@@ -1,0 +1,100 @@
+#include <gb/gb.h>
+
+#include "entity.h"
+#include "position.h"
+#include "player.h"
+
+const uint8_t MOVE_SPEED = 128;
+
+typedef enum
+{
+    DIR_NONE,
+    DIR_UP,
+    DIR_DOWN,
+    DIR_LEFT,
+    DIR_RIGHT
+} Direction;
+
+Direction current_direction = DIR_NONE;
+
+uint8_t last_keys = 0;
+
+void move_up(Entity e)
+{
+    position.fixed_y[e] -= MOVE_SPEED;
+    position.y[e] = position.fixed_y[e] >> 8;
+}
+
+void move_down(Entity e)
+{
+    position.fixed_y[e] += MOVE_SPEED;
+    position.y[e] = position.fixed_y[e] >> 8;
+}
+
+void move_left(Entity e)
+{
+    position.fixed_x[e] -= MOVE_SPEED;
+    position.x[e] = position.fixed_x[e] >> 8;
+}
+
+void move_right(Entity e)
+{
+    position.fixed_x[e] += MOVE_SPEED;
+    position.x[e] = position.fixed_x[e] >> 8;
+}
+
+void check_input()
+{
+    uint8_t keys = joypad();
+
+    // Si no hay dirección activa, asignamos la primera que se presiona
+    if (current_direction == DIR_NONE)
+    {
+        if (keys & J_UP)
+            current_direction = DIR_UP;
+        else if (keys & J_DOWN)
+            current_direction = DIR_DOWN;
+        else if (keys & J_LEFT)
+            current_direction = DIR_LEFT;
+        else if (keys & J_RIGHT)
+            current_direction = DIR_RIGHT;
+    }
+
+    // Ejecutar la dirección activa
+    switch (current_direction)
+    {
+    case DIR_UP:
+        move_up(player);
+        set_animation(&animation[player], player_animations.UP_WALKING);
+        break;
+        case DIR_DOWN:
+        move_down(player);
+        set_animation(&animation[player], player_animations.DOWN_WALKING);
+        break;
+    case DIR_LEFT:
+        move_left(player);
+        break;
+    case DIR_RIGHT:
+        move_right(player);
+        break;
+    default:
+        break;
+    }
+
+    // Si se suelta la dirección activa, ponemos DIR_NONE
+    if (current_direction == DIR_UP && !(keys & J_UP)){
+        current_direction = DIR_NONE;
+        set_animation(&animation[player], player_animations.UP_STAY);
+    }
+
+    if (current_direction == DIR_DOWN && !(keys & J_DOWN))
+    {
+        current_direction = DIR_NONE;
+        set_animation(&animation[player], player_animations.DOWN_STAY);
+    }
+
+    if (current_direction == DIR_LEFT && !(keys & J_LEFT))
+        current_direction = DIR_NONE;
+    if (current_direction == DIR_RIGHT && !(keys & J_RIGHT))
+        current_direction = DIR_NONE;
+}
