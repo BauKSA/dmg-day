@@ -32,7 +32,7 @@ uint8_t load_actor_tiles(Entity e, const unsigned char *tiles[], uint8_t num_til
     return start;
 }
 
-void reset_render_component() {
+void reset_render_component(void) {
     for(Entity e = 0; e < next_entity_id; e++) {
         render.tile_start[e] = 0xFF;
         render.tile_count[e] = 0;

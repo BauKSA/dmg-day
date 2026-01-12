@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "Build ROM",
-            "command": "mkdir build & \"C:\\Program Files\\GBDK\\bin\\lcc.exe\" -debug -o build/game.gb src/main.c",
+            "command": "${workspaceFolder}\\build.bat",
             "type": "shell",
             "args": [],
             "problemMatcher": [

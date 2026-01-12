@@ -43,7 +43,7 @@ void move_right(Entity e)
     position.x[e] = position.fixed_x[e] >> 8;
 }
 
-void check_input()
+void check_input(void)
 {
     uint8_t keys = joypad();
 
