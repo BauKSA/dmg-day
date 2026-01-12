@@ -2,6 +2,9 @@
 
 #include <stdint.h>
 
+#ifndef POSITION_H
+#define POSITION_H
+
 #include "entity.h"
 
 typedef struct
@@ -12,4 +15,6 @@ typedef struct
     uint16_t fixed_y[MAX_ENTITIES];
 } PositionComponent;
 
-PositionComponent position;
+extern PositionComponent position;
+
+#endif // POSITION_H

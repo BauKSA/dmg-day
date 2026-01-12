@@ -6,6 +6,7 @@
 
 /* Include scene headers */
 #include "../scenes/gender_select/gender_select.h"
+#include "../scenes/map/00/map_00.h"
 
 #include "../include/draw.h"
 #include "../include/action.h"
@@ -18,18 +19,19 @@ void main(void) {
     Game game;
     game.running = 1;
 
-    GenderSelect_Create();
+    init_player();
 
-    game.current_scene = &GenderSelect;
+    Map_00_Create();
 
-    game.current_scene->init(game.current_scene);
+    game.current_scene = &Map_00;
 
-    const uint8_t player_id = init_player();
+    game.current_scene->init(game.current_scene, &player);
 
     SHOW_BKG;
 
     while(game.running) {
-        //check_input();
+        game.current_scene->update(game.current_scene);
+        
         wait_vbl_done();
     }
 }

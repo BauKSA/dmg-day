@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef RENDER_H
+#define RENDER_H
+
 #include <gb/gb.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -14,9 +17,8 @@ typedef struct {
     bool vertical[MAX_ENTITIES];
 } RenderComponent;
 
-RenderComponent render;
+extern RenderComponent render;
 
-void render_reset(Entity e) {
-    render.tile_start[e] = 0xFF;
-    render.tile_count[e] = 0;
-}
+void render_reset(Entity e);
+
+#endif // RENDER_H
