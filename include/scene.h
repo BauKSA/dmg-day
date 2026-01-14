@@ -8,8 +8,10 @@ struct Scene {
     void (*init)(Scene*, Entity* player);      // Init
     void (*update)(Scene*);    // Update
     // void (*render)(Scene*);    // Draw
-    // void (*destroy)(Scene*);   // Clean
+    void (*destroy)(Scene*);   // Clean
     void* data;
 };
+
+void Scene_Destroy(Scene* scene);
 
 #endif // SCENE_H
