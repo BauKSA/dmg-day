@@ -17,7 +17,7 @@ uint8_t init_player(void)
     render.tile_count[player] = 4;
     render.vertical[player] = TRUE;
 
-    //PLAYER DOWN ANIMATIONS
+    // PLAYER DOWN ANIMATIONS
     const unsigned char *player_down_stay[] = {
         spr_Player_down1_00,
         spr_Player_down1_01,
@@ -46,8 +46,8 @@ uint8_t init_player(void)
         spr_Player_down1_10,
         spr_Player_down1_11};
 
-    //PLAYER UP ANIMATIONS
-        const unsigned char *player_up_stay[] = {
+    // PLAYER UP ANIMATIONS
+    const unsigned char *player_up_stay[] = {
         spr_Player_up1_00,
         spr_Player_up1_01,
         spr_Player_up1_10,

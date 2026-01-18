@@ -5,7 +5,9 @@ enum AllScenes
 {
     MENU,
     GENDER_SELECT,
-    MAP_00
+    INVENTORY,
+    MAP_00,
+
 };
 
 #endif // ALL_SCENES_H

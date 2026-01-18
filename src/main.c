@@ -13,6 +13,8 @@
 #include "../include/gender_selection.h"
 #include "../include/scene_manager.h"
 
+#include "../include/inventory.h"
+
 void main(void)
 {
     DISPLAY_ON;
@@ -29,14 +31,19 @@ void main(void)
 
     init_player();
 
+    init_arrow();
+
     enum GenderSelect gender = &GENDER;
     SceneManager_Create(&game);
 
-    scene_manager->change_scene(GENDER_SELECT, player);
+    scene_manager->change_scene(INVENTORY, player);
 
     while (game.running)
     {
         game.current_scene->update(game.current_scene);
+
+        inventory_input();
+        draw_actor(arrow);
 
         wait_vbl_done();
     }
