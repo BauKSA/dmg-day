@@ -5,7 +5,7 @@
 
 typedef struct MapData
 {
-    Entity *player;
+    Entity player;
 } MapData;
 
 #endif // MAP_DATA_H

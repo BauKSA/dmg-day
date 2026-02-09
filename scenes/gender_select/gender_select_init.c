@@ -6,7 +6,7 @@
 
 #include "../../assets/sprites/backgrounds/gender_select/gender_select_map.h"
 
-void GenderSelect_Init(Scene *scene, Entity *player)
+void GenderSelect_Init(Scene *scene, Entity player)
 {
     GenderSelectData *data = malloc(sizeof(GenderSelectData));
     if (!data)

@@ -1,5 +1,8 @@
 #include "../inventory.h"
 
+#include "../scene_manager.h"
+#include "../player.h"
+
 uint8_t prev_keys = 0;
 
 // Limits
@@ -15,6 +18,11 @@ const uint8_t HORIZONTAL_MOVEMENT = 24;
 void inventory_input()
 {
     uint8_t keys = joypad();
+
+    if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
+    {
+        scene_manager->change_scene(MAP_00, player);
+    }
 
     uint8_t arrow_x = position.x[arrow];
     uint8_t arrow_y = position.y[arrow];

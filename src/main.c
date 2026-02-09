@@ -36,14 +36,11 @@ void main(void)
     enum GenderSelect gender = &GENDER;
     SceneManager_Create(&game);
 
-    scene_manager->change_scene(INVENTORY, player);
+    scene_manager->change_scene(MAP_00, player);
 
     while (game.running)
     {
         game.current_scene->update(game.current_scene);
-
-        inventory_input();
-        draw_actor(arrow);
 
         wait_vbl_done();
     }

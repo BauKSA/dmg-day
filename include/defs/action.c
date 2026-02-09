@@ -1,5 +1,8 @@
 #include "../action.h"
 
+#include "../player.h"
+#include "../scene_manager.h"
+
 uint8_t MOVE_SPEED = 128;
 
 Direction current_direction = DIR_NONE;
@@ -34,6 +37,11 @@ void check_input(void)
 {
     uint8_t keys = joypad();
 
+    if (!(keys & J_SELECT) && (last_keys & J_SELECT))
+    {
+        scene_manager->change_scene(INVENTORY, player);
+    }
+
     // Si no hay dirección activa, asignamos la primera que se presiona
     if (current_direction == DIR_NONE)
     {
@@ -54,7 +62,7 @@ void check_input(void)
         move_up(player);
         set_animation(&animation[player], player_animations.UP_WALKING);
         break;
-        case DIR_DOWN:
+    case DIR_DOWN:
         move_down(player);
         set_animation(&animation[player], player_animations.DOWN_WALKING);
         break;
@@ -69,7 +77,8 @@ void check_input(void)
     }
 
     // Si se suelta la dirección activa, ponemos DIR_NONE
-    if (current_direction == DIR_UP && !(keys & J_UP)){
+    if (current_direction == DIR_UP && !(keys & J_UP))
+    {
         current_direction = DIR_NONE;
         set_animation(&animation[player], player_animations.UP_STAY);
     }
@@ -84,4 +93,6 @@ void check_input(void)
         current_direction = DIR_NONE;
     if (current_direction == DIR_RIGHT && !(keys & J_RIGHT))
         current_direction = DIR_NONE;
+
+    last_keys = keys;
 }

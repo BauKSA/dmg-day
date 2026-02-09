@@ -17,7 +17,7 @@ typedef struct
     Gender gender;
 } GenderSelectData;
 
-void GenderSelect_Init(Scene* scene, Entity* player);
+void GenderSelect_Init(Scene* scene, Entity player);
 void GenderSelect_Update(Scene* scene);
 
 extern Scene GenderSelect;

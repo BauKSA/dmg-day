@@ -12,6 +12,8 @@ void Map_00_Update(Scene *scene)
 {
     check_input();
     update_animation(animation);
-    draw_actor(*((MapData *)scene->data)->player);
+
+    MapData *data = (MapData *)scene->data;
+    draw_actor(data->player);
     return;
 }
