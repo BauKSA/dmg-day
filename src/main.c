@@ -12,8 +12,19 @@
 #include "../include/player.h"
 #include "../include/gender_selection.h"
 #include "../include/scene_manager.h"
+#include "../include/scene.h"
+
+#include "../assets/chars/numbers.h"
+#include "../assets/chars/chars.h"
 
 #include "../include/inventory.h"
+
+// Carga los tiles de números al inicio del juego
+void load_number_tiles()
+{
+    set_bkg_data(CHARS_TILESET_START, chars_tileset_size, (uint8_t *)chars_tileset);
+    set_bkg_data(NUMBER_TILESET_START, numbers_tileset_size, (uint8_t *)numbers_tileset);
+}
 
 void main(void)
 {
@@ -25,18 +36,24 @@ void main(void)
     muchas veces se sobreescribe y puede llegar a corromper la variable, por eso
     algo que persiste como el game, debería ser static.
     */
-   
+
     static Game game;
     game.running = 1;
 
     init_player();
-
+    init_NPCs();
     init_arrow();
 
     enum GenderSelect gender = &GENDER;
     SceneManager_Create(&game);
 
     scene_manager->change_scene(MAP_00, player);
+
+    load_number_tiles();
+    uint8_t npc1value = (int)npc_1 + NUMBER_TILESET_START;
+    uint8_t npc2value = (int)npc_2 + NUMBER_TILESET_START;
+    set_bkg_tiles(15, 15, 1, 1, &npc1value);
+    set_bkg_tiles(15, 16, 1, 1, &npc2value);
 
     while (game.running)
     {

@@ -14,7 +14,10 @@ void draw_actor(Entity e)
     uint8_t num_tiles = anim->tiles_per_frame; // 1, 2 o 4
     uint8_t first_tile = anim->start_frame + anim->current_frame * anim->tiles_per_frame;
 
-    uint8_t sprite_ids[4] = {0, 1, 2, 3};
+    uint8_t base = e * 4;
+    uint8_t sprite_ids[4] = {base, base + 1, base + 2, base + 3};
+
+    if(base > SPRITE_LIMIT) return;
 
     // Asignar tiles del frame a los sprites
     for (uint8_t i = 0; i < num_tiles; i++)

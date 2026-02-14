@@ -2,6 +2,7 @@
 
 #include "../player.h"
 #include "../scene_manager.h"
+#include "../can_move.h"
 
 uint8_t MOVE_SPEED = 128;
 
@@ -11,24 +12,36 @@ uint8_t last_keys = 0;
 
 void move_up(Entity e)
 {
+    if (can_move.up == false)
+        return;
+
     position.fixed_y[e] -= MOVE_SPEED;
     position.y[e] = position.fixed_y[e] >> 8;
 }
 
 void move_down(Entity e)
 {
+    if (can_move.down == false)
+        return;
+
     position.fixed_y[e] += MOVE_SPEED;
     position.y[e] = position.fixed_y[e] >> 8;
 }
 
 void move_left(Entity e)
 {
+    if (can_move.left == false)
+        return;
+
     position.fixed_x[e] -= MOVE_SPEED;
     position.x[e] = position.fixed_x[e] >> 8;
 }
 
 void move_right(Entity e)
 {
+    if (can_move.right == false)
+        return;
+
     position.fixed_x[e] += MOVE_SPEED;
     position.x[e] = position.fixed_x[e] >> 8;
 }

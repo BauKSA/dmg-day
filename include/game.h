@@ -1,7 +1,7 @@
 #ifndef GAME_H   // si GAME_H no está definido
 #define GAME_H   // definilo, y el resto del archivo se procesa
 
-typedef struct Scene Scene;
+#include "./scene.h"
 
 typedef struct Game {
     struct Scene* current_scene;

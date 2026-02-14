@@ -4,14 +4,20 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-struct Scene {
-    void (*init)(Scene*, Entity player);      // Init
-    void (*update)(Scene*);    // Update
-    // void (*render)(Scene*);    // Draw
-    void (*destroy)(Scene*);   // Clean
-    void* data;
+extern Entity npc_1;
+extern Entity npc_2;
+
+typedef struct Scene Scene;
+
+struct Scene
+{
+    void (*init)(struct Scene *, Entity player);
+    void (*update)(struct Scene *);
+    void (*destroy)(struct Scene *);
+    void *data;
 };
 
-void Scene_Destroy(Scene* scene);
+void init_NPCs();
+void Scene_Destroy(Scene *scene);
 
 #endif // SCENE_H

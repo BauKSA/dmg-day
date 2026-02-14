@@ -19,5 +19,6 @@
             "icon": "terminal-git-bash"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "C_Cpp.errorSquiggles": "disabled"
 }

@@ -11,6 +11,8 @@
 #include "render.h"
 #include "animation.h"
 
+#define SPRITE_LIMIT 36
+
 void draw_actor(Entity e);
 
 #endif // DRAW_H

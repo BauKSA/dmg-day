@@ -11,9 +11,17 @@
 void Map_00_Update(Scene *scene)
 {
     check_input();
-    update_animation(animation);
-
+    
     MapData *data = (MapData *)scene->data;
+    
+    for(size_t i = 0; i < data->npc_count; i++){
+        draw_actor(data->npc[i]);
+    }
+    
+    update_animation(animation);
     draw_actor(data->player);
+
+    Map_Collision(scene);
+
     return;
 }

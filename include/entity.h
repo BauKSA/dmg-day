@@ -5,11 +5,14 @@
 
 #include <stdint.h>
 
-typedef uint16_t Entity;
+typedef uint8_t Entity;
 
-#define MAX_ENTITIES 128
+#define MAX_ENTITIES 5
+#define SCENE_ENTITY 4
+
 extern Entity next_entity_id;
 
 Entity create_entity(void);
+void reset_entities(void);
 
 #endif // ENTITY_H
