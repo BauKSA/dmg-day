@@ -2,6 +2,7 @@
 
 #include "inventory_scene.h"
 #include "../../include/scene.h"
+#include "../../include/inventory.h"
 
 #include "../../assets/sprites/backgrounds/inventory/inventory_bkg.h"
 #include "../../assets/sprites/inventory/items/branch/spr_Branch.h"
@@ -9,6 +10,7 @@
 void InventoryScene_Init(Scene *scene, Entity player)
 {
     scene->data = NULL;
+    init_arrow();
 
     unsigned char tile = 51;
 

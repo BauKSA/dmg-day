@@ -1,26 +1,25 @@
 #include "../inventory.h"
 #include "../entity.h"
+#include "../scene.h"
 
 //Sprites
 #include "../../assets/sprites/inventory/spr_InventoryArrow_idle.h"
 
-Entity arrow;
+uint8_t inventory_active = 0;
 
 void init_arrow(void)
 {
-    arrow = create_entity();
+    position.x[option_actor] = 56;
+    position.y[option_actor] = 72;
 
-    position.x[arrow] = 56;
-    position.y[arrow] = 72;
+    position.fixed_x[option_actor] = position.x[option_actor] << 8;
+    position.fixed_y[option_actor] = position.y[option_actor] << 8;
 
-    position.fixed_x[arrow] = position.x[arrow] << 8;
-    position.fixed_y[arrow] = position.y[arrow] << 8;
-
-    render.tile_start[arrow] = 0;
-    render.tile_count[arrow] = 1;
-    render.vertical[arrow] = TRUE;
+    render.tile_start[option_actor] = 0;
+    render.tile_count[option_actor] = 1;
+    render.vertical[option_actor] = TRUE;
 
     const unsigned char *arrow_idle[] = { spr_InventoryArrow_idle };
 
-    init_animation(arrow, &animation[arrow], 0, arrow_idle, 1, DEFAULT_ANIMATION_SPEED, 1);
+    init_animation(option_actor, &animation[option_actor], 0, arrow_idle, 1, DEFAULT_ANIMATION_SPEED, 1);
 }

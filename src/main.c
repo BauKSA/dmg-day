@@ -42,7 +42,6 @@ void main(void)
 
     init_player();
     init_NPCs();
-    init_arrow();
 
     enum GenderSelect gender = &GENDER;
     SceneManager_Create(&game);

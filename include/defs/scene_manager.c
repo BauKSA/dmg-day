@@ -3,8 +3,21 @@
 #include <gb/gb.h>
 
 #include "../scene_manager.h"
+#include "../player.h"
+#include "../scene.h"
+#include "../position.h"
+#include "../draw.h"
 
 SceneManager *scene_manager;
+
+void SceneManager_CleanScreen()
+{
+    // Limpiar Y entera
+    position.y[player] = 0;
+    position.y[npc_1] = 0;
+    position.y[npc_2] = 0;
+    position.y[option_actor] = 0;
+}
 
 void SceneManager_Create(Game *game)
 {
@@ -24,6 +37,7 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
 
     scene_manager->game->current_scene = scene_manager_MapScene(new_scene);
 
+    SceneManager_CleanScreen();
     scene_manager->game->current_scene->init(scene_manager->game->current_scene, player);
 
     SHOW_BKG;

@@ -6,6 +6,7 @@
 
 extern Entity npc_1;
 extern Entity npc_2;
+extern Entity option_actor;
 
 typedef struct Scene Scene;
 

@@ -22,6 +22,7 @@
 #include "../assets/sprites/player/girl/up/spr_Player_up2.h"
 
 extern Entity player;
+extern uint8_t player_y_cache;
 
 typedef struct {
     uint8_t DOWN_STAY;

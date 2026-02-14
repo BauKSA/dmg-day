@@ -20,10 +20,13 @@ typedef struct MapData {
     const uint8_t (*collision_map)[MAP_WIDTH];
     CollisionEvent events[MAX_EVENTS];
     uint8_t event_count;
+    uint8_t event_active;
 } MapData;
 
 void Map_Collision(Scene *scene);
+void clean();
 
 extern MapData CurrentMapData;
+extern const uint8_t empty_tile;
 
 #endif // MAP_DATA_H

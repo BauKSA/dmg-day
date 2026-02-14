@@ -20,10 +20,10 @@ void Map_00_NPC_Init(Scene *scene){
 
     // PLAYER DOWN ANIMATIONS
     const unsigned char *npc_idle[] = {
-        spr_adolfito_00,
-        spr_adolfito_10,
-        spr_adolfito_01,
-        spr_adolfito_11
+        spr_example_NPC_00,
+        spr_example_NPC_10,
+        spr_example_NPC_01,
+        spr_example_NPC_11
     };
 
     init_animation(npc_1, &animation[npc_1], 0, npc_idle, 1, DEFAULT_ANIMATION_SPEED, 4);

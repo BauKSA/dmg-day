@@ -12,6 +12,7 @@ typedef struct SceneManager
     void (*change_scene)(enum AllScenes new_scene, Entity *player);
 } SceneManager;
 
+void SceneManager_CleanScreen();
 void SceneManager_Create(Game *game);
 void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player);
 Scene *scene_manager_MapScene(enum AllScenes scene);

@@ -2,13 +2,16 @@
 
 Entity player;
 PLAYER_ANIMATIONS player_animations;
+uint8_t player_y_cache;
 
 uint8_t init_player(void)
 {
     player = create_entity();
-
+    
     position.x[player] = 50;
     position.y[player] = 100;
+    
+    player_y_cache = position.y[player];
 
     position.fixed_x[player] = position.x[player] << 8;
     position.fixed_y[player] = position.y[player] << 8;

@@ -82,6 +82,11 @@ void Map_Collision(Scene *scene)
     /**
      * Eventos
      */
+
+    if(data->collision_map[tile_y][tile_x] == 0 & CurrentMapData.event_active == 1){
+        clean();
+    }
+
     if (data->collision_map[tile_y][tile_x] != 0)
     {
         uint8_t event = data->collision_map[tile_y][tile_x];

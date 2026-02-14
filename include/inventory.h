@@ -17,10 +17,9 @@ typedef struct InventorySlot
     bool active;
 } InventorySlot;
 
-extern Entity arrow;
-
 void init_arrow(void);
-
 void inventory_input();
+
+extern uint8_t inventory_active;
 
 #endif // INVENTORY_H

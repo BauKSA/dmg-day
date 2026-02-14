@@ -24,10 +24,10 @@
 
 
 /* Bank of tiles. */
-#define adolfitoBank 0
-extern unsigned char spr_adolfito_00[];
-extern unsigned char spr_adolfito_01[];
-extern unsigned char spr_adolfito_10[];
-extern unsigned char spr_adolfito_11[];
+#define example_NPCBank 0
+extern unsigned char spr_example_NPC_00[];
+extern unsigned char spr_example_NPC_01[];
+extern unsigned char spr_example_NPC_10[];
+extern unsigned char spr_example_NPC_11[];
 
 /* End of EXAMPLE_NPC.H */

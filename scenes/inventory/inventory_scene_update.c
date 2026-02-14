@@ -4,6 +4,6 @@
 #include "../../include/draw.h"
 
 void InventoryScene_Update(Scene* scene){
+    draw_actor(option_actor);
     inventory_input();
-    draw_actor(arrow);
 }

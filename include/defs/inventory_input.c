@@ -2,6 +2,7 @@
 
 #include "../scene_manager.h"
 #include "../player.h"
+#include "../draw.h"
 
 uint8_t prev_keys = 0;
 
@@ -22,10 +23,12 @@ void inventory_input()
     if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
     {
         scene_manager->change_scene(MAP_00, player);
+        position.y[option_actor] = 0;
+        draw_actor(option_actor);
     }
 
-    uint8_t arrow_x = position.x[arrow];
-    uint8_t arrow_y = position.y[arrow];
+    uint8_t arrow_x = position.x[option_actor];
+    uint8_t arrow_y = position.y[option_actor];
 
     if ((prev_keys & J_UP) && !(keys & J_UP))
     {
@@ -54,8 +57,8 @@ void inventory_input()
     if (arrow_x < left_limit)
         arrow_x = left_limit;
 
-    position.y[arrow] = arrow_y;
-    position.x[arrow] = arrow_x;
+    position.y[option_actor] = arrow_y;
+    position.x[option_actor] = arrow_x;
 
     prev_keys = keys;
 }
