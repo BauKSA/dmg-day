@@ -10,6 +10,8 @@
 #include "../map_data.h"
 #include "./map_00_collision.h"
 #include "../../../include/char_to_tile.h"
+#include "../../../include/text_positions.h"
+#include "../../../include/name.h"
 
 void hello_event()
 {
@@ -21,7 +23,13 @@ void hello_event()
     for (size_t i = 0; txt[i] != '\0'; i++)
     {
         uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
-        set_bkg_tiles(i + 1, 15, 1, 1, &tile);
+        set_bkg_tiles(i + TEXT_START_X, TEXT_START_Y, 1, 1, &tile);
+    }
+
+    for (size_t i = 0; names[npc_1][i] != '\0'; i++)
+    {
+        uint8_t tile = char_to_tile(names[npc_1][i]) + CHARS_TILESET_START;
+        set_bkg_tiles(i + NAME_START_X, NAME_START_Y, 1, 1, &tile);
     }
 }
 

@@ -6,10 +6,16 @@
 #include "../../../include/position.h"
 #include "../../../include/render.h"
 #include "../../../include/load.h"
+#include "../../../include/name.h"
 
-void Map_00_NPC_Init(Scene *scene){
+void Map_00_NPC_Init(Scene *scene)
+{
     position.x[npc_1] = 40;
     position.y[npc_1] = 80;
+
+    char npc_name[10] = "npc 1";
+    for (size_t i = 0; npc_name[i] != '\n'; i++)
+        names[npc_1][i] = npc_name[i];
 
     position.fixed_x[npc_1] = position.x[npc_1] << 8;
     position.fixed_y[npc_1] = position.y[npc_1] << 8;
@@ -23,8 +29,7 @@ void Map_00_NPC_Init(Scene *scene){
         spr_example_NPC_00,
         spr_example_NPC_10,
         spr_example_NPC_01,
-        spr_example_NPC_11
-    };
+        spr_example_NPC_11};
 
     init_animation(npc_1, &animation[npc_1], 0, npc_idle, 1, DEFAULT_ANIMATION_SPEED, 4);
 }

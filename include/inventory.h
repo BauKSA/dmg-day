@@ -11,6 +11,10 @@
 #include "load.h"
 #include "animation.h"
 
+#define INVENTORY_ITEMS_START 53
+#define INVENTORY_COIN_STARTS_X 5
+#define INVENTORY_COIN_STARTS_Y 12
+
 typedef struct InventorySlot
 {
     uint8_t item;

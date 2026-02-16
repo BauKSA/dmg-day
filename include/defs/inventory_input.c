@@ -8,12 +8,12 @@ uint8_t prev_keys = 0;
 
 // Limits
 const uint8_t top_limit = 72;
-const uint8_t bottom_limit = 104;
+const uint8_t bottom_limit = 96;
 
 const uint8_t left_limit = 56;
 const uint8_t right_limit = 128;
 
-const uint8_t VERTICAL_MOVEMENT = 32;
+const uint8_t VERTICAL_MOVEMENT = 24;
 const uint8_t HORIZONTAL_MOVEMENT = 24;
 
 void inventory_input()
