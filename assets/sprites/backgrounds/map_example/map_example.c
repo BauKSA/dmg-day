@@ -1,3 +1,5 @@
+#pragma bank 1
+
 const unsigned char example_tileset[] = {
 
 	// Tile 1

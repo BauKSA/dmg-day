@@ -42,6 +42,11 @@ void Map_00_Init(Scene *scene, Entity scene_player)
     Map_00_NPC_Init(scene);
     Map_00_InitDialogues();
 
+    unsigned char _previous_bank = _current_bank;
+    SWITCH_ROM_MBC1(1);
+
     set_bkg_data(0, example_tileset_size, example_tileset);
     set_bkg_tiles(0, 0, 20, 18, example_tilemap);
+    
+    SWITCH_ROM_MBC1(_previous_bank);
 }

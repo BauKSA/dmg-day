@@ -30,6 +30,9 @@ void InventoryScene_Init(Scene *scene, Entity player)
 
     const uint8_t branch_tile = 53;
 
+    unsigned char _previous_bank = _current_bank;
+    SWITCH_ROM_MBC1(1);
+
     set_bkg_data(0, inventory_bkg_tileset_size, inventory_bkg_tileset);
     set_bkg_tiles(0, 0, 20, 18, inventory_bkg_tilemap);
 
@@ -37,4 +40,6 @@ void InventoryScene_Init(Scene *scene, Entity player)
     set_bkg_tiles(5, 7, 1, 1, &branch_tile);
 
     InventoryScene_DrawCoins();
+
+    SWITCH_ROM_MBC1(_previous_bank);
 }

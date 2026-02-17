@@ -1,5 +1,4 @@
-// Generated using GB Export by AngelSix https://github.com/angelsix/retrosix-resources
-// Enhanced version based of original by https://github.com/gabrielcnr
+#pragma bank 1
 
 const unsigned char inventory_bkg_tileset[] = {
 	// Tile 1

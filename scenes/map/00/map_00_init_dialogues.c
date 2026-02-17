@@ -3,7 +3,7 @@
 
 const DialoguePerRelation dialogue_00 = {
     {{"...", ""}, {"...", ""}, {"...", ""}},
-    {{"mmmh...", ""}, {"hi!", ""}, {"hello!", ""}},
+    {{"mmmh...", ""}, {"hi!", ""}, {"hello, world!", ""}},
     {{"...", ""}, {"...", ""}, {"...", ""}}};
 
 void Map_00_InitDialogues()
