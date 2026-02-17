@@ -7,10 +7,6 @@
 #define MAP_WIDTH 20
 #define MAP_HEIGHT 18
 
-#define MAX_NPCS_PER_SCENE 2
-
-#define MAX_EVENTS 5
-
 typedef void (*CollisionEvent)();
 
 typedef struct MapData {

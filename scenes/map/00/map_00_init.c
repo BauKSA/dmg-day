@@ -15,6 +15,7 @@
 #include "../../../include/name.h"
 #include "../../../include/npcs.h"
 #include "../../../include/npc_stats_map.h"
+#include "../../../include/npc_lines.h"
 
 void hello_event()
 {
@@ -22,8 +23,7 @@ void hello_event()
         return;
 
     CurrentMapData.event_active = 1;
-    char txt[] = "hello, world!";
-    Scene_DrawNPCLine(npc_1, (uint8_t)EXAMPLE_00, txt, "\0", 0, NONE);
+    Scene_DrawNPCLine(npc_1, (uint8_t)EXAMPLE_00, 0, 0, NONE);
 }
 
 void Map_00_Init(Scene *scene, Entity scene_player)
@@ -40,6 +40,7 @@ void Map_00_Init(Scene *scene, Entity scene_player)
 
     scene->data = &CurrentMapData;
     Map_00_NPC_Init(scene);
+    Map_00_InitDialogues();
 
     set_bkg_data(0, example_tileset_size, example_tileset);
     set_bkg_tiles(0, 0, 20, 18, example_tilemap);
