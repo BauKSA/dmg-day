@@ -21,8 +21,6 @@ typedef enum
 
 extern Direction current_direction;
 
-extern uint8_t last_keys;
-
 void move_up(Entity e);
 
 void move_down(Entity e);

@@ -5,11 +5,15 @@
 #include "../../scenes/gender_select/gender_select.h"
 #include "../../scenes/inventory/inventory_scene.h"
 #include "../../scenes/map/00/map_00.h"
+#include "../../scenes/main_menu/main_menu.h"
 
 Scene *scene_manager_MapScene(enum AllScenes scene)
 {
     switch (scene)
     {
+    case MENU:
+        MainMenu_Create();
+        return &MainMenu;
     case GENDER_SELECT:
         GenderSelect_Create();
         return &GenderSelect;

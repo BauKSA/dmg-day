@@ -3,8 +3,7 @@
 #include "../scene_manager.h"
 #include "../player.h"
 #include "../draw.h"
-
-uint8_t prev_keys = 0;
+#include "../input.h"
 
 // Limits
 const uint8_t top_limit = 72;
@@ -18,7 +17,7 @@ const uint8_t HORIZONTAL_MOVEMENT = 24;
 
 void inventory_input()
 {
-    uint8_t keys = joypad();
+    keys = joypad();
 
     if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
     {

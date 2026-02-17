@@ -3,12 +3,11 @@
 #include "../player.h"
 #include "../scene_manager.h"
 #include "../can_move.h"
+#include "../input.h"
 
 uint8_t MOVE_SPEED = 128;
 
 Direction current_direction = DIR_NONE;
-
-uint8_t last_keys = 0;
 
 void move_up(Entity e)
 {
@@ -48,9 +47,9 @@ void move_right(Entity e)
 
 void check_input(void)
 {
-    uint8_t keys = joypad();
+    keys = joypad();
 
-    if (!(keys & J_SELECT) && (last_keys & J_SELECT))
+    if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
     {
         scene_manager->change_scene(INVENTORY, player);
     }
@@ -107,5 +106,5 @@ void check_input(void)
     if (current_direction == DIR_RIGHT && !(keys & J_RIGHT))
         current_direction = DIR_NONE;
 
-    last_keys = keys;
+    prev_keys = keys;
 }
