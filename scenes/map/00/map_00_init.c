@@ -23,20 +23,7 @@ void hello_event()
 
     CurrentMapData.event_active = 1;
     char txt[] = "hello, world!";
-    for (size_t i = 0; txt[i] != '\0'; i++)
-    {
-        uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
-        set_bkg_tiles(i + TEXT_START_X, TEXT_START_Y, 1, 1, &tile);
-    }
-
-    for (size_t i = 0; names[npc_1][i] != '\0'; i++)
-    {
-        uint8_t tile = char_to_tile(names[npc_1][i]) + CHARS_TILESET_START;
-        set_bkg_tiles(i + NAME_START_X, NAME_START_Y, 1, 1, &tile);
-    }
-
-    uint8_t humor_icon_tile = humor_stats[EXAMPLE_00] + NUMBER_TILESET_START;
-    set_bkg_tiles(HUMOR_ICON_X, ICON_Y, 1, 1, &humor_icon_tile);
+    Scene_DrawNPCLine(npc_1, (uint8_t)EXAMPLE_00, txt, "\0", 0, NONE);
 }
 
 void Map_00_Init(Scene *scene, Entity scene_player)

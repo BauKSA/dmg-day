@@ -7,7 +7,7 @@ enum AllScenes
     GENDER_SELECT,
     INVENTORY,
     MAP_00,
-
+    NONE
 };
 
 #endif // ALL_SCENES_H

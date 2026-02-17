@@ -14,7 +14,11 @@ void clean()
         set_bkg_tiles(i, TEXT_START_Y, 1, 1, &empty_tile);
     }
 
-    for(size_t i = NAME_START_X; i < NAME_END_X; i++){
+    for (size_t i = NAME_START_X; i < NAME_END_X; i++)
+    {
         set_bkg_tiles(i, NAME_START_Y, 1, 1, &empty_tile);
     }
+
+    set_bkg_tiles(HUMOR_ICON_X, ICON_Y, 1, 1, &empty_tile);
+    set_bkg_tiles(RELATION_ICON_X, ICON_Y, 1, 1, &empty_tile);
 }
