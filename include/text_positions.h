@@ -12,4 +12,8 @@
 
 #define NAME_END_X 10
 
+#define ICON_Y 1
+#define HUMOR_ICON_X 15
+#define RELATION_ICON_X 17
+
 #endif //_TEXTPOSITIONS_

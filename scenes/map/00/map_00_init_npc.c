@@ -7,6 +7,7 @@
 #include "../../../include/render.h"
 #include "../../../include/load.h"
 #include "../../../include/name.h"
+#include "../../../include/npcs.h"
 
 void Map_00_NPC_Init(Scene *scene)
 {

@@ -13,6 +13,7 @@
 #include "../include/gender_selection.h"
 #include "../include/scene_manager.h"
 #include "../include/scene.h"
+#include "../include/npcs.h"
 
 #include "../assets/chars/numbers.h"
 #include "../assets/chars/chars.h"
@@ -23,13 +24,6 @@
  * DEBUG:
  * Init random numbers 0-2
  */
-// unsigned int seed;
-
-// unsigned int my_rand()
-// {
-//     seed = seed * 25173 + 13849;
-//     return seed;
-// }
 
 // Carga los tiles de números al inicio del juego
 void load_number_tiles()
@@ -61,16 +55,6 @@ void main(void)
     scene_manager->change_scene(MENU, player);
 
     load_number_tiles();
-
-    /**
-     * TODO:
-     * Acá debería agregar el menú de inicio con su respectivo bkg y alguna anim,
-     * esperar el start como para arrancar el juego y ahí configuro los seeds y los random.
-     */
-    // waitpad(J_START); // esperamos input real del jugador
-
-    // seed = LY_REG;
-    // seed |= (unsigned int)DIV_REG << 8;
 
     while (game.running)
     {

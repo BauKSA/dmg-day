@@ -7,14 +7,14 @@
 #define MAP_WIDTH 20
 #define MAP_HEIGHT 18
 
-#define MAX_NPCS 2
+#define MAX_NPCS_PER_SCENE 2
 
 #define MAX_EVENTS 5
 
 typedef void (*CollisionEvent)();
 
 typedef struct MapData {
-    Entity npc[MAX_NPCS];
+    Entity npc[MAX_NPCS_PER_SCENE];
     uint8_t npc_count;
     Entity player;
     const uint8_t (*collision_map)[MAP_WIDTH];

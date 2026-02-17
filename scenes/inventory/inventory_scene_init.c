@@ -4,6 +4,7 @@
 #include "../../include/scene.h"
 #include "../../include/inventory.h"
 #include "../../include/money.h"
+#include "../../include/player.h"
 #include "../../assets/chars/numbers.h"
 
 #include "../../assets/sprites/backgrounds/inventory/inventory_bkg.h"

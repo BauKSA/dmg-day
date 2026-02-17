@@ -4,10 +4,6 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-extern Entity npc_1;
-extern Entity npc_2;
-extern Entity option_actor;
-
 typedef struct Scene Scene;
 
 struct Scene
@@ -18,7 +14,6 @@ struct Scene
     void *data;
 };
 
-void init_NPCs();
 void Scene_Destroy(Scene *scene);
 
 #endif // SCENE_H

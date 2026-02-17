@@ -7,11 +7,14 @@
 
 #include "../../../assets/sprites/backgrounds/map_example/map_example.h"
 #include "../../../assets/chars/chars.h"
+#include "../../../assets/chars/numbers.h"
 #include "../map_data.h"
 #include "./map_00_collision.h"
 #include "../../../include/char_to_tile.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/name.h"
+#include "../../../include/npcs.h"
+#include "../../../include/npc_stats_map.h"
 
 void hello_event()
 {
@@ -31,6 +34,9 @@ void hello_event()
         uint8_t tile = char_to_tile(names[npc_1][i]) + CHARS_TILESET_START;
         set_bkg_tiles(i + NAME_START_X, NAME_START_Y, 1, 1, &tile);
     }
+
+    uint8_t humor_icon_tile = humor_stats[EXAMPLE_00] + NUMBER_TILESET_START;
+    set_bkg_tiles(HUMOR_ICON_X, ICON_Y, 1, 1, &humor_icon_tile);
 }
 
 void Map_00_Init(Scene *scene, Entity scene_player)

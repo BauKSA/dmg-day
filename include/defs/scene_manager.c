@@ -7,6 +7,7 @@
 #include "../scene.h"
 #include "../position.h"
 #include "../draw.h"
+#include "../npcs.h"
 
 SceneManager *scene_manager;
 

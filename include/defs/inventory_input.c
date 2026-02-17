@@ -4,6 +4,7 @@
 #include "../player.h"
 #include "../draw.h"
 #include "../input.h"
+#include "../npcs.h"
 
 // Limits
 const uint8_t top_limit = 72;

@@ -1,6 +1,7 @@
 #include "../inventory.h"
 #include "../entity.h"
 #include "../scene.h"
+#include "../npcs.h"
 
 //Sprites
 #include "../../assets/sprites/inventory/spr_InventoryArrow_idle.h"
