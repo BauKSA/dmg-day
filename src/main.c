@@ -17,13 +17,9 @@
 
 #include "../assets/chars/numbers.h"
 #include "../assets/chars/chars.h"
+#include "../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 
 #include "../include/inventory.h"
-
-/**
- * DEBUG:
- * Init random numbers 0-2
- */
 
 // Carga los tiles de números al inicio del juego
 void load_number_tiles()
@@ -45,6 +41,8 @@ void main(void)
 
     static Game game;
     game.running = 1;
+
+    InitNPCIcons();
 
     init_player();
     init_NPCs();

@@ -2,7 +2,7 @@
 #include "./map_data.h"
 #include "../../include/text_positions.h"
 
-const uint8_t empty_tile = 150;
+const uint8_t empty_tile = 255;
 
 void clean()
 {
