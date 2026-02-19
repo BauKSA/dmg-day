@@ -14,6 +14,7 @@
 #include "../include/scene_manager.h"
 #include "../include/scene.h"
 #include "../include/npcs.h"
+#include "../include/input.h"
 
 #include "../assets/chars/numbers.h"
 #include "../assets/chars/chars.h"
@@ -56,8 +57,11 @@ void main(void)
 
     while (game.running)
     {
-        game.current_scene->update(game.current_scene);
-
         wait_vbl_done();
+
+        prev_keys = keys;
+        keys = joypad();
+
+        game.current_scene->update(game.current_scene);
     }
 }

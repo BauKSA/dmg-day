@@ -1,4 +1,6 @@
 #include <gb/gb.h>
+#include <stdlib.h>
+
 #include "./main_menu.h"
 #include "../../include/scene.h"
 #include "../../include/scene_manager.h"
@@ -8,8 +10,6 @@
 
 void MainMenu_CheckInput(void)
 {
-    keys = joypad();
-
     if (!(keys & J_START) && (prev_keys & J_START))
     {
         seed = LY_REG;
@@ -22,6 +22,4 @@ void MainMenu_CheckInput(void)
 
         scene_manager->change_scene(MAP_00, player);
     }
-
-    prev_keys = keys;
 }

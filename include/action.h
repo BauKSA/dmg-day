@@ -29,8 +29,4 @@ void move_left(Entity e);
 
 void move_right(Entity e);
 
-void check_input(void);
-
-void check_global_input(void);
-
 #endif // ACTION_H
