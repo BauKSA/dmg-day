@@ -15,7 +15,7 @@ void Map_00_NPC_Init(Scene *scene)
     position.y[npc_1] = 80;
 
     char npc_name[10] = "npc 1";
-    for (size_t i = 0; npc_name[i] != '\n'; i++)
+    for (size_t i = 0; npc_name[i] != '\0'; i++)
         names[npc_1][i] = npc_name[i];
 
     position.fixed_x[npc_1] = position.x[npc_1] << 8;

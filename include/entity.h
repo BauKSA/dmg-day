@@ -7,7 +7,7 @@
 
 typedef uint8_t Entity;
 
-#define MAX_ENTITIES 5
+#define MAX_ENTITIES 7
 #define SCENE_ENTITY 4
 
 extern Entity next_entity_id;

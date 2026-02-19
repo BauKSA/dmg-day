@@ -18,6 +18,11 @@ void SceneManager_CleanScreen()
     position.y[npc_1] = 0;
     position.y[npc_2] = 0;
     position.y[option_actor] = 0;
+
+    draw_actor(player);
+    draw_actor(npc_1);
+    draw_actor(npc_2);
+    draw_actor(option_actor);
 }
 
 void SceneManager_Create(Game *game)

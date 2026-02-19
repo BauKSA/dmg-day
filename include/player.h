@@ -22,6 +22,8 @@
 #include "../assets/sprites/player/girl/up/spr_Player_up2.h"
 
 extern Entity player;
+extern Entity mg_player;
+
 extern uint8_t player_y_cache;
 
 typedef struct {

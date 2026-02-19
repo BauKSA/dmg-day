@@ -18,7 +18,7 @@ const uint8_t HORIZONTAL_MOVEMENT = 24;
 
 void inventory_input()
 {
-    keys = joypad();
+    //keys = joypad();
 
     if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
     {
@@ -60,5 +60,5 @@ void inventory_input()
     position.y[option_actor] = arrow_y;
     position.x[option_actor] = arrow_x;
 
-    prev_keys = keys;
+    //prev_keys = keys;
 }

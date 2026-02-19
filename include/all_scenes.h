@@ -7,6 +7,7 @@ enum AllScenes
     GENDER_SELECT,
     INVENTORY,
     MAP_00,
+    MG_LEAVES,
     NONE
 };
 

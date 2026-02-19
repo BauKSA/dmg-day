@@ -13,6 +13,7 @@
 #include "../../../include/char_to_tile.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/name.h"
+#include "../../../include/draw.h"
 #include "../../../include/npcs.h"
 #include "../../../include/npc_stats_map.h"
 #include "../../../include/npc_lines.h"
@@ -49,4 +50,6 @@ void Map_00_Init(Scene *scene, Entity scene_player)
     set_bkg_tiles(0, 0, 20, 18, example_tilemap);
     
     SWITCH_ROM_MBC1(_previous_bank);
+
+    draw_actor(npc_1);
 }

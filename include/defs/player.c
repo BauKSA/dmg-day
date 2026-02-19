@@ -1,15 +1,21 @@
 #include "../player.h"
+#include "../speed.h"
 
 Entity player;
+Entity mg_player;
+
 PLAYER_ANIMATIONS player_animations;
 uint8_t player_y_cache;
 
 uint8_t init_player(void)
 {
     player = create_entity();
+    mg_player = create_entity();
     
     position.x[player] = 50;
     position.y[player] = 100;
+
+    speed[player] = 128;
     
     player_y_cache = position.y[player];
 

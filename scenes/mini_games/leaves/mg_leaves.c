@@ -1,0 +1,11 @@
+#include "mg_leaves.h"
+#include "../../../include/scene.h"
+
+Scene Mg_Leaves;
+
+void Mg_Leaves_Create(void){
+    Mg_Leaves.init = Mg_Leaves_Init;
+    Mg_Leaves.update = Mg_Leaves_Update;
+    
+    Mg_Leaves.data = NULL;
+}
