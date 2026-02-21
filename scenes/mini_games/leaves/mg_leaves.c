@@ -3,9 +3,10 @@
 
 Scene Mg_Leaves;
 
-void Mg_Leaves_Create(void){
+void Mg_Leaves_Create(void)
+{
     Mg_Leaves.init = Mg_Leaves_Init;
     Mg_Leaves.update = Mg_Leaves_Update;
-    
+    Mg_Leaves.bank = 2;
     Mg_Leaves.data = NULL;
 }

@@ -15,6 +15,7 @@ struct Scene
     void (*update)(struct Scene *);
     void (*destroy)(struct Scene *);
     void *data;
+    uint8_t bank;
 };
 
 void Scene_Destroy(Scene *scene);

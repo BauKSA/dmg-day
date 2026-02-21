@@ -1,3 +1,5 @@
+#include <gb/gb.h>
+
 #include "../all_scenes.h"
 #include "../scene.h"
 
@@ -30,7 +32,6 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     case MAP_00:
         Map_00_Create();
         return &Map_00;
-
     // MINI JUEGOS
     case MG_LEAVES:
         Mg_Leaves_Create();

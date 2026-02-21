@@ -44,7 +44,15 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
     scene_manager->game->current_scene = scene_manager_MapScene(new_scene);
 
     SceneManager_CleanScreen();
+
+    uint8_t previous_bank = _current_bank;
+    if (scene_manager->game->current_scene->bank != _current_bank)
+        SWITCH_ROM_MBC1(scene_manager->game->current_scene->bank);
+
     scene_manager->game->current_scene->init(scene_manager->game->current_scene, player);
+
+    if (previous_bank != _current_bank)
+        SWITCH_ROM_MBC1(previous_bank);
 
     SHOW_BKG;
 }

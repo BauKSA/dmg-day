@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <gb/gb.h>
 
 #include "../../../include/game.h"
 #include "../../../include/entity.h"
@@ -39,5 +40,6 @@ extern enum LeafState leaf_state[LEAF_COUNT];
 extern uint8_t SWEEPING_FLAG;
 
 void Mg_Leaves_Create(void);
+void Mg_Leaves_LoadBKG();
 
 #endif // MG_LEAVES_H

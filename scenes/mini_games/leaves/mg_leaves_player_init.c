@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "./mg_leaves.h"
 #include "../../../include/position.h"
 #include "../../../include/player.h"

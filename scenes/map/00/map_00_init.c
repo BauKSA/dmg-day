@@ -40,6 +40,7 @@ void Map_00_Init(Scene *scene, Entity scene_player)
     CurrentMapData.event_active = 0;
 
     scene->data = &CurrentMapData;
+
     Map_00_NPC_Init(scene);
     Map_00_InitDialogues();
 

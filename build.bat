@@ -8,4 +8,4 @@ for /R . %%f in (*.c) do (
     set FILES=!FILES! %%f
 )
 
-"C:\Program Files\GBDK\bin\lcc.exe" -debug -o build/game.gb !FILES!
+"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo4 -o build/game.gb !FILES!

@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include <gb/gb.h>
 
 #include "mg_leaves.h"
@@ -6,7 +8,6 @@
 #include "../../../include/player.h"
 #include "../../../include/position.h"
 
-#include "../../../assets/sprites/backgrounds/template/template.h"
 #include "../../../assets/chars/chars.h"
 #include "../../../assets/chars/numbers.h"
 #include "../../../assets/sprites/mini_game/leaf/leaf.h"
@@ -36,16 +37,10 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
     scene->data = &mg_leaves_DATA;
 
-    unsigned char _previous_bank = _current_bank;
-    SWITCH_ROM_MBC1(1);
-
-    set_bkg_data(0, template_tileset_size, template_tileset);
-    set_bkg_tiles(0, 0, 20, 18, template_tilemap);
+    Mg_Leaves_LoadBKG();
 
     char title[MAX_SIZE_MG_TITLE] = "sweep'em!";
     Mg_SetTitle(title);
-
-    SWITCH_ROM_MBC1(_previous_bank);
 
     Mg_Leaves_Player_Init();
 

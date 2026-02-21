@@ -62,6 +62,13 @@ void main(void)
         prev_keys = keys;
         keys = joypad();
 
+        uint8_t previous_bank = _current_bank;
+        if (game.current_scene->bank != _current_bank)
+            SWITCH_ROM_MBC1(game.current_scene->bank);
+
         game.current_scene->update(game.current_scene);
+
+        if (previous_bank != _current_bank)
+            SWITCH_ROM_MBC1(previous_bank);
     }
 }
