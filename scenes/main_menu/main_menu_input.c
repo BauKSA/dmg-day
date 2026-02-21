@@ -7,6 +7,7 @@
 #include "../../include/player.h"
 #include "../../include/input.h"
 #include "../../include/npcs.h"
+#include "../../include/random.h"
 
 void MainMenu_CheckInput(void)
 {

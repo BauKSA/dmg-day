@@ -14,6 +14,6 @@
 #define SPRITE_LIMIT 36
 
 void draw_actor(Entity e);
-void draw_extra(uint8_t index, uint8_t x, uint8_t y, uint8_t tiles, uint8_t vertical);
+void draw_extra(uint8_t index, int8_t x, int8_t y, uint8_t tiles, uint8_t vertical);
 
 #endif // DRAW_H

@@ -19,9 +19,21 @@
 #include "../../../include/load.h"
 #include "../../../include/draw.h"
 
+uint8_t leaf_ids[LEAF_COUNT];
+uint8_t leaf_x[LEAF_COUNT];
+int8_t leaf_y[LEAF_COUNT];
+uint8_t leaf_active[LEAF_COUNT];
+uint8_t leaf_timer[LEAF_COUNT];
+uint16_t leaf_spawner[LEAF_COUNT];
+enum LeafState leaf_state[LEAF_COUNT];
+
+MG_Leaves_DATA mg_leaves_DATA;
+
 void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 {
-    scene->data = NULL;
+    mg_leaves_DATA.bottom_limit = 120;
+
+    scene->data = &mg_leaves_DATA;
 
     unsigned char _previous_bank = _current_bank;
     SWITCH_ROM_MBC1(1);
@@ -42,6 +54,12 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
      * los extra actor
      */
 
-     uint8_t leaf_id = load_extra_tiles(1, spr_leaf_00, 1);
-     draw_extra(leaf_id, 50, 50, 1, 1);
+    for (uint8_t i = 0; i < LEAF_COUNT; i++)
+    {
+        uint8_t id = load_extra_tiles(i, spr_leaf_00, 1);
+        leaf_ids[i] = id;
+        leaf_active[i] = false;
+        leaf_x[i] = 50 + i * 7;
+        leaf_y[i] = 0;
+    }
 }

@@ -29,8 +29,6 @@ uint8_t load_actor_tiles(Entity e, const unsigned char *tiles[], uint8_t num_til
 
 uint8_t load_extra_tiles(uint8_t id, const unsigned char *tiles, uint8_t num_tiles)
 {
-    extra_actor_index++;
-    
     if (extra_actor_index >= MAX_EXTRA_ACTORS)
         extra_actor_index = 0;
 
@@ -47,7 +45,7 @@ uint8_t load_extra_tiles(uint8_t id, const unsigned char *tiles, uint8_t num_til
 
     extra_actors[extra_actor_index] = actor;
 
-    return extra_actor_index;
+    return extra_actor_index++;
 }
 
 void reset_extra_tiles()

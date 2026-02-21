@@ -19,12 +19,5 @@ void MainMenu_CheckInput(void);
 extern uint16_t timer;
 extern uint8_t rate;
 extern uint8_t show_text;
-extern unsigned int seed;
-
-inline unsigned int my_rand()
-{
-    seed = seed * 25173 + 13849;
-    return seed;
-}
 
 #endif //_MAINMENU_

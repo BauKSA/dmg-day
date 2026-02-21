@@ -7,18 +7,18 @@
 #include "../../include/all_scenes.h"
 #include "../../include/player.h"
 
-void Mg_PlayerMovement()
+void Mg_PlayerMovement(uint8_t horizontal, uint8_t vertical)
 {
     // Si no hay dirección activa, asignamos la primera que se presiona
     if (current_direction == DIR_NONE)
     {
-        if (keys & J_UP)
+        if (keys & J_UP && vertical != 0)
             current_direction = DIR_UP;
-        else if (keys & J_DOWN)
+        else if (keys & J_DOWN && vertical != 0)
             current_direction = DIR_DOWN;
-        else if (keys & J_LEFT)
+        else if (keys & J_LEFT && horizontal != 0)
             current_direction = DIR_LEFT;
-        else if (keys & J_RIGHT)
+        else if (keys & J_RIGHT && horizontal != 0)
             current_direction = DIR_RIGHT;
     }
 

@@ -52,7 +52,7 @@ void draw_actor(Entity e)
     }
 }
 
-void draw_extra(uint8_t index, uint8_t x, uint8_t y, uint8_t tiles, uint8_t vertical)
+void draw_extra(uint8_t index, int8_t x, int8_t y, uint8_t tiles, uint8_t vertical)
 {
     // Recuperamos info
     uint8_t tile_start = extra_actors[index].tile_index;
@@ -69,7 +69,7 @@ void draw_extra(uint8_t index, uint8_t x, uint8_t y, uint8_t tiles, uint8_t vert
     // Asumiremos que reservamos 4 sprites por extra para simplificar lógica, 
     // igual que con las entidades.
     
-    uint8_t base = hardware_start_offset + (index * 4);
+    uint8_t base = hardware_start_offset + (index * tiles);
 
     // Límite de Game Boy es 40 sprites
     if (base + tiles > 40)

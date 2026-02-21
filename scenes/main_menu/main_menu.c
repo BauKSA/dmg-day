@@ -5,7 +5,6 @@ Scene MainMenu;
 uint16_t timer = 0;
 uint8_t rate = 45;
 uint8_t show_text = 1;
-unsigned int seed = 0;
 
 void MainMenu_Create(void){
     MainMenu.init = MainMenu_Init;
