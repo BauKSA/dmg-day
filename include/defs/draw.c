@@ -56,19 +56,8 @@ void draw_extra(uint8_t index, int8_t x, int8_t y, uint8_t tiles, uint8_t vertic
 {
     // Recuperamos info
     uint8_t tile_start = extra_actors[index].tile_index;
-
-    // --- CORRECCIÓN CRÍTICA ---
-    // Las entidades normales usan desde el sprite 0 hasta el (MAX_ENTITIES * 4) - 1.
-    // Ejemplo: 7 entidades * 4 sprites = 28 sprites ocupados (del 0 al 27).
-    // Los extras deben empezar en el 28.
     
-    uint8_t hardware_start_offset = MAX_ENTITIES * 4; 
-    
-    // Además, para que dos "extras" distintos no se peleen por el mismo sprite,
-    // sumamos su index multiplicado por 4 (o por 2 si solo usan 2 tiles).
-    // Asumiremos que reservamos 4 sprites por extra para simplificar lógica, 
-    // igual que con las entidades.
-    
+    uint8_t hardware_start_offset = MAX_ENTITIES * 4;     
     uint8_t base = hardware_start_offset + (index * tiles);
 
     // Límite de Game Boy es 40 sprites

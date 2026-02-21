@@ -36,6 +36,7 @@ extern uint8_t leaf_active[LEAF_COUNT];
 extern uint8_t leaf_timer[LEAF_COUNT];
 extern uint16_t leaf_spawner[LEAF_COUNT];
 extern enum LeafState leaf_state[LEAF_COUNT];
+extern uint8_t SWEEPING_FLAG;
 
 void Mg_Leaves_Create(void);
 

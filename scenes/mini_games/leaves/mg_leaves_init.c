@@ -26,6 +26,7 @@ uint8_t leaf_active[LEAF_COUNT];
 uint8_t leaf_timer[LEAF_COUNT];
 uint16_t leaf_spawner[LEAF_COUNT];
 enum LeafState leaf_state[LEAF_COUNT];
+uint8_t SWEEPING_FLAG = 0;
 
 MG_Leaves_DATA mg_leaves_DATA;
 
@@ -48,18 +49,17 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
     Mg_Leaves_Player_Init();
 
-    /**
-     * [DEBUG:]
-     * Inicializamos hoja de ejemplo, a ver cómo funcionan
-     * los extra actor
-     */
+    uint8_t spacing = 119 / (LEAF_COUNT - 1);
 
     for (uint8_t i = 0; i < LEAF_COUNT; i++)
     {
         uint8_t id = load_extra_tiles(i, spr_leaf_00, 1);
         leaf_ids[i] = id;
         leaf_active[i] = false;
-        leaf_x[i] = 50 + i * 7;
+
+        leaf_x[i] = 24 + (i * spacing);
+
         leaf_y[i] = 0;
+        leaf_state[i] = FALLING;
     }
 }
