@@ -38,7 +38,7 @@ void Map_00_Update(Scene *scene)
         for (size_t i = 0; i < LEAF_COUNT; i++)
         {
             uint16_t spawner = my_rand() % 480;
-            leaf_spawner[i] = 90 + spawner;
+            actor_spawner[i] = 90 + spawner;
         }
 
         scene_manager->change_scene(MG_LEAVES, player);

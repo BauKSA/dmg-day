@@ -11,7 +11,7 @@
 void Mg_Leaves_Player_Init()
 {
     position.x[mg_player] = 50;
-    position.y[mg_player] = 104;
+    position.y[mg_player] = 112;
     speed[mg_player] = 400;
 
     position.fixed_x[mg_player] = position.x[mg_player] << 8;

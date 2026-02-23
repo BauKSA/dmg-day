@@ -12,7 +12,8 @@
             "program": "${workspaceFolder}/build/game.gb",
             "port": 58870,
             "stopOnEntry": false,
-            "preLaunchTask": "${defaultBuildTask}"
+            "preLaunchTask": "${defaultBuildTask}",
+            "emuliciousPath": "C:\\Users\\Bau_M\\OneDrive\\Desktop\\GameDev\\Gameboy\\Config\\Emulicious\\Emulicious.jar"
         }
     ]
 }

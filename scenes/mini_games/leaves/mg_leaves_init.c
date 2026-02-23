@@ -11,6 +11,7 @@
 #include "../../../assets/chars/chars.h"
 #include "../../../assets/chars/numbers.h"
 #include "../../../assets/sprites/mini_game/leaf/leaf.h"
+#include "../../../assets/sprites/mini_game/garbage/spr_garbage.h"
 #include "../../../include/char_to_tile.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/name.h"
@@ -20,13 +21,14 @@
 #include "../../../include/load.h"
 #include "../../../include/draw.h"
 
-uint8_t leaf_ids[LEAF_COUNT];
-uint8_t leaf_x[LEAF_COUNT];
-int8_t leaf_y[LEAF_COUNT];
-uint8_t leaf_active[LEAF_COUNT];
-uint8_t leaf_timer[LEAF_COUNT];
-uint16_t leaf_spawner[LEAF_COUNT];
-enum LeafState leaf_state[LEAF_COUNT];
+uint8_t actor_ids[TOTAL_ACTORS];
+uint8_t actor_x[TOTAL_ACTORS];
+int8_t actor_y[TOTAL_ACTORS];
+uint8_t actor_active[TOTAL_ACTORS];
+uint8_t actor_timer[TOTAL_ACTORS];
+uint16_t actor_spawner[TOTAL_ACTORS];
+uint8_t actor_spawn_x[TOTAL_ACTORS];
+enum ActorState actor_state[TOTAL_ACTORS];
 uint8_t SWEEPING_FLAG = 0;
 
 MG_Leaves_DATA mg_leaves_DATA;
@@ -34,6 +36,7 @@ MG_Leaves_DATA mg_leaves_DATA;
 void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 {
     mg_leaves_DATA.bottom_limit = 120;
+    mg_leaves_DATA.right_limit = 120;
 
     scene->data = &mg_leaves_DATA;
 
@@ -44,17 +47,32 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
     Mg_Leaves_Player_Init();
 
-    uint8_t spacing = 119 / (LEAF_COUNT - 1);
+    //Init Leaves
+    uint8_t leaf_spacing = 80 / (LEAF_COUNT - 1);
 
     for (uint8_t i = 0; i < LEAF_COUNT; i++)
     {
         uint8_t id = load_extra_tiles(i, spr_leaf_00, 1);
-        leaf_ids[i] = id;
-        leaf_active[i] = false;
+        actor_ids[i] = id;
+        actor_active[i] = false;
 
-        leaf_x[i] = 24 + (i * spacing);
+        actor_x[i] = 40 + (i * leaf_spacing);
+        actor_spawn_x[i] = 40 + (i * leaf_spacing);
 
-        leaf_y[i] = 0;
-        leaf_state[i] = FALLING;
+        actor_y[i] = 0;
+        actor_state[i] = FALLING;
+    }
+
+    //Init Garbage
+    uint8_t garbage_spacing = 80 / (GARBAGE_COUNT - 1);
+    for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++)
+    {
+        uint8_t id = load_extra_tiles(i, spr_garbage_00, 1);
+        actor_ids[i] = id;
+        actor_active[i] = false;
+        actor_x[i] = 40 + (i * garbage_spacing);
+        actor_spawn_x[i] = 40 + (i * garbage_spacing);
+        actor_y[i] = 0;
+        actor_state[i] = FALLING;
     }
 }
