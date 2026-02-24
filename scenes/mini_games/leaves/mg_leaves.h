@@ -8,9 +8,12 @@
 #ifndef MG_LEAVES_H
 #define MG_LEAVES_H
 
-#define LEAF_COUNT 5
-#define GARBAGE_COUNT 3
+#define LEAF_COUNT 3
+#define GARBAGE_COUNT 2
 #define TOTAL_ACTORS (LEAF_COUNT + GARBAGE_COUNT)
+
+#define POSITIVE_SCORE 10
+#define NEGATIVE_SCORE 5
 
 void Mg_Leaves_Init(Scene *scene, Entity scene_player);
 void Mg_Leaves_Update(Scene *scene);
@@ -28,6 +31,7 @@ typedef struct MG_Leaves_DATA
 {
     uint8_t bottom_limit;
     uint8_t right_limit;
+    uint8_t left_limit;
 } MG_Leaves_DATA;
 
 extern MG_Leaves_DATA mg_leaves_DATA;
@@ -42,6 +46,8 @@ extern uint8_t actor_timer[TOTAL_ACTORS];
 extern uint16_t actor_spawner[TOTAL_ACTORS];
 extern enum ActorState actor_state[TOTAL_ACTORS];
 extern uint8_t SWEEPING_FLAG;
+extern uint8_t score;
+extern uint8_t score_cache;
 
 void Mg_Leaves_Create(void);
 void Mg_Leaves_LoadBKG();
