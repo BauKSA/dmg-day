@@ -4,7 +4,7 @@
 
 #define FPS 60
 
-extern uint8_t mgt_current_frame;
+extern uint16_t mgt_current_frame;
 extern uint16_t mgt_target_frame;
 extern uint8_t mgt_running;
 extern uint8_t mgt_alarm;

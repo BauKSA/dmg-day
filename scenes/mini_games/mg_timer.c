@@ -1,6 +1,6 @@
 #include "./mg_timer.h"
 
-uint8_t mgt_current_frame = 0;
+uint16_t mgt_current_frame = 0;
 uint16_t mgt_target_frame = 0;
 uint8_t mgt_running = 0;
 uint8_t mgt_alarm = 0;

@@ -3,6 +3,7 @@
 #include <gb/gb.h>
 
 #include "../../../assets/chars/numbers.h"
+#include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
 #include "../../../include/extra_actor.h"
 #include "../../../include/input.h"
@@ -117,17 +118,17 @@ void check_actor_collision() {
 }
 
 void Mg_Leaves_Update(Scene *scene) {
-
-  if (mgt_running == 0)
-    Mg_TimerStart(10);
-
   Mg_TimerUpdate();
 
   if (mgt_alarm == 1) {
-    for (uint8_t i = 0; i < 60; i++)
-      wait_vbl_done();
+    Mg_TimerStopAlarm();
+
+    for (int8_t i = 0; i < TOTAL_ACTORS; i++) {
+      draw_extra(i, 0, 0, 1, 1);
+    }
 
     scene_manager->change_scene(MAP_00, &player);
+    return;
   }
 
   if (keys & J_A)
@@ -156,15 +157,13 @@ void Mg_Leaves_Update(Scene *scene) {
     set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
   }
 
-  if (mgt_running == 0)
-    return;
+  uint16_t seconds = mgt_current_frame / 60;
 
-  uint8_t t_tens =
-      (((mgt_current_frame / 60) / 10) % 10) + NUMBER_TILESET_START;
-  uint8_t t_units = ((mgt_current_frame / 60) % 10) + NUMBER_TILESET_START;
+  uint8_t t_tens = (seconds / 10) + NUMBER_TILESET_START;
+  uint8_t t_units = (seconds % 10) + NUMBER_TILESET_START;
 
   set_bkg_tile_xy(TEXT_START_X + 6, TEXT_START_Y + 1, t_tens);
-  set_bkg_tile_xy(TEXT_START_X + 6 + 6, TEXT_START_Y + 1, t_units);
+  set_bkg_tile_xy(TEXT_START_X + 6 + 1, TEXT_START_Y + 1, t_units);
 
   return;
 }
