@@ -1,0 +1,11 @@
+-I/usr/share/gbdk-2020/include
+_I/usr/share/gbdk-2020/include/asm
+-D__PORT_sm83
+-D__TARGET_gb
+-DSDCC=1
+-D__addressmod=
+-D__critical=
+-D__sfr=volatile unsigned char
+-D__sfr16=volatile unsigned short
+-D__sfr32=volatile unsigned long
+
