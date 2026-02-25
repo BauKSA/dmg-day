@@ -8,21 +8,18 @@
 #include "../position.h"
 #include "../draw.h"
 #include "../npcs.h"
+#include "../input.h"
 
 SceneManager *scene_manager;
 
 void SceneManager_CleanScreen()
 {
-    // Limpiar Y entera
-    position.y[player] = 0;
-    position.y[npc_1] = 0;
-    position.y[npc_2] = 0;
-    position.y[option_actor] = 0;
+    DISPLAY_OFF;
+    HIDE_BKG;
+    HIDE_SPRITES;
 
-    draw_actor(player);
-    draw_actor(npc_1);
-    draw_actor(npc_2);
-    draw_actor(option_actor);
+    for (uint8_t i = 0; i < 40; i++)
+        move_sprite(i, 0, 0);
 }
 
 void SceneManager_Create(Game *game)
@@ -41,9 +38,9 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
     if (scene_manager->game->current_scene && scene_manager->game->current_scene->destroy)
         scene_manager->game->current_scene->destroy(scene_manager->game->current_scene);
 
-    scene_manager->game->current_scene = scene_manager_MapScene(new_scene);
-
     SceneManager_CleanScreen();
+
+    scene_manager->game->current_scene = scene_manager_MapScene(new_scene);
 
     uint8_t previous_bank = _current_bank;
     if (scene_manager->game->current_scene->bank != _current_bank)
@@ -54,5 +51,10 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
     if (previous_bank != _current_bank)
         SWITCH_ROM_MBC1(previous_bank);
 
+    keys = 0;
+    prev_keys = 0;
+
+    DISPLAY_ON;
     SHOW_BKG;
+    SHOW_SPRITES;
 }

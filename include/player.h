@@ -36,5 +36,6 @@ typedef struct {
 extern PLAYER_ANIMATIONS player_animations;
 
 uint8_t init_player(void);
+void create_player(void);
 
 #endif // PLAYER_H

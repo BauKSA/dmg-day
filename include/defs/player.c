@@ -7,16 +7,19 @@ Entity mg_player;
 PLAYER_ANIMATIONS player_animations;
 uint8_t player_y_cache;
 
-uint8_t init_player(void)
+void create_player()
 {
     player = create_entity();
     mg_player = create_entity();
-    
+}
+
+uint8_t init_player(void)
+{
     position.x[player] = 50;
     position.y[player] = 100;
 
     speed[player] = 128;
-    
+
     player_y_cache = position.y[player];
 
     position.fixed_x[player] = position.x[player] << 8;

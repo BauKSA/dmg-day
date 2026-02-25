@@ -2,7 +2,7 @@
 #define NUMBERS_H
 
 #define numbers_tileset_size 11
-#define NUMBER_TILESET_START 132
+#define NUMBER_TILESET_START 244
 
 extern const unsigned char numbers_tileset[]; 
 

@@ -30,6 +30,9 @@ void Map_00_Update(Scene *scene)
 
     Map_Collision(scene);
 
+    if (data->event_active != 1)
+        return;
+
     if (!(keys & J_A) && (prev_keys & J_A))
     {
         seed = LY_REG;

@@ -2,7 +2,7 @@
 #define CHARS_H
 
 #define chars_tileset_size 32
-#define CHARS_TILESET_START 100
+#define CHARS_TILESET_START 212
 
 extern const unsigned char chars_tileset[]; 
 

@@ -45,7 +45,7 @@ void main(void)
 
     InitNPCIcons();
 
-    init_player();
+    create_player();
     init_NPCs();
 
     enum GenderSelect gender = &GENDER;

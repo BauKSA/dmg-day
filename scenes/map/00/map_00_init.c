@@ -27,6 +27,8 @@ void hello_event() {
 }
 
 void Map_00_Init(Scene *scene, Entity scene_player) {
+  init_player();
+  
   position.y[player] = player_y_cache;
   CurrentMapData.player = player;
   CurrentMapData.collision_map = map_00_example_collision;
