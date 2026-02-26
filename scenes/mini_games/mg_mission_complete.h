@@ -5,5 +5,6 @@
 #define CSCREEN_TIMER 5
 
 void Mg_SplashCompleteScreen(void);
+void Mg_CompleteScreenSleep(void);
 
 #endif

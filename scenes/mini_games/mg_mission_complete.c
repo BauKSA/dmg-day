@@ -22,8 +22,15 @@ void Mg_SplashCompleteScreen() {
     set_bkg_tile_xy(2 + i, 8, tile);
   }
 
-  for (uint8_t i = 0; i < 180; i++)
-    vsync();
+  // TO-DO:
+  // Acá habría que agregar el icono del botón para continuar
+
+  return;
+}
+
+void Mg_CompleteScreenSleep() {
+  while (!joypad())
+    ;
 
   return;
 }
