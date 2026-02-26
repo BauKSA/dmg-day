@@ -2,6 +2,7 @@
 
 #include <gb/gb.h>
 
+#include "../mg_load_screen.h"
 #include "../mg_timer.h"
 #include "../mini_games.h"
 #include "mg_leaves.h"
@@ -44,9 +45,15 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
 
   scene->data = &mg_leaves_DATA;
 
-  Mg_Leaves_LoadBKG();
+  if (mgl_initialized == 0)
+    Mg_LoadScreenInit();
 
   char title[MAX_SIZE_MG_TITLE] = "sweep'em!";
+  Mg_SetTitle(title);
+
+  Mg_LoadScreenUpdate();
+
+  Mg_Leaves_LoadBKG();
   Mg_SetTitle(title);
 
   Mg_Leaves_Player_Init();
@@ -103,5 +110,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
   set_bkg_tile_xy(TEXT_START_X + 6 + 2, TEXT_START_Y, tens);
   set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
 
-  Mg_TimerStart(10);
+  Mg_TimerStart(20);
 }

@@ -6,11 +6,11 @@ OBJDIR = build
 SOURCES = $(shell find . -name *.c)
 
 all:
-	make clean
+	@make clean
 	@mkdir -p build
-	$(LCC) -Wl-yt1 -Wl-yo4 -o $(TARGET) $(SOURCES) > ./build/logs.txt 2>&1
+	@$(LCC) -Wl-yt1 -Wl-yo4 -o $(TARGET) $(SOURCES) > ./build/logs.txt 2>&1
 	@echo "--- ROM CREATED: $(TARGET) ---"
 
 clean:
-	rm -f $(TARGET)
-	rm -rf build/
+	@rm -f $(TARGET)
+	@rm -rf build/
