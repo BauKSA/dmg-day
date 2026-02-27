@@ -22,8 +22,8 @@
 ./assets/sprites/mini_game/broom/broom.c:
 ./assets/sprites/mini_game/garbage/spr_garbage.c:
 ./src/main.c:
-./src/../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./src/../include/npcs.h:12: warning 283: function declarator with no prototype
+./src/../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./src/../include/inventory.h:25: warning 283: function declarator with no prototype
 ./src/main.c:26: warning 283: function declarator with no prototype
 ./src/main.c:54: warning 154: converting integral to pointer without a cast
@@ -37,19 +37,19 @@ from type '_Bool near* fixed'
 ./scenes/mini_games/leaves/mg_leaves.c:
 ./scenes/mini_games/leaves/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/mg_leaves.h:53: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves_init.c:
 ./scenes/mini_games/leaves/../mg_timer.h:13: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/../mg_timer.h:14: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/mg_leaves.h:53: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/mg_leaves_init.c:96: warning 211: string 'text'cannot be terminated within array
-./scenes/mini_games/leaves/mg_leaves_init.c:106: warning 85: in function Mg_Leaves_Init unreferenced function argument : 'scene_player'
+./scenes/mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/mg_leaves_init.c:99: warning 211: string 'text'cannot be terminated within array
+./scenes/mini_games/leaves/mg_leaves_init.c:109: warning 85: in function Mg_Leaves_Init unreferenced function argument : 'scene_player'
 ./scenes/mini_games/leaves/mg_leaves_player_init.c:
 ./scenes/mini_games/leaves/./../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/./mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/./mg_leaves.h:53: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/./mg_leaves.h:52: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves_player_init.c:11: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves_update.c:
 ./scenes/mini_games/leaves/../../../include/random.h:5: warning 283: function declarator with no prototype
@@ -58,16 +58,15 @@ from type '_Bool near* fixed'
 ./scenes/mini_games/leaves/../mg_timer.h:14: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/./../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/./mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/./mg_leaves.h:53: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/./mg_leaves.h:52: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves_update.c:21: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/mg_leaves_update.c:38: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
-./scenes/mini_games/leaves/mg_leaves_update.c:101: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/mg_leaves_update.c:128: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
-./scenes/mini_games/leaves/mg_leaves_update.c:174: warning 85: in function Mg_Leaves_Update unreferenced function argument : 'scene'
+./scenes/mini_games/leaves/mg_leaves_update.c:107: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/mg_leaves_update.c:134: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
+./scenes/mini_games/leaves/mg_leaves_update.c:180: warning 85: in function Mg_Leaves_Update unreferenced function argument : 'scene'
 ./scenes/mini_games/leaves/mg_leaves_load_bkg.c:
 ./scenes/mini_games/leaves/./../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/./mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/mini_games/leaves/./mg_leaves.h:53: warning 283: function declarator with no prototype
+./scenes/mini_games/leaves/./mg_leaves.h:52: warning 283: function declarator with no prototype
 ./scenes/mini_games/leaves/mg_leaves_load_bkg.c:5: warning 283: function declarator with no prototype
 ./scenes/mini_games/mini_games.c:
 ./scenes/mini_games/mg_timer.c:
@@ -84,6 +83,7 @@ from type '_Bool near* fixed'
 ./scenes/mini_games/mg_mission_complete.c:
 ./scenes/mini_games/mg_mission_complete.c:10: warning 283: function declarator with no prototype
 ./scenes/mini_games/mg_mission_complete.c:19: warning 211: string 'text'cannot be terminated within array
+./scenes/mini_games/mg_mission_complete.c:31: warning 283: function declarator with no prototype
 ./scenes/map/map_collision.c:
 ./scenes/map/../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
@@ -104,7 +104,7 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/00/../../map/map_data.h:23: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
-./scenes/map/00/../../mini_games/leaves/mg_leaves.h:53: warning 283: function declarator with no prototype
+./scenes/map/00/../../mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
 ./scenes/map/00/map_00_update.c:47: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
@@ -215,7 +215,7 @@ from type 'unsigned-char generic* auto'
 ./include/defs/../../scenes/map/00/../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
 ./include/defs/../../scenes/map/00/../../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
 ./include/defs/../../scenes/mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
-./include/defs/../../scenes/mini_games/leaves/mg_leaves.h:53: warning 283: function declarator with no prototype
+./include/defs/../../scenes/mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
 ./include/defs/action.c:
 ./include/defs/../scene_manager.h:15: warning 283: function declarator with no prototype
 ./include/defs/position.c:

@@ -7,68 +7,68 @@
 /* Include scene headers */
 #include "../scenes/gender_select/gender_select.h"
 
-#include "../include/draw.h"
 #include "../include/action.h"
-#include "../include/player.h"
+#include "../include/draw.h"
 #include "../include/gender_selection.h"
-#include "../include/scene_manager.h"
-#include "../include/scene.h"
-#include "../include/npcs.h"
 #include "../include/input.h"
+#include "../include/npcs.h"
+#include "../include/player.h"
+#include "../include/scene.h"
+#include "../include/scene_manager.h"
 
-#include "../assets/chars/numbers.h"
 #include "../assets/chars/chars.h"
+#include "../assets/chars/numbers.h"
 #include "../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 
 #include "../include/inventory.h"
 
 // Carga los tiles de números al inicio del juego
-void load_number_tiles()
-{
-    set_bkg_data(CHARS_TILESET_START, chars_tileset_size, (uint8_t *)chars_tileset);
-    set_bkg_data(NUMBER_TILESET_START, numbers_tileset_size, (uint8_t *)numbers_tileset);
+void load_number_tiles() {
+  set_bkg_data(CHARS_TILESET_START, chars_tileset_size,
+               (uint8_t *)chars_tileset);
+  set_bkg_data(NUMBER_TILESET_START, numbers_tileset_size,
+               (uint8_t *)numbers_tileset);
 }
 
-void main(void)
-{
-    DISPLAY_ON;
-    SHOW_SPRITES;
+void main(void) {
+  DISPLAY_ON;
+  SHOW_SPRITES;
 
-    /*
-    Game game; se guarda en el stack. El stack de la GB es muy chico, así que
-    muchas veces se sobreescribe y puede llegar a corromper la variable, por eso
-    algo que persiste como el game, debería ser static.
-    */
+  /*
+  Game game; se guarda en el stack. El stack de la GB es muy chico, así que
+  muchas veces se sobreescribe y puede llegar a corromper la variable, por eso
+  algo que persiste como el game, debería ser static.
+  */
 
-    static Game game;
-    game.running = 1;
+  static Game game;
+  game.running = 1;
 
-    InitNPCIcons();
+  InitNPCIcons();
 
-    create_player();
-    init_NPCs();
+  create_player();
+  init_NPCs();
 
-    enum GenderSelect gender = &GENDER;
-    SceneManager_Create(&game);
+  enum GenderSelect gender = &GENDER;
+  SceneManager_Create(&game);
 
-    scene_manager->change_scene(MENU, player);
+  scene_manager->change_scene(MENU, player);
 
-    load_number_tiles();
+  load_number_tiles();
 
-    while (game.running)
-    {
-        wait_vbl_done();
+  while (game.running) {
+    prev_keys = keys;
+    keys = joypad();
 
-        prev_keys = keys;
-        keys = joypad();
+    uint8_t previous_bank = _current_bank;
+    if (game.current_scene->bank != _current_bank)
+      SWITCH_ROM_MBC1(game.current_scene->bank);
 
-        uint8_t previous_bank = _current_bank;
-        if (game.current_scene->bank != _current_bank)
-            SWITCH_ROM_MBC1(game.current_scene->bank);
+    game.current_scene->update(game.current_scene);
 
-        game.current_scene->update(game.current_scene);
+    if (previous_bank != _current_bank)
+      SWITCH_ROM_MBC1(previous_bank);
 
-        if (previous_bank != _current_bank)
-            SWITCH_ROM_MBC1(previous_bank);
-    }
+    vsync();
+    refresh_OAM();
+  }
 }

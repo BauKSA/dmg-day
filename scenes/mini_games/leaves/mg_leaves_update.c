@@ -21,10 +21,10 @@
 void check_actor_status() {
   for (uint8_t i = 0; i <= extra_actor_index; i++) {
     if (actor_active[i] == 0 && actor_state[i] == FALLING) {
-      if ((my_rand() % 300) == 0) {
+      if ((my_rand() % (100 + (i * 15))) == 0) {
         actor_active[i] = 1;
         actor_timer[i] = 0;
-        actor_y[i] = 24;
+        actor_y[i] = 40;
 
         continue;
       }
@@ -32,24 +32,29 @@ void check_actor_status() {
       continue;
     }
 
+    uint8_t is_leaf = 0;
+    if (i < LEAF_COUNT)
+      is_leaf = 1;
+
+    uint8_t speed = 255;
+    if (is_leaf)
+      speed = 192;
+
     if (actor_state[i] == FALLING)
-      actor_y[i]++;
+      fixed_y[i] += speed;
+
+    actor_y[i] = fixed_y[i] >> 8;
 
     if (actor_y[i] >= mg_leaves_DATA.bottom_limit && actor_state[i] == FALLING)
       actor_state[i] = ON_FLOOR;
 
     if (SWEEPING_FLAG) {
-      uint8_t is_leaf;
-      if (i < LEAF_COUNT)
-        is_leaf = 1;
-      else
-        is_leaf = 0;
-
       if (actor_x[i] >= mg_leaves_DATA.right_limit &&
           actor_state[i] == BEING_SWEPT_RIGHT) {
         actor_state[i] = FALLING;
         actor_active[i] = 0;
         actor_y[i] = 0;
+        fixed_y[i] = 0;
 
         seed = LY_REG;
         seed |= (unsigned int)DIV_REG << 8;
@@ -66,6 +71,7 @@ void check_actor_status() {
         actor_state[i] = FALLING;
         actor_active[i] = 0;
         actor_y[i] = 0;
+        fixed_y[i] = 0;
 
         seed = LY_REG;
         seed |= (unsigned int)DIV_REG << 8;

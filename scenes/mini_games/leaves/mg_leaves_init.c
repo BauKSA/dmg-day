@@ -26,7 +26,8 @@
 
 uint8_t actor_ids[TOTAL_ACTORS];
 uint8_t actor_x[TOTAL_ACTORS];
-int8_t actor_y[TOTAL_ACTORS];
+uint8_t actor_y[TOTAL_ACTORS];
+uint16_t fixed_y[TOTAL_ACTORS];
 uint8_t actor_active[TOTAL_ACTORS];
 uint8_t actor_timer[TOTAL_ACTORS];
 uint16_t actor_spawner[TOTAL_ACTORS];
@@ -70,6 +71,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
     actor_spawn_x[i] = 40 + (i * leaf_spacing);
 
     actor_y[i] = 0;
+    fixed_y[i] = 0;
+
     actor_state[i] = FALLING;
   }
 
@@ -110,5 +113,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
   set_bkg_tile_xy(TEXT_START_X + 6 + 2, TEXT_START_Y, tens);
   set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
 
-  Mg_TimerStart(20);
+  Mg_TimerStart(45);
 }
