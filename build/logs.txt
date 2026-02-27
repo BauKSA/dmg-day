@@ -24,12 +24,12 @@
 ./src/main.c:
 ./src/../include/npcs.h:12: warning 283: function declarator with no prototype
 ./src/../include/scene_manager.h:15: warning 283: function declarator with no prototype
-./src/../include/inventory.h:25: warning 283: function declarator with no prototype
+./src/../include/inventory.h:33: warning 283: function declarator with no prototype
 ./src/main.c:26: warning 283: function declarator with no prototype
-./src/main.c:54: warning 154: converting integral to pointer without a cast
+./src/main.c:56: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
-./src/main.c:51: warning 155: converting pointer to integral without a cast
+./src/main.c:53: warning 155: converting pointer to integral without a cast
 from type '_Bool near* fixed'
   to type '_Bool auto'
 ./scenes/mini_games/mg_player_movement.c:
@@ -162,13 +162,13 @@ from type 'unsigned-char fixed'
 ./scenes/gender_select/gender_select_update.c:
 ./scenes/gender_select/gender_select_update.c:8: warning 85: in function GenderSelect_Update unreferenced function argument : 'scene'
 ./scenes/inventory/inventory_scene_init.c:
+./scenes/inventory/../../include/inventory.h:33: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
-./scenes/inventory/../../include/inventory.h:25: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene_init.c:13: warning 283: function declarator with no prototype
-./scenes/inventory/inventory_scene_init.c:44: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
+./scenes/inventory/inventory_scene_init.c:51: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
 ./scenes/inventory/inventory_scene_update.c:
 ./scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
-./scenes/inventory/../../include/inventory.h:25: warning 283: function declarator with no prototype
+./scenes/inventory/../../include/inventory.h:33: warning 283: function declarator with no prototype
 ./scenes/inventory/../../include/npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene_update.c:10: warning 85: in function InventoryScene_Update unreferenced function argument : 'scene'
 ./scenes/inventory/inventory_scene.c:
@@ -184,7 +184,7 @@ from type 'unsigned-char fixed'
 ./include/defs/.././npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/collision.c:
 ./include/defs/inventory_input.c:
-./include/defs/../inventory.h:25: warning 283: function declarator with no prototype
+./include/defs/../inventory.h:33: warning 283: function declarator with no prototype
 ./include/defs/../scene_manager.h:15: warning 283: function declarator with no prototype
 ./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/inventory_input.c:19: warning 283: function declarator with no prototype
@@ -220,8 +220,9 @@ from type 'unsigned-char generic* auto'
 ./include/defs/../scene_manager.h:15: warning 283: function declarator with no prototype
 ./include/defs/position.c:
 ./include/defs/inventory.c:
-./include/defs/../inventory.h:25: warning 283: function declarator with no prototype
+./include/defs/../inventory.h:33: warning 283: function declarator with no prototype
 ./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
+./include/defs/inventory.c:29: warning 283: function declarator with no prototype
 ./include/defs/animation.c:
 ./include/defs/char_to_tile.c:
 ./include/defs/extra_actors.c:
