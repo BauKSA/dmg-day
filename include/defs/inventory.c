@@ -8,6 +8,8 @@
 
 uint8_t inventory_active = 0;
 InventorySlot inventory[INVENTORY_ITEMS];
+InventoryItem active_item = ITM_NONE;
+InventoryItem selected_item = ITM_NONE;
 
 void init_arrow(void) {
   position.x[option_actor] = 56;

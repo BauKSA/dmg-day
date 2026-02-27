@@ -17,6 +17,9 @@ void SceneManager_CleanScreen() {
   HIDE_BKG;
   HIDE_SPRITES;
 
+  position.y[player] = 0;
+  draw_actor(player);
+
   for (uint8_t i = 0; i < 40; i++)
     move_sprite(i, 0, 0);
 }

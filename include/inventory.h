@@ -21,7 +21,8 @@ typedef enum InventoryItem {
   CHOCOLATE,
   GLASSES,
 
-  COUNT
+  COUNT,
+  ITM_NONE
 } InventoryItem;
 
 typedef struct InventorySlot {
@@ -35,5 +36,7 @@ void initialize_inventory(void);
 
 extern uint8_t inventory_active;
 extern InventorySlot inventory[INVENTORY_ITEMS];
+extern InventoryItem active_item;
+extern InventoryItem selected_item;
 
 #endif // INVENTORY_H

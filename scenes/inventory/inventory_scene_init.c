@@ -3,7 +3,6 @@
 #include "../../assets/chars/numbers.h"
 #include "../../include/inventory.h"
 #include "../../include/money.h"
-#include "../../include/player.h"
 #include "../../include/scene.h"
 #include "inventory_scene.h"
 
