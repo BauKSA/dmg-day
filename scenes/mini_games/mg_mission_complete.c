@@ -3,6 +3,7 @@
 #include "../../assets/chars/numbers.h"
 #include "../../assets/sprites/backgrounds/template/template.h"
 #include "../../include/char_to_tile.h"
+#include "../../include/input.h"
 
 #include <gb/gb.h>
 #include <stdint.h>
@@ -29,7 +30,12 @@ void Mg_SplashCompleteScreen() {
 }
 
 void Mg_CompleteScreenSleep() {
-  while (!joypad())
+  keys = 0;
+
+  while (joypad() != 0)
+    vsync();
+
+  while (!(keys & J_A))
     ;
 
   return;

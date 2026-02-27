@@ -138,6 +138,7 @@ void Mg_Leaves_Update(Scene *scene) {
     draw_actor(mg_player);
 
     Mg_SplashCompleteScreen();
+    Mg_CompleteScreenSleep();
 
     scene_manager->change_scene(MAP_00, &player);
     return;

@@ -113,5 +113,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
   set_bkg_tile_xy(TEXT_START_X + 6 + 2, TEXT_START_Y, tens);
   set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
 
-  Mg_TimerStart(45);
+  Mg_TimerStart(30);
 }
