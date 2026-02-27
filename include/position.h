@@ -15,10 +15,12 @@ typedef struct {
 } PositionComponent;
 
 extern PositionComponent position;
-extern struct actual_tile {
+typedef struct Tile {
   uint8_t x;
   uint8_t y;
   uint8_t value;
-};
+} Tile;
+
+extern Tile actual_tile;
 
 #endif // POSITION_H

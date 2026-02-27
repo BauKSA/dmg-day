@@ -1,4 +1,4 @@
 #include "../position.h"
 
 PositionComponent position;
-struct actual_tile;
+Tile actual_tile;
