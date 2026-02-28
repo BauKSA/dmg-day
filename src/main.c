@@ -53,7 +53,7 @@ void main(void) {
   enum GenderSelect gender = &GENDER;
   SceneManager_Create(&game);
 
-  scene_manager->change_scene(MENU, player);
+  scene_manager.change_scene(MENU, player);
 
   load_number_tiles();
 

@@ -140,7 +140,7 @@ void Mg_Leaves_Update(Scene *scene) {
     Mg_SplashCompleteScreen();
     Mg_CompleteScreenSleep();
 
-    scene_manager->change_scene(MAP_00, &player);
+    scene_manager.change_scene(MAP_00, &player);
     return;
   }
 

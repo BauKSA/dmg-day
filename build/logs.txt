@@ -87,7 +87,7 @@ from type '_Bool near* fixed'
 ./scenes/map/map_collision.c:
 ./scenes/map/../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
-./scenes/map/map_collision.c:14: warning 60: function return value mismatch
+./scenes/map/map_collision.c:10: warning 60: function return value mismatch
 from type 'const-unsigned-char [20] fixed'
   to type 'unsigned-char fixed'
 ./scenes/map/clean_text.c:
@@ -98,14 +98,14 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/00/./../map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/00/./../map_data.h:23: warning 283: function declarator with no prototype
 ./scenes/map/00/map_00_update.c:
-./scenes/map/00/../../../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./scenes/map/00/../../../include/random.h:5: warning 283: function declarator with no prototype
+./scenes/map/00/../../../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./scenes/map/00/../../map/map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/00/../../map/map_data.h:23: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
-./scenes/map/00/map_00_update.c:47: warning 154: converting integral to pointer without a cast
+./scenes/map/00/map_00_update.c:44: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
 ./scenes/map/00/map_00.c:
@@ -128,10 +128,27 @@ from type 'unsigned-char fixed'
 ./scenes/map/00/./../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/00/./../../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
 ./scenes/map/00/map_00_init_npc.c:35: warning 85: in function Map_00_NPC_Init unreferenced function argument : 'scene'
+./scenes/map/00/map_00_check_items.c:
+./scenes/map/00/../../../include//inventory.h:34: warning 283: function declarator with no prototype
+./scenes/map/00/./../../../include/./npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/00/./../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
+./scenes/map/00/./../../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
+./scenes/map/00/map_00_check_items.c:9: warning 283: function declarator with no prototype
+./scenes/map/00/map_00_check_items.c:18: warning 211: string 'text'cannot be terminated within array
+./scenes/map/00/map_00_check_items.c:19: warning 211: string 'text2'cannot be terminated within array
+./scenes/map/00/map_00_check_items.c:14: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:15: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:17: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:18: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:19: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:21: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:22: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:26: warning 126: unreachable code
+./scenes/map/00/map_00_check_items.c:27: warning 126: unreachable code
 ./scenes/map/map_player_movement.c:
 ./scenes/map/../../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./scenes/map/map_player_movement.c:10: warning 283: function declarator with no prototype
-./scenes/map/map_player_movement.c:14: warning 154: converting integral to pointer without a cast
+./scenes/map/map_player_movement.c:12: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
 ./scenes/map/map_data.c:
@@ -140,11 +157,11 @@ from type 'unsigned-char fixed'
 ./scenes/main_menu/main_menu.c:
 ./scenes/main_menu/./main_menu.h:12: warning 283: function declarator with no prototype
 ./scenes/main_menu/main_menu_input.c:
-./scenes/main_menu/./main_menu.h:12: warning 283: function declarator with no prototype
-./scenes/main_menu/../../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./scenes/main_menu/../../include/npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/main_menu/../../include/random.h:5: warning 283: function declarator with no prototype
-./scenes/main_menu/main_menu_input.c:24: warning 154: converting integral to pointer without a cast
+./scenes/main_menu/../../include/scene_manager.h:15: warning 283: function declarator with no prototype
+./scenes/main_menu/./main_menu.h:12: warning 283: function declarator with no prototype
+./scenes/main_menu/main_menu_input.c:21: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
 ./scenes/main_menu/main_menu_init_stats.c:
@@ -163,16 +180,16 @@ from type 'unsigned-char fixed'
 ./scenes/gender_select/gender_select_update.c:8: warning 85: in function GenderSelect_Update unreferenced function argument : 'scene'
 ./scenes/inventory/inventory_scene_init.c:
 ./scenes/inventory/../../include/inventory.h:34: warning 283: function declarator with no prototype
-./scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
+./scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene_init.c:12: warning 283: function declarator with no prototype
-./scenes/inventory/inventory_scene_init.c:50: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
+./scenes/inventory/inventory_scene_init.c:37: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
 ./scenes/inventory/inventory_scene_update.c:
-./scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
+./scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
 ./scenes/inventory/../../include/inventory.h:34: warning 283: function declarator with no prototype
 ./scenes/inventory/../../include/npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene_update.c:10: warning 85: in function InventoryScene_Update unreferenced function argument : 'scene'
 ./scenes/inventory/inventory_scene.c:
-./scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
+./scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
 ./include/defs/random.c:
 ./include/defs/../random.h:5: warning 283: function declarator with no prototype
 ./include/defs/random.c:5: warning 283: function declarator with no prototype
@@ -188,7 +205,10 @@ from type 'unsigned-char fixed'
 ./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/../scene_manager.h:15: warning 283: function declarator with no prototype
 ./include/defs/inventory_input.c:19: warning 283: function declarator with no prototype
-./include/defs/inventory_input.c:26: warning 154: converting integral to pointer without a cast
+./include/defs/inventory_input.c:29: warning 154: converting integral to pointer without a cast
+from type 'unsigned-char fixed'
+  to type 'unsigned-char generic* fixed'
+./include/defs/inventory_input.c:43: warning 154: converting integral to pointer without a cast
 from type 'unsigned-char fixed'
   to type 'unsigned-char generic* fixed'
 ./include/defs/npcs.c:
@@ -198,18 +218,14 @@ from type 'unsigned-char fixed'
 ./include/defs/npcs.c:70: warning 85: in function Scene_DrawNPCLine unreferenced function argument : 'has_minigame'
 ./include/defs/npcs.c:70: warning 85: in function Scene_DrawNPCLine unreferenced function argument : 'minigame'
 ./include/defs/scene_manager.c:
-./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/../scene_manager.h:15: warning 283: function declarator with no prototype
-./include/defs/scene_manager.c:15: warning 283: function declarator with no prototype
-./include/defs/scene_manager.c:56: warning 155: converting pointer to integral without a cast
-from type 'unsigned-char generic* auto'
-  to type 'unsigned-char fixed'
+./include/defs/scene_manager.c:14: warning 283: function declarator with no prototype
 ./include/defs/can_move.c:
 ./include/defs/render.c:
 ./include/defs/name.c:
 ./include/defs/draw.c:
 ./include/defs/map_scenes.c:
-./include/defs/../../scenes/inventory/inventory_scene.h:15: warning 283: function declarator with no prototype
+./include/defs/../../scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
 ./include/defs/../../scenes/main_menu/main_menu.h:12: warning 283: function declarator with no prototype
 ./include/defs/../../scenes/map/00/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/../../scenes/map/00/../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
@@ -222,7 +238,7 @@ from type 'unsigned-char generic* auto'
 ./include/defs/inventory.c:
 ./include/defs/../inventory.h:34: warning 283: function declarator with no prototype
 ./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
-./include/defs/inventory.c:31: warning 283: function declarator with no prototype
+./include/defs/inventory.c:32: warning 283: function declarator with no prototype
 ./include/defs/animation.c:
 ./include/defs/char_to_tile.c:
 ./include/defs/extra_actors.c:

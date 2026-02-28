@@ -18,12 +18,30 @@ const uint8_t HORIZONTAL_MOVEMENT = 24;
 
 void inventory_input() {
   if (!(keys & J_SELECT) && (prev_keys & J_SELECT)) {
+    if (closing == 1)
+      return;
+    closing = 1;
     position.y[option_actor] = 0;
     draw_actor(option_actor);
 
     selected_item = ITM_NONE;
 
-    scene_manager->change_scene(MAP_00, player);
+    scene_manager.change_scene(MAP_00, player);
+    closing = 0;
+  }
+
+  if ((prev_keys & J_A) && !(keys & J_A)) {
+    if (closing == 1)
+      return;
+    closing = 1;
+    position.y[option_actor] = 0;
+    draw_actor(option_actor);
+
+    active_item = selected_item;
+    selected_item = ITM_NONE;
+
+    scene_manager.change_scene(MAP_00, player);
+    closing = 0;
   }
 
   uint8_t arrow_x = position.x[option_actor];

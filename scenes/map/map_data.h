@@ -10,13 +10,13 @@
 typedef void (*CollisionEvent)();
 
 typedef struct MapData {
-    Entity npc[MAX_NPCS_PER_SCENE];
-    uint8_t npc_count;
-    Entity player;
-    const uint8_t (*collision_map)[MAP_WIDTH];
-    CollisionEvent events[MAX_EVENTS];
-    uint8_t event_count;
-    uint8_t event_active;
+  Entity npc[MAX_NPCS_PER_SCENE];
+  uint8_t npc_count;
+  Entity player;
+  const uint8_t (*collision_map)[MAP_WIDTH];
+  CollisionEvent events[MAX_EVENTS];
+  uint8_t event_count;
+  uint8_t event_active;
 } MapData;
 
 void Map_Collision(Scene *scene);

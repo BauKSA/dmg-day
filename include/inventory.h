@@ -38,5 +38,6 @@ extern uint8_t inventory_active;
 extern InventorySlot inventory[INVENTORY_ITEMS];
 extern InventoryItem active_item;
 extern InventoryItem selected_item;
+extern uint8_t closing;
 
 #endif // INVENTORY_H

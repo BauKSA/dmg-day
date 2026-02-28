@@ -18,6 +18,7 @@ void Map_Collision(Scene *scene) {
   uint8_t tile_x = (position.x[player]) >> 3;
   uint8_t tile_y = (position.y[player]) >> 3;
 
+  actual_tile.prev = actual_tile.value;
   actual_tile.x = tile_x;
   actual_tile.y = tile_y;
   actual_tile.value = data->collision_map[tile_y][tile_x];
@@ -31,8 +32,7 @@ void Map_Collision(Scene *scene) {
    * Eventos
    */
 
-  if (data->collision_map[tile_y][tile_x] == 0 &
-      CurrentMapData.event_active == 1) {
+  if (actual_tile.value != actual_tile.prev) {
     clean();
   }
 

@@ -19,6 +19,7 @@ typedef struct Tile {
   uint8_t x;
   uint8_t y;
   uint8_t value;
+  uint8_t prev;
 } Tile;
 
 extern Tile actual_tile;
