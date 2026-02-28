@@ -1,4 +1,5 @@
 #include "../player.h"
+#include "../position.h"
 #include "../speed.h"
 
 Entity player;
@@ -10,11 +11,22 @@ uint8_t player_y_cache;
 void create_player() {
   player = create_entity();
   mg_player = create_entity();
+
+  cache.active[player] = 0;
 }
 
 uint8_t init_player(void) {
   position.x[player] = 50;
   position.y[player] = 100;
+
+  if (cache.active[player] == 1) {
+    position.x[player] = cache.x[player];
+    position.y[player] = cache.y[player];
+    position.fixed_x[player] = cache.fixed_x[player];
+    position.fixed_y[player] = cache.fixed_y[player];
+
+    cache.active[player] = 0;
+  }
 
   speed[player] = 128;
 
@@ -80,4 +92,13 @@ uint8_t init_player(void) {
   player_animations.UP_WALKING = 3;
 
   return player;
+}
+
+void cache_player_position() {
+  cache.x[player] = position.x[player];
+  cache.y[player] = position.y[player];
+  cache.fixed_x[player] = position.fixed_x[player];
+  cache.fixed_y[player] = position.fixed_y[player];
+
+  cache.active[player] = 1;
 }

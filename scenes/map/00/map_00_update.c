@@ -41,7 +41,9 @@ void Map_00_Update(Scene *scene) {
       actor_spawner[i] = 90 + spawner;
     }
 
-    scene_manager.change_scene(MG_LEAVES, player);
+    cache_player_position();
+
+    scene_manager.change_scene(MG_LEAVES, &player);
   }
 
   return;

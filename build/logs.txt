@@ -105,9 +105,6 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/00/../../mini_games/leaves/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/mg_leaves.h:20: warning 283: function declarator with no prototype
 ./scenes/map/00/../../mini_games/leaves/mg_leaves.h:52: warning 283: function declarator with no prototype
-./scenes/map/00/map_00_update.c:44: warning 154: converting integral to pointer without a cast
-from type 'unsigned-char fixed'
-  to type 'unsigned-char generic* fixed'
 ./scenes/map/00/map_00.c:
 ./scenes/map/00/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/00/../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
@@ -117,7 +114,7 @@ from type 'unsigned-char fixed'
 ./scenes/map/00/../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/00/../../../scenes/map/map_data.h:23: warning 283: function declarator with no prototype
 ./scenes/map/00/map_00_init.c:21: warning 283: function declarator with no prototype
-./scenes/map/00/map_00_init.c:53: warning 85: in function Map_00_Init unreferenced function argument : 'scene_player'
+./scenes/map/00/map_00_init.c:47: warning 85: in function Map_00_Init unreferenced function argument : 'scene_player'
 ./scenes/map/00/map_00_init_dialogues.c:
 ./scenes/map/00/./../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/00/./../../../scenes/map/map_data.h:10: warning 283: function declarator with no prototype
@@ -148,9 +145,6 @@ from type 'unsigned-char fixed'
 ./scenes/map/map_player_movement.c:
 ./scenes/map/../../include/scene_manager.h:15: warning 283: function declarator with no prototype
 ./scenes/map/map_player_movement.c:10: warning 283: function declarator with no prototype
-./scenes/map/map_player_movement.c:12: warning 154: converting integral to pointer without a cast
-from type 'unsigned-char fixed'
-  to type 'unsigned-char generic* fixed'
 ./scenes/map/map_data.c:
 ./scenes/map/./map_data.h:10: warning 283: function declarator with no prototype
 ./scenes/map/./map_data.h:23: warning 283: function declarator with no prototype
@@ -249,4 +243,5 @@ from type 'unsigned-char fixed'
 ./include/defs/speed.c:
 ./include/defs/gender_selection.c:
 ./include/defs/player.c:
-./include/defs/player.c:10: warning 283: function declarator with no prototype
+./include/defs/player.c:11: warning 283: function declarator with no prototype
+./include/defs/player.c:97: warning 283: function declarator with no prototype

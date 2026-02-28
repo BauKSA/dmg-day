@@ -1,15 +1,15 @@
 #pragma once
 
-#include<stdint.h>
+#include <stdint.h>
 
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "animation.h"
 #include "entity.h"
+#include "load.h"
 #include "position.h"
 #include "render.h"
-#include "load.h"
-#include "animation.h"
 
 // Player DOWN animation sprites
 #include "../assets/sprites/player/girl/down/spr_Player_down0.h"
@@ -27,15 +27,16 @@ extern Entity mg_player;
 extern uint8_t player_y_cache;
 
 typedef struct {
-    uint8_t DOWN_STAY;
-    uint8_t DOWN_WALKING;
-    uint8_t UP_STAY;
-    uint8_t UP_WALKING;
+  uint8_t DOWN_STAY;
+  uint8_t DOWN_WALKING;
+  uint8_t UP_STAY;
+  uint8_t UP_WALKING;
 } PLAYER_ANIMATIONS;
 
 extern PLAYER_ANIMATIONS player_animations;
 
 uint8_t init_player(void);
 void create_player(void);
+void cache_player_position(void);
 
 #endif // PLAYER_H

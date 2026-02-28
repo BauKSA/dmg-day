@@ -14,7 +14,17 @@ typedef struct {
   uint16_t fixed_y[MAX_ENTITIES];
 } PositionComponent;
 
+typedef struct {
+  uint8_t x[MAX_ENTITIES];
+  uint8_t y[MAX_ENTITIES];
+  uint16_t fixed_x[MAX_ENTITIES];
+  uint16_t fixed_y[MAX_ENTITIES];
+  uint8_t active[MAX_ENTITIES];
+} PositionCache;
+
 extern PositionComponent position;
+extern PositionCache cache;
+
 typedef struct Tile {
   uint8_t x;
   uint8_t y;
