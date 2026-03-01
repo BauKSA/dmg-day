@@ -7,7 +7,6 @@
 #include "./mg_player_movement.h"
 
 void Mg_PlayerMovement(uint8_t horizontal, uint8_t vertical) {
-  // Si no hay dirección activa, asignamos la primera que se presiona
   if (current_direction == DIR_NONE) {
     if (keys & J_UP && vertical != 0)
       current_direction = DIR_UP;

@@ -8,6 +8,7 @@
 #include "../../../include/random.h"
 #include "../../../include/scene.h"
 #include "../../../include/scene_manager.h"
+#include "../../../include/minigames.h"
 #include "../../map/map_data.h"
 #include "../../map/map_player_movement.h"
 #include "../../mini_games/leaves/mg_leaves.h"
@@ -29,7 +30,7 @@ void Map_00_Update(Scene *scene) {
 
   Map_Collision(scene);
 
-  if (data->event_active != 1)
+  if (data->event_active != 1 || minigame_list[LSMG_LEAVES] == 1)
     return;
 
   if (!(keys & J_A) && (prev_keys & J_A)) {

@@ -8,7 +8,8 @@
 #include <gb/gb.h>
 #include <stdint.h>
 
-void Mg_SplashCompleteScreen() {
+void Mg_SplashCompleteScreen()
+{
   unsigned char _prev_bank = _current_bank;
   SWITCH_ROM_MBC1(1);
 
@@ -18,7 +19,8 @@ void Mg_SplashCompleteScreen() {
   SWITCH_ROM_MBC1(_prev_bank);
 
   char text[16] = "mission complete";
-  for (uint8_t i = 0; i < 16; i++) {
+  for (uint8_t i = 0; i < 16; i++)
+  {
     uint8_t tile = char_to_tile(text[i]) + CHARS_TILESET_START;
     set_bkg_tile_xy(2 + i, 8, tile);
   }
@@ -29,14 +31,22 @@ void Mg_SplashCompleteScreen() {
   return;
 }
 
-void Mg_CompleteScreenSleep() {
+void Mg_CompleteScreenSleep()
+{
   keys = 0;
 
   while (joypad() != 0)
     vsync();
 
-  while (!(keys & J_A))
-    ;
+  while (1)
+  {
+    keys = joypad();
+    if (keys & J_A)
+    {
+      keys = 0;
+      break;
+    }
+  }
 
   return;
 }

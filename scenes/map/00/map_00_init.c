@@ -23,6 +23,7 @@ void hello_event() {
     return;
 
   CurrentMapData.event_active = 1;
+
   Scene_DrawNPCLine(npc_1, (uint8_t)EXAMPLE_00, 0, 0, NONE);
 }
 

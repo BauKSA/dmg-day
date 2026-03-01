@@ -25,7 +25,7 @@ void SceneManager_CleanScreen() {
     move_sprite(i, 0, 0);
 
   vram_next_index = 0;
-  vram_next_index = 27;
+  vram_extra_start = 27;
 }
 
 void SceneManager_Create(Game *game) {

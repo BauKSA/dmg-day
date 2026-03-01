@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #include "../../assets/chars/numbers.h"
-#include "../../assets/sprites/backgrounds/template/template.h";
+#include "../../assets/sprites/backgrounds/template/template.h"
 
 uint8_t mgl_current_frame = 0;
 uint8_t mgl_target_frame = 180;

@@ -21,7 +21,6 @@ void Mg_Leaves_Player_Init()
     render.tile_count[mg_player] = 2;
     render.vertical[mg_player] = TRUE;
 
-    // PLAYER DOWN ANIMATIONS
     const unsigned char *broom_idle[] = {
         spr_broom_00,
         spr_broom_01};

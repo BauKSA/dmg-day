@@ -12,8 +12,8 @@
 #define GARBAGE_COUNT 2
 #define TOTAL_ACTORS (LEAF_COUNT + GARBAGE_COUNT)
 
-#define POSITIVE_SCORE 10
-#define NEGATIVE_SCORE 5
+#define POSITIVE_SCORE 5
+#define NEGATIVE_SCORE 3
 
 void Mg_Leaves_Init(Scene *scene, Entity scene_player);
 void Mg_Leaves_Update(Scene *scene);
@@ -23,7 +23,8 @@ typedef enum ActorState {
   FALLING,
   ON_FLOOR,
   BEING_SWEPT_RIGHT,
-  BEING_SWEPT_LEFT
+  BEING_SWEPT_LEFT,
+  INACTIVE
 };
 
 typedef struct MG_Leaves_DATA {
@@ -47,6 +48,8 @@ extern enum ActorState actor_state[TOTAL_ACTORS];
 extern uint8_t SWEEPING_FLAG;
 extern uint8_t score;
 extern uint8_t score_cache;
+extern uint8_t available_x[TOTAL_ACTORS];
+extern uint8_t next_spawn_idx;
 
 void Mg_Leaves_Create(void);
 void Mg_Leaves_LoadBKG();

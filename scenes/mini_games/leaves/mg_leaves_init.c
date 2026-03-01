@@ -39,7 +39,11 @@ uint8_t score_cache = 0;
 
 MG_Leaves_DATA mg_leaves_DATA;
 
-void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
+uint8_t available_x[TOTAL_ACTORS];
+uint8_t next_spawn_idx = 0;
+
+void Mg_Leaves_Init(Scene *scene, Entity scene_player)
+{
   mg_leaves_DATA.bottom_limit = 120;
   mg_leaves_DATA.right_limit = 120;
   mg_leaves_DATA.left_limit = 32;
@@ -59,46 +63,53 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
 
   Mg_Leaves_Player_Init();
 
-  // Init Leaves
-  uint8_t leaf_spacing = 80 / (LEAF_COUNT - 1);
+  for (uint8_t i = 0; i < TOTAL_ACTORS; i++)
+  {
+    // Distribuimos los actores en el ancho permitido (32 a 120)
+    available_x[i] = 44 + (i * (80 / TOTAL_ACTORS));
 
-  for (uint8_t i = 0; i < LEAF_COUNT; i++) {
+    // Inicializamos los estados explícitamente
+    actor_active[i] = 0;
+    actor_state[i] = INACTIVE;
+    actor_y[i] = 0; // Fuera de pantalla hasta que spawnee
+  }
+
+  // Init Leaves
+  for (uint8_t i = 0; i <= LEAF_COUNT; i++)
+  {
     uint8_t id = load_extra_tiles(i, spr_leaf_00, 1);
     actor_ids[i] = id;
     actor_active[i] = false;
 
-    actor_x[i] = 40 + (i * leaf_spacing);
-    actor_spawn_x[i] = 40 + (i * leaf_spacing);
+    actor_x[i] = available_x[i];
+    actor_spawn_x[i] = available_x[i];
 
     actor_y[i] = 0;
     fixed_y[i] = 0;
 
-    actor_state[i] = FALLING;
+    actor_state[i] = INACTIVE;
   }
 
   // Init Garbage
-  uint8_t garbage_spacing = 80 / (GARBAGE_COUNT - 1);
-  for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++) {
+  for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++)
+  {
     uint8_t id = load_extra_tiles(i, spr_garbage_00, 1);
     actor_ids[i] = id;
     actor_active[i] = false;
-    actor_x[i] = 40 + (i - LEAF_COUNT) * garbage_spacing;
-    actor_spawn_x[i] = 40 + (i - LEAF_COUNT) * garbage_spacing;
-    actor_y[i] = 0;
-    actor_state[i] = FALLING;
 
-    for (uint8_t j = 0; j < LEAF_COUNT; j++) {
-      if (actor_x[i] == actor_x[j]) {
-        actor_x[i] += 10;
-        actor_spawn_x[i] += 10;
-        break;
-      }
-    }
+    actor_x[i] = available_x[i];
+    actor_spawn_x[i] = available_x[i];
+
+    actor_y[i] = 0;
+    fixed_y[i] = 0;
+
+    actor_state[i] = INACTIVE;
   }
 
   char text[6] = "score:";
 
-  for (uint8_t i = 0; i < 6; i++) {
+  for (uint8_t i = 0; i < 6; i++)
+  {
     uint8_t char_tile = char_to_tile(text[i]) + CHARS_TILESET_START;
     set_bkg_tile_xy(TEXT_START_X + i, TEXT_START_Y, char_tile);
   }
