@@ -12,7 +12,7 @@ uint8_t mgl_initialized = 0;
 
 void Mg_LoadScreenInit() {
   mgl_current_frame = 0;
-  mgl_target_frame = 180;
+  mgl_target_frame = 120;
   mgl_active = 1;
   mgl_initialized = 1;
 
@@ -39,11 +39,11 @@ void Mg_LoadScreenUpdate() {
     }
 
     uint8_t n = 0;
-    if (mgl_current_frame <= 60)
+    if (mgl_current_frame <= 40)
       n = 3;
-    else if (mgl_current_frame <= 120)
+    else if (mgl_current_frame <= 80)
       n = 2;
-    else if (mgl_current_frame <= 180)
+    else if (mgl_current_frame <= 120)
       n = 1;
     else
       n = 0;
