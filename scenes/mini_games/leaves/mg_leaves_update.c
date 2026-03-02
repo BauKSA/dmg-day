@@ -44,7 +44,7 @@ void spawn(uint8_t actor_idx)
   if (actor_state[actor_idx] == INACTIVE)
     actor_timer[actor_idx]++;
 
-  if (actor_state[actor_idx] == INACTIVE && my_rand() % (45 + actor_idx * 15) == 0)
+  if (actor_state[actor_idx] == INACTIVE && my_rand() % (65 + actor_idx * 25) == 0)
   {
     actor_timer[actor_idx] = 0;
     actor_state[actor_idx] = FALLING;
@@ -139,6 +139,9 @@ void check_actor_collision()
         score -= NEGATIVE_SCORE;
     }
   }
+
+  if (score < 0)
+    score = 0;
 }
 
 void Mg_Leaves_Update(Scene *scene)

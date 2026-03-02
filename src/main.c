@@ -18,19 +18,24 @@
 
 #include "../assets/chars/chars.h"
 #include "../assets/chars/numbers.h"
+#include "../assets/chars/buttons.h"
 #include "../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 
 #include "../include/inventory.h"
 
 // Carga los tiles de números al inicio del juego
-void load_number_tiles() {
+void load_number_tiles()
+{
   set_bkg_data(CHARS_TILESET_START, chars_tileset_size,
                (uint8_t *)chars_tileset);
   set_bkg_data(NUMBER_TILESET_START, numbers_tileset_size,
                (uint8_t *)numbers_tileset);
+
+  init_buttons_tileset();
 }
 
-void main(void) {
+void main(void)
+{
   DISPLAY_ON;
   SHOW_SPRITES;
 
@@ -57,7 +62,8 @@ void main(void) {
 
   load_number_tiles();
 
-  while (game.running) {
+  while (game.running)
+  {
     prev_keys = keys;
     keys = joypad();
 

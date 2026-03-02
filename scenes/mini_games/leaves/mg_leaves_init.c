@@ -5,6 +5,7 @@
 #include "../mg_load_screen.h"
 #include "../mg_timer.h"
 #include "../mini_games.h"
+#include "../mg_instruction_set.h"
 #include "mg_leaves.h"
 
 #include "../../../include/player.h"
@@ -49,6 +50,18 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   mg_leaves_DATA.left_limit = 32;
 
   scene->data = &mg_leaves_DATA;
+
+  char *txt = "move";
+  char *sec_txt = "sweep";
+  Instruction instruction[2];
+
+  instruction[0].text = txt;
+  instruction[0].button = DPAD;
+
+  instruction[1].text = sec_txt;
+  instruction[1].button = A;
+
+  Mg_InstructionSet(instruction, 2);
 
   if (mgl_initialized == 0)
     Mg_LoadScreenInit();
