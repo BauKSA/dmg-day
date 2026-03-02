@@ -18,6 +18,6 @@ void MainMenu_CheckInput(void) {
       humor_stats[i] = my_rand() % 3;
     }
 
-    scene_manager.change_scene(MAP_00, player);
+    scene_manager.change_scene(STORY, &player);
   }
 }

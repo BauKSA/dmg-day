@@ -1,0 +1,16 @@
+#include "./story.h"
+#include <stdint.h>
+
+Scene Story;
+StoryLine *story_lines;
+uint8_t story_lines_count = 0;
+uint8_t story_lines_rate = 15;
+uint8_t story_lines_timer = 0;
+uint8_t actual_story_line = 0;
+uint8_t actual_line_char = 0;
+
+void Story_Create() {
+  Story.init = Story_Init;
+  Story.update = Story_Update;
+  Story.bank = 1;
+}
