@@ -49,4 +49,7 @@ void Map_00_Init(Scene *scene, Entity scene_player) {
 
   draw_actor(npc_1);
   draw_actor(player);
+
+  actual_tile.prev = 0;
+  actual_tile.value = 0;
 }

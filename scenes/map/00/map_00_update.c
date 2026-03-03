@@ -10,12 +10,14 @@
 #include "../../../include/scene_manager.h"
 #include "../../../include/minigames.h"
 #include "../../map/map_data.h"
+#include "../../map/auto_clean.h"
 #include "../../map/map_player_movement.h"
 #include "../../mini_games/leaves/mg_leaves.h"
 
 #include "map_00.h"
 
 void Map_00_Update(Scene *scene) {
+  Map_AutoClean();
   Map_00_CheckItems();
   Map_PlayerMovement();
 

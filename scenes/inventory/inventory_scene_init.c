@@ -9,7 +9,8 @@
 #include "../../assets/sprites/backgrounds/inventory/inventory_bkg.h"
 #include "../../assets/sprites/inventory/items/branch/spr_Branch.h"
 
-void InventoryScene_DrawCoins() {
+void InventoryScene_DrawCoins()
+{
   uint8_t thousands = ((money / 1000) % 10) + NUMBER_TILESET_START;
   uint8_t hundreds = ((money / 100) % 10) + NUMBER_TILESET_START;
   uint8_t tens = ((money / 10) % 10) + NUMBER_TILESET_START;
@@ -25,16 +26,20 @@ void InventoryScene_DrawCoins() {
                 &units);
 }
 
-void InventoryScene_Init(Scene *scene, Entity player) {
+void InventoryScene_Init(Scene *scene, Entity player)
+{
   scene->data = NULL;
   init_arrow();
+
+  selected_item = 0;
 
   const uint8_t branch_tile = 53;
 
   set_bkg_data(0, inventory_bkg_tileset_size, inventory_bkg_tileset);
   set_bkg_tiles(0, 0, 20, 18, inventory_bkg_tilemap);
 
-  for (uint8_t i = 0; i < INVENTORY_ITEMS; i++) {
+  for (uint8_t i = 0; i < INVENTORY_ITEMS; i++)
+  {
     if (inventory[i].active == 0)
       continue;
 
