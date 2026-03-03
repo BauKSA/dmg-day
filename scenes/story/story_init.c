@@ -16,15 +16,15 @@ void Story_Init(Scene *scene, Entity player) {
 
   story_lines_count = 3;
 
-  for (uint8_t i = 0; line_1[i] != '\n'; i++) {
+  for (uint8_t i = 0; line_1[i] != '\0'; i++) {
     story_lines[0][i] = line_1[i];
   }
 
-  for (uint8_t i = 0; line_2[i] != '\n'; i++) {
+  for (uint8_t i = 0; line_2[i] != '\0'; i++) {
     story_lines[1][i] = line_2[i];
   }
 
-  for (uint8_t i = 0; line_3[i] != '\n'; i++) {
+  for (uint8_t i = 0; line_3[i] != '\0'; i++) {
     story_lines[2][i] = line_3[i];
   }
 }
