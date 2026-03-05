@@ -1,11 +1,35 @@
 @echo off
-mkdir build
 setlocal enabledelayedexpansion
-set FILES=
 
-:: Recorre toda la carpeta del proyecto recursivamente y toma todos los .c
-for /R . %%f in (*.c) do (
-    set FILES=!FILES! %%f
+:: 1. Preparar carpetas
+if not exist build mkdir build
+if not exist build\obj mkdir build\obj
+
+echo --- COMPILANDO OBJETOS ---
+
+:: 2. Compilar cada .c a un archivo .o (objeto) individualmente
+for /R %%f in (*.c) do (
+    echo Compilando: %%~nxf
+    "C:\Program Files\GBDK\bin\lcc.exe" -debug -c -o "build\obj\%%~nf.o" "%%f"
 )
 
-"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo4 -o build/game.gb !FILES!
+echo.
+echo --- LINKEANDO ROM ---
+
+:: 3. Crear la lista de objetos generados
+set OBJS=
+for %%g in (build\obj\*.o) do (
+    set OBJS=!OBJS! "%%g"
+)
+
+:: 4. Linkeo final (aca es mucho mas dificil superar el limite de caracteres)
+"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo4 -o build/game.gb !OBJS!
+
+if %errorlevel% equ 0 (
+    echo.
+    echo [OK] ROM generada con exito en build/game.gb
+) else (
+    echo.
+    echo [ERROR] El linkeo fallo.
+    pause
+)
