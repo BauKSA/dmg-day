@@ -50,7 +50,7 @@ void Story_Update(Scene *scene)
       }
     }
 
-    scene_manager.change_scene(MAP_00, &player);
+    scene_manager.change_scene(MAP_21, &player);
     return;
   }
 

@@ -6,6 +6,10 @@ enum AllScenes {
   STORY,
   GENDER_SELECT,
   INVENTORY,
+
+  //MAPAS
+  MAP_21,
+
   MAP_00,
   MG_LEAVES,
   NONE
