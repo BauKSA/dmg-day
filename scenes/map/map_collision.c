@@ -71,12 +71,18 @@ void Map_Collision(Scene *scene)
       scene_manager.change_scene(CurrentMapData.spawner.left, &player);
       break;
     case 8:
-      if (CurrentMapData.spawner.up != NONE)
-        scene_manager.change_scene(CurrentMapData.spawner.up, &player);
+      if (CurrentMapData.spawner.up == NONE)
+        break;
+      position.y[player] = 110;
+      cache_player_position();
+      scene_manager.change_scene(CurrentMapData.spawner.up, &player);
       break;
     case 9:
-      if (CurrentMapData.spawner.down != NONE)
-        scene_manager.change_scene(CurrentMapData.spawner.down, &player);
+      if (CurrentMapData.spawner.down == NONE)
+        break;
+      position.y[player] = 24;
+      cache_player_position();
+      scene_manager.change_scene(CurrentMapData.spawner.down, &player);
       break;
     }
   }

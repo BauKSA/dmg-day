@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "./gender_select_map.h"
 
 const unsigned char gender_select_tileset[] = {

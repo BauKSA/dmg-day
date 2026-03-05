@@ -10,7 +10,7 @@ void MainMenu_Create(void)
 {
     MainMenu.init = MainMenu_Init;
     MainMenu.update = MainMenu_Update;
-    MainMenu.bank = 0;
+    MainMenu.bank = 2;
 
     MainMenu.data = NULL;
 }

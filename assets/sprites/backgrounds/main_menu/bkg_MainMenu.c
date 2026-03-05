@@ -1,4 +1,4 @@
-#pragma bank 1
+#pragma bank 2
 
 const unsigned char bkg_main_menu_tileset[] = {
 	// Tile 1
