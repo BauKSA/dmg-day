@@ -11,13 +11,17 @@
 
 // MAPAS
 #include "../../scenes/map/00/map_00.h"
+
 #include "../../scenes/map/2-1/map_21.h"
+#include "../../scenes/map/2-2/map_22.h"
 
 // MINI JUEGOS
 #include "../../scenes/mini_games/leaves/mg_leaves.h"
 
-Scene *scene_manager_MapScene(enum AllScenes scene) {
-  switch (scene) {
+Scene *scene_manager_MapScene(enum AllScenes scene)
+{
+  switch (scene)
+  {
   case MENU:
     MainMenu_Create();
     return &MainMenu;
@@ -35,6 +39,9 @@ Scene *scene_manager_MapScene(enum AllScenes scene) {
   case MAP_21:
     Map_21_Create();
     return &Map_21;
+  case MAP_22:
+    Map_22_Create();
+    return &Map_22;
   case MAP_00:
     Map_00_Create();
     return &Map_00;

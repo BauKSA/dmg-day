@@ -5,10 +5,10 @@
 #include "../../map/auto_clean.h"
 #include "../../map/map_player_movement.h"
 
-#include "map_21.h"
+#include "map_22.h"
 
-void Map_21_Update(Scene *scene) {
-  //Map_AutoClean();
+void Map_22_Update(Scene *scene) {
+  Map_AutoClean();
 
   Map_PlayerMovement();
 
