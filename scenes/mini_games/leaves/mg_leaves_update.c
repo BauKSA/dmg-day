@@ -1,6 +1,7 @@
 #pragma bank 2
 
 #include <gb/gb.h>
+#include <stdio.h>
 
 #include "../../../assets/chars/numbers.h"
 #include "../../../include/all_scenes.h"
@@ -12,12 +13,17 @@
 #include "../../../include/scene_manager.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/can_move.h"
+#include "../../../include/money.h"
+#include "../../../include/intermitent_text.h"
 
 #include "../mg_mission_complete.h"
 #include "../mg_player_movement.h"
 #include "../mg_timer.h"
 
 #include "./mg_leaves.h"
+
+uint8_t errors = 0;
+uint8_t sweeped = 0;
 
 uint8_t is_being_swept(uint8_t actor_idx)
 {
@@ -120,9 +126,18 @@ void check_actor_collision()
       fixed_y[i] = 0;
 
       if (is_leaf)
-        score -= NEGATIVE_SCORE;
+      {
+        if (score - NEGATIVE_SCORE <= 0)
+          score = 0;
+        else
+          score -= NEGATIVE_SCORE;
+        errors++;
+      }
       else
+      {
         score += POSITIVE_SCORE;
+        sweeped++;
+      }
     }
 
     if (actor_state[i] == BEING_SWEPT_RIGHT && actor_x[i] >= mg_leaves_DATA.right_limit)
@@ -133,15 +148,33 @@ void check_actor_collision()
       actor_y[i] = 0;
       fixed_y[i] = 0;
 
-      if (is_leaf)
-        score += POSITIVE_SCORE;
+      if (!is_leaf)
+      {
+        if (score - NEGATIVE_SCORE <= 0)
+          score = 0;
+        else
+          score -= NEGATIVE_SCORE;
+        errors++;
+      }
       else
-        score -= NEGATIVE_SCORE;
+      {
+        score += POSITIVE_SCORE;
+        sweeped++;
+      }
     }
   }
 
   if (score < 0)
     score = 0;
+}
+
+uint8_t SetCoinsReward()
+{
+  uint8_t tmp = money;
+  money += sweeped * 2 * 10;
+  money -= errors * 5;
+
+  return money - tmp;
 }
 
 void Mg_Leaves_Update(Scene *scene)
@@ -158,7 +191,21 @@ void Mg_Leaves_Update(Scene *scene)
     position.y[mg_player] = 0;
     draw_actor(mg_player);
 
+    uint8_t reward = SetCoinsReward();
+
+    char correct[] = "correct: ";
+    char error[] = "error: ";
+
+    uint8_t correct_tile = sweeped + NUMBER_TILESET_START;
+    uint8_t error_tile = errors + NUMBER_TILESET_START;
+
     Mg_SplashCompleteScreen();
+    IntermitentText_Init(TEXT_START_X, TEXT_START_Y, correct, 15);
+    set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y, correct_tile);
+
+    IntermitentText_Init(TEXT_START_X, TEXT_START_Y + 1, error, 15);
+    set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y + 1, error_tile);
+
     Mg_CompleteScreenSleep();
 
     scene_manager.change_scene(MAP_00, &player);

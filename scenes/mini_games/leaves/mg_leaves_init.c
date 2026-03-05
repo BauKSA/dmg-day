@@ -14,8 +14,10 @@
 
 #include "../../../assets/chars/chars.h"
 #include "../../../assets/chars/numbers.h"
-#include "../../../assets/sprites/mini_game/garbage/spr_garbage.h"
-#include "../../../assets/sprites/mini_game/leaf/leaf.h"
+#include "../../../assets/sprites/objects/acorn/spr_acorn.h"
+#include "../../../assets/sprites/objects/leaf/spr_leaf_a.h"
+#include "../../../assets/sprites/objects/leaf/spr_leaf_b.h"
+
 #include "../../../include/char_to_tile.h"
 #include "../../../include/draw.h"
 #include "../../../include/load.h"
@@ -90,7 +92,13 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   // Init Leaves
   for (uint8_t i = 0; i <= LEAF_COUNT; i++)
   {
-    uint8_t id = load_extra_tiles(i, spr_leaf_00, 1);
+    uint8_t id;
+
+    if (i % 2 == 0)
+      id = load_extra_tiles(i, spr_leaf_a, 1);
+    else
+      id = load_extra_tiles(i, spr_leaf_b, 1);
+
     actor_ids[i] = id;
     actor_active[i] = false;
 
@@ -106,7 +114,7 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   // Init Garbage
   for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++)
   {
-    uint8_t id = load_extra_tiles(i, spr_garbage_00, 1);
+    uint8_t id = load_extra_tiles(i, spr_acorn, 1);
     actor_ids[i] = id;
     actor_active[i] = false;
 
