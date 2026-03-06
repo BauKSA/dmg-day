@@ -12,6 +12,9 @@ enum AllScenes
   MAP_00,
   
   MAP_10,
+  MAP_11,
+  MAP_12,
+  MAP_13,
 
   MAP_20,
   MAP_21,
