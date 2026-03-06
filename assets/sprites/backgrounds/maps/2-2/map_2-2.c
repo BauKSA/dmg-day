@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 3
 
 const unsigned char map_2_2_tileset[] = {
 

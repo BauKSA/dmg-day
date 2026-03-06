@@ -23,7 +23,7 @@ for %%g in (build\obj\*.o) do (
 )
 
 :: 4. Linkeo final (aca es mucho mas dificil superar el limite de caracteres)
-"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo4 -o build/game.gb !OBJS!
+"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo8 -o build/game.gb !OBJS!
 
 if %errorlevel% equ 0 (
     echo.

@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 4
 
 #include "./map_32.h"
 #include "./map_32_collision.h"

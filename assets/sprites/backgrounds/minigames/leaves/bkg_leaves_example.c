@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 3
 
 const unsigned char bkg_leaves_example_tileset[] = {
 	// Tile 1

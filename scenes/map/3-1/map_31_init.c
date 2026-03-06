@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 4
 
 #include "./map_31.h"
 #include "./map_31_collision.h"
@@ -21,7 +21,7 @@ void Map_31_Init(Scene *scene, Entity scene_player)
   CurrentMapData.collision_map = map_31_collision;
 
   CurrentMapData.spawner.right = MAP_32;
-  CurrentMapData.spawner.left = NONE;
+  CurrentMapData.spawner.left = MAP_30;
   CurrentMapData.spawner.up = NONE;
   CurrentMapData.spawner.down = NONE;
 

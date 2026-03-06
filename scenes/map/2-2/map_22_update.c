@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 3
 
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
