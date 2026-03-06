@@ -73,7 +73,7 @@ void Map_Collision(Scene *scene)
     case 8:
       if (CurrentMapData.spawner.up == NONE)
         break;
-      position.y[player] = 120;
+      position.y[player] = 100;
       cache_player_position();
       scene_manager.change_scene(CurrentMapData.spawner.up, &player);
       break;

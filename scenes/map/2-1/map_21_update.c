@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
 #include "../../../include/scene.h"
@@ -8,7 +10,7 @@
 #include "map_21.h"
 
 void Map_21_Update(Scene *scene) {
-  //Map_AutoClean();
+  Map_AutoClean();
 
   Map_PlayerMovement();
 

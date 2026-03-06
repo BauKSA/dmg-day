@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
 #include "../../../include/scene.h"

@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "map_23.h"
 
 #include "../../../include/animation.h"

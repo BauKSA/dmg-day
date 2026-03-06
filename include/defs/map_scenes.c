@@ -16,13 +16,22 @@
 #include "../../scenes/map/2-2/map_22.h"
 #include "../../scenes/map/2-3/map_23.h"
 
+#include "../../scenes/map/3-1/map_31.h"
 #include "../../scenes/map/3-2/map_32.h"
+#include "../../scenes/map/3-3/map_33.h"
 
 // MINI JUEGOS
 #include "../../scenes/mini_games/leaves/mg_leaves.h"
 
+#define MAPS_01_BANK 1
+#define MAPS_23_BANK 2
+
 Scene *scene_manager_MapScene(enum AllScenes scene)
 {
+  uint8_t _prev_bank = _current_bank;
+
+  vsync();
+
   switch (scene)
   {
   case MENU:
@@ -40,18 +49,43 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
 
   // MAPAS
   case MAP_21:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
     Map_21_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
     return &Map_21;
   case MAP_22:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
     Map_22_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
     return &Map_22;
   case MAP_23:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
     Map_23_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
     return &Map_23;
 
+  case MAP_31:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
+    Map_31_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_31;
+
   case MAP_32:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
     Map_32_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
     return &Map_32;
+  case MAP_33:
+    SWITCH_ROM_MBC1(MAPS_23_BANK);
+    Map_33_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_33;
 
   case MAP_00:
     Map_00_Create();

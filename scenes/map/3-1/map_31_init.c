@@ -1,7 +1,7 @@
 #pragma bank 2
 
-#include "map_23.h"
-#include "./map_23_collision.h"
+#include "./map_31.h"
+#include "./map_31_collision.h"
 
 #include "../map_data.h"
 
@@ -10,18 +10,18 @@
 #include "../../../include/scene.h"
 #include "../../../include/all_scenes.h"
 
-#include "../../../assets/sprites/backgrounds/maps/2-3/map_2-3.h"
+#include "../../../assets/sprites/backgrounds/maps/3-1/map_3-1.h"
 
-void Map_23_Init(Scene *scene, Entity scene_player)
+void Map_31_Init(Scene *scene, Entity scene_player)
 {
   init_player();
 
   CurrentMapData.player = player;
   CurrentMapData.npc_count = 0;
-  CurrentMapData.collision_map = map_23_collision;
+  CurrentMapData.collision_map = map_31_collision;
 
-  CurrentMapData.spawner.right = NONE;
-  CurrentMapData.spawner.left = MAP_22;
+  CurrentMapData.spawner.right = MAP_32;
+  CurrentMapData.spawner.left = NONE;
   CurrentMapData.spawner.up = NONE;
   CurrentMapData.spawner.down = NONE;
 
@@ -30,8 +30,8 @@ void Map_23_Init(Scene *scene, Entity scene_player)
 
   scene->data = &CurrentMapData;
 
-  set_bkg_data(0, map_2_3_tileset_size, map_2_3_tileset);
-  set_bkg_tiles(0, 0, 20, 18, map_2_3_tilemap);
+  set_bkg_data(0, map_3_1_tileset_size, map_3_1_tileset);
+  set_bkg_tiles(0, 0, 20, 18, map_3_1_tilemap);
 
   draw_actor(player);
 

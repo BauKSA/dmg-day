@@ -15,5 +15,5 @@ void Story_Create()
 {
   Story.init = Story_Init;
   Story.update = Story_Update;
-  Story.bank = 2;
+  Story.bank = 3;
 }

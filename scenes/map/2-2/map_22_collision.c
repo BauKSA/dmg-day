@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "./map_22_collision.h"
 
 const uint8_t map_22_collision[MAP_HEIGHT][MAP_WIDTH] = {

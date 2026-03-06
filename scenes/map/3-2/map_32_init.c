@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "./map_32.h"
 #include "./map_32_collision.h"
 
@@ -18,8 +20,8 @@ void Map_32_Init(Scene *scene, Entity scene_player)
   CurrentMapData.npc_count = 0;
   CurrentMapData.collision_map = map_32_collision;
 
-  CurrentMapData.spawner.right = NONE;
-  CurrentMapData.spawner.left = NONE;
+  CurrentMapData.spawner.right = MAP_33;
+  CurrentMapData.spawner.left = MAP_31;
   CurrentMapData.spawner.up = MAP_22;
   CurrentMapData.spawner.down = NONE;
 

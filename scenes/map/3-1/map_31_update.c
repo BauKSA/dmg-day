@@ -7,9 +7,9 @@
 #include "../../map/auto_clean.h"
 #include "../../map/map_player_movement.h"
 
-#include "map_22.h"
+#include "./map_31.h"
 
-void Map_22_Update(Scene *scene) {
+void Map_31_Update(Scene *scene) {
   Map_AutoClean();
 
   Map_PlayerMovement();

@@ -6,5 +6,5 @@ Scene InventoryScene;
 void InventoryScene_Create(void) {
   InventoryScene.init = InventoryScene_Init;
   InventoryScene.update = InventoryScene_Update;
-  InventoryScene.bank = 2;
+  InventoryScene.bank = 3;
 }

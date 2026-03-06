@@ -1,4 +1,4 @@
-#pragma bank 1
+#pragma bank 2
 #include "./map_3-2.h"
 
 const unsigned char map_3_2_tileset[] = {

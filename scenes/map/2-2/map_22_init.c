@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "map_22.h"
 #include "map_22_collision.h"
 

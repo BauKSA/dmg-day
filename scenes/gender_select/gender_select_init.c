@@ -17,4 +17,5 @@ void GenderSelect_Init(Scene *scene, Entity player)
 
     set_bkg_data(0, gender_select_tileset_size, gender_select_tileset);
     set_bkg_tiles(0, 0, 20, 18, gender_select_tilemap);
+    scene->bank = 3;
 }

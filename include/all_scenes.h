@@ -12,7 +12,10 @@ enum AllScenes {
   MAP_22,
   MAP_23,
   
+  MAP_30,
+  MAP_31,
   MAP_32,
+  MAP_33,
 
   MAP_00,
   MG_LEAVES,
