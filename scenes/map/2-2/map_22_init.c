@@ -17,7 +17,7 @@ void Map_22_Init(Scene *scene, Entity scene_player)
     CurrentMapData.collision_map = map_22_collision;
     CurrentMapData.npc_count = 0;
 
-    CurrentMapData.spawner.right = NONE;
+    CurrentMapData.spawner.right = MAP_23;
     CurrentMapData.spawner.left = MAP_21;
     CurrentMapData.spawner.up = NONE;
     CurrentMapData.spawner.down = NONE;
