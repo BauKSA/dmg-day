@@ -22,7 +22,7 @@ void Map_30_Init(Scene *scene, Entity scene_player)
 
   CurrentMapData.spawner.right = MAP_31;
   CurrentMapData.spawner.left = NONE;
-  CurrentMapData.spawner.up = NONE;
+  CurrentMapData.spawner.up = MAP_20;
   CurrentMapData.spawner.down = NONE;
 
   CurrentMapData.event_count = 0;

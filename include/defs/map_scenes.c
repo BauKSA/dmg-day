@@ -13,6 +13,7 @@
 #include "../../scenes/map/00/map_00.h"
 
 #include "../../scenes/map/2-1/map_21.h"
+#include "../../scenes/map/2-0/map_20.h"
 #include "../../scenes/map/2-2/map_22.h"
 #include "../../scenes/map/2-3/map_23.h"
 
@@ -50,7 +51,14 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     Story_Create();
     return &Story;
 
-  // MAPAS
+    // MAPAS
+  case MAP_20:
+    SWITCH_ROM_MBC1(MAP_2_BANK);
+    Map_20_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_20;
+
   case MAP_21:
     SWITCH_ROM_MBC1(MAP_2_BANK);
     Map_21_Create();
