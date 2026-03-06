@@ -9,6 +9,8 @@ enum AllScenes
   INVENTORY,
 
   // MAPAS
+  MAP_00,
+  
   MAP_10,
 
   MAP_20,
@@ -21,7 +23,6 @@ enum AllScenes
   MAP_32,
   MAP_33,
 
-  MAP_00,
   MG_LEAVES,
   NONE
 };

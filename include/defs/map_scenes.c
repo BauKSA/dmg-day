@@ -10,10 +10,14 @@
 #include "../../scenes/story/story.h"
 
 // MAPAS
-#include "../../scenes/map/00/map_00.h"
+// #include "../../scenes/map/00/map_00.h"
 
-#include "../../scenes/map/2-1/map_21.h"
+#include "../../scenes/map/0-0/map_00.h"
+
+#include "../../scenes/map/1-0/map_10.h"
+
 #include "../../scenes/map/2-0/map_20.h"
+#include "../../scenes/map/2-1/map_21.h"
 #include "../../scenes/map/2-2/map_22.h"
 #include "../../scenes/map/2-3/map_23.h"
 
@@ -52,6 +56,20 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     return &Story;
 
     // MAPAS
+  case MAP_00:
+    SWITCH_ROM_MBC1(MAP_0_BANK);
+    Map_00_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_00;
+
+  case MAP_10:
+    SWITCH_ROM_MBC1(MAP_1_BANK);
+    Map_10_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_10;
+
   case MAP_20:
     SWITCH_ROM_MBC1(MAP_2_BANK);
     Map_20_Create();
@@ -104,10 +122,6 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     SWITCH_ROM_MBC1(_prev_bank);
 
     return &Map_33;
-
-  case MAP_00:
-    Map_00_Create();
-    return &Map_00;
 
   // MINI JUEGOS
   case MG_LEAVES:
