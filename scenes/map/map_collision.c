@@ -73,14 +73,14 @@ void Map_Collision(Scene *scene)
     case 8:
       if (CurrentMapData.spawner.up == NONE)
         break;
-      position.y[player] = 110;
+      position.y[player] = 120;
       cache_player_position();
       scene_manager.change_scene(CurrentMapData.spawner.up, &player);
       break;
     case 9:
       if (CurrentMapData.spawner.down == NONE)
         break;
-      position.y[player] = 24;
+      position.y[player] = 40;
       cache_player_position();
       scene_manager.change_scene(CurrentMapData.spawner.down, &player);
       break;

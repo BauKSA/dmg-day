@@ -5,6 +5,7 @@
 #include "../npcs.h"
 #include "../player.h"
 #include "../scene_manager.h"
+#include "../all_scenes.h"
 
 // Limits
 const uint8_t top_limit = 72;
@@ -29,7 +30,7 @@ void inventory_input()
 
     selected_item = ITM_NONE;
 
-    scene_manager.change_scene(MAP_00, player);
+    scene_manager.change_scene(prev_scene, player);
     closing = 0;
   }
 

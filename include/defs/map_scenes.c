@@ -16,6 +16,8 @@
 #include "../../scenes/map/2-2/map_22.h"
 #include "../../scenes/map/2-3/map_23.h"
 
+#include "../../scenes/map/3-2/map_32.h"
+
 // MINI JUEGOS
 #include "../../scenes/mini_games/leaves/mg_leaves.h"
 
@@ -46,6 +48,10 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
   case MAP_23:
     Map_23_Create();
     return &Map_23;
+
+  case MAP_32:
+    Map_32_Create();
+    return &Map_32;
 
   case MAP_00:
     Map_00_Create();

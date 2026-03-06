@@ -11,7 +11,8 @@
 SceneManager scene_manager;
 uint8_t is_transitioning = 0;
 
-void SceneManager_CleanScreen() {
+void SceneManager_CleanScreen()
+{
   DISPLAY_OFF;
   HIDE_BKG;
   HIDE_SPRITES;
@@ -28,12 +29,14 @@ void SceneManager_CleanScreen() {
   vram_extra_start = 27;
 }
 
-void SceneManager_Create(Game *game) {
+void SceneManager_Create(Game *game)
+{
   scene_manager.game = game;
   scene_manager.change_scene = SceneManager_ChangeScene;
 }
 
-void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player) {
+void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
+{
   if (is_transitioning == 1)
     return;
 
@@ -47,6 +50,9 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player) {
   DISPLAY_ON;
   SHOW_BKG;
   SHOW_SPRITES;
+
+  prev_scene = current_scene;
+  current_scene = new_scene;
 
   Scene *scene = scene_manager_MapScene(new_scene);
   uint8_t _prev_bank = _current_bank;
