@@ -19,6 +19,6 @@ void MainMenu_CheckInput(void) {
     }
 
     //scene_manager.change_scene(STORY, &player);
-    scene_manager.change_scene(MAP_00, &player);
+    scene_manager.change_scene(MAP_21, &player);
   }
 }

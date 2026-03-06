@@ -15,6 +15,7 @@
 #include "../../scenes/map/0-0/map_00.h"
 
 #include "../../scenes/map/1-0/map_10.h"
+#include "../../scenes/map/1-2/map_12.h"
 #include "../../scenes/map/1-3/map_13.h"
 
 #include "../../scenes/map/2-0/map_20.h"
@@ -70,6 +71,13 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     SWITCH_ROM_MBC1(_prev_bank);
 
     return &Map_10;
+
+  case MAP_12:
+    SWITCH_ROM_MBC1(MAP_1_BANK);
+    Map_12_Create();
+    SWITCH_ROM_MBC1(_prev_bank);
+
+    return &Map_12;
 
   case MAP_13:
     SWITCH_ROM_MBC1(MAP_1_BANK);

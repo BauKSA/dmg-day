@@ -10,6 +10,8 @@ enum AllScenes
 
   // MAPAS
   MAP_00,
+  MAP_01,
+  MAP_02,
   
   MAP_10,
   MAP_11,
