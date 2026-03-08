@@ -11,6 +11,8 @@
 void Map_22_Init(Scene *scene, Entity scene_player);
 void Map_22_Update(Scene *scene);
 
+void Map_22_InitNPC(void);
+
 extern Scene Map_22;
 
 void Map_22_Create(void);

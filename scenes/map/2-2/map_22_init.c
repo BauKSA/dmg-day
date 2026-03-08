@@ -15,9 +15,12 @@ void Map_22_Init(Scene *scene, Entity scene_player)
 {
     init_player();
 
+    Map_22_InitNPC();
+
     CurrentMapData.player = player;
     CurrentMapData.collision_map = map_22_collision;
-    CurrentMapData.npc_count = 0;
+    CurrentMapData.npc_count = 1;
+    CurrentMapData.npc[0] = npc_1;
 
     CurrentMapData.spawner.right = MAP_23;
     CurrentMapData.spawner.left = MAP_21;
@@ -32,6 +35,7 @@ void Map_22_Init(Scene *scene, Entity scene_player)
     set_bkg_data(0, map_2_2_tileset_size, map_2_2_tileset);
     set_bkg_tiles(0, 0, 20, 18, map_2_2_tilemap);
 
+    draw_actor(npc_1);
     draw_actor(player);
 
     actual_tile.prev = 0;

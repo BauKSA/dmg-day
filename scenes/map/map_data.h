@@ -47,5 +47,7 @@ void clean();
 
 extern MapData CurrentMapData;
 extern const uint8_t empty_tile;
+extern uint8_t last_r_tile_id;
+extern uint8_t last_l_tile_id;
 
 #endif // MAP_DATA_H

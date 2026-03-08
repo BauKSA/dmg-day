@@ -15,5 +15,6 @@
  */
 
  #define EXAMPLE_00 0 //Example NPC for testing purpose
+ #define NPC_MARTIN 1
 
  #endif //_NPCSTATSMAP_

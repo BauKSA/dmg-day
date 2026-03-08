@@ -8,18 +8,21 @@ Entity mg_player;
 PLAYER_ANIMATIONS player_animations;
 uint8_t player_y_cache;
 
-void create_player() {
+void create_player()
+{
   player = create_entity();
   mg_player = create_entity();
 
   cache.active[player] = 0;
 }
 
-uint8_t init_player(void) {
+uint8_t init_player(void)
+{
   position.x[player] = 50;
   position.y[player] = 100;
 
-  if (cache.active[player] == 1) {
+  if (cache.active[player] == 1)
+  {
     position.x[player] = cache.x[player];
     position.y[player] = cache.y[player];
     position.fixed_x[player] = cache.fixed_x[player];
@@ -41,22 +44,31 @@ uint8_t init_player(void) {
 
   // PLAYER DOWN ANIMATIONS
   const unsigned char *player_down_stay[] = {
-      spr_Player_down1_00, spr_Player_down1_01, spr_Player_down1_10,
-      spr_Player_down1_11};
+      spr_Player_down0_00, spr_Player_down0_01, spr_Player_down0_10,
+      spr_Player_down0_11};
 
   const unsigned char *player_down_walking[] = {
       // primer frame
-      spr_Player_down0_00, spr_Player_down0_01, spr_Player_down0_10,
-      spr_Player_down0_11,
-      // segundo frame
-      spr_Player_down1_00, spr_Player_down1_01, spr_Player_down1_10,
+      spr_Player_down1_00,
+      spr_Player_down1_01,
+      spr_Player_down1_10,
       spr_Player_down1_11,
+      // segundo frame
+      spr_Player_down0_00,
+      spr_Player_down0_01,
+      spr_Player_down0_10,
+      spr_Player_down0_11,
       // tercer frame
-      spr_Player_down2_00, spr_Player_down2_01, spr_Player_down2_10,
+      spr_Player_down2_00,
+      spr_Player_down2_01,
+      spr_Player_down2_10,
       spr_Player_down2_11,
       // cuarto frame
-      spr_Player_down1_00, spr_Player_down1_01, spr_Player_down1_10,
-      spr_Player_down1_11};
+      spr_Player_down0_00,
+      spr_Player_down0_01,
+      spr_Player_down0_10,
+      spr_Player_down0_11,
+  };
 
   // PLAYER UP ANIMATIONS
   const unsigned char *player_up_stay[] = {spr_Player_up1_00, spr_Player_up1_01,
@@ -94,7 +106,8 @@ uint8_t init_player(void) {
   return player;
 }
 
-void cache_player_position() {
+void cache_player_position()
+{
   cache.x[player] = position.x[player];
   cache.y[player] = position.y[player];
   cache.fixed_x[player] = position.fixed_x[player];
