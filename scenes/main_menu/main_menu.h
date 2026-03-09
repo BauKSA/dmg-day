@@ -7,6 +7,10 @@
 #include "../../include/entity.h"
 #include "../../scenes/main_menu/main_menu.h"
 
+#include "../../include/huge/include/hUGEDriver.h"
+
+extern const hUGESong_t test_song;
+
 void MainMenu_Init(Scene *scene, Entity scene_player);
 void MainMenu_Update(Scene *scene);
 void MainMenu_InitRandomStats();

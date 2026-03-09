@@ -25,6 +25,7 @@ void Map_22_Update(Scene *scene)
   draw_actor(data->player);
 
   Map_Collision(scene);
+  Map_22_CheckInput();
 
   return;
 }

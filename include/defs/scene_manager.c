@@ -45,6 +45,25 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
 
   is_transitioning = 1;
 
+  if (scene_manager.game->current_scene != NULL && new_scene != INVENTORY)
+  {
+    Scene *old_scene = scene_manager.game->current_scene;
+
+    // Guardamos el banco actual para no perdernos
+    uint8_t _prev_bank_destroy = _current_bank;
+
+    // Cambiamos al banco de la escena que se va y destruimos
+    SWITCH_ROM_MBC1(old_scene->bank);
+
+    if (old_scene->destroy != NULL)
+    { // <--- Verificación de seguridad
+      old_scene->destroy(old_scene);
+    }
+
+    // Volvemos al banco previo (opcional si vas a cambiar de banco inmediatamente después)
+    SWITCH_ROM_MBC1(_prev_bank_destroy);
+  }
+
   SceneManager_CleanScreen();
 
   DISPLAY_ON;

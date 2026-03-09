@@ -39,6 +39,17 @@ void main(void)
   DISPLAY_ON;
   SHOW_SPRITES;
 
+  // 1. Encender el sistema de sonido (Registro NR52)
+  NR52_REG = 0x80;
+
+  // 2. Habilitar la salida a los parlantes izquierdo y derecho (Registro NR51)
+  // 0xFF activa todos los canales (1, 2, 3 y 4) en ambos lados.
+  NR51_REG = 0xFF;
+
+  // 3. Ajustar el volumen maestro (Registro NR50)
+  // 0x77 es el volumen máximo para ambos canales.
+  NR50_REG = 0x77;
+
   /*
   Game game; se guarda en el stack. El stack de la GB es muy chico, así que
   muchas veces se sobreescribe y puede llegar a corromper la variable, por eso

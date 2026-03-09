@@ -8,34 +8,55 @@
 #include "../../../include/scene.h"
 #include "../../../include/player.h"
 #include "../../../include/draw.h"
+#include "../../../include/npcs.h"
+#include "../../../include/npc_stats_map.h"
 
 #include "../../../assets/sprites/backgrounds/maps/2-2/map_2-2.h"
+
+static void Map_22_Event()
+{
+    CurrentMapData.event_active = 1;
+}
 
 void Map_22_Init(Scene *scene, Entity scene_player)
 {
     init_player();
 
-    Map_22_InitNPC();
+    if (npc_appeared == 0)
+    {
+        Map_22_InitNPC();
+        Map_22_InitDialogues();
+
+        CurrentMapData.npc_count = 1;
+        CurrentMapData.npc[0] = npc_1;
+
+        draw_actor(npc_1);
+    }
+    else
+    {
+        CurrentMapData.npc_count = 0;
+        position.x[npc_1] = 0;
+        position.y[npc_1] = 0;
+
+        draw_actor(npc_1);
+    }
 
     CurrentMapData.player = player;
     CurrentMapData.collision_map = map_22_collision;
-    CurrentMapData.npc_count = 1;
-    CurrentMapData.npc[0] = npc_1;
-
     CurrentMapData.spawner.right = MAP_23;
     CurrentMapData.spawner.left = MAP_21;
     CurrentMapData.spawner.up = NONE;
     CurrentMapData.spawner.down = MAP_32;
 
-    CurrentMapData.event_count = 0;
+    CurrentMapData.event_count = 1;
     CurrentMapData.event_active = 0;
+    CurrentMapData.events[0] = Map_22_Event;
 
     scene->data = &CurrentMapData;
 
     set_bkg_data(0, map_2_2_tileset_size, map_2_2_tileset);
     set_bkg_tiles(0, 0, 20, 18, map_2_2_tilemap);
 
-    draw_actor(npc_1);
     draw_actor(player);
 
     actual_tile.prev = 0;

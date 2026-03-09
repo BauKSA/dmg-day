@@ -1,3 +1,5 @@
+#pragma bank 3
+
 #include "./map_22.h"
 #include "../map_data.h"
 #include "../../../assets/sprites/NPCs/martin/martin_npc.h"
@@ -11,8 +13,8 @@
 
 void Map_22_InitNPC()
 {
-    position.x[npc_1] = 40;
-    position.y[npc_1] = 80;
+    position.x[npc_1] = 38;
+    position.y[npc_1] = 71;
 
     char npc_name[10] = "martin";
     for (size_t i = 0; npc_name[i] != '\0'; i++)

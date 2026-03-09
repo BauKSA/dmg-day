@@ -17,6 +17,7 @@ Entity npc_2;
 Entity option_actor;
 
 uint8_t humor_stats[MAX_NPCS];
+uint8_t dialogue_phase[MAX_NPCS];
 
 void init_NPCs()
 {

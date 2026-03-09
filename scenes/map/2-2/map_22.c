@@ -2,3 +2,4 @@
 #include "../../../include/scene.h"
 
 Scene Map_22;
+uint8_t npc_appeared = 0;

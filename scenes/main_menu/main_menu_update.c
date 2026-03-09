@@ -4,10 +4,14 @@
 #include "../../include/char_to_tile.h"
 #include "../../assets/chars/chars.h"
 
+#include "../../include/huge/include/hUGEDriver.h"
+
 void MainMenu_Update(Scene *scene)
 {
     timer++;
     MainMenu_CheckInput();
+
+    hUGE_dosound();
 
     if (timer >= rate)
     {
