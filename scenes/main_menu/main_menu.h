@@ -3,13 +3,13 @@
 
 #include <stdlib.h>
 
-#include "../../include/game.h"
 #include "../../include/entity.h"
+#include "../../include/game.h"
 #include "../../scenes/main_menu/main_menu.h"
 
-#include "../../include/huge/include/hUGEDriver.h"
+// #include "../../include/huge/include/hUGEDriver.h"
 
-extern const hUGESong_t test_song;
+// extern const hUGESong_t test_song;
 
 void MainMenu_Init(Scene *scene, Entity scene_player);
 void MainMenu_Update(Scene *scene);

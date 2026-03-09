@@ -1,3 +1,4 @@
+/*
 #include "../include/huge/include/hUGEDriver.h"
 #include <stddef.h>
 
@@ -358,4 +359,6 @@ static const unsigned char waves[] = {
     255,
 };
 
-const hUGESong_t test_song = {8, &order_cnt, order1, order2, order3, order4, duty_instruments, wave_instruments, noise_instruments, NULL, waves};
+const hUGESong_t test_song = {8, &order_cnt, order1, order2, order3, order4,
+duty_instruments, wave_instruments, noise_instruments, NULL, waves};
+*/

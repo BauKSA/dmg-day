@@ -4,9 +4,11 @@
 
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
+#include "../../../include/npcs.h"
 #include "../../../include/scene.h"
-#include "../../map/map_data.h"
+
 #include "../../map/auto_clean.h"
+#include "../../map/map_data.h"
 #include "../../map/map_player_movement.h"
 
 void Map_23_Update(Scene *scene) {
@@ -18,8 +20,10 @@ void Map_23_Update(Scene *scene) {
 
   update_animation(animation);
   draw_actor(data->player);
+  draw_actor(npc_1);
 
   Map_Collision(scene);
+  Map_23_CheckInput();
 
   return;
 }
