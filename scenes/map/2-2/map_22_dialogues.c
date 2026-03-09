@@ -9,7 +9,7 @@ const DialoguePerRelation dialogue_00 = {
     {{"...", ""}, {"mhmm...", ""}, {"hi...", ""}},
     {{"...", ""}, {"...", ""}, {"...", ""}}};
 
-    const DialoguePerRelation dialogue_00 = {
+    const DialoguePerRelation dialogue_01 = {
     {{"...", ""}, {"...", ""}, {"...", ""}},
     {{"sec dialogue", ""}, {"sec dialogue", "xd"}, {"sec dialogue", "xddddd"}},
     {{"...", ""}, {"...", ""}, {"...", ""}}};

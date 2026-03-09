@@ -18,6 +18,8 @@ void Scene_DrawNPCLine(
     enum AllScenes minigame);
 
 extern uint8_t humor_stats[MAX_NPCS];
+extern uint8_t relation_stats[MAX_NPCS];
+
 extern uint8_t dialogue_phase[MAX_NPCS];
 
 #endif //_NPCS_

@@ -13,6 +13,8 @@ extern const hUGESong_t test_song;
 
 void MainMenu_Init(Scene *scene, Entity scene_player);
 void MainMenu_Update(Scene *scene);
+void MainMenu_Destroy(Scene *scene);
+
 void MainMenu_InitRandomStats();
 
 extern Scene MainMenu;

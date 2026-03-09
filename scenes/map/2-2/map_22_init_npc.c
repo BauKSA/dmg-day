@@ -14,7 +14,7 @@
 void Map_22_InitNPC()
 {
     position.x[npc_1] = 38;
-    position.y[npc_1] = 71;
+    position.y[npc_1] = 75;
 
     char npc_name[10] = "martin";
     for (size_t i = 0; npc_name[i] != '\0'; i++)

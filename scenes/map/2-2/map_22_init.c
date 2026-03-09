@@ -15,6 +15,9 @@
 
 static void Map_22_Event()
 {
+    if (npc_appeared == 1)
+        return;
+        
     CurrentMapData.event_active = 1;
 }
 

@@ -17,6 +17,8 @@ Entity npc_2;
 Entity option_actor;
 
 uint8_t humor_stats[MAX_NPCS];
+uint8_t relation_stats[MAX_NPCS];
+
 uint8_t dialogue_phase[MAX_NPCS];
 
 void init_NPCs()
@@ -33,7 +35,7 @@ void Scene_DrawNPCLine(
     uint8_t has_minigame,
     enum AllScenes minigame)
 {
-    uint8_t relation = 1;
+    uint8_t relation = relation_stats[npc_map];
     uint8_t humor = humor_stats[npc_map];
 
     DialoguePerRelation *dialogue_ptr = CurrentNPCDialogues[npc_index];
@@ -66,7 +68,7 @@ void Scene_DrawNPCLine(
     uint8_t humor_icon_tile = humor_stats[npc_map] + NPC_ICONS_TILESET_START;
     set_bkg_tiles(HUMOR_ICON_X, ICON_Y, 1, 1, &humor_icon_tile);
 
-    // Relación (Hardcodeada a 1 -NUETRO-)
-    uint8_t relation_icon_tile = 1 + NPC_ICONS_TILESET_START + 3;
+    // Relación
+    uint8_t relation_icon_tile = relation + NPC_ICONS_TILESET_START + 3;
     set_bkg_tiles(RELATION_ICON_X, ICON_Y, 1, 1, &relation_icon_tile);
 }

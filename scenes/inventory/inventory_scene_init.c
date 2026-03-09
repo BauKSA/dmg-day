@@ -38,6 +38,7 @@ void InventoryScene_Init(Scene *scene, Entity player)
   set_bkg_data(0, inventory_bkg_tileset_size, inventory_bkg_tileset);
   set_bkg_tiles(0, 0, 20, 18, inventory_bkg_tilemap);
 
+  // A CORREGIR
   for (uint8_t i = 0; i < INVENTORY_ITEMS; i++)
   {
     if (inventory[i].active == 0)

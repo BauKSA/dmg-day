@@ -18,6 +18,7 @@ void Map_22_CheckInput(void);
 
 extern Scene Map_22;
 extern uint8_t npc_appeared;
+extern uint8_t temp_relation;
 
 void Map_22_Create(void);
 

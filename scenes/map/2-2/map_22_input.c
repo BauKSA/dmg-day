@@ -16,5 +16,6 @@ void Map_22_CheckInput()
     {
         uint8_t pepe = 0;
         Scene_DrawNPCLine(npc_1, (uint8_t)NPC_MARTIN, 0, 0, NONE);
+        temp_relation = 2;
     }
 }

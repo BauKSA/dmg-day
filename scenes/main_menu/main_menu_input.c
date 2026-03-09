@@ -19,6 +19,7 @@ void MainMenu_CheckInput(void)
     for (size_t i = 0; i < MAX_NPCS; i++)
     {
       humor_stats[i] = my_rand() % 3;
+      relation_stats[i] = 1;
     }
 
     // scene_manager.change_scene(STORY, &player);

@@ -35,10 +35,6 @@ void initialize_inventory() {
     slot.active = 0;
     slot.item = i;
 
-    // DEBUG
-    if (i == 0)
-      slot.active = 1;
-
     inventory[i] = slot;
   }
 }
