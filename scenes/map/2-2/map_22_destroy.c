@@ -10,5 +10,5 @@ void Map_22_Destroy(Scene *scene)
     if (dialogue_phase[(uint8_t)NPC_MARTIN] > 3)
         dialogue_phase[(uint8_t)NPC_MARTIN] = 3;
         
-    npc_appeared = 1;
+    //npc_appeared = 1;
 }

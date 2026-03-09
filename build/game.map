@@ -81,8 +81,8 @@ Area                                    Addr        Size        Decimal Bytes (A
      00002000  _rROMB0                            
      00003000  _rROMB1                            
      000035F9  l__CODE                         
-     0000371C  l__CODE_3                       
      000037F9  s__HOME                         
+     0000386B  l__CODE_3                       
      00003925  s__BASE                         
      00003925  s__CODE_0                       
      00003925  s__INITIALIZER                  
@@ -8936,7 +8936,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -8995,7 +8995,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9055,7 +9055,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9115,7 +9115,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9175,7 +9175,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9235,7 +9235,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9295,7 +9295,7 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
@@ -9341,710 +9341,722 @@ _CODE_3                             00034000    0000371C =       14108. bytes (R
      00036E0E  A$map_22_destroy$62                map_22_destroy
      00036E0E  C$map_22_destroy.c$10$2_0$37       map_22_destroy
      00036E10  A$map_22_destroy$63                map_22_destroy
-     00036E12  A$map_22_destroy$67                map_22_destroy
-     00036E12  C$map_22_destroy.c$11$2_0$37       map_22_destroy
-     00036E14  A$map_22_destroy$68                map_22_destroy
-     00036E15  A$map_22_destroy$73                map_22_destroy
-     00036E15  C$map_22_destroy.c$13$1_0$36       map_22_destroy
-     00036E18  A$map_22_destroy$74                map_22_destroy
-     00036E1A  A$map_22_destroy$82                map_22_destroy
-     00036E1A  C$map_22_destroy.c$14$1_0$36       map_22_destroy
-     00036E1A  XG$Map_22_Destroy$0$0              map_22_destroy
+     00036E11  A$map_22_destroy$67                map_22_destroy
+     00036E11  C$map_22_destroy.c$11$2_0$37       map_22_destroy
+     00036E13  A$map_22_destroy$68                map_22_destroy
+     00036E14  A$map_22_destroy$76                map_22_destroy
+     00036E14  C$map_22_destroy.c$14$2_0$36       map_22_destroy
+     00036E14  XG$Map_22_Destroy$0$0              map_22_destroy
+     00036E15  A$map_22_dialogues$57              map_22_dialogues
+     00036E15  C$map_22_dialogues.c$17$0_0$36     map_22_dialogues
+     00036E15  C$map_22_dialogues.c$19$2_0$36     map_22_dialogues
 ASxxxx Linker V03.00/V05.40 + sdld,  page 178.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00036E1B  A$map_22_dialogues$56              map_22_dialogues
-     00036E1B  C$map_22_dialogues.c$11$0_0$35     map_22_dialogues
-     00036E1B  C$map_22_dialogues.c$13$1_0$35     map_22_dialogues
-     00036E1B  G$Map_22_InitDialogues$0$0         map_22_dialogues
-     00036E1B  _Map_22_InitDialogues              map_22_dialogues
-     00036E1E  A$map_22_dialogues$57              map_22_dialogues
-     00036E20  A$map_22_dialogues$58              map_22_dialogues
-     00036E21  A$map_22_dialogues$59              map_22_dialogues
+     00036E15  G$Map_22_InitDialogues$0$0         map_22_dialogues
+     00036E15  _Map_22_InitDialogues              map_22_dialogues
+     00036E18  A$map_22_dialogues$58              map_22_dialogues
+     00036E19  A$map_22_dialogues$59              map_22_dialogues
+     00036E1B  A$map_22_dialogues$63              map_22_dialogues
+     00036E1B  C$map_22_dialogues.c$20$3_0$37     map_22_dialogues
+     00036E1E  A$map_22_dialogues$64              map_22_dialogues
+     00036E20  A$map_22_dialogues$65              map_22_dialogues
+     00036E21  A$map_22_dialogues$66              map_22_dialogues
      00036E23  A$map_22_dialogues$67              map_22_dialogues
-     00036E23  C$map_22_dialogues.c$14$1_0$35     map_22_dialogues
-     00036E23  XG$Map_22_InitDialogues$0$0        map_22_dialogues
-     00036E24  G$dialogue_00$0_0$0                map_22_dialogues
-     00036E24  _dialogue_00                       map_22_dialogues
-     00036F68  A$map_22_init$61                   map_22_init
-     00036F68  C$map_22_init.c$16$0_0$173         map_22_init
-     00036F68  C$map_22_init.c$18$1_0$173         map_22_init
-     00036F68  Fmap_22_init$Map_22_Event$0$0      map_22_init
-     00036F6B  A$map_22_init$62                   map_22_init
-     00036F6D  A$map_22_init$70                   map_22_init
-     00036F6D  C$map_22_init.c$19$1_0$173         map_22_init
-     00036F6D  XFmap_22_init$Map_22_Event$0$0     map_22_init
-     00036F6E  A$map_22_init$80                   map_22_init
-     00036F6E  C$map_22_init.c$21$1_0$175         map_22_init
-     00036F6E  G$Map_22_Init$0$0                  map_22_init
-     00036F6E  _Map_22_Init                       map_22_init
-     00036F6F  A$map_22_init$84                   map_22_init
-     00036F6F  C$map_22_init.c$23$1_0$175         map_22_init
-     00036F72  A$map_22_init$88                   map_22_init
-     00036F72  C$map_22_init.c$25$2_0$176         map_22_init
-     00036F75  A$map_22_init$89                   map_22_init
-     00036F76  A$map_22_init$90                   map_22_init
-     00036F78  A$map_22_init$94                   map_22_init
-     00036F78  C$map_22_init.c$27$3_0$177         map_22_init
-     00036F7B  A$map_22_init$98                   map_22_init
-     00036F7B  C$map_22_init.c$28$3_0$177         map_22_init
-     00036F7E  A$map_22_init$102                  map_22_init
-     00036F7E  C$map_22_init.c$30$3_0$177         map_22_init
-     00036F81  A$map_22_init$103                  map_22_init
-     00036F83  A$map_22_init$107                  map_22_init
-     00036F83  C$map_22_init.c$31$3_0$177         map_22_init
-     00036F86  A$map_22_init$108                  map_22_init
-     00036F89  A$map_22_init$109                  map_22_init
-     00036F8A  A$map_22_init$113                  map_22_init
-     00036F8A  C$map_22_init.c$33$3_0$177         map_22_init
-     00036F8D  A$map_22_init$114                  map_22_init
-     00036F90  A$map_22_init$115                  map_22_init
-     00036F92  A$map_22_init$120                  map_22_init
-     00036F92  C$map_22_init.c$37$3_0$178         map_22_init
-     00036F95  A$map_22_init$121                  map_22_init
-     00036F97  A$map_22_init$125                  map_22_init
-     00036F97  C$map_22_init.c$38$3_0$178         map_22_init
+     00036E24  A$map_22_dialogues$72              map_22_dialogues
+     00036E24  C$map_22_dialogues.c$22$3_0$38     map_22_dialogues
+     00036E25  A$map_22_dialogues$73              map_22_dialogues
+     00036E26  A$map_22_dialogues$77              map_22_dialogues
+     00036E26  C$map_22_dialogues.c$23$3_0$38     map_22_dialogues
+     00036E29  A$map_22_dialogues$78              map_22_dialogues
+     00036E2B  A$map_22_dialogues$79              map_22_dialogues
+     00036E2C  A$map_22_dialogues$80              map_22_dialogues
+     00036E2E  A$map_22_dialogues$88              map_22_dialogues
+     00036E2E  C$map_22_dialogues.c$24$2_0$36     map_22_dialogues
+     00036E2E  XG$Map_22_InitDialogues$0$0        map_22_dialogues
+     00036E2F  G$dialogue_00$0_0$0                map_22_dialogues
+     00036E2F  _dialogue_00                       map_22_dialogues
+     00036F73  G$dialogue_01$0_0$0                map_22_dialogues
+     00036F73  _dialogue_01                       map_22_dialogues
+     000370B7  A$map_22_init$61                   map_22_init
+     000370B7  C$map_22_init.c$16$0_0$173         map_22_init
+     000370B7  C$map_22_init.c$18$1_0$173         map_22_init
+     000370B7  Fmap_22_init$Map_22_Event$0$0      map_22_init
+     000370BA  A$map_22_init$62                   map_22_init
+     000370BC  A$map_22_init$70                   map_22_init
+     000370BC  C$map_22_init.c$19$1_0$173         map_22_init
+     000370BC  XFmap_22_init$Map_22_Event$0$0     map_22_init
+     000370BD  A$map_22_init$80                   map_22_init
+     000370BD  C$map_22_init.c$21$1_0$175         map_22_init
+     000370BD  G$Map_22_Init$0$0                  map_22_init
+     000370BD  _Map_22_Init                       map_22_init
+     000370BE  A$map_22_init$84                   map_22_init
+     000370BE  C$map_22_init.c$23$1_0$175         map_22_init
+     000370C1  A$map_22_init$88                   map_22_init
+     000370C1  C$map_22_init.c$25$2_0$176         map_22_init
+     000370C4  A$map_22_init$89                   map_22_init
+     000370C5  A$map_22_init$90                   map_22_init
+     000370C7  A$map_22_init$94                   map_22_init
+     000370C7  C$map_22_init.c$27$3_0$177         map_22_init
+     000370CA  A$map_22_init$98                   map_22_init
+     000370CA  C$map_22_init.c$28$3_0$177         map_22_init
+     000370CD  A$map_22_init$102                  map_22_init
+     000370CD  C$map_22_init.c$30$3_0$177         map_22_init
+     000370D0  A$map_22_init$103                  map_22_init
+     000370D2  A$map_22_init$107                  map_22_init
 ASxxxx Linker V03.00/V05.40 + sdld,  page 179.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00036F9A  A$map_22_init$126                  map_22_init
-     00036F9B  A$map_22_init$127                  map_22_init
-     00036F9D  A$map_22_init$128                  map_22_init
-     00036FA0  A$map_22_init$129                  map_22_init
-     00036FA1  A$map_22_init$130                  map_22_init
-     00036FA3  A$map_22_init$134                  map_22_init
-     00036FA3  C$map_22_init.c$39$3_0$178         map_22_init
-     00036FA6  A$map_22_init$135                  map_22_init
-     00036FA7  A$map_22_init$136                  map_22_init
-     00036FA9  A$map_22_init$137                  map_22_init
-     00036FAC  A$map_22_init$138                  map_22_init
-     00036FAD  A$map_22_init$139                  map_22_init
-     00036FAF  A$map_22_init$143                  map_22_init
-     00036FAF  C$map_22_init.c$41$3_0$178         map_22_init
-     00036FB2  A$map_22_init$144                  map_22_init
-     00036FB5  A$map_22_init$149                  map_22_init
-     00036FB5  C$map_22_init.c$44$1_0$175         map_22_init
-     00036FB8  A$map_22_init$150                  map_22_init
-     00036FBB  A$map_22_init$151                  map_22_init
-     00036FBC  A$map_22_init$155                  map_22_init
-     00036FBC  C$map_22_init.c$45$1_0$175         map_22_init
-     00036FBF  A$map_22_init$156                  map_22_init
-     00036FC1  A$map_22_init$157                  map_22_init
-     00036FC2  A$map_22_init$158                  map_22_init
-     00036FC4  A$map_22_init$162                  map_22_init
-     00036FC4  C$map_22_init.c$46$1_0$175         map_22_init
-     00036FC7  A$map_22_init$163                  map_22_init
-     00036FC9  A$map_22_init$167                  map_22_init
-     00036FC9  C$map_22_init.c$47$1_0$175         map_22_init
-     00036FCC  A$map_22_init$168                  map_22_init
-     00036FCE  A$map_22_init$172                  map_22_init
-     00036FCE  C$map_22_init.c$48$1_0$175         map_22_init
-     00036FD1  A$map_22_init$173                  map_22_init
-     00036FD3  A$map_22_init$177                  map_22_init
-     00036FD3  C$map_22_init.c$49$1_0$175         map_22_init
-     00036FD6  A$map_22_init$178                  map_22_init
-     00036FD8  A$map_22_init$182                  map_22_init
-     00036FD8  C$map_22_init.c$51$1_0$175         map_22_init
-     00036FDB  A$map_22_init$183                  map_22_init
-     00036FDD  A$map_22_init$187                  map_22_init
-     00036FDD  C$map_22_init.c$52$1_0$175         map_22_init
-     00036FE0  A$map_22_init$188                  map_22_init
-     00036FE2  A$map_22_init$192                  map_22_init
-     00036FE2  C$map_22_init.c$53$1_0$175         map_22_init
-     00036FE5  A$map_22_init$193                  map_22_init
-     00036FE7  A$map_22_init$194                  map_22_init
-     00036FE8  A$map_22_init$195                  map_22_init
-     00036FEA  A$map_22_init$199                  map_22_init
-     00036FEA  C$map_22_init.c$55$1_0$175         map_22_init
-     00036FEB  A$map_22_init$200                  map_22_init
-     00036FEC  A$map_22_init$201                  map_22_init
+     000370D2  C$map_22_init.c$31$3_0$177         map_22_init
+     000370D5  A$map_22_init$108                  map_22_init
+     000370D8  A$map_22_init$109                  map_22_init
+     000370D9  A$map_22_init$113                  map_22_init
+     000370D9  C$map_22_init.c$33$3_0$177         map_22_init
+     000370DC  A$map_22_init$114                  map_22_init
+     000370DF  A$map_22_init$115                  map_22_init
+     000370E1  A$map_22_init$120                  map_22_init
+     000370E1  C$map_22_init.c$37$3_0$178         map_22_init
+     000370E4  A$map_22_init$121                  map_22_init
+     000370E6  A$map_22_init$125                  map_22_init
+     000370E6  C$map_22_init.c$38$3_0$178         map_22_init
+     000370E9  A$map_22_init$126                  map_22_init
+     000370EA  A$map_22_init$127                  map_22_init
+     000370EC  A$map_22_init$128                  map_22_init
+     000370EF  A$map_22_init$129                  map_22_init
+     000370F0  A$map_22_init$130                  map_22_init
+     000370F2  A$map_22_init$134                  map_22_init
+     000370F2  C$map_22_init.c$39$3_0$178         map_22_init
+     000370F5  A$map_22_init$135                  map_22_init
+     000370F6  A$map_22_init$136                  map_22_init
+     000370F8  A$map_22_init$137                  map_22_init
+     000370FB  A$map_22_init$138                  map_22_init
+     000370FC  A$map_22_init$139                  map_22_init
+     000370FE  A$map_22_init$143                  map_22_init
+     000370FE  C$map_22_init.c$41$3_0$178         map_22_init
+     00037101  A$map_22_init$144                  map_22_init
+     00037104  A$map_22_init$149                  map_22_init
+     00037104  C$map_22_init.c$44$1_0$175         map_22_init
+     00037107  A$map_22_init$150                  map_22_init
+     0003710A  A$map_22_init$151                  map_22_init
+     0003710B  A$map_22_init$155                  map_22_init
+     0003710B  C$map_22_init.c$45$1_0$175         map_22_init
+     0003710E  A$map_22_init$156                  map_22_init
+     00037110  A$map_22_init$157                  map_22_init
+     00037111  A$map_22_init$158                  map_22_init
+     00037113  A$map_22_init$162                  map_22_init
+     00037113  C$map_22_init.c$46$1_0$175         map_22_init
+     00037116  A$map_22_init$163                  map_22_init
+     00037118  A$map_22_init$167                  map_22_init
+     00037118  C$map_22_init.c$47$1_0$175         map_22_init
+     0003711B  A$map_22_init$168                  map_22_init
+     0003711D  A$map_22_init$172                  map_22_init
+     0003711D  C$map_22_init.c$48$1_0$175         map_22_init
+     00037120  A$map_22_init$173                  map_22_init
+     00037122  A$map_22_init$177                  map_22_init
+     00037122  C$map_22_init.c$49$1_0$175         map_22_init
+     00037125  A$map_22_init$178                  map_22_init
+     00037127  A$map_22_init$182                  map_22_init
+     00037127  C$map_22_init.c$51$1_0$175         map_22_init
+     0003712A  A$map_22_init$183                  map_22_init
 ASxxxx Linker V03.00/V05.40 + sdld,  page 180.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00036FEF  A$map_22_init$202                  map_22_init
-     00036FF0  A$map_22_init$203                  map_22_init
-     00036FF2  A$map_22_init$204                  map_22_init
-     00036FF3  A$map_22_init$205                  map_22_init
-     00036FF5  A$map_22_init$209                  map_22_init
-     00036FF5  C$map_22_init.c$57$1_0$175         map_22_init
-     00036FF8  A$map_22_init$210                  map_22_init
-     00036FF9  A$map_22_init$211                  map_22_init
-     00036FFC  A$map_22_init$212                  map_22_init
-     00036FFD  A$map_22_init$213                  map_22_init
-     00037000  A$map_22_init$214                  map_22_init
-     00037002  A$map_22_init$218                  map_22_init
-     00037002  C$map_22_init.c$58$1_0$175         map_22_init
-     00037005  A$map_22_init$219                  map_22_init
-     00037006  A$map_22_init$220                  map_22_init
-     00037009  A$map_22_init$221                  map_22_init
-     0003700A  A$map_22_init$222                  map_22_init
-     0003700B  A$map_22_init$223                  map_22_init
-     0003700C  A$map_22_init$224                  map_22_init
-     0003700D  A$map_22_init$225                  map_22_init
-     00037010  A$map_22_init$226                  map_22_init
-     00037012  A$map_22_init$230                  map_22_init
-     00037012  C$map_22_init.c$60$1_0$175         map_22_init
-     00037015  A$map_22_init$231                  map_22_init
-     00037018  A$map_22_init$235                  map_22_init
-     00037018  C$map_22_init.c$62$1_0$175         map_22_init
-     0003701B  A$map_22_init$236                  map_22_init
-     0003701D  A$map_22_init$240                  map_22_init
-     0003701D  C$map_22_init.c$63$1_0$175         map_22_init
-     00037020  A$map_22_init$241                  map_22_init
-     00037022  A$map_22_init$245                  map_22_init
-     00037023  A$map_22_init$246                  map_22_init
-     00037024  A$map_22_init$251                  map_22_init
-     00037024  C$map_22_init.c$64$1_0$175         map_22_init
-     00037024  XG$Map_22_Init$0$0                 map_22_init
-     00037025  A$map_22_init_npc$53               map_22_init_npc
-     00037025  C$map_22_init_npc.c$14$0_0$168     map_22_init_npc
-     00037025  G$Map_22_InitNPC$0$0               map_22_init_npc
-     00037025  _Map_22_InitNPC                    map_22_init_npc
-     00037027  A$map_22_init_npc$57               map_22_init_npc
-     00037027  C$map_22_init_npc.c$16$1_0$168     map_22_init_npc
-     0003702A  A$map_22_init_npc$58               map_22_init_npc
-     0003702B  A$map_22_init_npc$59               map_22_init_npc
-     0003702D  A$map_22_init_npc$60               map_22_init_npc
-     00037030  A$map_22_init_npc$61               map_22_init_npc
-     00037031  A$map_22_init_npc$62               map_22_init_npc
-     00037033  A$map_22_init_npc$66               map_22_init_npc
-     00037033  C$map_22_init_npc.c$17$1_0$168     map_22_init_npc
-     00037036  A$map_22_init_npc$67               map_22_init_npc
-     00037037  A$map_22_init_npc$68               map_22_init_npc
-     00037039  A$map_22_init_npc$69               map_22_init_npc
+     0003712C  A$map_22_init$187                  map_22_init
+     0003712C  C$map_22_init.c$52$1_0$175         map_22_init
+     0003712F  A$map_22_init$188                  map_22_init
+     00037131  A$map_22_init$192                  map_22_init
+     00037131  C$map_22_init.c$53$1_0$175         map_22_init
+     00037134  A$map_22_init$193                  map_22_init
+     00037136  A$map_22_init$194                  map_22_init
+     00037137  A$map_22_init$195                  map_22_init
+     00037139  A$map_22_init$199                  map_22_init
+     00037139  C$map_22_init.c$55$1_0$175         map_22_init
+     0003713A  A$map_22_init$200                  map_22_init
+     0003713B  A$map_22_init$201                  map_22_init
+     0003713E  A$map_22_init$202                  map_22_init
+     0003713F  A$map_22_init$203                  map_22_init
+     00037141  A$map_22_init$204                  map_22_init
+     00037142  A$map_22_init$205                  map_22_init
+     00037144  A$map_22_init$209                  map_22_init
+     00037144  C$map_22_init.c$57$1_0$175         map_22_init
+     00037147  A$map_22_init$210                  map_22_init
+     00037148  A$map_22_init$211                  map_22_init
+     0003714B  A$map_22_init$212                  map_22_init
+     0003714C  A$map_22_init$213                  map_22_init
+     0003714F  A$map_22_init$214                  map_22_init
+     00037151  A$map_22_init$218                  map_22_init
+     00037151  C$map_22_init.c$58$1_0$175         map_22_init
+     00037154  A$map_22_init$219                  map_22_init
+     00037155  A$map_22_init$220                  map_22_init
+     00037158  A$map_22_init$221                  map_22_init
+     00037159  A$map_22_init$222                  map_22_init
+     0003715A  A$map_22_init$223                  map_22_init
+     0003715B  A$map_22_init$224                  map_22_init
+     0003715C  A$map_22_init$225                  map_22_init
+     0003715F  A$map_22_init$226                  map_22_init
+     00037161  A$map_22_init$230                  map_22_init
+     00037161  C$map_22_init.c$60$1_0$175         map_22_init
+     00037164  A$map_22_init$231                  map_22_init
+     00037167  A$map_22_init$235                  map_22_init
+     00037167  C$map_22_init.c$62$1_0$175         map_22_init
+     0003716A  A$map_22_init$236                  map_22_init
+     0003716C  A$map_22_init$240                  map_22_init
+     0003716C  C$map_22_init.c$63$1_0$175         map_22_init
+     0003716F  A$map_22_init$241                  map_22_init
+     00037171  A$map_22_init$245                  map_22_init
+     00037172  A$map_22_init$246                  map_22_init
+     00037173  A$map_22_init$251                  map_22_init
+     00037173  C$map_22_init.c$64$1_0$175         map_22_init
+     00037173  XG$Map_22_Init$0$0                 map_22_init
+     00037174  A$map_22_init_npc$53               map_22_init_npc
+     00037174  C$map_22_init_npc.c$14$0_0$168     map_22_init_npc
+     00037174  G$Map_22_InitNPC$0$0               map_22_init_npc
+     00037174  _Map_22_InitNPC                    map_22_init_npc
 ASxxxx Linker V03.00/V05.40 + sdld,  page 181.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0003703C  A$map_22_init_npc$70               map_22_init_npc
-     0003703D  A$map_22_init_npc$71               map_22_init_npc
-     0003703F  A$map_22_init_npc$75               map_22_init_npc
-     0003703F  C$map_22_init_npc.c$19$2_0$169     map_22_init_npc
-     00037041  A$map_22_init_npc$76               map_22_init_npc
-     00037043  A$map_22_init_npc$77               map_22_init_npc
-     00037044  A$map_22_init_npc$78               map_22_init_npc
-     00037046  A$map_22_init_npc$79               map_22_init_npc
-     00037047  A$map_22_init_npc$80               map_22_init_npc
-     00037049  A$map_22_init_npc$81               map_22_init_npc
-     0003704A  A$map_22_init_npc$82               map_22_init_npc
-     0003704C  A$map_22_init_npc$83               map_22_init_npc
-     0003704D  A$map_22_init_npc$84               map_22_init_npc
-     0003704F  A$map_22_init_npc$85               map_22_init_npc
-     00037050  A$map_22_init_npc$86               map_22_init_npc
-     00037052  A$map_22_init_npc$87               map_22_init_npc
-     00037053  A$map_22_init_npc$88               map_22_init_npc
-     00037054  A$map_22_init_npc$89               map_22_init_npc
-     00037055  A$map_22_init_npc$90               map_22_init_npc
-     00037056  A$map_22_init_npc$91               map_22_init_npc
-     00037057  A$map_22_init_npc$92               map_22_init_npc
-     00037058  A$map_22_init_npc$96               map_22_init_npc
-     0003705B  A$map_22_init_npc$97               map_22_init_npc
-     0003705C  A$map_22_init_npc$99               map_22_init_npc
-     0003705F  A$map_22_init_npc$100              map_22_init_npc
-     00037060  A$map_22_init_npc$101              map_22_init_npc
-     00037061  A$map_22_init_npc$102              map_22_init_npc
-     00037062  A$map_22_init_npc$103              map_22_init_npc
-     00037064  A$map_22_init_npc$104              map_22_init_npc
-     00037065  A$map_22_init_npc$105              map_22_init_npc
-     00037066  A$map_22_init_npc$106              map_22_init_npc
-     00037068  A$map_22_init_npc$110              map_22_init_npc
-     00037068  C$map_22_init_npc.c$21$2_1$170     map_22_init_npc
-     0003706B  A$map_22_init_npc$111              map_22_init_npc
-     0003706C  A$map_22_init_npc$112              map_22_init_npc
-     0003706E  A$map_22_init_npc$113              map_22_init_npc
-     0003706F  A$map_22_init_npc$114              map_22_init_npc
-     00037070  A$map_22_init_npc$115              map_22_init_npc
-     00037071  A$map_22_init_npc$116              map_22_init_npc
-     00037072  A$map_22_init_npc$117              map_22_init_npc
-     00037073  A$map_22_init_npc$118              map_22_init_npc
-     00037074  A$map_22_init_npc$119              map_22_init_npc
-     00037075  A$map_22_init_npc$120              map_22_init_npc
-     00037076  A$map_22_init_npc$121              map_22_init_npc
-     00037078  A$map_22_init_npc$122              map_22_init_npc
-     00037079  A$map_22_init_npc$123              map_22_init_npc
-     0003707A  A$map_22_init_npc$124              map_22_init_npc
-     0003707B  A$map_22_init_npc$125              map_22_init_npc
-     0003707D  A$map_22_init_npc$126              map_22_init_npc
-     0003707E  A$map_22_init_npc$127              map_22_init_npc
-     0003707F  A$map_22_init_npc$128              map_22_init_npc
+     00037176  A$map_22_init_npc$57               map_22_init_npc
+     00037176  C$map_22_init_npc.c$16$1_0$168     map_22_init_npc
+     00037179  A$map_22_init_npc$58               map_22_init_npc
+     0003717A  A$map_22_init_npc$59               map_22_init_npc
+     0003717C  A$map_22_init_npc$60               map_22_init_npc
+     0003717F  A$map_22_init_npc$61               map_22_init_npc
+     00037180  A$map_22_init_npc$62               map_22_init_npc
+     00037182  A$map_22_init_npc$66               map_22_init_npc
+     00037182  C$map_22_init_npc.c$17$1_0$168     map_22_init_npc
+     00037185  A$map_22_init_npc$67               map_22_init_npc
+     00037186  A$map_22_init_npc$68               map_22_init_npc
+     00037188  A$map_22_init_npc$69               map_22_init_npc
+     0003718B  A$map_22_init_npc$70               map_22_init_npc
+     0003718C  A$map_22_init_npc$71               map_22_init_npc
+     0003718E  A$map_22_init_npc$75               map_22_init_npc
+     0003718E  C$map_22_init_npc.c$19$2_0$169     map_22_init_npc
+     00037190  A$map_22_init_npc$76               map_22_init_npc
+     00037192  A$map_22_init_npc$77               map_22_init_npc
+     00037193  A$map_22_init_npc$78               map_22_init_npc
+     00037195  A$map_22_init_npc$79               map_22_init_npc
+     00037196  A$map_22_init_npc$80               map_22_init_npc
+     00037198  A$map_22_init_npc$81               map_22_init_npc
+     00037199  A$map_22_init_npc$82               map_22_init_npc
+     0003719B  A$map_22_init_npc$83               map_22_init_npc
+     0003719C  A$map_22_init_npc$84               map_22_init_npc
+     0003719E  A$map_22_init_npc$85               map_22_init_npc
+     0003719F  A$map_22_init_npc$86               map_22_init_npc
+     000371A1  A$map_22_init_npc$87               map_22_init_npc
+     000371A2  A$map_22_init_npc$88               map_22_init_npc
+     000371A3  A$map_22_init_npc$89               map_22_init_npc
+     000371A4  A$map_22_init_npc$90               map_22_init_npc
+     000371A5  A$map_22_init_npc$91               map_22_init_npc
+     000371A6  A$map_22_init_npc$92               map_22_init_npc
+     000371A7  A$map_22_init_npc$96               map_22_init_npc
+     000371AA  A$map_22_init_npc$97               map_22_init_npc
+     000371AB  A$map_22_init_npc$99               map_22_init_npc
+     000371AE  A$map_22_init_npc$100              map_22_init_npc
+     000371AF  A$map_22_init_npc$101              map_22_init_npc
+     000371B0  A$map_22_init_npc$102              map_22_init_npc
+     000371B1  A$map_22_init_npc$103              map_22_init_npc
+     000371B3  A$map_22_init_npc$104              map_22_init_npc
+     000371B4  A$map_22_init_npc$105              map_22_init_npc
+     000371B5  A$map_22_init_npc$106              map_22_init_npc
+     000371B7  A$map_22_init_npc$110              map_22_init_npc
+     000371B7  C$map_22_init_npc.c$21$2_1$170     map_22_init_npc
+     000371BA  A$map_22_init_npc$111              map_22_init_npc
+     000371BB  A$map_22_init_npc$112              map_22_init_npc
+     000371BD  A$map_22_init_npc$113              map_22_init_npc
+     000371BE  A$map_22_init_npc$114              map_22_init_npc
+     000371BF  A$map_22_init_npc$115              map_22_init_npc
+     000371C0  A$map_22_init_npc$116              map_22_init_npc
 ASxxxx Linker V03.00/V05.40 + sdld,  page 182.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00037080  A$map_22_init_npc$129              map_22_init_npc
-     00037081  A$map_22_init_npc$130              map_22_init_npc
-     00037084  A$map_22_init_npc$131              map_22_init_npc
-     00037085  A$map_22_init_npc$132              map_22_init_npc
-     00037086  A$map_22_init_npc$133              map_22_init_npc
-     00037087  A$map_22_init_npc$134              map_22_init_npc
-     00037089  A$map_22_init_npc$135              map_22_init_npc
-     0003708A  A$map_22_init_npc$136              map_22_init_npc
-     0003708B  A$map_22_init_npc$137              map_22_init_npc
-     0003708C  A$map_22_init_npc$141              map_22_init_npc
-     0003708C  C$map_22_init_npc.c$20$2_1$170     map_22_init_npc
-     0003708D  A$map_22_init_npc$142              map_22_init_npc
-     0003708F  A$map_22_init_npc$147              map_22_init_npc
-     0003708F  C$map_22_init_npc.c$23$1_1$169     map_22_init_npc
-     00037092  A$map_22_init_npc$148              map_22_init_npc
-     00037093  A$map_22_init_npc$149              map_22_init_npc
-     00037094  A$map_22_init_npc$150              map_22_init_npc
-     00037096  A$map_22_init_npc$151              map_22_init_npc
-     00037099  A$map_22_init_npc$152              map_22_init_npc
-     0003709A  A$map_22_init_npc$153              map_22_init_npc
-     0003709D  A$map_22_init_npc$154              map_22_init_npc
-     0003709F  A$map_22_init_npc$155              map_22_init_npc
-     000370A0  A$map_22_init_npc$156              map_22_init_npc
-     000370A2  A$map_22_init_npc$157              map_22_init_npc
-     000370A4  A$map_22_init_npc$158              map_22_init_npc
-     000370A5  A$map_22_init_npc$159              map_22_init_npc
-     000370A6  A$map_22_init_npc$160              map_22_init_npc
-     000370A7  A$map_22_init_npc$161              map_22_init_npc
-     000370A8  A$map_22_init_npc$162              map_22_init_npc
-     000370A9  A$map_22_init_npc$163              map_22_init_npc
-     000370AA  A$map_22_init_npc$167              map_22_init_npc
-     000370AA  C$map_22_init_npc.c$24$1_1$169     map_22_init_npc
-     000370AD  A$map_22_init_npc$168              map_22_init_npc
-     000370AE  A$map_22_init_npc$169              map_22_init_npc
-     000370AF  A$map_22_init_npc$170              map_22_init_npc
-     000370B1  A$map_22_init_npc$171              map_22_init_npc
-     000370B4  A$map_22_init_npc$172              map_22_init_npc
-     000370B5  A$map_22_init_npc$173              map_22_init_npc
-     000370B8  A$map_22_init_npc$174              map_22_init_npc
-     000370BA  A$map_22_init_npc$175              map_22_init_npc
-     000370BB  A$map_22_init_npc$176              map_22_init_npc
-     000370BD  A$map_22_init_npc$177              map_22_init_npc
-     000370BF  A$map_22_init_npc$178              map_22_init_npc
-     000370C0  A$map_22_init_npc$179              map_22_init_npc
-     000370C1  A$map_22_init_npc$180              map_22_init_npc
-     000370C2  A$map_22_init_npc$181              map_22_init_npc
-     000370C3  A$map_22_init_npc$182              map_22_init_npc
-     000370C4  A$map_22_init_npc$183              map_22_init_npc
-     000370C5  A$map_22_init_npc$187              map_22_init_npc
-     000370C5  C$map_22_init_npc.c$26$1_1$169     map_22_init_npc
-     000370C8  A$map_22_init_npc$188              map_22_init_npc
+     000371C1  A$map_22_init_npc$117              map_22_init_npc
+     000371C2  A$map_22_init_npc$118              map_22_init_npc
+     000371C3  A$map_22_init_npc$119              map_22_init_npc
+     000371C4  A$map_22_init_npc$120              map_22_init_npc
+     000371C5  A$map_22_init_npc$121              map_22_init_npc
+     000371C7  A$map_22_init_npc$122              map_22_init_npc
+     000371C8  A$map_22_init_npc$123              map_22_init_npc
+     000371C9  A$map_22_init_npc$124              map_22_init_npc
+     000371CA  A$map_22_init_npc$125              map_22_init_npc
+     000371CC  A$map_22_init_npc$126              map_22_init_npc
+     000371CD  A$map_22_init_npc$127              map_22_init_npc
+     000371CE  A$map_22_init_npc$128              map_22_init_npc
+     000371CF  A$map_22_init_npc$129              map_22_init_npc
+     000371D0  A$map_22_init_npc$130              map_22_init_npc
+     000371D3  A$map_22_init_npc$131              map_22_init_npc
+     000371D4  A$map_22_init_npc$132              map_22_init_npc
+     000371D5  A$map_22_init_npc$133              map_22_init_npc
+     000371D6  A$map_22_init_npc$134              map_22_init_npc
+     000371D8  A$map_22_init_npc$135              map_22_init_npc
+     000371D9  A$map_22_init_npc$136              map_22_init_npc
+     000371DA  A$map_22_init_npc$137              map_22_init_npc
+     000371DB  A$map_22_init_npc$141              map_22_init_npc
+     000371DB  C$map_22_init_npc.c$20$2_1$170     map_22_init_npc
+     000371DC  A$map_22_init_npc$142              map_22_init_npc
+     000371DE  A$map_22_init_npc$147              map_22_init_npc
+     000371DE  C$map_22_init_npc.c$23$1_1$169     map_22_init_npc
+     000371E1  A$map_22_init_npc$148              map_22_init_npc
+     000371E2  A$map_22_init_npc$149              map_22_init_npc
+     000371E3  A$map_22_init_npc$150              map_22_init_npc
+     000371E5  A$map_22_init_npc$151              map_22_init_npc
+     000371E8  A$map_22_init_npc$152              map_22_init_npc
+     000371E9  A$map_22_init_npc$153              map_22_init_npc
+     000371EC  A$map_22_init_npc$154              map_22_init_npc
+     000371EE  A$map_22_init_npc$155              map_22_init_npc
+     000371EF  A$map_22_init_npc$156              map_22_init_npc
+     000371F1  A$map_22_init_npc$157              map_22_init_npc
+     000371F3  A$map_22_init_npc$158              map_22_init_npc
+     000371F4  A$map_22_init_npc$159              map_22_init_npc
+     000371F5  A$map_22_init_npc$160              map_22_init_npc
+     000371F6  A$map_22_init_npc$161              map_22_init_npc
+     000371F7  A$map_22_init_npc$162              map_22_init_npc
+     000371F8  A$map_22_init_npc$163              map_22_init_npc
+     000371F9  A$map_22_init_npc$167              map_22_init_npc
+     000371F9  C$map_22_init_npc.c$24$1_1$169     map_22_init_npc
+     000371FC  A$map_22_init_npc$168              map_22_init_npc
+     000371FD  A$map_22_init_npc$169              map_22_init_npc
+     000371FE  A$map_22_init_npc$170              map_22_init_npc
+     00037200  A$map_22_init_npc$171              map_22_init_npc
+     00037203  A$map_22_init_npc$172              map_22_init_npc
+     00037204  A$map_22_init_npc$173              map_22_init_npc
+     00037207  A$map_22_init_npc$174              map_22_init_npc
 ASxxxx Linker V03.00/V05.40 + sdld,  page 183.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000370C9  A$map_22_init_npc$189              map_22_init_npc
-     000370CB  A$map_22_init_npc$190              map_22_init_npc
-     000370CE  A$map_22_init_npc$191              map_22_init_npc
-     000370CF  A$map_22_init_npc$192              map_22_init_npc
-     000370D1  A$map_22_init_npc$196              map_22_init_npc
-     000370D1  C$map_22_init_npc.c$27$1_1$169     map_22_init_npc
-     000370D4  A$map_22_init_npc$197              map_22_init_npc
-     000370D5  A$map_22_init_npc$198              map_22_init_npc
-     000370D7  A$map_22_init_npc$199              map_22_init_npc
-     000370DA  A$map_22_init_npc$200              map_22_init_npc
-     000370DB  A$map_22_init_npc$201              map_22_init_npc
-     000370DD  A$map_22_init_npc$205              map_22_init_npc
-     000370DD  C$map_22_init_npc.c$28$1_1$169     map_22_init_npc
-     000370E0  A$map_22_init_npc$206              map_22_init_npc
-     000370E1  A$map_22_init_npc$207              map_22_init_npc
-     000370E3  A$map_22_init_npc$208              map_22_init_npc
-     000370E6  A$map_22_init_npc$209              map_22_init_npc
-     000370E7  A$map_22_init_npc$210              map_22_init_npc
-     000370E9  A$map_22_init_npc$214              map_22_init_npc
-     000370E9  C$map_22_init_npc.c$30$2_1$171     map_22_init_npc
-     000370EB  A$map_22_init_npc$215              map_22_init_npc
-     000370ED  A$map_22_init_npc$216              map_22_init_npc
-     000370EE  A$map_22_init_npc$217              map_22_init_npc
-     000370F0  A$map_22_init_npc$218              map_22_init_npc
-     000370F1  A$map_22_init_npc$219              map_22_init_npc
-     000370F3  A$map_22_init_npc$220              map_22_init_npc
-     000370F4  A$map_22_init_npc$221              map_22_init_npc
-     000370F6  A$map_22_init_npc$222              map_22_init_npc
-     000370F7  A$map_22_init_npc$223              map_22_init_npc
-     000370F9  A$map_22_init_npc$224              map_22_init_npc
-     000370FA  A$map_22_init_npc$225              map_22_init_npc
-     000370FC  A$map_22_init_npc$226              map_22_init_npc
-     000370FD  A$map_22_init_npc$227              map_22_init_npc
-     000370FF  A$map_22_init_npc$228              map_22_init_npc
-     00037100  A$map_22_init_npc$229              map_22_init_npc
-     00037102  A$map_22_init_npc$230              map_22_init_npc
-     00037103  A$map_22_init_npc$231              map_22_init_npc
-     00037105  A$map_22_init_npc$232              map_22_init_npc
-     00037106  A$map_22_init_npc$233              map_22_init_npc
-     00037108  A$map_22_init_npc$234              map_22_init_npc
-     00037109  A$map_22_init_npc$235              map_22_init_npc
-     0003710B  A$map_22_init_npc$236              map_22_init_npc
-     0003710C  A$map_22_init_npc$237              map_22_init_npc
-     0003710E  A$map_22_init_npc$238              map_22_init_npc
-     0003710F  A$map_22_init_npc$239              map_22_init_npc
-     00037111  A$map_22_init_npc$240              map_22_init_npc
-     00037112  A$map_22_init_npc$241              map_22_init_npc
-     00037114  A$map_22_init_npc$242              map_22_init_npc
-     00037115  A$map_22_init_npc$243              map_22_init_npc
-     00037117  A$map_22_init_npc$244              map_22_init_npc
-     00037118  A$map_22_init_npc$245              map_22_init_npc
+     00037209  A$map_22_init_npc$175              map_22_init_npc
+     0003720A  A$map_22_init_npc$176              map_22_init_npc
+     0003720C  A$map_22_init_npc$177              map_22_init_npc
+     0003720E  A$map_22_init_npc$178              map_22_init_npc
+     0003720F  A$map_22_init_npc$179              map_22_init_npc
+     00037210  A$map_22_init_npc$180              map_22_init_npc
+     00037211  A$map_22_init_npc$181              map_22_init_npc
+     00037212  A$map_22_init_npc$182              map_22_init_npc
+     00037213  A$map_22_init_npc$183              map_22_init_npc
+     00037214  A$map_22_init_npc$187              map_22_init_npc
+     00037214  C$map_22_init_npc.c$26$1_1$169     map_22_init_npc
+     00037217  A$map_22_init_npc$188              map_22_init_npc
+     00037218  A$map_22_init_npc$189              map_22_init_npc
+     0003721A  A$map_22_init_npc$190              map_22_init_npc
+     0003721D  A$map_22_init_npc$191              map_22_init_npc
+     0003721E  A$map_22_init_npc$192              map_22_init_npc
+     00037220  A$map_22_init_npc$196              map_22_init_npc
+     00037220  C$map_22_init_npc.c$27$1_1$169     map_22_init_npc
+     00037223  A$map_22_init_npc$197              map_22_init_npc
+     00037224  A$map_22_init_npc$198              map_22_init_npc
+     00037226  A$map_22_init_npc$199              map_22_init_npc
+     00037229  A$map_22_init_npc$200              map_22_init_npc
+     0003722A  A$map_22_init_npc$201              map_22_init_npc
+     0003722C  A$map_22_init_npc$205              map_22_init_npc
+     0003722C  C$map_22_init_npc.c$28$1_1$169     map_22_init_npc
+     0003722F  A$map_22_init_npc$206              map_22_init_npc
+     00037230  A$map_22_init_npc$207              map_22_init_npc
+     00037232  A$map_22_init_npc$208              map_22_init_npc
+     00037235  A$map_22_init_npc$209              map_22_init_npc
+     00037236  A$map_22_init_npc$210              map_22_init_npc
+     00037238  A$map_22_init_npc$214              map_22_init_npc
+     00037238  C$map_22_init_npc.c$30$2_1$171     map_22_init_npc
+     0003723A  A$map_22_init_npc$215              map_22_init_npc
+     0003723C  A$map_22_init_npc$216              map_22_init_npc
+     0003723D  A$map_22_init_npc$217              map_22_init_npc
+     0003723F  A$map_22_init_npc$218              map_22_init_npc
+     00037240  A$map_22_init_npc$219              map_22_init_npc
+     00037242  A$map_22_init_npc$220              map_22_init_npc
+     00037243  A$map_22_init_npc$221              map_22_init_npc
+     00037245  A$map_22_init_npc$222              map_22_init_npc
+     00037246  A$map_22_init_npc$223              map_22_init_npc
+     00037248  A$map_22_init_npc$224              map_22_init_npc
+     00037249  A$map_22_init_npc$225              map_22_init_npc
+     0003724B  A$map_22_init_npc$226              map_22_init_npc
+     0003724C  A$map_22_init_npc$227              map_22_init_npc
+     0003724E  A$map_22_init_npc$228              map_22_init_npc
+     0003724F  A$map_22_init_npc$229              map_22_init_npc
+     00037251  A$map_22_init_npc$230              map_22_init_npc
+     00037252  A$map_22_init_npc$231              map_22_init_npc
+     00037254  A$map_22_init_npc$232              map_22_init_npc
+     00037255  A$map_22_init_npc$233              map_22_init_npc
 ASxxxx Linker V03.00/V05.40 + sdld,  page 184.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0003711A  A$map_22_init_npc$249              map_22_init_npc
-     0003711A  C$map_22_init_npc.c$44$1_2$171     map_22_init_npc
-     0003711D  A$map_22_init_npc$250              map_22_init_npc
-     0003711E  A$map_22_init_npc$251              map_22_init_npc
-     00037120  A$map_22_init_npc$252              map_22_init_npc
-     00037121  A$map_22_init_npc$253              map_22_init_npc
-     00037122  A$map_22_init_npc$254              map_22_init_npc
-     00037123  A$map_22_init_npc$255              map_22_init_npc
-     00037124  A$map_22_init_npc$256              map_22_init_npc
-     00037125  A$map_22_init_npc$257              map_22_init_npc
-     00037126  A$map_22_init_npc$258              map_22_init_npc
-     00037127  A$map_22_init_npc$259              map_22_init_npc
-     00037128  A$map_22_init_npc$260              map_22_init_npc
-     00037129  A$map_22_init_npc$261              map_22_init_npc
-     0003712C  A$map_22_init_npc$262              map_22_init_npc
-     0003712D  A$map_22_init_npc$263              map_22_init_npc
-     0003712E  A$map_22_init_npc$264              map_22_init_npc
-     0003712F  A$map_22_init_npc$265              map_22_init_npc
-     00037132  A$map_22_init_npc$266              map_22_init_npc
-     00037133  A$map_22_init_npc$267              map_22_init_npc
-     00037135  A$map_22_init_npc$268              map_22_init_npc
-     00037136  A$map_22_init_npc$269              map_22_init_npc
-     00037137  A$map_22_init_npc$270              map_22_init_npc
-     0003713A  A$map_22_init_npc$271              map_22_init_npc
-     0003713B  A$map_22_init_npc$272              map_22_init_npc
-     0003713C  A$map_22_init_npc$273              map_22_init_npc
-     0003713D  A$map_22_init_npc$274              map_22_init_npc
-     0003713E  A$map_22_init_npc$275              map_22_init_npc
-     0003713F  A$map_22_init_npc$276              map_22_init_npc
-     00037142  A$map_22_init_npc$277              map_22_init_npc
-     00037145  A$map_22_init_npc$281              map_22_init_npc
-     00037147  A$map_22_init_npc$286              map_22_init_npc
-     00037147  C$map_22_init_npc.c$45$1_2$168     map_22_init_npc
-     00037147  XG$Map_22_InitNPC$0$0              map_22_init_npc
-     00037148  A$map_22_input$56                  map_22_input
-     00037148  C$map_22_input.c$10$0_0$160        map_22_input
-     00037148  C$map_22_input.c$12$2_0$161        map_22_input
-     00037148  G$Map_22_CheckInput$0$0            map_22_input
-     00037148  _Map_22_CheckInput                 map_22_input
-     0003714B  A$map_22_input$57                  map_22_input
-     0003714C  A$map_22_input$61                  map_22_input
-     0003714C  C$map_22_input.c$13$2_0$161        map_22_input
-     0003714D  A$map_22_input$65                  map_22_input
-     0003714D  C$map_22_input.c$15$2_0$162        map_22_input
-     00037150  A$map_22_input$66                  map_22_input
-     00037152  A$map_22_input$67                  map_22_input
-     00037153  A$map_22_input$68                  map_22_input
-     00037156  A$map_22_input$69                  map_22_input
-     00037158  A$map_22_input$70                  map_22_input
-     00037159  A$map_22_input$74                  map_22_input
-     00037159  C$map_22_input.c$18$3_0$163        map_22_input
+     00037257  A$map_22_init_npc$234              map_22_init_npc
+     00037258  A$map_22_init_npc$235              map_22_init_npc
+     0003725A  A$map_22_init_npc$236              map_22_init_npc
+     0003725B  A$map_22_init_npc$237              map_22_init_npc
+     0003725D  A$map_22_init_npc$238              map_22_init_npc
+     0003725E  A$map_22_init_npc$239              map_22_init_npc
+     00037260  A$map_22_init_npc$240              map_22_init_npc
+     00037261  A$map_22_init_npc$241              map_22_init_npc
+     00037263  A$map_22_init_npc$242              map_22_init_npc
+     00037264  A$map_22_init_npc$243              map_22_init_npc
+     00037266  A$map_22_init_npc$244              map_22_init_npc
+     00037267  A$map_22_init_npc$245              map_22_init_npc
+     00037269  A$map_22_init_npc$249              map_22_init_npc
+     00037269  C$map_22_init_npc.c$44$1_2$171     map_22_init_npc
+     0003726C  A$map_22_init_npc$250              map_22_init_npc
+     0003726D  A$map_22_init_npc$251              map_22_init_npc
+     0003726F  A$map_22_init_npc$252              map_22_init_npc
+     00037270  A$map_22_init_npc$253              map_22_init_npc
+     00037271  A$map_22_init_npc$254              map_22_init_npc
+     00037272  A$map_22_init_npc$255              map_22_init_npc
+     00037273  A$map_22_init_npc$256              map_22_init_npc
+     00037274  A$map_22_init_npc$257              map_22_init_npc
+     00037275  A$map_22_init_npc$258              map_22_init_npc
+     00037276  A$map_22_init_npc$259              map_22_init_npc
+     00037277  A$map_22_init_npc$260              map_22_init_npc
+     00037278  A$map_22_init_npc$261              map_22_init_npc
+     0003727B  A$map_22_init_npc$262              map_22_init_npc
+     0003727C  A$map_22_init_npc$263              map_22_init_npc
+     0003727D  A$map_22_init_npc$264              map_22_init_npc
+     0003727E  A$map_22_init_npc$265              map_22_init_npc
+     00037281  A$map_22_init_npc$266              map_22_init_npc
+     00037282  A$map_22_init_npc$267              map_22_init_npc
+     00037284  A$map_22_init_npc$268              map_22_init_npc
+     00037285  A$map_22_init_npc$269              map_22_init_npc
+     00037286  A$map_22_init_npc$270              map_22_init_npc
+     00037289  A$map_22_init_npc$271              map_22_init_npc
+     0003728A  A$map_22_init_npc$272              map_22_init_npc
+     0003728B  A$map_22_init_npc$273              map_22_init_npc
+     0003728C  A$map_22_init_npc$274              map_22_init_npc
+     0003728D  A$map_22_init_npc$275              map_22_init_npc
+     0003728E  A$map_22_init_npc$276              map_22_init_npc
+     00037291  A$map_22_init_npc$277              map_22_init_npc
+     00037294  A$map_22_init_npc$281              map_22_init_npc
+     00037296  A$map_22_init_npc$286              map_22_init_npc
+     00037296  C$map_22_init_npc.c$45$1_2$168     map_22_init_npc
+     00037296  XG$Map_22_InitNPC$0$0              map_22_init_npc
+     00037297  A$map_22_input$56                  map_22_input
+     00037297  C$map_22_input.c$10$0_0$160        map_22_input
+     00037297  C$map_22_input.c$12$2_0$161        map_22_input
+     00037297  G$Map_22_CheckInput$0$0            map_22_input
+     00037297  _Map_22_CheckInput                 map_22_input
 ASxxxx Linker V03.00/V05.40 + sdld,  page 185.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0003715B  A$map_22_input$75                  map_22_input
-     0003715C  A$map_22_input$76                  map_22_input
-     0003715D  A$map_22_input$77                  map_22_input
-     0003715E  A$map_22_input$78                  map_22_input
-     0003715F  A$map_22_input$79                  map_22_input
-     00037160  A$map_22_input$80                  map_22_input
-     00037162  A$map_22_input$81                  map_22_input
-     00037165  A$map_22_input$82                  map_22_input
-     00037168  A$map_22_input$90                  map_22_input
-     00037168  C$map_22_input.c$20$2_0$160        map_22_input
-     00037168  XG$Map_22_CheckInput$0$0           map_22_input
-     00037169  A$map_22_update$58                 map_22_update
-     00037169  C$map_22_update.c$13$0_0$175       map_22_update
-     00037169  G$Map_22_Update$0$0                map_22_update
-     00037169  _Map_22_Update                     map_22_update
-     0003716B  A$map_22_update$59                 map_22_update
-     0003716D  A$map_22_update$60                 map_22_update
-     0003716E  A$map_22_update$61                 map_22_update
-     0003716F  A$map_22_update$62                 map_22_update
-     00037170  A$map_22_update$66                 map_22_update
-     00037170  C$map_22_update.c$15$1_0$175       map_22_update
-     00037173  A$map_22_update$70                 map_22_update
-     00037173  C$map_22_update.c$17$1_0$175       map_22_update
-     00037176  A$map_22_update$74                 map_22_update
-     00037176  C$map_22_update.c$19$1_1$176       map_22_update
-     00037178  A$map_22_update$75                 map_22_update
-     00037179  A$map_22_update$76                 map_22_update
-     0003717A  A$map_22_update$77                 map_22_update
-     0003717B  A$map_22_update$78                 map_22_update
-     0003717E  A$map_22_update$79                 map_22_update
-     0003717F  A$map_22_update$80                 map_22_update
-     00037180  A$map_22_update$81                 map_22_update
-     00037181  A$map_22_update$82                 map_22_update
-     00037182  A$map_22_update$83                 map_22_update
-     00037184  A$map_22_update$84                 map_22_update
-     00037185  A$map_22_update$85                 map_22_update
-     00037186  A$map_22_update$86                 map_22_update
-     00037187  A$map_22_update$90                 map_22_update
-     00037187  C$map_22_update.c$21$1_1$176       map_22_update
-     0003718A  A$map_22_update$91                 map_22_update
-     0003718B  A$map_22_update$92                 map_22_update
-     0003718D  A$map_22_update$93                 map_22_update
-     0003718E  A$map_22_update$94                 map_22_update
-     0003718F  A$map_22_update$95                 map_22_update
-     00037190  A$map_22_update$96                 map_22_update
-     00037191  A$map_22_update$97                 map_22_update
-     00037192  A$map_22_update$98                 map_22_update
-     00037193  A$map_22_update$99                 map_22_update
-     00037194  A$map_22_update$100                map_22_update
-     00037195  A$map_22_update$101                map_22_update
-     00037196  A$map_22_update$102                map_22_update
+     0003729A  A$map_22_input$57                  map_22_input
+     0003729B  A$map_22_input$61                  map_22_input
+     0003729B  C$map_22_input.c$13$2_0$161        map_22_input
+     0003729C  A$map_22_input$65                  map_22_input
+     0003729C  C$map_22_input.c$15$2_0$162        map_22_input
+     0003729F  A$map_22_input$66                  map_22_input
+     000372A1  A$map_22_input$67                  map_22_input
+     000372A2  A$map_22_input$68                  map_22_input
+     000372A5  A$map_22_input$69                  map_22_input
+     000372A7  A$map_22_input$70                  map_22_input
+     000372A8  A$map_22_input$74                  map_22_input
+     000372A8  C$map_22_input.c$18$3_0$163        map_22_input
+     000372AA  A$map_22_input$75                  map_22_input
+     000372AB  A$map_22_input$76                  map_22_input
+     000372AC  A$map_22_input$77                  map_22_input
+     000372AD  A$map_22_input$78                  map_22_input
+     000372AE  A$map_22_input$79                  map_22_input
+     000372AF  A$map_22_input$80                  map_22_input
+     000372B1  A$map_22_input$81                  map_22_input
+     000372B4  A$map_22_input$82                  map_22_input
+     000372B7  A$map_22_input$90                  map_22_input
+     000372B7  C$map_22_input.c$20$2_0$160        map_22_input
+     000372B7  XG$Map_22_CheckInput$0$0           map_22_input
+     000372B8  A$map_22_update$58                 map_22_update
+     000372B8  C$map_22_update.c$13$0_0$175       map_22_update
+     000372B8  G$Map_22_Update$0$0                map_22_update
+     000372B8  _Map_22_Update                     map_22_update
+     000372BA  A$map_22_update$59                 map_22_update
+     000372BC  A$map_22_update$60                 map_22_update
+     000372BD  A$map_22_update$61                 map_22_update
+     000372BE  A$map_22_update$62                 map_22_update
+     000372BF  A$map_22_update$66                 map_22_update
+     000372BF  C$map_22_update.c$15$1_0$175       map_22_update
+     000372C2  A$map_22_update$70                 map_22_update
+     000372C2  C$map_22_update.c$17$1_0$175       map_22_update
+     000372C5  A$map_22_update$74                 map_22_update
+     000372C5  C$map_22_update.c$19$1_1$176       map_22_update
+     000372C7  A$map_22_update$75                 map_22_update
+     000372C8  A$map_22_update$76                 map_22_update
+     000372C9  A$map_22_update$77                 map_22_update
+     000372CA  A$map_22_update$78                 map_22_update
+     000372CD  A$map_22_update$79                 map_22_update
+     000372CE  A$map_22_update$80                 map_22_update
+     000372CF  A$map_22_update$81                 map_22_update
+     000372D0  A$map_22_update$82                 map_22_update
+     000372D1  A$map_22_update$83                 map_22_update
+     000372D3  A$map_22_update$84                 map_22_update
+     000372D4  A$map_22_update$85                 map_22_update
+     000372D5  A$map_22_update$86                 map_22_update
+     000372D6  A$map_22_update$90                 map_22_update
+     000372D6  C$map_22_update.c$21$1_1$176       map_22_update
 ASxxxx Linker V03.00/V05.40 + sdld,  page 186.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00037199  A$map_22_update$103                map_22_update
-     0003719A  A$map_22_update$104                map_22_update
-     0003719B  A$map_22_update$105                map_22_update
-     0003719C  A$map_22_update$106                map_22_update
-     0003719F  A$map_22_update$110                map_22_update
-     0003719F  C$map_22_update.c$22$1_1$176       map_22_update
-     000371A2  A$map_22_update$111                map_22_update
-     000371A3  A$map_22_update$112                map_22_update
-     000371A5  A$map_22_update$113                map_22_update
-     000371A6  A$map_22_update$114                map_22_update
-     000371A7  A$map_22_update$115                map_22_update
-     000371A8  A$map_22_update$116                map_22_update
-     000371A9  A$map_22_update$117                map_22_update
-     000371AA  A$map_22_update$118                map_22_update
-     000371AB  A$map_22_update$119                map_22_update
-     000371AC  A$map_22_update$120                map_22_update
-     000371AD  A$map_22_update$121                map_22_update
-     000371AE  A$map_22_update$122                map_22_update
-     000371B1  A$map_22_update$123                map_22_update
-     000371B2  A$map_22_update$124                map_22_update
-     000371B3  A$map_22_update$125                map_22_update
-     000371B4  A$map_22_update$126                map_22_update
-     000371B7  A$map_22_update$130                map_22_update
-     000371B7  C$map_22_update.c$24$1_1$176       map_22_update
-     000371BA  A$map_22_update$131                map_22_update
-     000371BD  A$map_22_update$135                map_22_update
-     000371BD  C$map_22_update.c$25$1_1$176       map_22_update
-     000371BE  A$map_22_update$136                map_22_update
-     000371BF  A$map_22_update$137                map_22_update
-     000371C0  A$map_22_update$138                map_22_update
-     000371C1  A$map_22_update$139                map_22_update
-     000371C2  A$map_22_update$140                map_22_update
-     000371C3  A$map_22_update$141                map_22_update
-     000371C6  A$map_22_update$145                map_22_update
-     000371C6  C$map_22_update.c$27$1_1$176       map_22_update
-     000371C8  A$map_22_update$146                map_22_update
-     000371C9  A$map_22_update$147                map_22_update
-     000371CA  A$map_22_update$148                map_22_update
-     000371CB  A$map_22_update$149                map_22_update
-     000371CE  A$map_22_update$153                map_22_update
-     000371CE  C$map_22_update.c$28$1_1$176       map_22_update
-     000371D1  A$map_22_update$160                map_22_update
-     000371D1  C$map_22_update.c$30$1_1$176       map_22_update
-     000371D3  A$map_22_update$165                map_22_update
-     000371D3  C$map_22_update.c$31$1_1$175       map_22_update
-     000371D3  XG$Map_22_Update$0$0               map_22_update
-     000371D4  G$map_23_collision$0_0$0           map_23_collision
-     000371D4  _map_23_collision                  map_23_collision
-     0003733C  A$map_23_create$57                 map_23_create
-     0003733C  C$map_23_create.c$6$0_0$10         map_23_create
-     0003733C  C$map_23_create.c$7$1_0$10         map_23_create
+     000372D9  A$map_22_update$91                 map_22_update
+     000372DA  A$map_22_update$92                 map_22_update
+     000372DC  A$map_22_update$93                 map_22_update
+     000372DD  A$map_22_update$94                 map_22_update
+     000372DE  A$map_22_update$95                 map_22_update
+     000372DF  A$map_22_update$96                 map_22_update
+     000372E0  A$map_22_update$97                 map_22_update
+     000372E1  A$map_22_update$98                 map_22_update
+     000372E2  A$map_22_update$99                 map_22_update
+     000372E3  A$map_22_update$100                map_22_update
+     000372E4  A$map_22_update$101                map_22_update
+     000372E5  A$map_22_update$102                map_22_update
+     000372E8  A$map_22_update$103                map_22_update
+     000372E9  A$map_22_update$104                map_22_update
+     000372EA  A$map_22_update$105                map_22_update
+     000372EB  A$map_22_update$106                map_22_update
+     000372EE  A$map_22_update$110                map_22_update
+     000372EE  C$map_22_update.c$22$1_1$176       map_22_update
+     000372F1  A$map_22_update$111                map_22_update
+     000372F2  A$map_22_update$112                map_22_update
+     000372F4  A$map_22_update$113                map_22_update
+     000372F5  A$map_22_update$114                map_22_update
+     000372F6  A$map_22_update$115                map_22_update
+     000372F7  A$map_22_update$116                map_22_update
+     000372F8  A$map_22_update$117                map_22_update
+     000372F9  A$map_22_update$118                map_22_update
+     000372FA  A$map_22_update$119                map_22_update
+     000372FB  A$map_22_update$120                map_22_update
+     000372FC  A$map_22_update$121                map_22_update
+     000372FD  A$map_22_update$122                map_22_update
+     00037300  A$map_22_update$123                map_22_update
+     00037301  A$map_22_update$124                map_22_update
+     00037302  A$map_22_update$125                map_22_update
+     00037303  A$map_22_update$126                map_22_update
+     00037306  A$map_22_update$130                map_22_update
+     00037306  C$map_22_update.c$24$1_1$176       map_22_update
+     00037309  A$map_22_update$131                map_22_update
+     0003730C  A$map_22_update$135                map_22_update
+     0003730C  C$map_22_update.c$25$1_1$176       map_22_update
+     0003730D  A$map_22_update$136                map_22_update
+     0003730E  A$map_22_update$137                map_22_update
+     0003730F  A$map_22_update$138                map_22_update
+     00037310  A$map_22_update$139                map_22_update
+     00037311  A$map_22_update$140                map_22_update
+     00037312  A$map_22_update$141                map_22_update
+     00037315  A$map_22_update$145                map_22_update
+     00037315  C$map_22_update.c$27$1_1$176       map_22_update
+     00037317  A$map_22_update$146                map_22_update
+     00037318  A$map_22_update$147                map_22_update
+     00037319  A$map_22_update$148                map_22_update
+     0003731A  A$map_22_update$149                map_22_update
 ASxxxx Linker V03.00/V05.40 + sdld,  page 187.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     0003733C  G$Map_23_Create$0$0                map_23_create
-     0003733C  _Map_23_Create                     map_23_create
-     0003733F  A$map_23_create$58                 map_23_create
-     00037341  A$map_23_create$59                 map_23_create
-     00037342  A$map_23_create$60                 map_23_create
-     00037344  A$map_23_create$64                 map_23_create
-     00037344  C$map_23_create.c$8$1_0$10         map_23_create
-     00037345  A$map_23_create$65                 map_23_create
-     00037347  A$map_23_create$66                 map_23_create
-     00037348  A$map_23_create$67                 map_23_create
-     0003734A  A$map_23_create$71                 map_23_create
-     0003734A  C$map_23_create.c$9$1_0$10         map_23_create
-     0003734D  A$map_23_create$72                 map_23_create
-     0003734F  A$map_23_create$80                 map_23_create
-     0003734F  C$map_23_create.c$10$1_0$10        map_23_create
-     0003734F  XG$Map_23_Create$0$0               map_23_create
-     00037350  A$map_23_init$59                   map_23_init
-     00037350  C$map_23_init.c$15$0_0$150         map_23_init
-     00037350  C$map_23_init.c$17$1_0$150         map_23_init
-     00037350  G$Map_23_Init$0$0                  map_23_init
-     00037350  _Map_23_Init                       map_23_init
-     00037351  A$map_23_init$60                   map_23_init
-     00037354  A$map_23_init$61                   map_23_init
-     00037355  A$map_23_init$65                   map_23_init
-     00037355  C$map_23_init.c$19$1_0$150         map_23_init
-     00037358  A$map_23_init$66                   map_23_init
-     0003735B  A$map_23_init$67                   map_23_init
-     0003735C  A$map_23_init$71                   map_23_init
-     0003735C  C$map_23_init.c$20$1_0$150         map_23_init
-     0003735F  A$map_23_init$72                   map_23_init
-     00037361  A$map_23_init$76                   map_23_init
-     00037361  C$map_23_init.c$21$1_0$150         map_23_init
-     00037364  A$map_23_init$77                   map_23_init
-     00037366  A$map_23_init$78                   map_23_init
-     00037367  A$map_23_init$79                   map_23_init
-     00037369  A$map_23_init$83                   map_23_init
-     00037369  C$map_23_init.c$23$1_0$150         map_23_init
-     0003736C  A$map_23_init$84                   map_23_init
-     0003736E  A$map_23_init$88                   map_23_init
-     0003736E  C$map_23_init.c$24$1_0$150         map_23_init
-     00037371  A$map_23_init$89                   map_23_init
-     00037373  A$map_23_init$93                   map_23_init
-     00037373  C$map_23_init.c$25$1_0$150         map_23_init
-     00037376  A$map_23_init$94                   map_23_init
-     00037378  A$map_23_init$98                   map_23_init
-     00037378  C$map_23_init.c$26$1_0$150         map_23_init
-     0003737B  A$map_23_init$99                   map_23_init
-     0003737D  A$map_23_init$103                  map_23_init
-     0003737D  C$map_23_init.c$28$1_0$150         map_23_init
-     00037380  A$map_23_init$104                  map_23_init
-     00037382  A$map_23_init$108                  map_23_init
+     0003731D  A$map_22_update$153                map_22_update
+     0003731D  C$map_22_update.c$28$1_1$176       map_22_update
+     00037320  A$map_22_update$160                map_22_update
+     00037320  C$map_22_update.c$30$1_1$176       map_22_update
+     00037322  A$map_22_update$165                map_22_update
+     00037322  C$map_22_update.c$31$1_1$175       map_22_update
+     00037322  XG$Map_22_Update$0$0               map_22_update
+     00037323  G$map_23_collision$0_0$0           map_23_collision
+     00037323  _map_23_collision                  map_23_collision
+     0003748B  A$map_23_create$57                 map_23_create
+     0003748B  C$map_23_create.c$6$0_0$10         map_23_create
+     0003748B  C$map_23_create.c$7$1_0$10         map_23_create
+     0003748B  G$Map_23_Create$0$0                map_23_create
+     0003748B  _Map_23_Create                     map_23_create
+     0003748E  A$map_23_create$58                 map_23_create
+     00037490  A$map_23_create$59                 map_23_create
+     00037491  A$map_23_create$60                 map_23_create
+     00037493  A$map_23_create$64                 map_23_create
+     00037493  C$map_23_create.c$8$1_0$10         map_23_create
+     00037494  A$map_23_create$65                 map_23_create
+     00037496  A$map_23_create$66                 map_23_create
+     00037497  A$map_23_create$67                 map_23_create
+     00037499  A$map_23_create$71                 map_23_create
+     00037499  C$map_23_create.c$9$1_0$10         map_23_create
+     0003749C  A$map_23_create$72                 map_23_create
+     0003749E  A$map_23_create$80                 map_23_create
+     0003749E  C$map_23_create.c$10$1_0$10        map_23_create
+     0003749E  XG$Map_23_Create$0$0               map_23_create
+     0003749F  A$map_23_init$59                   map_23_init
+     0003749F  C$map_23_init.c$15$0_0$150         map_23_init
+     0003749F  C$map_23_init.c$17$1_0$150         map_23_init
+     0003749F  G$Map_23_Init$0$0                  map_23_init
+     0003749F  _Map_23_Init                       map_23_init
+     000374A0  A$map_23_init$60                   map_23_init
+     000374A3  A$map_23_init$61                   map_23_init
+     000374A4  A$map_23_init$65                   map_23_init
+     000374A4  C$map_23_init.c$19$1_0$150         map_23_init
+     000374A7  A$map_23_init$66                   map_23_init
+     000374AA  A$map_23_init$67                   map_23_init
+     000374AB  A$map_23_init$71                   map_23_init
+     000374AB  C$map_23_init.c$20$1_0$150         map_23_init
+     000374AE  A$map_23_init$72                   map_23_init
+     000374B0  A$map_23_init$76                   map_23_init
+     000374B0  C$map_23_init.c$21$1_0$150         map_23_init
+     000374B3  A$map_23_init$77                   map_23_init
+     000374B5  A$map_23_init$78                   map_23_init
+     000374B6  A$map_23_init$79                   map_23_init
+     000374B8  A$map_23_init$83                   map_23_init
+     000374B8  C$map_23_init.c$23$1_0$150         map_23_init
+     000374BB  A$map_23_init$84                   map_23_init
+     000374BD  A$map_23_init$88                   map_23_init
 ASxxxx Linker V03.00/V05.40 + sdld,  page 188.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     00037382  C$map_23_init.c$29$1_0$150         map_23_init
-     00037385  A$map_23_init$109                  map_23_init
-     00037387  A$map_23_init$113                  map_23_init
-     00037387  C$map_23_init.c$31$1_0$150         map_23_init
-     0003738A  A$map_23_init$114                  map_23_init
-     0003738B  A$map_23_init$115                  map_23_init
-     0003738D  A$map_23_init$116                  map_23_init
-     0003738E  A$map_23_init$117                  map_23_init
-     00037390  A$map_23_init$121                  map_23_init
-     00037390  C$map_23_init.c$33$1_0$150         map_23_init
-     00037393  A$map_23_init$122                  map_23_init
-     00037394  A$map_23_init$123                  map_23_init
-     00037397  A$map_23_init$124                  map_23_init
-     00037398  A$map_23_init$125                  map_23_init
-     0003739B  A$map_23_init$126                  map_23_init
-     0003739D  A$map_23_init$130                  map_23_init
-     0003739D  C$map_23_init.c$34$1_0$150         map_23_init
-     000373A0  A$map_23_init$131                  map_23_init
-     000373A1  A$map_23_init$132                  map_23_init
-     000373A4  A$map_23_init$133                  map_23_init
-     000373A5  A$map_23_init$134                  map_23_init
-     000373A6  A$map_23_init$135                  map_23_init
-     000373A7  A$map_23_init$136                  map_23_init
-     000373A8  A$map_23_init$137                  map_23_init
-     000373AB  A$map_23_init$138                  map_23_init
-     000373AD  A$map_23_init$142                  map_23_init
-     000373AD  C$map_23_init.c$36$1_0$150         map_23_init
-     000373B0  A$map_23_init$143                  map_23_init
-     000373B3  A$map_23_init$147                  map_23_init
-     000373B3  C$map_23_init.c$38$1_0$150         map_23_init
-     000373B6  A$map_23_init$148                  map_23_init
-     000373B8  A$map_23_init$152                  map_23_init
-     000373B8  C$map_23_init.c$39$1_0$150         map_23_init
-     000373BB  A$map_23_init$153                  map_23_init
-     000373BD  A$map_23_init$161                  map_23_init
-     000373BD  C$map_23_init.c$40$1_0$150         map_23_init
-     000373BD  XG$Map_23_Init$0$0                 map_23_init
-     000373BE  A$map_23_update$60                 map_23_update
-     000373BE  C$map_23_update.c$12$0_0$148       map_23_update
-     000373BE  C$map_23_update.c$13$1_0$148       map_23_update
-     000373BE  G$Map_23_Update$0$0                map_23_update
-     000373BE  _Map_23_Update                     map_23_update
-     000373BF  A$map_23_update$61                 map_23_update
-     000373C2  A$map_23_update$65                 map_23_update
-     000373C2  C$map_23_update.c$15$1_0$148       map_23_update
-     000373C5  A$map_23_update$66                 map_23_update
-     000373C6  A$map_23_update$70                 map_23_update
-     000373C6  C$map_23_update.c$17$1_1$149       map_23_update
-     000373C9  A$map_23_update$71                 map_23_update
-     000373CA  A$map_23_update$72                 map_23_update
-     000373CB  A$map_23_update$73                 map_23_update
+     000374BD  C$map_23_init.c$24$1_0$150         map_23_init
+     000374C0  A$map_23_init$89                   map_23_init
+     000374C2  A$map_23_init$93                   map_23_init
+     000374C2  C$map_23_init.c$25$1_0$150         map_23_init
+     000374C5  A$map_23_init$94                   map_23_init
+     000374C7  A$map_23_init$98                   map_23_init
+     000374C7  C$map_23_init.c$26$1_0$150         map_23_init
+     000374CA  A$map_23_init$99                   map_23_init
+     000374CC  A$map_23_init$103                  map_23_init
+     000374CC  C$map_23_init.c$28$1_0$150         map_23_init
+     000374CF  A$map_23_init$104                  map_23_init
+     000374D1  A$map_23_init$108                  map_23_init
+     000374D1  C$map_23_init.c$29$1_0$150         map_23_init
+     000374D4  A$map_23_init$109                  map_23_init
+     000374D6  A$map_23_init$113                  map_23_init
+     000374D6  C$map_23_init.c$31$1_0$150         map_23_init
+     000374D9  A$map_23_init$114                  map_23_init
+     000374DA  A$map_23_init$115                  map_23_init
+     000374DC  A$map_23_init$116                  map_23_init
+     000374DD  A$map_23_init$117                  map_23_init
+     000374DF  A$map_23_init$121                  map_23_init
+     000374DF  C$map_23_init.c$33$1_0$150         map_23_init
+     000374E2  A$map_23_init$122                  map_23_init
+     000374E3  A$map_23_init$123                  map_23_init
+     000374E6  A$map_23_init$124                  map_23_init
+     000374E7  A$map_23_init$125                  map_23_init
+     000374EA  A$map_23_init$126                  map_23_init
+     000374EC  A$map_23_init$130                  map_23_init
+     000374EC  C$map_23_init.c$34$1_0$150         map_23_init
+     000374EF  A$map_23_init$131                  map_23_init
+     000374F0  A$map_23_init$132                  map_23_init
+     000374F3  A$map_23_init$133                  map_23_init
+     000374F4  A$map_23_init$134                  map_23_init
+     000374F5  A$map_23_init$135                  map_23_init
+     000374F6  A$map_23_init$136                  map_23_init
+     000374F7  A$map_23_init$137                  map_23_init
+     000374FA  A$map_23_init$138                  map_23_init
+     000374FC  A$map_23_init$142                  map_23_init
+     000374FC  C$map_23_init.c$36$1_0$150         map_23_init
+     000374FF  A$map_23_init$143                  map_23_init
+     00037502  A$map_23_init$147                  map_23_init
+     00037502  C$map_23_init.c$38$1_0$150         map_23_init
+     00037505  A$map_23_init$148                  map_23_init
+     00037507  A$map_23_init$152                  map_23_init
+     00037507  C$map_23_init.c$39$1_0$150         map_23_init
+     0003750A  A$map_23_init$153                  map_23_init
+     0003750C  A$map_23_init$161                  map_23_init
+     0003750C  C$map_23_init.c$40$1_0$150         map_23_init
+     0003750C  XG$Map_23_Init$0$0                 map_23_init
+     0003750D  A$map_23_update$60                 map_23_update
+     0003750D  C$map_23_update.c$12$0_0$148       map_23_update
 ASxxxx Linker V03.00/V05.40 + sdld,  page 189.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-_CODE_3                             00034000    0000371C =       14108. bytes (REL,CON)
+_CODE_3                             00034000    0000386B =       14443. bytes (REL,CON)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-     000373CC  A$map_23_update$74                 map_23_update
-     000373CD  A$map_23_update$75                 map_23_update
-     000373CE  A$map_23_update$79                 map_23_update
-     000373CE  C$map_23_update.c$19$1_1$149       map_23_update
-     000373CF  A$map_23_update$80                 map_23_update
-     000373D0  A$map_23_update$81                 map_23_update
-     000373D3  A$map_23_update$82                 map_23_update
-     000373D6  A$map_23_update$83                 map_23_update
-     000373D7  A$map_23_update$84                 map_23_update
-     000373D8  A$map_23_update$88                 map_23_update
-     000373D8  C$map_23_update.c$20$1_1$149       map_23_update
-     000373D9  A$map_23_update$89                 map_23_update
-     000373DA  A$map_23_update$90                 map_23_update
-     000373DB  A$map_23_update$91                 map_23_update
-     000373DC  A$map_23_update$92                 map_23_update
-     000373DD  A$map_23_update$93                 map_23_update
-     000373E0  A$map_23_update$97                 map_23_update
-     000373E0  C$map_23_update.c$22$1_1$149       map_23_update
-     000373E1  A$map_23_update$108                map_23_update
-     000373E1  C$map_23_update.c$24$1_1$149       map_23_update
-     000373E1  C$map_23_update.c$25$1_1$148       map_23_update
-     000373E1  XG$Map_23_Update$0$0               map_23_update
-     000373E4  G$template_tileset$0_0$0           template_tileset
-     000373E4  _template_tileset                  template_tileset
-     000375B4  G$template_tilemap$0_0$0           template_tileset
-     000375B4  _template_tilemap                  template_tileset
+     0003750D  C$map_23_update.c$13$1_0$148       map_23_update
+     0003750D  G$Map_23_Update$0$0                map_23_update
+     0003750D  _Map_23_Update                     map_23_update
+     0003750E  A$map_23_update$61                 map_23_update
+     00037511  A$map_23_update$65                 map_23_update
+     00037511  C$map_23_update.c$15$1_0$148       map_23_update
+     00037514  A$map_23_update$66                 map_23_update
+     00037515  A$map_23_update$70                 map_23_update
+     00037515  C$map_23_update.c$17$1_1$149       map_23_update
+     00037518  A$map_23_update$71                 map_23_update
+     00037519  A$map_23_update$72                 map_23_update
+     0003751A  A$map_23_update$73                 map_23_update
+     0003751B  A$map_23_update$74                 map_23_update
+     0003751C  A$map_23_update$75                 map_23_update
+     0003751D  A$map_23_update$79                 map_23_update
+     0003751D  C$map_23_update.c$19$1_1$149       map_23_update
+     0003751E  A$map_23_update$80                 map_23_update
+     0003751F  A$map_23_update$81                 map_23_update
+     00037522  A$map_23_update$82                 map_23_update
+     00037525  A$map_23_update$83                 map_23_update
+     00037526  A$map_23_update$84                 map_23_update
+     00037527  A$map_23_update$88                 map_23_update
+     00037527  C$map_23_update.c$20$1_1$149       map_23_update
+     00037528  A$map_23_update$89                 map_23_update
+     00037529  A$map_23_update$90                 map_23_update
+     0003752A  A$map_23_update$91                 map_23_update
+     0003752B  A$map_23_update$92                 map_23_update
+     0003752C  A$map_23_update$93                 map_23_update
+     0003752F  A$map_23_update$97                 map_23_update
+     0003752F  C$map_23_update.c$22$1_1$149       map_23_update
+     00037530  A$map_23_update$108                map_23_update
+     00037530  C$map_23_update.c$24$1_1$149       map_23_update
+     00037530  C$map_23_update.c$25$1_1$148       map_23_update
+     00037530  XG$Map_23_Update$0$0               map_23_update
+     00037533  G$template_tileset$0_0$0           template_tileset
+     00037533  _template_tileset                  template_tileset
+     00037703  G$template_tilemap$0_0$0           template_tileset
+     00037703  _template_tilemap                  template_tileset
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 190.
 Hexadecimal  [32-Bits]

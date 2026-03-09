@@ -52,7 +52,7 @@ void Scene_DrawNPCLine(
     for (size_t i = 0; (*second_line)[i] != '\0'; i++)
     {
         uint8_t tile = char_to_tile((*second_line)[i]) + CHARS_TILESET_START;
-        set_bkg_tiles(i + TEXT_START_X, TEXT_START_Y, 1, 1, &tile);
+        set_bkg_tiles(i + TEXT_START_X, TEXT_START_Y + 1, 1, 1, &tile);
     }
 
     // Nombre
