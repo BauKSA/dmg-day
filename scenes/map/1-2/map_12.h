@@ -11,6 +11,10 @@
 void Map_12_Init(Scene *scene, Entity scene_player);
 void Map_12_Update(Scene *scene);
 
+void Map_12_InitNPC(void);
+void Map_12_InitDialogues(void);
+void Map_12_CheckInput(void);
+
 extern Scene Map_12;
 
 void Map_12_Create(void);

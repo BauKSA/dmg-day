@@ -8,9 +8,9 @@
 
 #include "../../assets/sprites/backgrounds/inventory/inventory_bkg.h"
 #include "../../assets/sprites/inventory/items/branch/spr_Branch.h"
+#include "../../assets/sprites/inventory/items/glasses/spr_Glasses.h"
 
-void InventoryScene_DrawCoins()
-{
+void InventoryScene_DrawCoins() {
   uint8_t thousands = ((money / 1000) % 10) + NUMBER_TILESET_START;
   uint8_t hundreds = ((money / 100) % 10) + NUMBER_TILESET_START;
   uint8_t tens = ((money / 10) % 10) + NUMBER_TILESET_START;
@@ -26,8 +26,7 @@ void InventoryScene_DrawCoins()
                 &units);
 }
 
-void InventoryScene_Init(Scene *scene, Entity player)
-{
+void InventoryScene_Init(Scene *scene, Entity player) {
   scene->data = NULL;
   init_arrow();
 
@@ -39,13 +38,14 @@ void InventoryScene_Init(Scene *scene, Entity player)
   set_bkg_tiles(0, 0, 20, 18, inventory_bkg_tilemap);
 
   // A CORREGIR
-  for (uint8_t i = 0; i < INVENTORY_ITEMS; i++)
-  {
+  for (uint8_t i = 0; i < INVENTORY_ITEMS; i++) {
     if (inventory[i].active == 0)
       continue;
 
-    set_bkg_data(INVENTORY_ITEMS_START, 1, spr_Branch);
-    set_bkg_tiles(5, 7, 1, 1, &branch_tile);
+    if (inventory[i].item == GLASSES) {
+      set_bkg_data(INVENTORY_ITEMS_START, 1, spr_Glasses);
+      set_bkg_tiles(5, 7, 1, 1, spr_Glasses);
+    }
   }
 
   InventoryScene_DrawCoins();

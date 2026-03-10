@@ -25,20 +25,20 @@ Area                       Addr        Size        Decimal Bytes (Attributes)
      00000006  l__HEADER |    00000007  l__HEADER |    00000008  l__HEADER
      0000000F  l__GSINIT |    00000013  l__HRAM   |    00000030  l__HEADER
      00000060  l__HEADER |    000000AB  l__HEADER |    0000012C  l__HOME  
-     00000200  s__CODE   |    00000401  l__DATA   |    00000697  l__INITIA
-     00000697  l__INITIA |    000007FF  l__HEAP   |    00001560  l__CODE_4
-     00001B90  l__CODE_1 |    00001F33  l__CODE_2 |    00002000  _rROMB0  
-     00002C7F  l__CODE   |    00002E7F  s__HOME   |    00002FAB  s__BASE  
-     00002FAB  s__CODE_0 |    00002FAB  s__INITIA |    00002FAB  s__LIT   
-     00003000  _rROMB1   |    00003642  s__GSINIT |    00003651  s__GSFINA
-     00003B73  l__CODE_3 |    00004000  _rMBC7_SR |    00004000  _rRAMB   
+     00000200  s__CODE   |    00000401  l__DATA   |    00000698  l__INITIA
+     00000698  l__INITIA |    000007FF  l__HEAP   |    00001560  l__CODE_4
+     00001B90  l__CODE_1 |    00002000  _rROMB0   |    000021B9  l__CODE_2
+     00002C8B  l__CODE   |    00002E8B  s__HOME   |    00002FB7  s__BASE  
+     00002FB7  s__CODE_0 |    00002FB7  s__INITIA |    00002FB7  s__LIT   
+     00003000  _rROMB1   |    0000364F  s__GSINIT |    0000365E  s__GSFINA
+     00003CC7  l__CODE_3 |    00004000  _rMBC7_SR |    00004000  _rRAMB   
      00008000  __VRAM    |    00008000  __VRAM800 |    00008800  __VRAM880
      00009000  __VRAM900 |    00009800  __SCRN0   |    00009C00  __SCRN1  
      0000A000  __SRAM    |    0000A000  _rMBC7_LA |    0000A010  _rMBC7_LA
      0000A020  _rMBC7_AC |    0000A030  _rMBC7_AC |    0000A040  _rMBC7_AC
      0000A050  _rMBC7_AC |    0000C000  __RAM     |    0000C000  _shadow_O
      0000C0A0  s__DATA   |    0000C4A1  s__BSS    |    0000C4A1  s__INITIA
-     0000CB38  s__HEAP   |    0000D000  __RAMBANK |    0000D337  s__HEAP_E
+     0000CB39  s__HEAP   |    0000D000  __RAMBANK |    0000D338  s__HEAP_E
      0000E000  .STACK    |    0000FE00  __OAMRAM  |    0000FF00  _P1_REG  
      0000FF00  __IO      |    0000FF01  _SB_REG   |    0000FF02  _SC_REG  
      0000FF04  _DIV_REG  |    0000FF05  _TIMA_REG |    0000FF06  _TMA_REG 
@@ -76,7 +76,7 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_CODE                  00000200    00002C7F =       11391. bytes (REL,CON)
+_CODE                  00000200    00002C8B =       11403. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
@@ -91,36 +91,36 @@ _CODE                  00000200    00002C7F =       11391. bytes (REL,CON)
      00000C79  _Mg_LoadS |    00000CBD  _Mg_LoadS |    00000D11  _Mg_Splas
      00000D9E  _Mg_Compl |    00000DF7  _Map_Coll |    0000104A  _clean   
      000010B1  _empty_ti |    000010B2  _Map_Play |    00001206  _Map_Auto
-     00001217  _MainMenu |    00001237  _MainMenu |    000012A9  _MainMenu
-     000012AA  _MainMenu |    000012AB  _MainMenu |    000012D0  _MainMenu
-     0000137E  _GenderSe |    00001393  _GenderSe |    000013CD  _GenderSe
-     000013CE  _Story_In |    000014D4  _Story_Up |    000015A9  _Story_Cr
-     000015BD  _Inventor |    00001665  _Inventor |    000016CE  _Inventor
-     000016D7  _Inventor |    000016EB  _my_rand  |    00001718  _Scene_De
-     0000172F  _create_e |    00001742  _reset_en |    00001748  _check_co
-     000017C0  _inventor |    0000191C  _top_limi |    0000191D  _bottom_l
-     0000191E  _left_lim |    0000191F  _right_li |    00001920  _VERTICAL
-     00001921  _HORIZONT |    00001922  _init_NPC |    00001935  _Scene_Dr
-     00001AA5  _SceneMan |    00001B07  _SceneMan |    00001B16  _SceneMan
-     00001BFD  _Intermit |    00001C4B  _render_r |    00001C5D  _draw_act
-     00001E0C  _draw_ext |    000020A3  _scene_ma |    0000229D  _move_up 
-     000022F3  _move_dow |    00002343  _move_lef |    00002399  _move_rig
-     000023EB  _init_arr |    00002490  _initiali |    000024C4  _init_ani
-     0000254A  _update_a |    0000258C  _set_anim |    000025B0  _char_to_
-     00002642  _add_mone |    00002680  _load_act |    000026E7  _load_ext
-     00002743  _reset_ex |    00002749  _reset_re |    0000276A  _create_p
-     00002783  _init_pla |    00002A37  _cache_pl |    00002A9E  _free    
-     00002BAE  __divsuch |    00002BB4  __modsuch |    00002BBD  __divusch
-     00002BC6  __modusch |    00002BD2  __divscha |    00002BD7  __modscha
-     00002BDE  __divsint |    00002BE7  __modsint |    00002BF3  __divucha
-     00002BF8  __moducha |    00002BFF  __divuint |    00002C08  __moduint
-     00002C14  .div8     |    00002C14  .mod8     |    00002C1C  .div16   
-     00002C1C  .mod16    |    00002C52  .divu8    |    00002C52  .modu8   
-     00002C55  .divu16   |    00002C55  .modu16   |    00002C95  ___sdcc_h
-     00002CB7  _malloc   |    00002DC7  _set_vram |    00002DD0  _set_win_
-     00002DD9  _set_bkg_ |    00002E08  __mulsuch |    00002E0B  __mulusch
-     00002E14  __mulscha |    00002E1C  __mulint  |    00002E3B  __mulucha
-     00002E4D  ___memcpy |    00002E4D  _memcpy  
+     00001217  _MainMenu |    00001237  _MainMenu |    000012B9  _MainMenu
+     000012BA  _MainMenu |    000012BB  _MainMenu |    000012E0  _MainMenu
+     0000138E  _GenderSe |    000013A3  _GenderSe |    000013DD  _GenderSe
+     000013DE  _Story_In |    000014E4  _Story_Up |    000015B9  _Story_Cr
+     000015CD  _Inventor |    00001675  _Inventor |    000016DA  _Inventor
+     000016E3  _Inventor |    000016F7  _my_rand  |    00001724  _Scene_De
+     0000173B  _create_e |    0000174E  _reset_en |    00001754  _check_co
+     000017CC  _inventor |    00001928  _top_limi |    00001929  _bottom_l
+     0000192A  _left_lim |    0000192B  _right_li |    0000192C  _VERTICAL
+     0000192D  _HORIZONT |    0000192E  _init_NPC |    00001941  _Scene_Dr
+     00001AB1  _SceneMan |    00001B13  _SceneMan |    00001B22  _SceneMan
+     00001C09  _Intermit |    00001C57  _render_r |    00001C69  _draw_act
+     00001E18  _draw_ext |    000020AF  _scene_ma |    000022A9  _move_up 
+     000022FF  _move_dow |    0000234F  _move_lef |    000023A5  _move_rig
+     000023F7  _init_arr |    0000249C  _initiali |    000024D0  _init_ani
+     00002556  _update_a |    00002598  _set_anim |    000025BC  _char_to_
+     0000264E  _add_mone |    0000268C  _load_act |    000026F3  _load_ext
+     0000274F  _reset_ex |    00002755  _reset_re |    00002776  _create_p
+     0000278F  _init_pla |    00002A43  _cache_pl |    00002AAA  _free    
+     00002BBA  __divsuch |    00002BC0  __modsuch |    00002BC9  __divusch
+     00002BD2  __modusch |    00002BDE  __divscha |    00002BE3  __modscha
+     00002BEA  __divsint |    00002BF3  __modsint |    00002BFF  __divucha
+     00002C04  __moducha |    00002C0B  __divuint |    00002C14  __moduint
+     00002C20  .div8     |    00002C20  .mod8     |    00002C28  .div16   
+     00002C28  .mod16    |    00002C5E  .divu8    |    00002C5E  .modu8   
+     00002C61  .divu16   |    00002C61  .modu16   |    00002CA1  ___sdcc_h
+     00002CC3  _malloc   |    00002DD3  _set_vram |    00002DDC  _set_win_
+     00002DE5  _set_bkg_ |    00002E14  __mulsuch |    00002E17  __mulusch
+     00002E20  __mulscha |    00002E28  __mulint  |    00002E47  __mulucha
+     00002E59  ___memcpy |    00002E59  _memcpy  
 ASxxxx Linker V03.00/V05.40 + sdld,  page 4.
 Hexadecimal  [32-Bits]
 
@@ -298,23 +298,23 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_HOME                  00002E7F    0000012C =         300. bytes (REL,CON)
+_HOME                  00002E8B    0000012C =         300. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
-     00002E7F  .memset_s |    00002E88  .memcpy_s |    00002EA5  .display_
-     00002EA5  _display_ |    00002EBD  _set_tile |    00002EC2  _set_bkg_
-     00002EC2  _set_win_ |    00002ECA  _set_spri |    00002EFA  .padup   
-     00002EFA  _waitpadu |    00002F0A  .jpad     |    00002F0A  _joypad  
-     00002F32  _waitpad  |    00002F33  .wait_pad |    00002F3A  ___sdcc_c
-     00002F3B  _set_bkg_ |    00002F4F  .set_xy_w |    00002F58  .set_xy_b
-     00002F67  .set_xy_t
+     00002E8B  .memset_s |    00002E94  .memcpy_s |    00002EB1  .display_
+     00002EB1  _display_ |    00002EC9  _set_tile |    00002ECE  _set_bkg_
+     00002ECE  _set_win_ |    00002ED6  _set_spri |    00002F06  .padup   
+     00002F06  _waitpadu |    00002F16  .jpad     |    00002F16  _joypad  
+     00002F3E  _waitpad  |    00002F3F  .wait_pad |    00002F46  ___sdcc_c
+     00002F47  _set_bkg_ |    00002F5B  .set_xy_w |    00002F64  .set_xy_b
+     00002F73  .set_xy_t
 ASxxxx Linker V03.00/V05.40 + sdld,  page 23.
 Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_INITIALIZER           00002FAB    00000697 =        1687. bytes (REL,CON)
+_INITIALIZER           00002FB7    00000698 =        1688. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
@@ -323,17 +323,17 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_GSINIT                00003642    0000000F =          15. bytes (REL,CON)
+_GSINIT                0000364F    0000000F =          15. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
-     00003642  gsinit   
+     0000364F  gsinit   
 ASxxxx Linker V03.00/V05.40 + sdld,  page 25.
 Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_GSFINAL               00003651    00000001 =           1. bytes (REL,CON)
+_GSFINAL               0000365E    00000001 =           1. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
@@ -372,14 +372,15 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_INITIALIZED           0000C4A1    00000697 =        1687. bytes (REL,CON)
+_INITIALIZED           0000C4A1    00000698 =        1688. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
      0000C4A1  _spr_Chic |    0000C4E1  _spr_Viej |    0000C4F1  _spr_Viej
      0000C501  _spr_Viej |    0000C511  _spr_Viej |    0000C521  _spr_exam
      0000C531  _spr_exam |    0000C541  _spr_exam |    0000C551  _spr_exam
-     0000C561  _spr_Firu |    0000C5A1  _spr_Viej |    0000C5E1  _spr_Viej
+     0000C561  _spr_Firu |    0000C571  _spr_Firu |    0000C581  _spr_Firu
+     0000C591  _spr_Firu |    0000C5A1  _spr_Viej |    0000C5E1  _spr_Viej
      0000C621  _spr_Viej |    0000C661  _spr_Viej |    0000C6A1  _spr_Pend
      0000C6E1  _spr_Mart |    0000C6F1  _spr_Mart |    0000C701  _spr_Mart
      0000C711  _spr_Mart |    0000C721  _spr_Mart |    0000C731  _spr_Mart
@@ -411,29 +412,29 @@ _INITIALIZED           0000C4A1    00000697 =        1687. bytes (REL,CON)
      0000CB23  _current_ |    0000CB24  _prev_sce |    0000CB25  _is_trans
      0000CB26  _can_move |    0000CB2A  _current_ |    0000CB2B  _inventor
      0000CB2C  _active_i |    0000CB2D  _selected |    0000CB2E  _closing 
-     0000CB2F  _extra_ac |    0000CB30  _money    |    0000CB32  _keys    
-     0000CB33  _prev_key |    0000CB34  _vram_nex |    0000CB35  _vram_ext
-     0000CB36  _GENDER   |    0000CB37  __map_til
+     0000CB2F  _language |    0000CB30  _extra_ac |    0000CB31  _money   
+     0000CB33  _keys     |    0000CB34  _prev_key |    0000CB35  _vram_nex
+     0000CB36  _vram_ext |    0000CB37  _GENDER   |    0000CB38  __map_til
 ASxxxx Linker V03.00/V05.40 + sdld,  page 28.
 Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_HEAP                  0000CB38    000007FF =        2047. bytes (REL,CON)
+_HEAP                  0000CB39    000007FF =        2047. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
-     0000CB38  ___sdcc_h
+     0000CB39  ___sdcc_h
 ASxxxx Linker V03.00/V05.40 + sdld,  page 29.
 Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_HEAP_END              0000D337    00000001 =           1. bytes (REL,CON)
+_HEAP_END              0000D338    00000001 =           1. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
-     0000D337  ___sdcc_h
+     0000D338  ___sdcc_h
 ASxxxx Linker V03.00/V05.40 + sdld,  page 30.
 Hexadecimal  [32-Bits]
 
@@ -450,7 +451,7 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_CODE_3                00034000    00003B73 =       15219. bytes (REL,CON)
+_CODE_3                00034000    00003CC7 =       15559. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
@@ -466,9 +467,9 @@ _CODE_3                00034000    00003B73 =       15219. bytes (REL,CON)
      000370A3  _Map_23_C |    000370BD  _Map_23_I |    00037146  _Map_23_I
      0003727A  _Map_21_U |    000372A0  _Map_21_I |    0003730E  _Map_21_C
      0003732C  _map_21_c |    00037494  _map_22_c |    000375FC  _Map_22_C
-     00037622  _Map_22_I |    00037745  _Map_22_I |    0003775F  _dialogue
-     000378A3  _dialogue |    000379E7  _Map_22_D |    00037A26  _Map_22_C
-     00037A51  _Map_22_I |    00037B08  _Map_22_U
+     00037622  _Map_22_I |    00037745  _Map_22_I |    0003776F  _dialogue
+     000378B3  _dialogue |    000379F7  _dialogue |    00037B3B  _Map_22_D
+     00037B7A  _Map_22_C |    00037BA5  _Map_22_I |    00037C5C  _Map_22_U
 ASxxxx Linker V03.00/V05.40 + sdld,  page 32.
 Hexadecimal  [32-Bits]
 
@@ -509,7 +510,7 @@ Hexadecimal  [32-Bits]
 
 Area                       Addr        Size        Decimal Bytes (Attributes)
 --------------------       ----        ----        ------- ----- ------------
-_CODE_2                00024000    00001F33 =        7987. bytes (REL,CON)
+_CODE_2                00024000    000021B9 =        8633. bytes (REL,CON)
 
         Value  Global            Value  Global            Value  Global    
         -----  ------            -----  ------            -----  ------    
@@ -521,221 +522,226 @@ _CODE_2                00024000    00001F33 =        7987. bytes (REL,CON)
      00025494  _Mg_Leave |    000256DB  _Map_10_C |    000256F5  _Map_10_U
      0002571B  _Map_10_I |    00025789  _map_10_c |    000258F1  _Map_11_C
      0002590B  _Map_11_I |    00025979  _map_11_c |    00025AE1  _Map_11_U
-     00025B07  _Map_12_C |    00025B21  _Map_12_U |    00025B47  _map_12_c
-     00025CAF  _Map_12_I |    00025D1D  _Map_13_U |    00025D43  _Map_13_I
-     00025DB1  _map_13_c |    00025F19  _Map_13_C
+     00025B07  _Map_12_C |    00025B21  _Map_12_U |    00025B50  _Map_12_I
+     00025B5F  _dialogue |    00025CA3  _Map_12_I |    00025D8E  _map_12_c
+     00025EF6  _Map_12_C |    00025F1D  _Map_12_I |    00025FA3  _Map_13_U
+     00025FC9  _Map_13_I |    00026037  _map_13_c |    0002619F  _Map_13_C
 ASxxxx Linker V03.00/V05.40 + sdld,  page 35.
 
 Files Linked                              [ module(s) ]
 
 /usr/share/gbdk-2020//lib/gb/crt0.o       [ Runtime ]
-/tmp/lcc174710.o                          [ numbers ]
-/tmp/lcc174711.o                          [ buttons ]
-/tmp/lcc174712.o                          [ chars ]
-/tmp/lcc174713.o                          [ map_2_0 ]
-/tmp/lcc174714.o                          [ map_2_3 ]
-/tmp/lcc174715.o                          [ map_0_0 ]
-/tmp/lcc174716.o                          [ map_0_1 ]
-/tmp/lcc174717.o                          [ map_3_3 ]
-/tmp/lcc174718.o                          [ map_1_0 ]
-/tmp/lcc174719.o                          [ map_2_1 ]
-/tmp/lcc1747110.o                         [ map_1_1 ]
-/tmp/lcc1747111.o                         [ map_1_2 ]
-/tmp/lcc1747112.o                         [ map_1_3 ]
-/tmp/lcc1747113.o                         [ map_3_2 ]
-/tmp/lcc1747114.o                         [ map_3_0 ]
-/tmp/lcc1747115.o                         [ map_0_3 ]
-/tmp/lcc1747116.o                         [ map_2_2 ]
-/tmp/lcc1747117.o                         [ map_0_2 ]
-/tmp/lcc1747118.o                         [ map_3_1 ]
-/tmp/lcc1747119.o                         [ bkg_MainMenu ]
-/tmp/lcc1747120.o                         [ gender_select_tilemap ]
-/tmp/lcc1747121.o                         [ gender_select_tileset ]
-/tmp/lcc1747122.o                         [ npc_icons ]
-/tmp/lcc1747123.o                         [ inventory_bkg ]
-/tmp/lcc1747124.o                         [ bkg_leaves_example ]
-/tmp/lcc1747125.o                         [ template_tileset ]
-/tmp/lcc1747126.o                         [ map_example ]
-/tmp/lcc1747127.o                         [ spr_ChicaLibro0 ]
-/tmp/lcc1747128.o                         [ spr_ViejoDiario0 ]
-/tmp/lcc1747129.o                         [ example_npc ]
-/tmp/lcc1747130.o                         [ spr_Firulais0 ]
-/tmp/lcc1747131.o                         [ spr_ViejaEscoba1 ]
-/tmp/lcc1747132.o                         [ spr_ViejaEscoba0 ]
-/tmp/lcc1747133.o                         [ spr_ViejoSuper1 ]
-/tmp/lcc1747134.o                         [ spr_ViejoSuper0 ]
-/tmp/lcc1747135.o                         [ spr_PendejoTarea ]
-/tmp/lcc1747136.o                         [ martin_npc_0 ]
-/tmp/lcc1747137.o                         [ martin_npc_2 ]
-/tmp/lcc1747138.o                         [ martin_npc_1 ]
-/tmp/lcc1747139.o                         [ spr_ViejaAnteojos0 ]
-/tmp/lcc1747140.o                         [ spr_Pigeon0 ]
-/tmp/lcc1747141.o                         [ text_frame ]
-/tmp/lcc1747142.o                         [ text_frame_init ]
-/tmp/lcc1747143.o                         [ spr_InventoryArrow_idle ]
-/tmp/lcc1747144.o                         [ spr_Branch ]
-/tmp/lcc1747145.o                         [ spr_Glasses ]
-/tmp/lcc1747146.o                         [ spr_Martin_down0 ]
-/tmp/lcc1747147.o                         [ spr_Player_up2 ]
-/tmp/lcc1747148.o                         [ spr_Player_up0 ]
-/tmp/lcc1747149.o                         [ spr_Player_up1 ]
-/tmp/lcc1747150.o                         [ spr_Player_down2 ]
-/tmp/lcc1747151.o                         [ spr_Player_down0 ]
-/tmp/lcc1747152.o                         [ spr_Player_down1 ]
-/tmp/lcc1747153.o                         [ spr_leaf_a ]
-/tmp/lcc1747154.o                         [ spr_leaf_b ]
-/tmp/lcc1747155.o                         [ spr_acorn ]
-/tmp/lcc1747156.o                         [ leaf ]
-/tmp/lcc1747157.o                         [ broom ]
-/tmp/lcc1747158.o                         [ spr_garbage ]
-/tmp/lcc1747159.o                         [ test_song ]
-/tmp/lcc1747160.o                         [ main ]
-/tmp/lcc1747161.o                         [ mg_player_movement ]
-/tmp/lcc1747162.o                         [ mg_instruction_set ]
-/tmp/lcc1747163.o                         [ mg_leaves ]
-/tmp/lcc1747164.o                         [ mg_leaves_init ]
-/tmp/lcc1747165.o                         [ mg_leaves_player_init ]
-/tmp/lcc1747166.o                         [ mg_leaves_update ]
-/tmp/lcc1747167.o                         [ mg_leaves_load_bkg ]
-/tmp/lcc1747168.o                         [ mini_games ]
-/tmp/lcc1747169.o                         [ mg_timer ]
-/tmp/lcc1747170.o                         [ mg_load_screen ]
-/tmp/lcc1747171.o                         [ mg_mission_complete ]
-/tmp/lcc1747172.o                         [ map_20_create ]
-/tmp/lcc1747173.o                         [ map_20 ]
-/tmp/lcc1747174.o                         [ map_20_update ]
-/tmp/lcc1747175.o                         [ map_20_collision ]
-/tmp/lcc1747176.o                         [ map_20_init ]
-/tmp/lcc1747177.o                         [ map_23 ]
-/tmp/lcc1747178.o                         [ map_23_dialogues ]
-/tmp/lcc1747179.o                         [ map_23_collision ]
-/tmp/lcc1747180.o                         [ map_23_update ]
-/tmp/lcc1747181.o                         [ map_23_input ]
-/tmp/lcc1747182.o                         [ map_23_create ]
-/tmp/lcc1747183.o                         [ map_23_init ]
-/tmp/lcc1747184.o                         [ map_23_init_npc ]
-/tmp/lcc1747185.o                         [ map_00_collision ]
-/tmp/lcc1747186.o                         [ map_00_create ]
-/tmp/lcc1747187.o                         [ map_00_update ]
-/tmp/lcc1747188.o                         [ map_00 ]
-/tmp/lcc1747189.o                         [ map_00_init ]
-/tmp/lcc1747190.o                         [ map_collision ]
-/tmp/lcc1747191.o                         [ map_01_collision ]
-/tmp/lcc1747192.o                         [ map_01_create ]
-/tmp/lcc1747193.o                         [ map_01_update ]
-/tmp/lcc1747194.o                         [ map_01 ]
-/tmp/lcc1747195.o                         [ map_01_init ]
-/tmp/lcc1747196.o                         [ map_33_update ]
-/tmp/lcc1747197.o                         [ map_33 ]
-/tmp/lcc1747198.o                         [ map_33_collision ]
-/tmp/lcc1747199.o                         [ map_33_create ]
-/tmp/lcc17471100.o                        [ map_33_init ]
-/tmp/lcc17471101.o                        [ map_10_create ]
-/tmp/lcc17471102.o                        [ map_10_update ]
-/tmp/lcc17471103.o                        [ map_10_init ]
-/tmp/lcc17471104.o                        [ map_10 ]
-/tmp/lcc17471105.o                        [ map_10_collision ]
-/tmp/lcc17471106.o                        [ map_21 ]
-/tmp/lcc17471107.o                        [ map_21_update ]
-/tmp/lcc17471108.o                        [ map_21_init ]
-/tmp/lcc17471109.o                        [ map_21_create ]
-/tmp/lcc17471110.o                        [ map_21_collision ]
-/tmp/lcc17471111.o                        [ map_11_create ]
-/tmp/lcc17471112.o                        [ map_11_init ]
-/tmp/lcc17471113.o                        [ map_11 ]
-/tmp/lcc17471114.o                        [ map_11_collision ]
-/tmp/lcc17471115.o                        [ map_11_update ]
-/tmp/lcc17471116.o                        [ clean_text ]
-/tmp/lcc17471117.o                        [ map_12_create ]
-/tmp/lcc17471118.o                        [ map_12_update ]
-/tmp/lcc17471119.o                        [ map_12 ]
-/tmp/lcc17471120.o                        [ map_12_collision ]
-/tmp/lcc17471121.o                        [ map_12_init ]
-/tmp/lcc17471122.o                        [ map_13 ]
-/tmp/lcc17471123.o                        [ map_13_update ]
-/tmp/lcc17471124.o                        [ map_13_init ]
-/tmp/lcc17471125.o                        [ map_13_collision ]
-/tmp/lcc17471126.o                        [ map_13_create ]
-/tmp/lcc17471127.o                        [ map_32_update ]
-/tmp/lcc17471128.o                        [ map_32 ]
-/tmp/lcc17471129.o                        [ map_32_collision ]
-/tmp/lcc17471130.o                        [ map_32_init ]
-/tmp/lcc17471131.o                        [ map_32_create ]
-/tmp/lcc17471132.o                        [ map_player_movement ]
-/tmp/lcc17471133.o                        [ map_30_create ]
-/tmp/lcc17471134.o                        [ map_30_update ]
-/tmp/lcc17471135.o                        [ map_30_init ]
-/tmp/lcc17471136.o                        [ map_30 ]
-/tmp/lcc17471137.o                        [ map_30_collision ]
-/tmp/lcc17471138.o                        [ map_03_create ]
-/tmp/lcc17471139.o                        [ map_03_init ]
-/tmp/lcc17471140.o                        [ map_03 ]
-/tmp/lcc17471141.o                        [ map_03_update ]
-/tmp/lcc17471142.o                        [ map_03_collision ]
-/tmp/lcc17471143.o                        [ map_22_collision ]
-/tmp/lcc17471144.o                        [ map_22 ]
-/tmp/lcc17471145.o                        [ map_22_input ]
-/tmp/lcc17471146.o                        [ map_22_init_npc ]
-/tmp/lcc17471147.o                        [ map_22_dialogues ]
-/tmp/lcc17471148.o                        [ map_22_destroy ]
-/tmp/lcc17471149.o                        [ map_22_create ]
-/tmp/lcc17471150.o                        [ map_22_init ]
-/tmp/lcc17471151.o                        [ map_22_update ]
-/tmp/lcc17471152.o                        [ auto_clean ]
-/tmp/lcc17471153.o                        [ map_data ]
-/tmp/lcc17471154.o                        [ map_02 ]
-/tmp/lcc17471155.o                        [ map_02_create ]
-/tmp/lcc17471156.o                        [ map_02_collision ]
-/tmp/lcc17471157.o                        [ map_02_update ]
-/tmp/lcc17471158.o                        [ map_02_init ]
-/tmp/lcc17471159.o                        [ map_31_update ]
-/tmp/lcc17471160.o                        [ map_31_create ]
-/tmp/lcc17471161.o                        [ map_31_collision ]
-/tmp/lcc17471162.o                        [ map_31 ]
-/tmp/lcc17471163.o                        [ map_31_init ]
-/tmp/lcc17471164.o                        [ main_menu ]
-/tmp/lcc17471165.o                        [ main_menu_input ]
-/tmp/lcc17471166.o                        [ main_menu_destroy ]
-/tmp/lcc17471167.o                        [ main_menu_init_stats ]
-/tmp/lcc17471168.o                        [ main_menu_init ]
-/tmp/lcc17471169.o                        [ main_menu_update ]
-/tmp/lcc17471170.o                        [ gender_select ]
-/tmp/lcc17471171.o                        [ gender_select_init ]
-/tmp/lcc17471172.o                        [ gender_select_update ]
-/tmp/lcc17471173.o                        [ story_init ]
-/tmp/lcc17471174.o                        [ story_update ]
-/tmp/lcc17471175.o                        [ story ]
-/tmp/lcc17471176.o                        [ inventory_scene_init ]
-/tmp/lcc17471177.o                        [ inventory_scene_update ]
-/tmp/lcc17471178.o                        [ inventory_scene ]
-/tmp/lcc17471179.o                        [ random ]
-/tmp/lcc17471180.o                        [ scene ]
-/tmp/lcc17471181.o                        [ entity ]
-/tmp/lcc17471182.o                        [ npc_lines ]
-/tmp/lcc17471183.o                        [ collision ]
-/tmp/lcc17471184.o                        [ inventory_input ]
-/tmp/lcc17471185.o                        [ minigames ]
-/tmp/lcc17471186.o                        [ all_scenes ]
-/tmp/lcc17471187.o                        [ npcs ]
-/tmp/lcc17471188.o                        [ scene_manager ]
-/tmp/lcc17471189.o                        [ intermitent_text ]
-/tmp/lcc17471190.o                        [ can_move ]
-/tmp/lcc17471191.o                        [ render ]
-/tmp/lcc17471192.o                        [ name ]
-/tmp/lcc17471193.o                        [ draw ]
-/tmp/lcc17471194.o                        [ map_scenes ]
-/tmp/lcc17471195.o                        [ action ]
-/tmp/lcc17471196.o                        [ position ]
-/tmp/lcc17471197.o                        [ inventory ]
-/tmp/lcc17471198.o                        [ animation ]
-/tmp/lcc17471199.o                        [ char_to_tile ]
-/tmp/lcc17471200.o                        [ extra_actors ]
-/tmp/lcc17471201.o                        [ money ]
-/tmp/lcc17471202.o                        [ input ]
-/tmp/lcc17471203.o                        [ load ]
-/tmp/lcc17471204.o                        [ speed ]
-/tmp/lcc17471205.o                        [ gender_selection ]
-/tmp/lcc17471206.o                        [ player ]
+/tmp/lcc78950.o                           [ numbers ]
+/tmp/lcc78951.o                           [ buttons ]
+/tmp/lcc78952.o                           [ chars ]
+/tmp/lcc78953.o                           [ map_2_0 ]
+/tmp/lcc78954.o                           [ map_2_3 ]
+/tmp/lcc78955.o                           [ map_0_0 ]
+/tmp/lcc78956.o                           [ map_0_1 ]
+/tmp/lcc78957.o                           [ map_3_3 ]
+/tmp/lcc78958.o                           [ map_1_0 ]
+/tmp/lcc78959.o                           [ map_2_1 ]
+/tmp/lcc789510.o                          [ map_1_1 ]
+/tmp/lcc789511.o                          [ map_1_2 ]
+/tmp/lcc789512.o                          [ map_1_3 ]
+/tmp/lcc789513.o                          [ map_3_2 ]
+/tmp/lcc789514.o                          [ map_3_0 ]
+/tmp/lcc789515.o                          [ map_0_3 ]
+/tmp/lcc789516.o                          [ map_2_2 ]
+/tmp/lcc789517.o                          [ map_0_2 ]
+/tmp/lcc789518.o                          [ map_3_1 ]
+/tmp/lcc789519.o                          [ bkg_MainMenu ]
+/tmp/lcc789520.o                          [ gender_select_tilemap ]
+/tmp/lcc789521.o                          [ gender_select_tileset ]
+/tmp/lcc789522.o                          [ npc_icons ]
+/tmp/lcc789523.o                          [ inventory_bkg ]
+/tmp/lcc789524.o                          [ bkg_leaves_example ]
+/tmp/lcc789525.o                          [ template_tileset ]
+/tmp/lcc789526.o                          [ map_example ]
+/tmp/lcc789527.o                          [ spr_ChicaLibro0 ]
+/tmp/lcc789528.o                          [ spr_ViejoDiario0 ]
+/tmp/lcc789529.o                          [ example_npc ]
+/tmp/lcc789530.o                          [ spr_Firulais0 ]
+/tmp/lcc789531.o                          [ spr_ViejaEscoba1 ]
+/tmp/lcc789532.o                          [ spr_ViejaEscoba0 ]
+/tmp/lcc789533.o                          [ spr_ViejoSuper1 ]
+/tmp/lcc789534.o                          [ spr_ViejoSuper0 ]
+/tmp/lcc789535.o                          [ spr_PendejoTarea ]
+/tmp/lcc789536.o                          [ martin_npc_0 ]
+/tmp/lcc789537.o                          [ martin_npc_2 ]
+/tmp/lcc789538.o                          [ martin_npc_1 ]
+/tmp/lcc789539.o                          [ spr_ViejaAnteojos0 ]
+/tmp/lcc789540.o                          [ spr_Pigeon0 ]
+/tmp/lcc789541.o                          [ text_frame ]
+/tmp/lcc789542.o                          [ text_frame_init ]
+/tmp/lcc789543.o                          [ spr_InventoryArrow_idle ]
+/tmp/lcc789544.o                          [ spr_Branch ]
+/tmp/lcc789545.o                          [ spr_Glasses ]
+/tmp/lcc789546.o                          [ spr_Martin_down0 ]
+/tmp/lcc789547.o                          [ spr_Player_up2 ]
+/tmp/lcc789548.o                          [ spr_Player_up0 ]
+/tmp/lcc789549.o                          [ spr_Player_up1 ]
+/tmp/lcc789550.o                          [ spr_Player_down2 ]
+/tmp/lcc789551.o                          [ spr_Player_down0 ]
+/tmp/lcc789552.o                          [ spr_Player_down1 ]
+/tmp/lcc789553.o                          [ spr_leaf_a ]
+/tmp/lcc789554.o                          [ spr_leaf_b ]
+/tmp/lcc789555.o                          [ spr_acorn ]
+/tmp/lcc789556.o                          [ leaf ]
+/tmp/lcc789557.o                          [ broom ]
+/tmp/lcc789558.o                          [ spr_garbage ]
+/tmp/lcc789559.o                          [ test_song ]
+/tmp/lcc789560.o                          [ main ]
+/tmp/lcc789561.o                          [ mg_player_movement ]
+/tmp/lcc789562.o                          [ mg_instruction_set ]
+/tmp/lcc789563.o                          [ mg_leaves ]
+/tmp/lcc789564.o                          [ mg_leaves_init ]
+/tmp/lcc789565.o                          [ mg_leaves_player_init ]
+/tmp/lcc789566.o                          [ mg_leaves_update ]
+/tmp/lcc789567.o                          [ mg_leaves_load_bkg ]
+/tmp/lcc789568.o                          [ mini_games ]
+/tmp/lcc789569.o                          [ mg_timer ]
+/tmp/lcc789570.o                          [ mg_load_screen ]
+/tmp/lcc789571.o                          [ mg_mission_complete ]
+/tmp/lcc789572.o                          [ map_20_create ]
+/tmp/lcc789573.o                          [ map_20 ]
+/tmp/lcc789574.o                          [ map_20_update ]
+/tmp/lcc789575.o                          [ map_20_collision ]
+/tmp/lcc789576.o                          [ map_20_init ]
+/tmp/lcc789577.o                          [ map_23 ]
+/tmp/lcc789578.o                          [ map_23_dialogues ]
+/tmp/lcc789579.o                          [ map_23_collision ]
+/tmp/lcc789580.o                          [ map_23_update ]
+/tmp/lcc789581.o                          [ map_23_input ]
+/tmp/lcc789582.o                          [ map_23_create ]
+/tmp/lcc789583.o                          [ map_23_init ]
+/tmp/lcc789584.o                          [ map_23_init_npc ]
+/tmp/lcc789585.o                          [ map_00_collision ]
+/tmp/lcc789586.o                          [ map_00_create ]
+/tmp/lcc789587.o                          [ map_00_update ]
+/tmp/lcc789588.o                          [ map_00 ]
+/tmp/lcc789589.o                          [ map_00_init ]
+/tmp/lcc789590.o                          [ map_collision ]
+/tmp/lcc789591.o                          [ map_01_collision ]
+/tmp/lcc789592.o                          [ map_01_create ]
+/tmp/lcc789593.o                          [ map_01_update ]
+/tmp/lcc789594.o                          [ map_01 ]
+/tmp/lcc789595.o                          [ map_01_init ]
+/tmp/lcc789596.o                          [ map_33_update ]
+/tmp/lcc789597.o                          [ map_33 ]
+/tmp/lcc789598.o                          [ map_33_collision ]
+/tmp/lcc789599.o                          [ map_33_create ]
+/tmp/lcc7895100.o                         [ map_33_init ]
+/tmp/lcc7895101.o                         [ map_10_create ]
+/tmp/lcc7895102.o                         [ map_10_update ]
+/tmp/lcc7895103.o                         [ map_10_init ]
+/tmp/lcc7895104.o                         [ map_10 ]
+/tmp/lcc7895105.o                         [ map_10_collision ]
+/tmp/lcc7895106.o                         [ map_21 ]
+/tmp/lcc7895107.o                         [ map_21_update ]
+/tmp/lcc7895108.o                         [ map_21_init ]
+/tmp/lcc7895109.o                         [ map_21_create ]
+/tmp/lcc7895110.o                         [ map_21_collision ]
+/tmp/lcc7895111.o                         [ map_11_create ]
+/tmp/lcc7895112.o                         [ map_11_init ]
+/tmp/lcc7895113.o                         [ map_11 ]
+/tmp/lcc7895114.o                         [ map_11_collision ]
+/tmp/lcc7895115.o                         [ map_11_update ]
+/tmp/lcc7895116.o                         [ clean_text ]
+/tmp/lcc7895117.o                         [ map_12_create ]
+/tmp/lcc7895118.o                         [ map_12_update ]
+/tmp/lcc7895119.o                         [ map_12_dialogues ]
+/tmp/lcc7895120.o                         [ map_12 ]
+/tmp/lcc7895121.o                         [ map_12_init_npc ]
+/tmp/lcc7895122.o                         [ map_12_collision ]
+/tmp/lcc7895123.o                         [ map_12_input ]
+/tmp/lcc7895124.o                         [ map_12_init ]
+/tmp/lcc7895125.o                         [ map_13 ]
+/tmp/lcc7895126.o                         [ map_13_update ]
+/tmp/lcc7895127.o                         [ map_13_init ]
+/tmp/lcc7895128.o                         [ map_13_collision ]
+/tmp/lcc7895129.o                         [ map_13_create ]
+/tmp/lcc7895130.o                         [ map_32_update ]
+/tmp/lcc7895131.o                         [ map_32 ]
+/tmp/lcc7895132.o                         [ map_32_collision ]
+/tmp/lcc7895133.o                         [ map_32_init ]
+/tmp/lcc7895134.o                         [ map_32_create ]
+/tmp/lcc7895135.o                         [ map_player_movement ]
+/tmp/lcc7895136.o                         [ map_30_create ]
+/tmp/lcc7895137.o                         [ map_30_update ]
+/tmp/lcc7895138.o                         [ map_30_init ]
+/tmp/lcc7895139.o                         [ map_30 ]
+/tmp/lcc7895140.o                         [ map_30_collision ]
+/tmp/lcc7895141.o                         [ map_03_create ]
+/tmp/lcc7895142.o                         [ map_03_init ]
+/tmp/lcc7895143.o                         [ map_03 ]
+/tmp/lcc7895144.o                         [ map_03_update ]
+/tmp/lcc7895145.o                         [ map_03_collision ]
+/tmp/lcc7895146.o                         [ map_22_collision ]
+/tmp/lcc7895147.o                         [ map_22 ]
+/tmp/lcc7895148.o                         [ map_22_input ]
+/tmp/lcc7895149.o                         [ map_22_init_npc ]
+/tmp/lcc7895150.o                         [ map_22_dialogues ]
+/tmp/lcc7895151.o                         [ map_22_destroy ]
+/tmp/lcc7895152.o                         [ map_22_create ]
+/tmp/lcc7895153.o                         [ map_22_init ]
+/tmp/lcc7895154.o                         [ map_22_update ]
+/tmp/lcc7895155.o                         [ auto_clean ]
+/tmp/lcc7895156.o                         [ map_data ]
+/tmp/lcc7895157.o                         [ map_02 ]
+/tmp/lcc7895158.o                         [ map_02_create ]
+/tmp/lcc7895159.o                         [ map_02_collision ]
+/tmp/lcc7895160.o                         [ map_02_update ]
+/tmp/lcc7895161.o                         [ map_02_init ]
+/tmp/lcc7895162.o                         [ map_31_update ]
+/tmp/lcc7895163.o                         [ map_31_create ]
+/tmp/lcc7895164.o                         [ map_31_collision ]
+/tmp/lcc7895165.o                         [ map_31 ]
+/tmp/lcc7895166.o                         [ map_31_init ]
+/tmp/lcc7895167.o                         [ main_menu ]
+/tmp/lcc7895168.o                         [ main_menu_input ]
+/tmp/lcc7895169.o                         [ main_menu_destroy ]
+/tmp/lcc7895170.o                         [ main_menu_init_stats ]
+/tmp/lcc7895171.o                         [ main_menu_init ]
+/tmp/lcc7895172.o                         [ main_menu_update ]
+/tmp/lcc7895173.o                         [ gender_select ]
+/tmp/lcc7895174.o                         [ gender_select_init ]
+/tmp/lcc7895175.o                         [ gender_select_update ]
+/tmp/lcc7895176.o                         [ story_init ]
+/tmp/lcc7895177.o                         [ story_update ]
+/tmp/lcc7895178.o                         [ story ]
+/tmp/lcc7895179.o                         [ inventory_scene_init ]
+/tmp/lcc7895180.o                         [ inventory_scene_update ]
+/tmp/lcc7895181.o                         [ inventory_scene ]
+/tmp/lcc7895182.o                         [ random ]
+/tmp/lcc7895183.o                         [ scene ]
+/tmp/lcc7895184.o                         [ entity ]
+/tmp/lcc7895185.o                         [ npc_lines ]
+/tmp/lcc7895186.o                         [ collision ]
+/tmp/lcc7895187.o                         [ inventory_input ]
+/tmp/lcc7895188.o                         [ minigames ]
+/tmp/lcc7895189.o                         [ all_scenes ]
+/tmp/lcc7895190.o                         [ npcs ]
+/tmp/lcc7895191.o                         [ scene_manager ]
+/tmp/lcc7895192.o                         [ intermitent_text ]
+/tmp/lcc7895193.o                         [ can_move ]
+/tmp/lcc7895194.o                         [ render ]
+/tmp/lcc7895195.o                         [ name ]
+/tmp/lcc7895196.o                         [ draw ]
+/tmp/lcc7895197.o                         [ map_scenes ]
+/tmp/lcc7895198.o                         [ action ]
+/tmp/lcc7895199.o                         [ position ]
+/tmp/lcc7895200.o                         [ inventory ]
+/tmp/lcc7895201.o                         [ animation ]
+/tmp/lcc7895202.o                         [ language ]
+/tmp/lcc7895203.o                         [ char_to_tile ]
+/tmp/lcc7895204.o                         [ extra_actors ]
+/tmp/lcc7895205.o                         [ money ]
+/tmp/lcc7895206.o                         [ input ]
+/tmp/lcc7895207.o                         [ load ]
+/tmp/lcc7895208.o                         [ speed ]
+/tmp/lcc7895209.o                         [ gender_selection ]
+/tmp/lcc7895210.o                         [ player ]
 
 
 Libraries Linked                          [ object file ]

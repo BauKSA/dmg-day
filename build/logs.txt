@@ -321,22 +321,38 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/1-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
 ./scenes/map/1-2/map_12_update.c:
+./scenes/map/1-2/../../map/auto_clean.h:8: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../map/map_data.h:46: warning 283: function declarator with no prototype
-./scenes/map/1-2/../../map/auto_clean.h:8: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_dialogues.c:
+./scenes/map/1-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/1-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
+./scenes/map/1-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_dialogues.c:15: warning 283: function declarator with no prototype
 ./scenes/map/1-2/map_12.c:
 ./scenes/map/1-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_init_npc.c:
+./scenes/map/1-2/../../../include/npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/1-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
+./scenes/map/1-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_init_npc.c:14: warning 283: function declarator with no prototype
 ./scenes/map/1-2/map_12_collision.c:
 ./scenes/map/1-2/./../map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/1-2/./../map_data.h:46: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_input.c:
+./scenes/map/1-2/../../../include/npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/1-2/../map_data.h:25: warning 283: function declarator with no prototype
+./scenes/map/1-2/../map_data.h:46: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_input.c:10: warning 283: function declarator with no prototype
 ./scenes/map/1-2/map_12_init.c:
 ./scenes/map/1-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/1-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
-./scenes/map/1-2/map_12_init.c:39: warning 85: in function Map_12_Init unreferenced function argument : 'scene_player'
+./scenes/map/1-2/map_12_init.c:15: warning 283: function declarator with no prototype
+./scenes/map/1-2/map_12_init.c:44: warning 85: in function Map_12_Init unreferenced function argument : 'scene_player'
 ./scenes/map/1-3/map_13.c:
 ./scenes/map/1-3/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/1-3/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
@@ -418,7 +434,7 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/2-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/2-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
 ./scenes/map/2-2/map_22_input.c:
-./scenes/map/2-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
+./scenes/map/2-2/../../../include/npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/2-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/2-2/../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
 ./scenes/map/2-2/map_22_input.c:10: warning 283: function declarator with no prototype
@@ -431,7 +447,7 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/map/2-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/2-2/./../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
 ./scenes/map/2-2/./../../../scenes/map/map_data.h:46: warning 283: function declarator with no prototype
-./scenes/map/2-2/map_22_dialogues.c:17: warning 283: function declarator with no prototype
+./scenes/map/2-2/map_22_dialogues.c:24: warning 283: function declarator with no prototype
 ./scenes/map/2-2/map_22_destroy.c:
 ./scenes/map/2-2/../../../include/./npcs.h:12: warning 283: function declarator with no prototype
 ./scenes/map/2-2/../../../scenes/map/map_data.h:25: warning 283: function declarator with no prototype
@@ -534,8 +550,8 @@ from type 'const-unsigned-char [20] fixed'
 ./scenes/inventory/inventory_scene_init.c:
 ./scenes/inventory/../../include/inventory.h:34: warning 283: function declarator with no prototype
 ./scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
-./scenes/inventory/inventory_scene_init.c:12: warning 283: function declarator with no prototype
-./scenes/inventory/inventory_scene_init.c:42: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
+./scenes/inventory/inventory_scene_init.c:13: warning 283: function declarator with no prototype
+./scenes/inventory/inventory_scene_init.c:41: warning 85: in function InventoryScene_Init unreferenced function argument : 'player'
 ./scenes/inventory/inventory_scene_update.c:
 ./scenes/inventory/inventory_scene.h:13: warning 283: function declarator with no prototype
 ./scenes/inventory/../../include/inventory.h:34: warning 283: function declarator with no prototype
@@ -596,6 +612,7 @@ from type 'unsigned-char fixed'
 ./include/defs/../npcs.h:12: warning 283: function declarator with no prototype
 ./include/defs/inventory.c:32: warning 283: function declarator with no prototype
 ./include/defs/animation.c:
+./include/defs/language.c:
 ./include/defs/char_to_tile.c:
 ./include/defs/extra_actors.c:
 ./include/defs/money.c:
