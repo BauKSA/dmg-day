@@ -9,6 +9,7 @@
 #include "../scene.h"
 #include "../scene_manager.h"
 
+enum AllScenes next_scene = NONE;
 SceneManager scene_manager;
 uint8_t is_transitioning = 0;
 
@@ -50,6 +51,7 @@ void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
     return;
 
   is_transitioning = 1;
+  next_scene = NONE;
 
   if (scene_manager.game->current_scene != NULL && new_scene != INVENTORY)
   {

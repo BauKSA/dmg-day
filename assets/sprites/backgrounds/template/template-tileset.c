@@ -1,4 +1,4 @@
-#pragma bank 3
+#pragma bank 6
 
 #include "template.h"
 

@@ -21,8 +21,6 @@
 #include "../assets/chars/buttons.h"
 #include "../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 
-#include "../include/inventory.h"
-
 // Carga los tiles de números al inicio del juego
 void load_number_tiles()
 {
@@ -64,8 +62,6 @@ void main(void)
   create_player();
   init_NPCs();
 
-  initialize_inventory();
-
   enum GenderSelect gender = &GENDER;
   SceneManager_Create(&game);
 
@@ -77,6 +73,9 @@ void main(void)
   {
     prev_keys = keys;
     keys = joypad();
+
+    if (next_scene != NONE)
+      scene_manager.change_scene(next_scene, player);
 
     uint8_t previous_bank = _current_bank;
     if (game.current_scene->bank != _current_bank)

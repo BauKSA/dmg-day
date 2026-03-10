@@ -7,7 +7,8 @@
 #ifndef SCENE_MANAGER_H
 #define SCENE_MANAGER_H
 
-typedef struct SceneManager {
+typedef struct SceneManager
+{
   Game *game;
   void (*change_scene)(enum AllScenes new_scene, Entity *player);
 } SceneManager;
@@ -19,5 +20,7 @@ Scene *scene_manager_MapScene(enum AllScenes scene);
 
 extern SceneManager scene_manager;
 extern uint8_t is_transitioning;
+
+extern enum AllScenes next_scene;
 
 #endif // SCENE_MANAGER_H

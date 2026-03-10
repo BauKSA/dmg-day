@@ -11,7 +11,7 @@ void Map_PlayerMovement() {
   if (!(keys & J_SELECT) && (prev_keys & J_SELECT)) {
     cache_player_position();
 
-    scene_manager.change_scene(INVENTORY, &player);
+    next_scene = INVENTORY;
   }
 
   // Si no hay dirección activa, asignamos la primera que se presiona
