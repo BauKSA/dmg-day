@@ -7,6 +7,7 @@ enum AllScenes
   STORY,
   GENDER_SELECT,
   INVENTORY,
+  LANG_SELECT,
 
   // MAPAS
   MAP_00,

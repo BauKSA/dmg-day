@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "../../assets/chars/chars.h"
 #include "../../include/char_to_tile.h"
 #include "../../include/scene.h"

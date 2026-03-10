@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "../../assets/sprites/backgrounds/main_menu/bkg_MainMenu.h"
 #include "../../include/player.h"
 #include "../../include/position.h"

@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include <gb/gb.h>
 #include <stdlib.h>
 
@@ -20,14 +22,7 @@ void MainMenu_CheckInput(void) {
       relation_stats[i] = 1;
     }
 
-    // scene_manager.change_scene(STORY, &player);
+    //scene_manager.change_scene(LANG_SELECT, &player);
     scene_manager.change_scene(MAP_21, &player);
-  }
-
-  if (!(keys & J_SELECT) && (prev_keys & J_SELECT)) {
-    if (language == ENGLISH)
-      language = SPANISH;
-    else
-      language = ENGLISH;
   }
 }

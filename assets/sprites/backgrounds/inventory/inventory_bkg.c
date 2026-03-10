@@ -1,4 +1,4 @@
-#pragma bank 3
+#pragma bank 5
 
 const unsigned char inventory_bkg_tileset[] = {
 	// Tile 1

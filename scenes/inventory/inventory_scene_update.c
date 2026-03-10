@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "inventory_scene.h"
 #include "../../include/inventory.h"
 

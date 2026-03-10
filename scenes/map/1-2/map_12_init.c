@@ -14,9 +14,11 @@
 
 static void event_12() { CurrentMapData.event_active = 1; }
 
-void Map_12_Init(Scene *scene, Entity scene_player) {
+void Map_12_Init(Scene *scene, Entity scene_player)
+{
   init_player();
   Map_12_InitNPC();
+  Map_12_InitDialogues();
 
   CurrentMapData.player = player;
   CurrentMapData.collision_map = map_12_collision;

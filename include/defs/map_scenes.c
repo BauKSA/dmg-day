@@ -4,6 +4,7 @@
 #include "../scene.h"
 
 // All scenes include
+#include "../../scenes/language_select/language_select.h"
 #include "../../scenes/gender_select/gender_select.h"
 #include "../../scenes/inventory/inventory_scene.h"
 #include "../../scenes/main_menu/main_menu.h"
@@ -39,6 +40,7 @@
 #define MAP_1_BANK 2
 #define MAP_2_BANK 3
 #define MAP_3_BANK 4
+#define MENU_BANK 5
 
 Scene *scene_manager_MapScene(enum AllScenes scene)
 {
@@ -49,17 +51,30 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
   switch (scene)
   {
   case MENU:
+    SWITCH_ROM_MBC1(MENU_BANK);
     MainMenu_Create();
     return &MainMenu;
+    SWITCH_ROM_MBC1(_prev_bank);
+  case LANG_SELECT:
+    SWITCH_ROM_MBC1(MENU_BANK);
+    LanguageSelect_Create();
+    return &LanguageSelect;
+    SWITCH_ROM_MBC1(_prev_bank);
   case GENDER_SELECT:
+    SWITCH_ROM_MBC1(MENU_BANK);
     GenderSelect_Create();
     return &GenderSelect;
+    SWITCH_ROM_MBC1(_prev_bank);
   case INVENTORY:
+    SWITCH_ROM_MBC1(MENU_BANK);
     InventoryScene_Create();
     return &InventoryScene;
+    SWITCH_ROM_MBC1(_prev_bank);
   case STORY:
+    SWITCH_ROM_MBC1(MENU_BANK);
     Story_Create();
     return &Story;
+    SWITCH_ROM_MBC1(_prev_bank);
 
     // MAPAS
   case MAP_00:

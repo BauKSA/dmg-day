@@ -5,7 +5,6 @@
 
 #include "../../include/entity.h"
 #include "../../include/game.h"
-#include "../../scenes/main_menu/main_menu.h"
 
 // #include "../../include/huge/include/hUGEDriver.h"
 

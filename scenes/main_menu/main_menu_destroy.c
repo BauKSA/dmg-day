@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "./main_menu.h"
 
 #include "../../include/huge/include/hUGEDriver.h"

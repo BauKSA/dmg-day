@@ -1,4 +1,4 @@
-#pragma bank 3
+#pragma bank 5
 
 #include "./gender_select_map.h"
 

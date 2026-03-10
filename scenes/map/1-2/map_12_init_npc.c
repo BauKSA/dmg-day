@@ -12,8 +12,8 @@
 #include <stdint.h>
 
 void Map_12_InitNPC() {
-  position.x[npc_1] = 38;
-  position.y[npc_1] = 75;
+  position.x[npc_1] = 81;
+  position.y[npc_1] = 72;
 
   char npc_name[10] = "firulais";
   for (uint8_t i = 0; npc_name[i] != '\0'; i++)

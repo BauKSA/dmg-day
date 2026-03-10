@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include <gb/gb.h>
 
 #include "../../assets/chars/numbers.h"
