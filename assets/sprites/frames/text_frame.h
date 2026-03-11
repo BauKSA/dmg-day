@@ -6,9 +6,10 @@
 #define TEXT_FRAME_TILESET_START 180
 
 extern const unsigned char text_frame_tileset[];
-
 extern const unsigned char text_frame_tilemap[];
+extern uint8_t backup_tiles[100];
 
 void TextFrame_Init(uint8_t width, uint8_t height);
+void TextFrame_Close(uint8_t width, uint8_t height);
 
 #endif // _TEXTFRAME_

@@ -10,10 +10,12 @@
 
 #include "./map_30.h"
 
-void Map_30_Update(Scene *scene) {
+void Map_30_Update(Scene *scene)
+{
   Map_AutoClean();
 
   Map_PlayerMovement();
+  Map_30_CheckInput();
 
   MapData *data = (MapData *)scene->data;
 

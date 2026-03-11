@@ -23,6 +23,7 @@ void MainMenu_CheckInput(void)
     {
       humor_stats[i] = my_rand() % 3;
       relation_stats[i] = 1;
+      dialogue_phase[i] = 0;
     }
 
     next_scene = LANG_SELECT;

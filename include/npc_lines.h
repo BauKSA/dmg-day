@@ -3,7 +3,7 @@
 #include "./npcs.h"
 #include "./scene.h"
 
-typedef char Line[18];
+typedef char Line[19];
 typedef Line Dialogue[2];
 
 typedef Dialogue DialoguePerHumor[3];

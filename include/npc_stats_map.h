@@ -18,7 +18,6 @@
 #define NPC_MARTIN 1
 #define NPC_DIARIOS 2
 #define NPC_FIRULAIS 3
-#define NPC_DIARIOS 4
-#define NPC_ESCOBA 5
+#define NPC_ESCOBA 4
 
 #endif //_NPCSTATSMAP_

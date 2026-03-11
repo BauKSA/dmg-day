@@ -4,13 +4,18 @@
 #include "../npcs.h"
 #include "../npc_lines.h"
 #include "../name.h"
+#include "../input.h"
+#include "../scene_manager.h"
+#include "../language.h"
 #include "../entity.h"
+#include "../../assets/sprites/frames/text_frame.h"
 #include "../char_to_tile.h"
 #include "../text_positions.h"
 #include "../npc_stats_map.h"
 #include "../../assets/chars/chars.h"
 #include "../../assets/chars/numbers.h"
 #include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
+#include "../../assets/chars/buttons.h"
 
 #include "../../scenes/map/auto_clean.h"
 
@@ -38,7 +43,7 @@ void Scene_DrawNPCLine(
     enum AllScenes minigame)
 {
     auto_clean_timer = 0;
-    
+
     uint8_t relation = relation_stats[npc_map];
     uint8_t humor = humor_stats[npc_map];
 
@@ -75,4 +80,99 @@ void Scene_DrawNPCLine(
     // Relación
     uint8_t relation_icon_tile = relation + NPC_ICONS_TILESET_START + 3;
     set_bkg_tiles(RELATION_ICON_X, ICON_Y, 1, 1, &relation_icon_tile);
+
+    if (has_minigame)
+    {
+        TextFrame_Init(12, 1);
+
+        uint8_t a_button = BUTTON_TILESET_START + 1;
+        uint8_t b_button = BUTTON_TILESET_START + 2;
+
+        if (language == SPANISH)
+        {
+            char txt[] = "ayudar?";
+            for (uint8_t i = 0; txt[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(3 + i, 4, tile);
+            }
+
+            char si[] = "si";
+            char no[] = "no";
+
+            for (uint8_t i = 0; si[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(si[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(13 + i, 6, tile);
+            }
+
+            set_bkg_tile_xy(12, 6, a_button);
+
+            for (uint8_t i = 0; no[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(no[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(9 + i, 6, tile);
+            }
+
+            set_bkg_tile_xy(8, 6, b_button);
+        }
+        else if (language == ENGLISH)
+        {
+            char txt[] = "lend a hand?";
+            for (uint8_t i = 0; txt[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(3 + i, 4, tile);
+            }
+
+            char si[] = "yes";
+            char no[] = "no";
+
+            for (uint8_t i = 0; si[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(si[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(12 + i, 6, tile);
+            }
+
+            set_bkg_tile_xy(11, 6, a_button);
+
+            for (uint8_t i = 0; no[i] != '\0'; i++)
+            {
+                uint8_t tile = char_to_tile(no[i]) + CHARS_TILESET_START;
+                set_bkg_tile_xy(8 + i, 6, tile);
+            }
+
+            set_bkg_tile_xy(7, 6, b_button);
+        }
+
+        for (uint8_t i = 0; i < 15; i++)
+            vsync();
+
+        keys = 0;
+        prev_keys = 0;
+
+        while (1)
+        {
+            prev_keys = keys;
+            keys = joypad();
+
+            if (!(keys & J_A) && (prev_keys & J_A))
+            {
+                cache_player_position();
+                next_scene = minigame;
+                break;
+            }
+
+            if (!(keys & J_B) && (prev_keys & J_B))
+            {
+                dialogue_phase[npc_map] = 3; // fase única para ayudas denegadas
+                humor_stats[npc_map] = 0;
+                relation_stats[npc_map] = 0;
+
+                TextFrame_Close(12, 1);
+
+                break;
+            }
+        }
+    }
 }
