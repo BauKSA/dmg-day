@@ -11,6 +11,7 @@
 #include "../include/draw.h"
 #include "../include/gender_selection.h"
 #include "../include/input.h"
+#include "../include/inventory.h"
 #include "../include/npcs.h"
 #include "../include/player.h"
 #include "../include/scene.h"
@@ -61,6 +62,8 @@ void main(void)
 
   create_player();
   init_NPCs();
+
+  init_inventory();
 
   enum GenderSelect gender = &GENDER;
   SceneManager_Create(&game);

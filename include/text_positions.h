@@ -10,6 +10,9 @@
 #define NAME_START_X 1
 #define NAME_START_Y 1
 
+#define INVENTORY_ITEM_START_X 5
+#define INVENTORY_ITEM_START_Y 3
+
 #define NAME_END_X 10
 
 #define ICON_Y 1

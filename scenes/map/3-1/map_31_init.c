@@ -15,6 +15,7 @@
 void Map_31_Init(Scene *scene, Entity scene_player)
 {
   init_player();
+  Map_31_InitNPCs();
 
   CurrentMapData.player = player;
   CurrentMapData.npc_count = 0;

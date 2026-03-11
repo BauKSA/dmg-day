@@ -61,28 +61,28 @@ void Map_Collision(Scene *scene)
         break;
       position.x[player] = 16;
       cache_player_position();
-      scene_manager.change_scene(CurrentMapData.spawner.right, &player);
+      next_scene = CurrentMapData.spawner.right;
       break;
     case 7:
       if (CurrentMapData.spawner.left == NONE)
         break;
       position.x[player] = 142;
       cache_player_position();
-      scene_manager.change_scene(CurrentMapData.spawner.left, &player);
+      next_scene = CurrentMapData.spawner.left;
       break;
     case 8:
       if (CurrentMapData.spawner.up == NONE)
         break;
       position.y[player] = 100;
       cache_player_position();
-      scene_manager.change_scene(CurrentMapData.spawner.up, &player);
+      next_scene = CurrentMapData.spawner.up;
       break;
     case 9:
       if (CurrentMapData.spawner.down == NONE)
         break;
       position.y[player] = 40;
       cache_player_position();
-      scene_manager.change_scene(CurrentMapData.spawner.down, &player);
+      next_scene = CurrentMapData.spawner.down;
       break;
     }
   }

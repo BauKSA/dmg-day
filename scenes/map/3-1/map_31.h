@@ -6,6 +6,7 @@
 
 void Map_31_Init(Scene *scene, Entity scene_player);
 void Map_31_Update(Scene *scene);
+void Map_31_InitNPCs(void);
 
 extern Scene Map_31;
 

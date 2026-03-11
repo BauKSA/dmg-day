@@ -64,7 +64,5 @@ void LanguageSelect_CheckInput()
     }
 
     if (!(keys & J_A) && (prev_keys & J_A))
-    {
-        scene_manager.change_scene(MAP_21, player);
-    }
+        next_scene = MAP_21;
 }
