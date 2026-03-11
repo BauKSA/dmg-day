@@ -41,6 +41,7 @@
 #define MAP_2_BANK 3
 #define MAP_3_BANK 4
 #define MENU_BANK 5
+#define MG_BANK 6
 
 Scene *scene_manager_MapScene(enum AllScenes scene)
 {
@@ -188,8 +189,10 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
 
   // MINI JUEGOS
   case MG_LEAVES:
+    SWITCH_ROM_MBC1(MG_BANK);
     Mg_Leaves_Create();
     return &Mg_Leaves;
+    SWITCH_ROM_MBC1(_prev_bank);
   default:
     return NULL;
   }

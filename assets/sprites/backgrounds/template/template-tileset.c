@@ -1,5 +1,3 @@
-#pragma bank 6
-
 #include "template.h"
 
 const unsigned char template_tileset[] = {

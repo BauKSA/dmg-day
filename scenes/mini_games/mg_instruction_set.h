@@ -9,12 +9,18 @@ typedef enum InstructionButton
     B
 } InstructionButton;
 
+typedef struct Requirement
+{
+    char *text;
+    uint8_t qty;
+} Requirement;
+
 typedef struct Instruction
 {
     char *text;
     InstructionButton button;
 } Instruction;
 
-void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count);
+void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count, Requirement *reqs, uint8_t reqs_count);
 
 #endif // _MG_INSTRUCTIONSET_

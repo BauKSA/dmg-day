@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include "./mg_instruction_set.h"
 #include "../../include/char_to_tile.h"
 #include "../../assets/chars/chars.h"
@@ -5,18 +7,14 @@
 #include "../../assets/chars/buttons.h"
 #include "../../assets/sprites/backgrounds/template/template.h"
 #include "../../include/input.h"
+#include "../../include/language.h"
 
 #include <gb/gb.h>
 
-void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count)
+void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count, Requirement *reqs, uint8_t reqs_count)
 {
-    unsigned char _previous_bank = _current_bank;
-    SWITCH_ROM_MBC1(1);
-
     set_bkg_data(0, template_tileset_size, template_tileset);
     set_bkg_tiles(0, 0, 20, 18, template_tilemap);
-
-    SWITCH_ROM_MBC1(_previous_bank);
 
     for (uint8_t i = 0; i < instruction_count; i++)
     {
@@ -31,6 +29,43 @@ void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count)
 
         uint8_t button = (uint8_t)instructions[i].button + BUTTON_TILESET_START;
         set_bkg_tile_xy(button_x, 3 + i, button);
+    }
+
+    if (language == SPANISH)
+    {
+        char txt[] = "requisitos";
+        for (uint8_t i = 0; txt[i] != '\0'; i++)
+        {
+            uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
+            set_bkg_tile_xy(1, 7, tile);
+        }
+    }
+    else
+    {
+        char txt[] = "requirements";
+        for (uint8_t i = 0; txt[i] != '\0'; i++)
+        {
+            uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
+            set_bkg_tile_xy(1 + i, 7, tile);
+        }
+    }
+
+    for (uint8_t i = 0; i < reqs_count; i++)
+    {
+        uint8_t tens = reqs[i].qty / 10;
+        uint8_t units = reqs[i].qty % 10;
+
+        uint8_t tens_tile = NUMBER_TILESET_START + tens;
+        uint8_t units_tile = NUMBER_TILESET_START + units;
+
+        set_bkg_tile_xy(1, 8 + i, tens_tile);
+        set_bkg_tile_xy(2, 8 + i, units_tile);
+
+        for (uint8_t j = 0; reqs[i].text[j] != '\0'; j++)
+        {
+            uint8_t tile = char_to_tile(reqs[i].text[j]) + CHARS_TILESET_START;
+            set_bkg_tile_xy(4 + j, 8 + i, tile);
+        }
     }
 
     uint8_t button = (uint8_t)A + BUTTON_TILESET_START;

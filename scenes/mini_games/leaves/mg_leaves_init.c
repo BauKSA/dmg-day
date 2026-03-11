@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 6
 
 #include <gb/gb.h>
 
@@ -20,6 +20,7 @@
 
 #include "../../../include/char_to_tile.h"
 #include "../../../include/draw.h"
+#include "../../../include/language.h"
 #include "../../../include/load.h"
 #include "../../../include/name.h"
 #include "../../../include/npc_lines.h"
@@ -37,13 +38,17 @@ uint16_t actor_spawner[TOTAL_ACTORS];
 uint8_t actor_spawn_x[TOTAL_ACTORS];
 enum ActorState actor_state[TOTAL_ACTORS];
 uint8_t SWEEPING_FLAG = 0;
-uint8_t score = 0;
-uint8_t score_cache = 0;
 
 MG_Leaves_DATA mg_leaves_DATA;
 
 uint8_t available_x[TOTAL_ACTORS];
 uint8_t next_spawn_idx = 0;
+
+// SCORE
+uint8_t min_acorns = 5;
+uint8_t min_leaves = 12;
+uint8_t acorns_count = 0;
+uint8_t leaves_count = 0;
 
 void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 {
@@ -53,28 +58,79 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
   scene->data = &mg_leaves_DATA;
 
-  char *txt = "move";
-  char *sec_txt = "sweep";
-  Instruction instruction[2];
+  if (language == ENGLISH)
+  {
+    char *txt = "move";
+    char *sec_txt = "sweep";
 
-  instruction[0].text = txt;
-  instruction[0].button = DPAD;
+    Instruction instruction[2];
 
-  instruction[1].text = sec_txt;
-  instruction[1].button = A;
+    instruction[0].text = txt;
+    instruction[0].button = DPAD;
 
-  Mg_InstructionSet(instruction, 2);
+    instruction[1].text = sec_txt;
+    instruction[1].button = A;
 
-  if (mgl_initialized == 0)
-    Mg_LoadScreenInit();
+    char *req_a = "leaves";
+    char *req_b = "acorns";
 
-  char title[MAX_SIZE_MG_TITLE] = "sweep'em!";
-  Mg_SetTitle(title);
+    Requirement reqs[2];
 
-  Mg_LoadScreenUpdate();
+    reqs[0].text = req_a;
+    reqs[0].qty = 10;
 
-  Mg_Leaves_LoadBKG();
-  Mg_SetTitle(title);
+    reqs[1].text = req_b;
+    reqs[1].qty = 5;
+
+    Mg_InstructionSet(instruction, 2, reqs, 2);
+
+    if (mgl_initialized == 0)
+      Mg_LoadScreenInit();
+
+    char title[MAX_SIZE_MG_TITLE] = "sweep'em!";
+    Mg_SetTitle(title);
+
+    Mg_LoadScreenUpdate();
+
+    Mg_Leaves_LoadBKG();
+    Mg_SetTitle(title);
+  }
+  else
+  {
+    char *txt = "mover";
+    char *sec_txt = "barrer";
+    Instruction instruction[2];
+
+    instruction[0].text = txt;
+    instruction[0].button = DPAD;
+
+    instruction[1].text = sec_txt;
+    instruction[1].button = A;
+
+    char *req_a = "hojas";
+    char *req_b = "bellotas";
+
+    Requirement reqs[2];
+
+    reqs[0].text = req_a;
+    reqs[0].qty = 10;
+
+    reqs[1].text = req_b;
+    reqs[1].text = 5;
+
+    Mg_InstructionSet(instruction, 2, reqs, 2);
+
+    if (mgl_initialized == 0)
+      Mg_LoadScreenInit();
+
+    char title[MAX_SIZE_MG_TITLE] = "barre!";
+    Mg_SetTitle(title);
+
+    Mg_LoadScreenUpdate();
+
+    Mg_Leaves_LoadBKG();
+    Mg_SetTitle(title);
+  }
 
   Mg_Leaves_Player_Init();
 
@@ -127,23 +183,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
     actor_state[i] = INACTIVE;
   }
 
-  char text[6] = "score:";
-
-  for (uint8_t i = 0; i < 6; i++)
-  {
-    uint8_t char_tile = char_to_tile(text[i]) + CHARS_TILESET_START;
-    set_bkg_tile_xy(TEXT_START_X + i, TEXT_START_Y, char_tile);
-  }
-
-  uint8_t thousands = ((score / 1000) % 10) + NUMBER_TILESET_START;
-  uint8_t hundreds = ((score / 100) % 10) + NUMBER_TILESET_START;
-  uint8_t tens = ((score / 10) % 10) + NUMBER_TILESET_START;
-  uint8_t units = (score % 10) + NUMBER_TILESET_START;
-
-  set_bkg_tile_xy(TEXT_START_X + 6 + 0, TEXT_START_Y, thousands);
-  set_bkg_tile_xy(TEXT_START_X + 6 + 1, TEXT_START_Y, hundreds);
-  set_bkg_tile_xy(TEXT_START_X + 6 + 2, TEXT_START_Y, tens);
-  set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
-
-  Mg_TimerStart(30);
+  Mg_TimerStart(20);
 }

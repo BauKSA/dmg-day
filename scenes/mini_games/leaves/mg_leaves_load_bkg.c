@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include <gb/gb.h>
 #include "./mg_leaves.h"
 #include "../../../assets/sprites/backgrounds/minigames/leaves/bkg_leaves_example.h"

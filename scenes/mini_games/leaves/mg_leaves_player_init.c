@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 6
 
 #include "./mg_leaves.h"
 #include "../../../include/position.h"

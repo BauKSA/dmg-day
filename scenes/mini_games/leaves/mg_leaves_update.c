@@ -1,4 +1,4 @@
-#pragma bank 2
+#pragma bank 6
 
 #include <gb/gb.h>
 #include <stdio.h>
@@ -15,15 +15,14 @@
 #include "../../../include/can_move.h"
 #include "../../../include/money.h"
 #include "../../../include/intermitent_text.h"
+#include "../../../include/npc_stats_map.h"
+#include "../../../include/npcs.h"
 
 #include "../mg_mission_complete.h"
 #include "../mg_player_movement.h"
 #include "../mg_timer.h"
 
 #include "./mg_leaves.h"
-
-uint8_t errors = 0;
-uint8_t sweeped = 0;
 
 uint8_t is_being_swept(uint8_t actor_idx)
 {
@@ -125,19 +124,8 @@ void check_actor_collision()
       actor_y[i] = 0;
       fixed_y[i] = 0;
 
-      if (is_leaf)
-      {
-        if (score - NEGATIVE_SCORE <= 0)
-          score = 0;
-        else
-          score -= NEGATIVE_SCORE;
-        errors++;
-      }
-      else
-      {
-        score += POSITIVE_SCORE;
-        sweeped++;
-      }
+      if (is_leaf == 0)
+        acorns_count++;
     }
 
     if (actor_state[i] == BEING_SWEPT_RIGHT && actor_x[i] >= mg_leaves_DATA.right_limit)
@@ -148,31 +136,75 @@ void check_actor_collision()
       actor_y[i] = 0;
       fixed_y[i] = 0;
 
-      if (!is_leaf)
-      {
-        if (score - NEGATIVE_SCORE <= 0)
-          score = 0;
-        else
-          score -= NEGATIVE_SCORE;
-        errors++;
-      }
-      else
-      {
-        score += POSITIVE_SCORE;
-        sweeped++;
-      }
+      if (is_leaf == 1)
+        leaves_count++;
     }
   }
-
-  if (score < 0)
-    score = 0;
 }
 
-uint8_t SetCoinsReward()
+/**
+ * TABLA DE PUNTAJES MINI-JUEGOS
+ * Pasando puntaje mínimo:
+ * R/H |  malo | neutro | bueno
+ * -----------------------------
+ * B   | 3.500 | 3.800  | 4.200
+ * -----------------------------
+ * M   | 2.100 | 2.300  | 2.500
+ *
+ * Sin puntaje mínimo:
+ * R/H |  malo | neutro | bueno
+ * -----------------------------
+ * B   | 800   | 900    | 1.000
+ * -----------------------------
+ * M   | 500   | 600    | 700
+ */
+
+uint16_t SetCoinsReward()
 {
-  uint8_t tmp = money;
-  money += sweeped * 2 * 10;
-  money -= errors * 5;
+  uint16_t tmp = money;
+  uint8_t min = 0;
+  uint8_t good_relation = 0;
+  uint8_t humor = humor_stats[(uint8_t)NPC_ESCOBA];
+
+  if (acorns_count >= min_acorns && leaves_count >= min_leaves)
+    min = 1;
+
+  if (relation_stats[(uint8_t)NPC_ESCOBA] == 2)
+    good_relation = 1;
+
+  if (humor == 0)
+  {
+    if (min == 0 && good_relation == 0)
+      money += 500;
+    else if (min == 1 && good_relation == 0)
+      money += 2100;
+    else if (min == 0 && good_relation == 1)
+      money += 800;
+    else if (min == 1 && good_relation == 1)
+      money += 3500;
+  }
+  else if (humor == 1)
+  {
+    if (min == 0 && good_relation == 0)
+      money += 600;
+    else if (min == 1 && good_relation == 0)
+      money += 2300;
+    else if (min == 0 && good_relation == 1)
+      money += 900;
+    else if (min == 1 && good_relation == 1)
+      money += 3800;
+  }
+  else if (humor == 2)
+  {
+    if (min == 0 && good_relation == 0)
+      money += 700;
+    else if (min == 1 && good_relation == 0)
+      money += 2500;
+    else if (min == 0 && good_relation == 1)
+      money += 1000;
+    else if (min == 1 && good_relation == 1)
+      money += 4200;
+  }
 
   return money - tmp;
 }
@@ -191,21 +223,10 @@ void Mg_Leaves_Update(Scene *scene)
     position.y[mg_player] = 0;
     draw_actor(mg_player);
 
-    uint8_t reward = SetCoinsReward();
+    uint16_t reward = SetCoinsReward();
+    uint8_t success = (acorns_count >= min_acorns && leaves_count >= min_leaves);
 
-    char correct[] = "correct: ";
-    char error[] = "error: ";
-
-    uint8_t correct_tile = sweeped + NUMBER_TILESET_START;
-    uint8_t error_tile = errors + NUMBER_TILESET_START;
-
-    Mg_SplashCompleteScreen();
-    IntermitentText_Init(TEXT_START_X, TEXT_START_Y, correct, 15);
-    set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y, correct_tile);
-
-    IntermitentText_Init(TEXT_START_X, TEXT_START_Y + 1, error, 15);
-    set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y + 1, error_tile);
-
+    Mg_SplashCompleteScreen((uint8_t)NPC_ESCOBA, success, reward);
     Mg_CompleteScreenSleep();
 
     scene_manager.change_scene(MAP_00, &player);
@@ -233,21 +254,6 @@ void Mg_Leaves_Update(Scene *scene)
   check_actor_collision();
 
   draw_actor(mg_player);
-
-  if (score != score_cache)
-  {
-    score_cache = score;
-
-    uint8_t thousands = ((score / 1000) % 10) + NUMBER_TILESET_START;
-    uint8_t hundreds = ((score / 100) % 10) + NUMBER_TILESET_START;
-    uint8_t tens = ((score / 10) % 10) + NUMBER_TILESET_START;
-    uint8_t units = (score % 10) + NUMBER_TILESET_START;
-
-    set_bkg_tile_xy(TEXT_START_X + 6 + 0, TEXT_START_Y, thousands);
-    set_bkg_tile_xy(TEXT_START_X + 6 + 1, TEXT_START_Y, hundreds);
-    set_bkg_tile_xy(TEXT_START_X + 6 + 2, TEXT_START_Y, tens);
-    set_bkg_tile_xy(TEXT_START_X + 6 + 3, TEXT_START_Y, units);
-  }
 
   uint16_t seconds = mgt_current_frame / 60;
 
