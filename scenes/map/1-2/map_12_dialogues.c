@@ -7,13 +7,21 @@
 #include "map_12.h"
 
 const DialoguePerRelation dialogue_00_12_en = {
-    {{"", ""}, {"woof, woof!", "Grrrrh..."}, {"", ""}},
-    {{"", ""}, {"woof, woof!", ""}, {"", ""}},
-    {{"", ""}, {"*pant, pant*", ""}, {"", ""}},
+    {{"", ""}, {"", ""}, {"", ""}},
+    {{"woof, woof!", "grrrrh..."}, {"woof, woof!", ""}, {"*pant, pant*", ""}},
+    {{"", ""}, {"", ""}, {"", ""}},
+};
+
+const DialoguePerRelation dialogue_00_12_es = {
+    {{"", ""}, {"", ""}, {"", ""}},
+    {{"guau, guau!", "grrrrh..."}, {"guau, guau!", ""}, {"*jadeo, jadeo*", ""}},
+    {{"", ""}, {"", ""}, {"", ""}},
 };
 
 void Map_12_InitDialogues()
 {
-  // if (language == ENGLISH)
-  CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_00_12_en;
+  if (language == ENGLISH)
+    CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_00_12_en;
+  else
+    CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_00_12_es;
 }

@@ -14,8 +14,10 @@ void Map_12_Update(Scene *scene);
 void Map_12_InitNPC(void);
 void Map_12_InitDialogues(void);
 void Map_12_CheckInput(void);
+void Map_12_CheckItems(void);
 
 extern Scene Map_12;
+extern uint8_t dog_active;
 
 void Map_12_Create(void);
 

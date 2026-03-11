@@ -15,6 +15,7 @@ void Map_22_Destroy(Scene *scene);
 void Map_22_InitNPC(void);
 void Map_22_InitDialogues(void);
 void Map_22_CheckInput(void);
+void Map_22_CheckItems(void);
 
 extern Scene Map_22;
 extern uint8_t npc_appeared;

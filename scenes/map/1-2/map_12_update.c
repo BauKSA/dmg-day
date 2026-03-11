@@ -22,6 +22,7 @@ void Map_12_Update(Scene *scene) {
 
   Map_Collision(scene);
   Map_12_CheckInput();
+  Map_12_CheckItems();
 
   return;
 }

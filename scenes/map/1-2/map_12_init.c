@@ -17,7 +17,9 @@ static void event_12() { CurrentMapData.event_active = 1; }
 void Map_12_Init(Scene *scene, Entity scene_player)
 {
   init_player();
-  Map_12_InitNPC();
+  if (dog_active == 1)
+    Map_12_InitNPC();
+    
   Map_12_InitDialogues();
 
   CurrentMapData.player = player;

@@ -10,5 +10,6 @@ void Map_30_Update(Scene *scene);
 extern Scene Map_30;
 
 void Map_30_Create(void);
+void Map_30_InitNPC(void);
 
 #endif //_MAP_30_

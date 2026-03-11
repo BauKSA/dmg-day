@@ -12,6 +12,8 @@
 #include "../../assets/chars/numbers.h"
 #include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 
+#include "../../scenes/map/auto_clean.h"
+
 Entity npc_1;
 Entity npc_2;
 Entity option_actor;
@@ -35,6 +37,8 @@ void Scene_DrawNPCLine(
     uint8_t has_minigame,
     enum AllScenes minigame)
 {
+    auto_clean_timer = 0;
+    
     uint8_t relation = relation_stats[npc_map];
     uint8_t humor = humor_stats[npc_map];
 

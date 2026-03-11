@@ -42,5 +42,13 @@ void InventoryScene_CheckInput()
         position.x[option_actor] += 24;
     }
 
+    if ((keys & J_A) && !(prev_keys & J_A))
+    {
+        active_item_index = selected_item_index;
+        active_item = 1;
+
+        next_scene = prev_scene;
+    }
+
     return;
 }

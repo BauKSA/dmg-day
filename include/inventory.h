@@ -23,7 +23,7 @@ typedef struct Slot
 
 extern Slot inventory[MAX_ITEMS];
 extern uint8_t active_item_index;
-extern Item active_item;
+extern uint8_t active_item;
 
 extern uint8_t selected_item_index;
 extern uint8_t last_selected_item_index;

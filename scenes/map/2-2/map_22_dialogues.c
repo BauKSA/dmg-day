@@ -7,14 +7,14 @@
 #include "./map_22.h"
 
 const DialoguePerRelation dialogue_00 = {
-    {{"...", ""}, {"...", ""}, {"...", ""}},
+    {{"", ""}, {"", ""}, {"", ""}},
     {{"...", ""}, {"mhmm...", ""}, {"hi...", ""}},
-    {{"...", ""}, {"...", ""}, {"...", ""}}};
+    {{"", ""}, {"", ""}, {"", ""}}};
 
 const DialoguePerRelation dialogue_00_en = {
-    {{"", ""}, {"english text!", ""}, {"", ""}},
-    {{"", ""}, {"english text b", ""}, {"", ""}},
-    {{"", ""}, {"englosh text c", ""}, {"", ""}}};
+    {{"", ""}, {"", ""}, {"", ""}},
+    {{"english text!", ""}, {"english text b", ""}, {"englosh text c", ""}},
+    {{"", ""}, {"", ""}, {"", ""}}};
 
 const DialoguePerRelation dialogue_01 = {
     {{"...", ""}, {"...", ""}, {"...", ""}},

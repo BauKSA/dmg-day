@@ -4,12 +4,18 @@
 #include "../../include/can_move.h"
 #include "../../include/position.h"
 #include "../../include/scene.h"
+#include "../../include/language.h"
+#include "../../include/text_positions.h"
+#include "../../include/char_to_tile.h"
+#include "../../include/inventory.h"
 #include "../../include/scene_manager.h"
 #include "../../include/player.h"
 #include "../../scenes/map/map_data.h"
+#include "../../scenes/map/auto_clean.h"
 
 #include "../../include/text_positions.h"
 #include "../../assets/chars/numbers.h"
+#include "../../assets/chars/chars.h"
 
 static inline uint8_t get_tile(MapData *data, int x, int y)
 {
@@ -36,6 +42,14 @@ void Map_Collision(Scene *scene)
   if (actual_tile.value != actual_tile.prev)
   {
     clean();
+  }
+
+  if (active_item == 1 && CurrentMapData.collision_map[tile_y][tile_x] == 0)
+  {
+    active_item = 0;
+    auto_clean_timer = 0;
+
+    ItemNoUseText();
   }
 
   if (CurrentMapData.collision_map[tile_y][tile_x] > 1 && CurrentMapData.collision_map[tile_y][tile_x] < 6)

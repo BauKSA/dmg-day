@@ -10,8 +10,8 @@
 #include "./map_23.h"
 
 void Map_23_InitNPC() {
-  position.x[npc_1] = 38;
-  position.y[npc_1] = 75;
+  position.x[npc_1] = 96;
+  position.y[npc_1] = 76;
 
   char npc_name[10] = "diariero";
   for (uint8_t i = 0; i < npc_name[i] != '\0'; i++)
