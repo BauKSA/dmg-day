@@ -11,5 +11,6 @@ extern Scene Map_30;
 
 void Map_30_Create(void);
 void Map_30_InitNPC(void);
+void Map_30_InitDialogues(void);
 
 #endif //_MAP_30_
