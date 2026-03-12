@@ -3,6 +3,7 @@
 
 #include "../include/game.h"
 #include "../include/scene.h"
+#include "../include/mgm_states.h"
 
 /* Include scene headers */
 #include "../scenes/gender_select/gender_select.h"
@@ -64,6 +65,7 @@ void main(void)
   init_NPCs();
 
   init_inventory();
+  init_mgm_states();
 
   enum GenderSelect gender = &GENDER;
   SceneManager_Create(&game);

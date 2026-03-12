@@ -31,6 +31,7 @@ enum AllScenes
   MAP_33,
 
   MG_LEAVES,
+  MG_HOMEWORK,
   NONE
 };
 
