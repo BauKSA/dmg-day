@@ -6,6 +6,7 @@
 #include "../map_data.h"
 
 #include "../../../include/draw.h"
+#include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/scene.h"
 #include "../../../include/all_scenes.h"
@@ -15,9 +16,11 @@
 void Map_32_Init(Scene *scene, Entity scene_player)
 {
   init_player();
+  Map_32_InitNPC();
 
   CurrentMapData.player = player;
-  CurrentMapData.npc_count = 0;
+  CurrentMapData.npc_count = 1;
+  CurrentMapData.npc[0] = npc_1;
   CurrentMapData.collision_map = map_32_collision;
 
   CurrentMapData.spawner.right = MAP_33;
@@ -34,6 +37,7 @@ void Map_32_Init(Scene *scene, Entity scene_player)
   set_bkg_tiles(0, 0, 20, 18, map_3_2_tilemap);
 
   draw_actor(player);
+  draw_actor(npc_1);
 
   actual_tile.prev = 0;
   actual_tile.value = 0;
