@@ -1,4 +1,4 @@
-pragma bank 4
+#pragma bank 4
 
 #include "../../../include/npc_lines.h"
 #include "../../../include/language.h"
@@ -8,12 +8,12 @@ pragma bank 4
 
 static const DialoguePerRelation dialogue_0_32_es = {
     {{"", ""}, {"", ""}, {"", ""}},
-    {{"no es hora del\0", "colegio, ya?\0"}, {"buen dia\0", ""}, {"que maravilloso\0", "dia, no?\0"}},
+    {{"dialogo a", "humor c"}, {"dialogo a", "humor b"}, {"dialogo a", "humor a"}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
 static const DialoguePerRelation dialogue_0_32_en = {
     {{"", ""}, {"", ""}, {"", ""}},
-    {{"it's time for", "school, y'now?"}, {"good morning", ""}, {"what a beautiful", "day, kid"}},
+    {{"dialogue a", "mood c"}, {"dialogue a", "mood b"}, {"dialogue a", "mood a"}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
 static const DialoguePerRelation dialogue_1_32_es = {
@@ -38,7 +38,7 @@ static const DialoguePerRelation dialogue_2_32_en = {
 
 void Map_32_InitDialogues()
 {
-    if (mg_32_tmp != MGM_states.homework)
+    if (mg_32_tmp != MGM_states.mg_homework)
         dialogue_phase[(uint8_t)NPC_TAREA] = 1;
 
     if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)

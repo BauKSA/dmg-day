@@ -1,19 +1,19 @@
 #ifndef _MGMSTATES_
 #define _MGMSTATES_
 
-typedef enum MGM_STATE = {
+enum MGM_STATE {
     MGM_INACTIVE,
     MGM_ACTIVE
-} MGM_STATE;
+};
 
-typedef struct AllMGMStates = {
-    MGM_STATE mg_leaves;
-    MGM_STATE mg_homework;
-    MGM_STATE mg_football;
-    MGM_STATE glasses;
-    MGM_STATE pigeon;
-    MGM_STATE super;
-    MGM_STATE book;
+typedef struct AllMGMStates {
+    enum MGM_STATE mg_leaves;
+    enum MGM_STATE mg_homework;
+    enum MGM_STATE mg_football;
+    enum MGM_STATE glasses;
+    enum MGM_STATE pigeon;
+    enum MGM_STATE super;
+    enum MGM_STATE book;
 } AllMGMStates;
 
 extern AllMGMStates MGM_states;

@@ -4,6 +4,7 @@
 #include "../../../include/draw.h"
 #include "../../../include/scene.h"
 #include "../../../include/npcs.h"
+#include "../../../include/npc_stats_map.h"
 #include "../../../include/mgm_states.h"
 #include "../../map/map_data.h"
 #include "../../map/auto_clean.h"
@@ -12,10 +13,11 @@
 #include "./map_32.h"
 
 void Map_32_Update(Scene *scene)
-{ 
+{
   Map_AutoClean();
 
   Map_PlayerMovement();
+  Map_32_CheckInput();
 
   MapData *data = (MapData *)scene->data;
 

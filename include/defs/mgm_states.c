@@ -2,9 +2,10 @@
 
 AllMGMStates MGM_states;
 
-void init_mgm_states(){
+void init_mgm_states()
+{
     MGM_states.mg_leaves = MGM_ACTIVE;
-    MGM_states.mg_football = MGM_ACTIVE:
+    MGM_states.mg_football = MGM_ACTIVE;
     MGM_states.mg_homework = MGM_ACTIVE;
     MGM_states.glasses = MGM_ACTIVE;
     MGM_states.book = MGM_ACTIVE;

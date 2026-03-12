@@ -20,14 +20,14 @@ void Map_32_CheckInput()
 
     if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)
     {
-      //mg_active = 1;
-      //mg = MG_HOMEWORK;
+      // mg_active = 1;
+      // mg = MG_HOMEWORK;
       mg = NONE;
     }
 
     if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)
     {
-      tmp_relation = 2;
+      tmp_relation32 = 2;
     }
 
     uint8_t tmp = dialogue_phase[(uint8_t)NPC_TAREA];
@@ -38,7 +38,7 @@ void Map_32_CheckInput()
     {
       Map_30_InitDialogues();
       clean();
-      mg_ended = 0;
+      mg_32_tmp = MGM_states.mg_homework;
       Scene_DrawNPCLine(npc_1, (uint8_t)NPC_TAREA, 0, 0, NONE);
     }
   }

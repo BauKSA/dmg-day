@@ -3,5 +3,5 @@
 #include "../../../include/mgm_states.h"
 
 Scene Map_32;
-AllMGMStates mg_32_tmp = MGM_INACTIVE;
+enum MGM_STATE mg_32_tmp = MGM_ACTIVE;
 uint8_t tmp_relation32 = 1;

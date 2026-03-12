@@ -13,10 +13,16 @@
 
 #include "../../../assets/sprites/backgrounds/maps/3-2/map_3-2.h"
 
+static void map_32_event()
+{
+  CurrentMapData.event_active = 1;
+}
+
 void Map_32_Init(Scene *scene, Entity scene_player)
 {
   init_player();
   Map_32_InitNPC();
+  Map_32_InitDialogues();
 
   CurrentMapData.player = player;
   CurrentMapData.npc_count = 1;
@@ -28,8 +34,9 @@ void Map_32_Init(Scene *scene, Entity scene_player)
   CurrentMapData.spawner.up = MAP_22;
   CurrentMapData.spawner.down = NONE;
 
-  CurrentMapData.event_count = 0;
+  CurrentMapData.event_count = 1;
   CurrentMapData.event_active = 0;
+  CurrentMapData.events[0] = map_32_event;
 
   scene->data = &CurrentMapData;
 
