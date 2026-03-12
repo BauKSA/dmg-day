@@ -40,13 +40,16 @@ static const DialoguePerRelation dialogue_3_30_es = {
     {{"", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
-    static const DialoguePerRelation dialogue_3_30_en = {
+static const DialoguePerRelation dialogue_3_30_en = {
     {{"hmpf...", "how rude"}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
 void Map_30_InitDialogues()
 {
+    if (mg_ended == 1)
+        dialogue_phase[(uint8_t)NPC_ESCOBA] = 2;
+
     if (dialogue_phase[(uint8_t)NPC_ESCOBA] == 0)
     {
         if (language == SPANISH)

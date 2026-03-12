@@ -10,6 +10,7 @@ void Map_30_Destroy(Scene *scene);
 
 extern Scene Map_30;
 extern uint8_t tmp_relation;
+extern uint8_t mg_ended;
 
 void Map_30_Create(void);
 void Map_30_InitNPC(void);

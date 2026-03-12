@@ -22,6 +22,7 @@ void Map_30_CheckInput()
     {
       mg_active = 1;
       mg = MG_LEAVES;
+      mg_ended = 1;
     }
 
     if (dialogue_phase[(uint8_t)NPC_ESCOBA] == 0)
@@ -37,6 +38,7 @@ void Map_30_CheckInput()
     {
       Map_30_InitDialogues();
       clean();
+      mg_ended = 0;
       Scene_DrawNPCLine(npc_1, (uint8_t)NPC_ESCOBA, 0, 0, NONE);
     }
   }

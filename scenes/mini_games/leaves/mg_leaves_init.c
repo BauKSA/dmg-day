@@ -46,7 +46,7 @@ uint8_t next_spawn_idx = 0;
 
 // SCORE
 uint8_t min_acorns = 5;
-uint8_t min_leaves = 12;
+uint8_t min_leaves = 10;
 uint8_t acorns_count = 0;
 uint8_t leaves_count = 0;
 
@@ -77,7 +77,7 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
     Requirement reqs[2];
 
     reqs[0].text = req_a;
-    reqs[0].qty = 10;
+    reqs[0].qty = 8;
 
     reqs[1].text = req_b;
     reqs[1].qty = 5;
@@ -107,16 +107,16 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
     instruction[1].text = sec_txt;
     instruction[1].button = A;
 
-    char *req_a = "hojas";
-    char *req_b = "bellotas";
+    char *req_a = "hojas\0";
+    char *req_b = "bellotas\0";
 
     Requirement reqs[2];
 
     reqs[0].text = req_a;
-    reqs[0].qty = 10;
+    reqs[0].qty = 8;
 
     reqs[1].text = req_b;
-    reqs[1].text = 5;
+    reqs[1].qty = 5;
 
     Mg_InstructionSet(instruction, 2, reqs, 2);
 
@@ -136,16 +136,13 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
   for (uint8_t i = 0; i < TOTAL_ACTORS; i++)
   {
-    // Distribuimos los actores en el ancho permitido (32 a 120)
     available_x[i] = 44 + (i * (80 / TOTAL_ACTORS));
 
-    // Inicializamos los estados explícitamente
     actor_active[i] = 0;
     actor_state[i] = INACTIVE;
-    actor_y[i] = 0; // Fuera de pantalla hasta que spawnee
+    actor_y[i] = 0;
   }
 
-  // Init Leaves
   for (uint8_t i = 0; i <= LEAF_COUNT; i++)
   {
     uint8_t id;
@@ -167,7 +164,6 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
     actor_state[i] = INACTIVE;
   }
 
-  // Init Garbage
   for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++)
   {
     uint8_t id = load_extra_tiles(i, spr_acorn, 1);
@@ -183,5 +179,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
     actor_state[i] = INACTIVE;
   }
 
-  Mg_TimerStart(20);
+  Mg_TimerStart(30);
 }

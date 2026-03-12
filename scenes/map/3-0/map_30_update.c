@@ -4,6 +4,7 @@
 #include "../../../include/npcs.h"
 #include "../../../include/draw.h"
 #include "../../../include/scene.h"
+#include "../../../include/npc_stats_map.h"
 #include "../../map/map_data.h"
 #include "../../map/auto_clean.h"
 #include "../../map/map_player_movement.h"
@@ -26,6 +27,13 @@ void Map_30_Update(Scene *scene)
   draw_actor(npc_1);
 
   Map_Collision(scene);
+
+  if (mg_ended == 1)
+  {
+    mg_ended = 0;
+
+    Scene_DrawNPCLine(npc_1, (uint8_t)NPC_ESCOBA, 0, 0, NONE);
+  }
 
   return;
 }

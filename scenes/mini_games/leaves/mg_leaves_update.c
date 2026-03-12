@@ -159,17 +159,17 @@ void check_actor_collision()
  * M   | 500   | 600    | 700
  */
 
-uint16_t SetCoinsReward()
+uint16_t SetCoinsReward(uint8_t npc_map)
 {
   uint16_t tmp = money;
   uint8_t min = 0;
   uint8_t good_relation = 0;
-  uint8_t humor = humor_stats[(uint8_t)NPC_ESCOBA];
+  uint8_t humor = humor_stats[npc_map];
 
   if (acorns_count >= min_acorns && leaves_count >= min_leaves)
     min = 1;
 
-  if (relation_stats[(uint8_t)NPC_ESCOBA] == 2)
+  if (relation_stats[npc_map] == 2)
     good_relation = 1;
 
   if (humor == 0)
@@ -223,13 +223,26 @@ void Mg_Leaves_Update(Scene *scene)
     position.y[mg_player] = 0;
     draw_actor(mg_player);
 
-    uint16_t reward = SetCoinsReward();
+    uint16_t reward = SetCoinsReward((uint8_t)NPC_ESCOBA);
     uint8_t success = (acorns_count >= min_acorns && leaves_count >= min_leaves);
 
     Mg_SplashCompleteScreen((uint8_t)NPC_ESCOBA, success, reward);
     Mg_CompleteScreenSleep();
 
-    scene_manager.change_scene(MAP_00, &player);
+    uint8_t npc_map = (uint8_t)NPC_ESCOBA;
+    uint8_t humor = humor_stats[npc_map];
+    uint8_t min = 0;
+    if (acorns_count >= min_acorns && leaves_count >= min_leaves)
+      min = 1;
+
+    if (min == 0 && humor > 0)
+      humor--;
+    if (min == 1 && humor < 2)
+      humor++;
+
+    humor_stats[npc_map] = humor;
+
+    next_scene = prev_scene;
     return;
   }
 
@@ -255,13 +268,14 @@ void Mg_Leaves_Update(Scene *scene)
 
   draw_actor(mg_player);
 
-  uint16_t seconds = mgt_current_frame / 60;
+  uint16_t seconds = (mgt_current_frame / 60);
+  uint8_t rest = 30 - seconds;
 
-  uint8_t t_tens = (seconds / 10) + NUMBER_TILESET_START;
-  uint8_t t_units = (seconds % 10) + NUMBER_TILESET_START;
+  uint8_t t_tens = (rest / 10) + NUMBER_TILESET_START;
+  uint8_t t_units = (rest % 10) + NUMBER_TILESET_START;
 
-  set_bkg_tile_xy(TEXT_START_X + 6, TEXT_START_Y + 1, t_tens);
-  set_bkg_tile_xy(TEXT_START_X + 6 + 1, TEXT_START_Y + 1, t_units);
+  set_bkg_tile_xy(TEXT_START_X + 9, TEXT_START_Y + 1, t_tens);
+  set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y + 1, t_units);
 
   return;
 }

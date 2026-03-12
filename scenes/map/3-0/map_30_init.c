@@ -9,6 +9,8 @@
 #include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/scene.h"
+#include "../../../include/npcs.h"
+#include "../../../include/npc_stats_map.h"
 #include "../../../include/all_scenes.h"
 
 #include "../../../assets/sprites/backgrounds/maps/3-0/map_3-0.h"

@@ -3,3 +3,4 @@
 
 Scene Map_30;
 uint8_t tmp_relation = 1;
+uint8_t mg_ended = 0;

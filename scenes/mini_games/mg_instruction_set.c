@@ -37,7 +37,7 @@ void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count, Req
         for (uint8_t i = 0; txt[i] != '\0'; i++)
         {
             uint8_t tile = char_to_tile(txt[i]) + CHARS_TILESET_START;
-            set_bkg_tile_xy(1, 7, tile);
+            set_bkg_tile_xy(1 + i, 7, tile);
         }
     }
     else
