@@ -6,6 +6,7 @@
 #include "../../../assets/chars/numbers.h"
 #include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
+#include "../../../include/huge/include/hUGEDriver.h"
 #include "../../../include/extra_actor.h"
 #include "../../../include/input.h"
 #include "../../../include/player.h"
@@ -21,6 +22,7 @@
 #include "../mg_mission_complete.h"
 #include "../mg_player_movement.h"
 #include "../mg_timer.h"
+#include "../mini_games.h"
 
 #include "./mg_leaves.h"
 
@@ -212,10 +214,12 @@ uint16_t SetCoinsReward(uint8_t npc_map)
 void Mg_Leaves_Update(Scene *scene)
 {
   Mg_TimerUpdate();
+  hUGE_dosound();
 
   if (mgt_alarm == 1)
   {
     Mg_TimerStopAlarm();
+    Mg_StopMusic();
 
     for (int8_t i = 0; i < extra_actor_index; i++)
       draw_extra(i, 0, -1, 1, 1);
@@ -243,6 +247,7 @@ void Mg_Leaves_Update(Scene *scene)
     humor_stats[npc_map] = humor;
 
     next_scene = prev_scene;
+
     return;
   }
 

@@ -48,7 +48,7 @@ void main(void)
 
   // 3. Ajustar el volumen maestro (Registro NR50)
   // 0x77 es el volumen máximo para ambos canales.
-  NR50_REG = 0x77;
+  NR50_REG = 0x33;
 
   /*
   Game game; se guarda en el stack. El stack de la GB es muy chico, así que

@@ -7,6 +7,7 @@
 #include "../mini_games.h"
 #include "../mg_instruction_set.h"
 #include "mg_leaves.h"
+#include "../../map/3-0/map_30.h"
 
 #include "../../../include/player.h"
 #include "../../../include/position.h"
@@ -57,6 +58,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   mg_leaves_DATA.left_limit = 32;
 
   scene->data = &mg_leaves_DATA;
+
+  mg_ended = 1;
 
   if (language == ENGLISH)
   {
@@ -180,4 +183,5 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   }
 
   Mg_TimerStart(30);
+  Mg_PlayMain();
 }

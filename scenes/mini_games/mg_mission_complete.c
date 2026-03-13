@@ -1,6 +1,7 @@
 #pragma bank 6
 
 #include "./mg_mission_complete.h"
+#include "./mini_games.h"
 #include "../../assets/chars/chars.h"
 #include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 #include "../../assets/chars/numbers.h"
@@ -8,7 +9,9 @@
 #include "../../include/input.h"
 #include "../../include/npcs.h"
 #include "../../include/language.h"
+#include "../../include/huge/include/hUGEDriver.h"
 
+#include "../../assets/music/songs.h"
 #include "../../assets/sprites/backgrounds/minigames/mission_complete/bkg_mission_complete.h"
 
 #include <gb/gb.h>
@@ -18,6 +21,14 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
 {
   set_bkg_data(0, bkg_mission_complete_tileset_size, bkg_mission_complete_tileset);
   set_bkg_tiles(0, 0, 20, 18, bkg_mission_complete_tilemap);
+
+  if (success == 1)
+    hUGE_init(&mg_main_win);
+  else
+    hUGE_init(&mg_main_lose);
+
+  vsync();
+  hUGE_dosound();
 
   if (language == SPANISH)
   {
@@ -133,6 +144,18 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
     tile = NUMBER_TILESET_START + units;
     set_bkg_tile_xy(MC_REWARD_X + index, MC_REWARD_Y, tile);
   }
+
+  uint8_t limit = 170;
+  uint8_t timer = 0;
+
+  while (timer <= limit)
+  {
+    hUGE_dosound();
+    vsync();
+    timer++;
+  }
+
+  Mg_StopMusic();
 }
 
 void Mg_CompleteScreenSleep()

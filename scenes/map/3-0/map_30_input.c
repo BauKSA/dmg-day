@@ -22,7 +22,6 @@ void Map_30_CheckInput()
     {
       mg_active = 1;
       mg = MG_LEAVES;
-      mg_ended = 1;
     }
 
     if (dialogue_phase[(uint8_t)NPC_ESCOBA] == 0)
