@@ -1,11 +1,9 @@
-/*
 #ifndef HUGEDRIVER_H_INCLUDE
 #define HUGEDRIVER_H_INCLUDE
 
 #include <gbdk/platform.h>
 
-#define DN(A, B, C) (unsigned char)(A | ((B & 0x10) << 3)),(unsigned char)(((B
-<< 4) & 0xFF) | (C >> 8)),(unsigned char)(C & 0xFF)
+#define DN(A, B, C) (unsigned char)(A | ((B & 0x10) << 3)),(unsigned char)(((B << 4) & 0xFF) | (C >> 8)),(unsigned char)(C & 0xFF)
 
 #define C_3 0
 #define Cs3 1
@@ -82,9 +80,8 @@
 #define LAST_NOTE 72
 #define ___ 90
 
-// tick is a tick number; the high byte of param is channel and the low byte of
-param is routine id typedef void (*hUGERoutine_t)(unsigned char tick, unsigned
-int param);
+// tick is a tick number; the high byte of param is channel and the low byte of param is routine id
+typedef void (*hUGERoutine_t)(unsigned char tick, unsigned int param);
 
 typedef struct hUGEDutyInstr_t {
   const unsigned char sweep;
@@ -139,8 +136,7 @@ extern volatile unsigned char hUGE_current_wave;
 extern volatile unsigned char hUGE_mute_mask;
 
 inline void hUGE_reset_wave(void) {
-        hUGE_current_wave = 100;
+	hUGE_current_wave = 100;
 }
 
 #endif
-*/

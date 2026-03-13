@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include <gb/gb.h>
 
 #include "../../include/action.h"
@@ -6,8 +8,10 @@
 #include "../../include/scene_manager.h"
 #include "./mg_player_movement.h"
 
-void Mg_PlayerMovement(uint8_t horizontal, uint8_t vertical) {
-  if (current_direction == DIR_NONE) {
+void Mg_PlayerMovement(uint8_t horizontal, uint8_t vertical)
+{
+  if (current_direction == DIR_NONE)
+  {
     if (keys & J_UP && vertical != 0)
       current_direction = DIR_UP;
     else if (keys & J_DOWN && vertical != 0)
@@ -19,7 +23,8 @@ void Mg_PlayerMovement(uint8_t horizontal, uint8_t vertical) {
   }
 
   // Ejecutar la dirección activa
-  switch (current_direction) {
+  switch (current_direction)
+  {
   case DIR_UP:
     move_up(mg_player);
     break;

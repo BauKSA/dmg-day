@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "../../assets/sprites/backgrounds/template/template.h"
 #include "../../assets/sprites/frames/text_frame.h"
 #include "./story.h"

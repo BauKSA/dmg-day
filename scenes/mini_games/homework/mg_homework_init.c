@@ -6,7 +6,7 @@
 #include "../mg_timer.h"
 #include "../mini_games.h"
 #include "../mg_instruction_set.h"
-#include "mg_leaves.h"
+#include "mg_homework.h"
 
 #include "../../../include/player.h"
 #include "../../../include/position.h"
@@ -14,7 +14,7 @@
 
 #include "../../../assets/chars/chars.h"
 #include "../../../assets/chars/numbers.h"
-#include "../../../assets/sprites/backgrounds/template/template.h"
+#include "../../../assets/sprites/backgrounds/minigames/homework/bkg_homework.h"
 
 #include "../../../include/char_to_tile.h"
 #include "../../../include/draw.h"
@@ -26,9 +26,7 @@
 #include "../../../include/npcs.h"
 #include "../../../include/text_positions.h"
 
-
-
-void Mg_Leaves_Init(Scene *scene, Entity scene_player)
+void Mg_Homework_Init(Scene *scene, Entity scene_player)
 {
   if (language == ENGLISH)
   {
@@ -48,15 +46,17 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
     Mg_InstructionSet(instruction, 1, reqs, 1);
 
-    if(mgl_active == 0)
-        Mg_LoadScreenInit();
+    if (mgl_active == 0)
+      Mg_LoadScreenInit();
 
     char title[MAX_SIZE_MG_TITLE] = "answer all!";
     Mg_SetTitle(title);
 
     Mg_LoadScreenUpdate();
 
-    Mg_Leaves_LoadBKG();
+    set_bkg_data(0, bkg_homework_tileset_size, bkg_homework_tileset);
+    set_bkg_tiles(0, 0, 20, 18, bkg_homework_tilemap);
+
     Mg_SetTitle(title);
   }
   else
@@ -84,8 +84,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
 
     Mg_LoadScreenUpdate();
 
-    set_bkg_data(0, template_tileset_size, template_tileset);
-    set_bkg_tiles(0, 0, 20, 18, template_tilemap);
+    set_bkg_data(0, bkg_homework_tileset_size, bkg_homework_tileset);
+    set_bkg_tiles(0, 0, 20, 18, bkg_homework_tilemap);
 
     Mg_SetTitle(title);
   }

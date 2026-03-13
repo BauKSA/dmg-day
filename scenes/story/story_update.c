@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "../../assets/chars/chars.h"
 #include "../../assets/chars/buttons.h"
 #include "../../include/all_scenes.h"

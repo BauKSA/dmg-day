@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "inventory_scene.h"
 #include "../../include/player.h"
 #include "../../include/position.h"

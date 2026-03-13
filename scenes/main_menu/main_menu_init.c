@@ -7,7 +7,7 @@
 #include "./main_menu.h"
 #include <gb/gb.h>
 
-// #include "../../include/huge/include/hUGEDriver.h"
+//#include "../../include/huge/include/hUGEDriver.h"
 
 void MainMenu_Init(Scene *scene, Entity scene_player) {
   scene->data = NULL;
@@ -15,5 +15,5 @@ void MainMenu_Init(Scene *scene, Entity scene_player) {
   set_bkg_data(0, bkg_main_menu_tileset_size, bkg_main_menu_tileset);
   set_bkg_tiles(0, 0, 20, 18, bkg_main_menu_tilemap);
 
-  //  hUGE_init(&test_song);
+  //hUGE_init(&test_song);
 }

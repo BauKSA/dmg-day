@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include "./mg_mission_complete.h"
 #include "../../assets/chars/chars.h"
 #include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"

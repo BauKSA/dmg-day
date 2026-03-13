@@ -1,3 +1,5 @@
+#pragma bank 5
+
 #include "gender_select.h"
 #include "../../include/scene.h"
 

@@ -20,15 +20,12 @@ void Map_32_CheckInput()
 
     if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)
     {
-      // mg_active = 1;
-      // mg = MG_HOMEWORK;
-      mg = NONE;
+      mg = MG_HOMEWORK;
+      mg_active = 1;
     }
 
     if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)
-    {
       tmp_relation32 = 2;
-    }
 
     uint8_t tmp = dialogue_phase[(uint8_t)NPC_TAREA];
 

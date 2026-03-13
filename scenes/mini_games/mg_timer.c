@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include "./mg_timer.h"
 
 uint16_t mgt_current_frame = 0;

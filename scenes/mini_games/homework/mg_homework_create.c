@@ -2,7 +2,7 @@
 
 #include "mg_homework.h"
 
-#include "./mg_load_screen.h"
+#include "../mg_load_screen.h"
 
 #include "../../../include/scene.h"
 #include "../../../include/minigames.h"

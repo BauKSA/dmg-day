@@ -4,6 +4,8 @@
 #include "../scene.h"
 
 // All scenes include
+
+// MENU
 #include "../../scenes/language_select/language_select.h"
 #include "../../scenes/gender_select/gender_select.h"
 #include "../../scenes/inventory/inventory_scene.h"
@@ -11,8 +13,6 @@
 #include "../../scenes/story/story.h"
 
 // MAPAS
-// #include "../../scenes/map/00/map_00.h"
-
 #include "../../scenes/map/0-0/map_00.h"
 #include "../../scenes/map/0-1/map_01.h"
 #include "../../scenes/map/0-2/map_02.h"
@@ -35,6 +35,7 @@
 
 // MINI JUEGOS
 #include "../../scenes/mini_games/leaves/mg_leaves.h"
+#include "../../scenes/mini_games/homework/mg_homework.h"
 
 #define MAP_0_BANK 1
 #define MAP_1_BANK 2
@@ -192,6 +193,11 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     SWITCH_ROM_MBC1(MG_BANK);
     Mg_Leaves_Create();
     return &Mg_Leaves;
+    SWITCH_ROM_MBC1(_prev_bank);
+  case MG_HOMEWORK:
+    SWITCH_ROM_MBC1(MG_BANK);
+    Mg_Homework_Create();
+    return &Mg_Homework;
     SWITCH_ROM_MBC1(_prev_bank);
   default:
     return NULL;

@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include <gb/gb.h>
 #include <stdlib.h>
 
