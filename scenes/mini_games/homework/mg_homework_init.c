@@ -15,6 +15,7 @@
 #include "../../../assets/chars/chars.h"
 #include "../../../assets/chars/numbers.h"
 #include "../../../assets/sprites/backgrounds/minigames/homework/bkg_homework.h"
+#include "../../../assets/sprites/backgrounds/minigames/homework/correct_icons.h"
 
 #include "../../../include/char_to_tile.h"
 #include "../../../include/draw.h"
@@ -89,4 +90,8 @@ void Mg_Homework_Init(Scene *scene, Entity scene_player)
 
     Mg_SetTitle(title);
   }
+
+  set_bkg_data(HOMEWORK_ICONS_TILESET_START, homework_icons_tileset_size, homework_icons_tileset);
+
+  row_tile = get_bkg_tile_xy(QUESTION_X, QUESTION_Y + 1);
 }

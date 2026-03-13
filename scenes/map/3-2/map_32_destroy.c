@@ -6,11 +6,7 @@
 
 void Map_32_Destroy(Scene *scene)
 {
-    dialogue_phase[(uint8_t)NPC_TAREA]++;
-    if (dialogue_phase[(uint8_t)NPC_TAREA] > 2)
-        dialogue_phase[(uint8_t)NPC_TAREA] = 2;
-
-    if (dialogue_phase[(uint8_t)NPC_TAREA] == 2)
+    if (dialogue_phase[(uint8_t)NPC_TAREA] != 0)
         return;
 
     if (tmp_relation32 == 2)

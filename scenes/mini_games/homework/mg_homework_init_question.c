@@ -47,7 +47,7 @@ Mg_Homework_Test test[QUESTION_COUNT] = {
         .options_count = 1
     },
     {
-        .question = { .lines_txt = {"pregunta f", "esta tiene", "muchas", "muchas", "lineas"}, .lines_count = 5 },
+        .question = { .lines_txt = {"pregunta f", "esta tiene", "muchas", "lineas"}, .lines_count = 4 },
         .options = {
             {"y una respuesta", 0, MGH_RIGHT}
         },

@@ -6,6 +6,9 @@
 
 void Map_30_Destroy(Scene *scene)
 {
+    if (dialogue_phase[(uint8_t)NPC_ESCOBA] != 0)
+        return;
+        
     dialogue_phase[(uint8_t)NPC_ESCOBA]++;
     if (dialogue_phase[(uint8_t)NPC_ESCOBA] > 3)
         dialogue_phase[(uint8_t)NPC_ESCOBA] = 3;
