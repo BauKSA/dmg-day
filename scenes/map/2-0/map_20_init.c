@@ -8,6 +8,7 @@
 #include "../../../include/scene.h"
 #include "../../../include/all_scenes.h"
 #include "../../../include/player.h"
+#include "../../../include/npcs.h"
 #include "../../../include/draw.h"
 
 #include "../../../assets/sprites/backgrounds/maps/2-0/map_2-0.h"
@@ -33,7 +34,10 @@ void Map_20_Init(Scene *scene, Entity scene_player)
     set_bkg_data(0, map_2_0_tileset_size, map_2_0_tileset);
     set_bkg_tiles(0, 0, 20, 18, map_2_0_tilemap);
 
+    Map_20_InitNPC();
+
     draw_actor(player);
+    draw_actor(npc_1);
 
     actual_tile.prev = 0;
     actual_tile.value = 0;

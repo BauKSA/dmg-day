@@ -2,6 +2,7 @@
 
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
+#include "../../../include/npcs.h"
 #include "../../../include/scene.h"
 #include "../../map/map_data.h"
 #include "../../map/auto_clean.h"
@@ -9,7 +10,8 @@
 
 #include "map_20.h"
 
-void Map_20_Update(Scene *scene) {
+void Map_20_Update(Scene *scene)
+{
   Map_AutoClean();
 
   Map_PlayerMovement();
@@ -17,7 +19,9 @@ void Map_20_Update(Scene *scene) {
   MapData *data = (MapData *)scene->data;
 
   update_animation(animation);
+
   draw_actor(data->player);
+  draw_actor(npc_1);
 
   Map_Collision(scene);
 
