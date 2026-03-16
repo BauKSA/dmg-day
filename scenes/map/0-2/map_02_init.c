@@ -7,6 +7,7 @@
 
 #include "../../../include/scene.h"
 #include "../../../include/all_scenes.h"
+#include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/draw.h"
 
@@ -18,7 +19,8 @@ void Map_02_Init(Scene *scene, Entity scene_player)
 
     CurrentMapData.player = player;
     CurrentMapData.collision_map = map_02_collision;
-    CurrentMapData.npc_count = 0;
+    CurrentMapData.npc_count = 1;
+    CurrentMapData.npc[0] = npc_1;
 
     CurrentMapData.event_count = 0;
     CurrentMapData.event_active = 0;
@@ -34,6 +36,7 @@ void Map_02_Init(Scene *scene, Entity scene_player)
     set_bkg_tiles(0, 0, 20, 18, map_0_2_tilemap);
 
     draw_actor(player);
+    Map_02_InitNPC();
 
     actual_tile.prev = 0;
     actual_tile.value = 0;

@@ -14,5 +14,6 @@ void Map_02_Update(Scene *scene);
 extern Scene Map_02;
 
 void Map_02_Create(void);
+void Map_02_InitNPC(void);
 
 #endif // MAP_02_H

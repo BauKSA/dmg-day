@@ -3,6 +3,7 @@
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
 #include "../../../include/scene.h"
+#include "../../../include/npcs.h"
 #include "../../map/map_data.h"
 #include "../../map/auto_clean.h"
 #include "../../map/map_player_movement.h"
@@ -18,7 +19,10 @@ void Map_02_Update(Scene *scene)
     MapData *data = (MapData *)scene->data;
 
     update_animation(animation);
+    update_animation(&animation[npc_1]);
+
     draw_actor(data->player);
+    draw_actor(npc_1);
 
     Map_Collision(scene);
 
