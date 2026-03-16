@@ -17,13 +17,29 @@ static void Map_22_Event()
 {
     if (npc_appeared == 1)
         return;
-        
+
     CurrentMapData.event_active = 1;
 }
 
 void Map_22_Init(Scene *scene, Entity scene_player)
 {
     init_player();
+
+    CurrentMapData.player = player;
+    CurrentMapData.collision_map = map_22_collision;
+    CurrentMapData.spawner.right = MAP_23;
+    CurrentMapData.spawner.left = MAP_21;
+    CurrentMapData.spawner.up = NONE;
+    CurrentMapData.spawner.down = MAP_32;
+
+    CurrentMapData.event_count = 1;
+    CurrentMapData.event_active = 0;
+    CurrentMapData.events[0] = Map_22_Event;
+
+    scene->data = &CurrentMapData;
+
+    set_bkg_data(0, map_2_2_tileset_size, map_2_2_tileset);
+    set_bkg_tiles(0, 0, 20, 18, map_2_2_tilemap);
 
     if (npc_appeared == 0)
     {
@@ -43,22 +59,6 @@ void Map_22_Init(Scene *scene, Entity scene_player)
 
         draw_actor(npc_1);
     }
-
-    CurrentMapData.player = player;
-    CurrentMapData.collision_map = map_22_collision;
-    CurrentMapData.spawner.right = MAP_23;
-    CurrentMapData.spawner.left = MAP_21;
-    CurrentMapData.spawner.up = NONE;
-    CurrentMapData.spawner.down = MAP_32;
-
-    CurrentMapData.event_count = 1;
-    CurrentMapData.event_active = 0;
-    CurrentMapData.events[0] = Map_22_Event;
-
-    scene->data = &CurrentMapData;
-
-    set_bkg_data(0, map_2_2_tileset_size, map_2_2_tileset);
-    set_bkg_tiles(0, 0, 20, 18, map_2_2_tilemap);
 
     draw_actor(player);
 

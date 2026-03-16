@@ -1,7 +1,7 @@
 #ifndef _MAP_3_2_
 #define _MAP_3_2_
 
-#define map_3_2_tileset_size 77
+#define map_3_2_tileset_size 83
 
 extern const unsigned char map_3_2_tileset[];
 

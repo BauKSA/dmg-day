@@ -20,5 +20,6 @@
 #define NPC_FIRULAIS 3
 #define NPC_ESCOBA 4
 #define NPC_TAREA 5
+#define NPC_DIARIO 6
 
 #endif //_NPCSTATSMAP_

@@ -10,5 +10,7 @@ void Map_33_Update(Scene *scene);
 extern Scene Map_33;
 
 void Map_33_Create(void);
+void Map_33_InitNPC(void);
+void Map_33_LoadBKG(void);
 
 #endif // _MAP_33_

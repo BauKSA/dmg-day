@@ -182,7 +182,7 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
 
     return &Map_32;
   case MAP_33:
-    SWITCH_ROM_MBC1(MAP_3_BANK);
+    SWITCH_ROM_MBC1(MENU_BANK); //NO ENTRABA MÁS EN EL 4
     Map_33_Create();
     SWITCH_ROM_MBC1(_prev_bank);
 
