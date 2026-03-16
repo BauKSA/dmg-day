@@ -1,3 +1,4 @@
+/*
 #pragma bank 6
 
 #include "songs.h"
@@ -292,4 +293,6 @@ static const unsigned char waves[] = {
     255,
 };
 
-const hUGESong_t mg_main_win = {5, &order_cnt, order1, order2, order3, order4, duty_instruments, wave_instruments, noise_instruments, NULL, waves};
+const hUGESong_t mg_main_win = {5, &order_cnt, order1, order2, order3, order4,
+duty_instruments, wave_instruments, noise_instruments, NULL, waves};
+*/

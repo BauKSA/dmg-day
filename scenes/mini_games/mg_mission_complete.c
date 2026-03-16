@@ -1,15 +1,15 @@
 #pragma bank 6
 
 #include "./mg_mission_complete.h"
-#include "./mini_games.h"
 #include "../../assets/chars/chars.h"
-#include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 #include "../../assets/chars/numbers.h"
+#include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 #include "../../include/char_to_tile.h"
+// #include "../../include/huge/include/hUGEDriver.h"
 #include "../../include/input.h"
-#include "../../include/npcs.h"
 #include "../../include/language.h"
-#include "../../include/huge/include/hUGEDriver.h"
+#include "../../include/npcs.h"
+#include "./mini_games.h"
 
 #include "../../assets/music/songs.h"
 #include "../../assets/sprites/backgrounds/minigames/mission_complete/bkg_mission_complete.h"
@@ -17,24 +17,23 @@
 #include <gb/gb.h>
 #include <stdint.h>
 
-void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
-{
-  set_bkg_data(0, bkg_mission_complete_tileset_size, bkg_mission_complete_tileset);
+void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success,
+                             uint16_t reward) {
+  set_bkg_data(0, bkg_mission_complete_tileset_size,
+               bkg_mission_complete_tileset);
   set_bkg_tiles(0, 0, 20, 18, bkg_mission_complete_tilemap);
 
-  if (success == 1)
-    hUGE_init(&mg_main_win);
-  else
-    hUGE_init(&mg_main_lose);
+  // if (success == 1)
+  // hUGE_init(&mg_main_win);
+  //   else
+  // hUGE_init(&mg_main_lose);
 
   vsync();
-  hUGE_dosound();
+  // hUGE_dosound();
 
-  if (language == SPANISH)
-  {
+  if (language == SPANISH) {
     char text[] = "mision  completa\0";
-    for (uint8_t i = 0; text[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; text[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(text[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(2 + i, 3, tile);
     }
@@ -46,21 +45,18 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
     set_bkg_tile_xy(MC_REL_ICON_X, MC_REL_ICON_Y, rel_icon);
 
     char completa[] = "sueprada\0";
-    for (uint8_t i = 0; completa[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; completa[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(completa[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(1 + i, MC_TASK_COMPLETE_Y, tile);
     }
 
-    if (success == 0)
-    {
+    if (success == 0) {
       uint8_t empty_tile = 255;
       set_bkg_tile_xy(MC_TASK_COMPLETE_X, MC_TASK_COMPLETE_Y, empty_tile);
     }
 
     char recompensa[] = "recompensa\0";
-    for (uint8_t i = 0; recompensa[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; recompensa[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(recompensa[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(1 + i, MC_REWARD_Y, tile);
     }
@@ -86,12 +82,9 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
 
     tile = NUMBER_TILESET_START + units;
     set_bkg_tile_xy(MC_REWARD_X + index, MC_REWARD_Y, tile);
-  }
-  else
-  {
+  } else {
     char text[] = "mission complete\0";
-    for (uint8_t i = 0; text[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; text[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(text[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(2 + i, 3, tile);
     }
@@ -103,21 +96,18 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
     set_bkg_tile_xy(MC_REL_ICON_X, MC_REL_ICON_Y, rel_icon);
 
     char completa[] = "passed\0";
-    for (uint8_t i = 0; completa[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; completa[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(completa[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(1 + i, MC_TASK_COMPLETE_Y, tile);
     }
 
-    if (success == 0)
-    {
+    if (success == 0) {
       uint8_t empty_tile = 255;
       set_bkg_tile_xy(MC_TASK_COMPLETE_X, MC_TASK_COMPLETE_Y, empty_tile);
     }
 
     char recompensa[] = "reward\0";
-    for (uint8_t i = 0; recompensa[i] != '\0'; i++)
-    {
+    for (uint8_t i = 0; recompensa[i] != '\0'; i++) {
       uint8_t tile = char_to_tile(recompensa[i]) + CHARS_TILESET_START;
       set_bkg_tile_xy(1 + i, MC_REWARD_Y, tile);
     }
@@ -148,9 +138,8 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
   uint8_t limit = 170;
   uint8_t timer = 0;
 
-  while (timer <= limit)
-  {
-    hUGE_dosound();
+  while (timer <= limit) {
+    //  hUGE_dosound();
     vsync();
     timer++;
   }
@@ -158,18 +147,15 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success, uint16_t reward)
   Mg_StopMusic();
 }
 
-void Mg_CompleteScreenSleep()
-{
+void Mg_CompleteScreenSleep() {
   keys = 0;
 
   while (joypad() != 0)
     vsync();
 
-  while (1)
-  {
+  while (1) {
     keys = joypad();
-    if (keys & J_A)
-    {
+    if (keys & J_A) {
       keys = 0;
       break;
     }

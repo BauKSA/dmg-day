@@ -8,18 +8,15 @@
 #include "../map_data.h"
 #include "map_32.h"
 
-void Map_32_CheckInput()
-{
+void Map_32_CheckInput() {
   if (CurrentMapData.event_active == 0)
     return;
 
-  if (!(keys & J_A) && (prev_keys & J_A))
-  {
+  if (!(keys & J_A) && (prev_keys & J_A)) {
     uint8_t mg_active = 0;
     enum AllScenes mg = NONE;
 
-    if (dialogue_phase[(uint8_t)NPC_TAREA] == 0)
-    {
+    if (dialogue_phase[(uint8_t)NPC_TAREA] == 0) {
       mg = MG_HOMEWORK;
       mg_active = 1;
     }
@@ -31,9 +28,8 @@ void Map_32_CheckInput()
 
     Scene_DrawNPCLine(npc_1, (uint8_t)NPC_TAREA, 0, mg_active, mg);
 
-    if (dialogue_phase[(uint8_t)NPC_TAREA] != tmp)
-    {
-      Map_30_InitDialogues();
+    if (dialogue_phase[(uint8_t)NPC_TAREA] != tmp) {
+      Map_32_InitDialogues();
       clean();
       mg_32_tmp = MGM_states.mg_homework;
       Scene_DrawNPCLine(npc_1, (uint8_t)NPC_TAREA, 0, 0, NONE);

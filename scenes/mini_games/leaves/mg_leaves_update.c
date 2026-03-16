@@ -6,34 +6,33 @@
 #include "../../../assets/chars/numbers.h"
 #include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
-#include "../../../include/huge/include/hUGEDriver.h"
+// #include "../../../include/huge/include/hUGEDriver.h"
+#include "../../../include/can_move.h"
 #include "../../../include/extra_actor.h"
 #include "../../../include/input.h"
+#include "../../../include/intermitent_text.h"
+#include "../../../include/money.h"
+#include "../../../include/npc_stats_map.h"
+#include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/random.h"
 #include "../../../include/scene_manager.h"
 #include "../../../include/text_positions.h"
-#include "../../../include/can_move.h"
-#include "../../../include/money.h"
-#include "../../../include/intermitent_text.h"
-#include "../../../include/npc_stats_map.h"
-#include "../../../include/npcs.h"
 
 #include "../mg_mission_complete.h"
 #include "../mg_player_movement.h"
+#include "../mg_set_coins_reward.h"
 #include "../mg_timer.h"
 #include "../mini_games.h"
 
 #include "./mg_leaves.h"
 
-uint8_t is_being_swept(uint8_t actor_idx)
-{
+uint8_t is_being_swept(uint8_t actor_idx) {
   uint8_t x1 = position.x[mg_player];
 
   uint8_t x2 = actor_x[actor_idx];
 
-  if (x1 < x2 + 8 && x1 + 4 > x2)
-  {
+  if (x1 < x2 + 8 && x1 + 4 > x2) {
     if (x1 > x2)
       actor_state[actor_idx] = BEING_SWEPT_LEFT;
 
@@ -46,13 +45,12 @@ uint8_t is_being_swept(uint8_t actor_idx)
   return 0;
 }
 
-void spawn(uint8_t actor_idx)
-{
+void spawn(uint8_t actor_idx) {
   if (actor_state[actor_idx] == INACTIVE)
     actor_timer[actor_idx]++;
 
-  if (actor_state[actor_idx] == INACTIVE && my_rand() % (65 + actor_idx * 25) == 0)
-  {
+  if (actor_state[actor_idx] == INACTIVE &&
+      my_rand() % (65 + actor_idx * 25) == 0) {
     actor_timer[actor_idx] = 0;
     actor_state[actor_idx] = FALLING;
     actor_active[actor_idx] = 1;
@@ -65,16 +63,13 @@ void spawn(uint8_t actor_idx)
   }
 }
 
-void check_actor_status()
-{
-  for (uint8_t i = 0; i < TOTAL_ACTORS; i++)
-  {
+void check_actor_status() {
+  for (uint8_t i = 0; i < TOTAL_ACTORS; i++) {
     uint8_t is_leaf = (i < LEAF_COUNT);
 
     spawn(i);
 
-    if (actor_state[i] == FALLING)
-    {
+    if (actor_state[i] == FALLING) {
       uint8_t speed = 255;
       if (is_leaf)
         speed = 176;
@@ -83,8 +78,7 @@ void check_actor_status()
       actor_y[i] = fixed_y[i] >> 8;
     }
 
-    if (SWEEPING_FLAG)
-    {
+    if (SWEEPING_FLAG) {
       if (actor_state[i] == BEING_SWEPT_LEFT)
         actor_x[i] = position.x[mg_player] - 8;
       else if (actor_state[i] == BEING_SWEPT_RIGHT)
@@ -95,21 +89,16 @@ void check_actor_status()
   }
 }
 
-void check_actor_collision()
-{
-  for (uint8_t i = 0; i < TOTAL_ACTORS; i++)
-  {
+void check_actor_collision() {
+  for (uint8_t i = 0; i < TOTAL_ACTORS; i++) {
     if (!actor_active[i] || actor_state[i] == INACTIVE)
       continue;
 
-    if (actor_state[i] == FALLING)
-    {
-      if (actor_y[i] >= mg_leaves_DATA.bottom_limit)
-      {
+    if (actor_state[i] == FALLING) {
+      if (actor_y[i] >= mg_leaves_DATA.bottom_limit) {
         actor_state[i] = ON_FLOOR;
         actor_y[i] = mg_leaves_DATA.bottom_limit;
-      }
-      else
+      } else
         continue;
     }
 
@@ -118,8 +107,8 @@ void check_actor_collision()
 
     uint8_t is_leaf = (i < LEAF_COUNT);
 
-    if (actor_state[i] == BEING_SWEPT_LEFT && actor_x[i] <= mg_leaves_DATA.left_limit)
-    {
+    if (actor_state[i] == BEING_SWEPT_LEFT &&
+        actor_x[i] <= mg_leaves_DATA.left_limit) {
       actor_state[i] = INACTIVE;
       actor_active[i] = 0;
 
@@ -130,8 +119,8 @@ void check_actor_collision()
         acorns_count++;
     }
 
-    if (actor_state[i] == BEING_SWEPT_RIGHT && actor_x[i] >= mg_leaves_DATA.right_limit)
-    {
+    if (actor_state[i] == BEING_SWEPT_RIGHT &&
+        actor_x[i] >= mg_leaves_DATA.right_limit) {
       actor_state[i] = INACTIVE;
       actor_active[i] = 0;
 
@@ -161,63 +150,11 @@ void check_actor_collision()
  * M   | 500   | 600    | 700
  */
 
-uint16_t SetCoinsReward(uint8_t npc_map)
-{
-  uint16_t tmp = money;
-  uint8_t min = 0;
-  uint8_t good_relation = 0;
-  uint8_t humor = humor_stats[npc_map];
-
-  if (acorns_count >= min_acorns && leaves_count >= min_leaves)
-    min = 1;
-
-  if (relation_stats[npc_map] == 2)
-    good_relation = 1;
-
-  if (humor == 0)
-  {
-    if (min == 0 && good_relation == 0)
-      money += 500;
-    else if (min == 1 && good_relation == 0)
-      money += 2100;
-    else if (min == 0 && good_relation == 1)
-      money += 800;
-    else if (min == 1 && good_relation == 1)
-      money += 3500;
-  }
-  else if (humor == 1)
-  {
-    if (min == 0 && good_relation == 0)
-      money += 600;
-    else if (min == 1 && good_relation == 0)
-      money += 2300;
-    else if (min == 0 && good_relation == 1)
-      money += 900;
-    else if (min == 1 && good_relation == 1)
-      money += 3800;
-  }
-  else if (humor == 2)
-  {
-    if (min == 0 && good_relation == 0)
-      money += 700;
-    else if (min == 1 && good_relation == 0)
-      money += 2500;
-    else if (min == 0 && good_relation == 1)
-      money += 1000;
-    else if (min == 1 && good_relation == 1)
-      money += 4200;
-  }
-
-  return money - tmp;
-}
-
-void Mg_Leaves_Update(Scene *scene)
-{
+void Mg_Leaves_Update(Scene *scene) {
   Mg_TimerUpdate();
-  hUGE_dosound();
+  // hUGE_dosound();
 
-  if (mgt_alarm == 1)
-  {
+  if (mgt_alarm == 1) {
     Mg_TimerStopAlarm();
     Mg_StopMusic();
 
@@ -227,8 +164,12 @@ void Mg_Leaves_Update(Scene *scene)
     position.y[mg_player] = 0;
     draw_actor(mg_player);
 
-    uint16_t reward = SetCoinsReward((uint8_t)NPC_ESCOBA);
-    uint8_t success = (acorns_count >= min_acorns && leaves_count >= min_leaves);
+    uint8_t success = 0;
+
+    if (acorns_count >= min_acorns && leaves_count >= min_leaves)
+      success = 1;
+
+    uint16_t reward = Mg_SetCoinsReward((uint8_t)NPC_ESCOBA, success);
 
     Mg_SplashCompleteScreen((uint8_t)NPC_ESCOBA, success, reward);
     Mg_CompleteScreenSleep();
