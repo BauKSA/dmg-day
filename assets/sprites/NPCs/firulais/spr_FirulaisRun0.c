@@ -1,3 +1,5 @@
+#pragma bank 2
+
 #include "spr_Firulais.h"
 
 unsigned char spr_Firulais_run00[] =

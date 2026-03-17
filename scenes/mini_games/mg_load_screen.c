@@ -5,7 +5,7 @@
 #include <stdint.h>
 
 #include "../../assets/chars/numbers.h"
-#include "../../assets/sprites/backgrounds/template/template.h"
+#include "../../assets/sprites/backgrounds/template/template_mg.h"
 
 uint8_t mgl_current_frame = 0;
 uint8_t mgl_target_frame = 180;
@@ -21,8 +21,8 @@ void Mg_LoadScreenInit()
 
   unsigned char _previous_bank = _current_bank;
 
-  set_bkg_data(0, template_tileset_size, template_tileset);
-  set_bkg_tiles(0, 0, 20, 18, template_tilemap);
+  set_bkg_data(0, template_mg_tileset_size, template_mg_tileset);
+  set_bkg_tiles(0, 0, 20, 18, template_mg_tilemap);
 }
 
 void Mg_LoadScreenUpdate()

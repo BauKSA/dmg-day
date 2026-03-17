@@ -5,7 +5,7 @@
 #include "../../assets/chars/chars.h"
 #include "../../assets/chars/numbers.h"
 #include "../../assets/chars/buttons.h"
-#include "../../assets/sprites/backgrounds/template/template.h"
+#include "../../assets/sprites/backgrounds/template/template_mg.h"
 #include "../../include/input.h"
 #include "../../include/language.h"
 
@@ -13,8 +13,8 @@
 
 void Mg_InstructionSet(Instruction *instructions, uint8_t instruction_count, Requirement *reqs, uint8_t reqs_count)
 {
-    set_bkg_data(0, template_tileset_size, template_tileset);
-    set_bkg_tiles(0, 0, 20, 18, template_tilemap);
+    set_bkg_data(0, template_mg_tileset_size, template_mg_tileset);
+    set_bkg_tiles(0, 0, 20, 18, template_mg_tilemap);
 
     for (uint8_t i = 0; i < instruction_count; i++)
     {

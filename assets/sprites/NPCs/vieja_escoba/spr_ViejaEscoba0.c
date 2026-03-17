@@ -1,3 +1,5 @@
+#pragma bank 4
+
 #include "spr_ViejaEscoba.h"
 
 unsigned char spr_ViejaEscoba00[] =

@@ -175,6 +175,6 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
     actor_state[i] = INACTIVE;
   }
 
-  Mg_TimerStart(30);
+  Mg_TimerStart(5);
   // Mg_PlayMain();
 }

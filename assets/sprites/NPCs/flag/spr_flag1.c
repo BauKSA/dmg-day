@@ -1,3 +1,5 @@
+#pragma bank 4
+
 #include "spr_flag.h"
 
 unsigned char spr_Flag10[] =

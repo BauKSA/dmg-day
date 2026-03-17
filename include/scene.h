@@ -5,7 +5,7 @@
 #define SCENE_H
 
 #define MAX_NPCS_PER_SCENE 2
-#define MAX_EVENTS 5
+#define MAX_EVENTS 2
 
 typedef struct Scene Scene;
 
