@@ -40,6 +40,7 @@ typedef struct MapData {
   uint8_t event_count;
   uint8_t event_active;
   MapSpawner spawner;
+  uint8_t receive_items;
 } MapData;
 
 void Map_Collision(Scene *scene);

@@ -52,20 +52,25 @@ uint8_t is_being_swept(uint8_t actor_idx)
 void spawn(uint8_t actor_idx)
 {
   if (actor_state[actor_idx] == INACTIVE)
+  {
     actor_timer[actor_idx]++;
 
-  if (actor_state[actor_idx] == INACTIVE &&
-      my_rand() % (65 + actor_idx * 25) == 0)
-  {
-    actor_timer[actor_idx] = 0;
-    actor_state[actor_idx] = FALLING;
-    actor_active[actor_idx] = 1;
+    if (actor_timer[actor_idx] > (20 + (actor_idx * 5)))
+    {
+      actor_timer[actor_idx] = 0;
 
-    actor_y[actor_idx] = 40;
-    fixed_y[actor_idx] = 40 << 8;
+      if (my_rand() % 2 == 0) // todavía hay algo de azar
+      {
+        actor_state[actor_idx] = FALLING;
+        actor_active[actor_idx] = 1;
 
-    actor_x[actor_idx] = available_x[next_spawn_idx];
-    next_spawn_idx = (next_spawn_idx + 1) % TOTAL_ACTORS;
+        actor_y[actor_idx] = 40;
+        fixed_y[actor_idx] = 40 << 8;
+
+        actor_x[actor_idx] = available_x[next_spawn_idx];
+        next_spawn_idx = (next_spawn_idx + 1) % TOTAL_ACTORS;
+      }
+    }
   }
 }
 
@@ -79,9 +84,9 @@ void check_actor_status()
 
     if (actor_state[i] == FALLING)
     {
-      uint8_t speed = 255;
-      if (is_leaf)
-        speed = 176;
+      uint16_t seconds = (mgt_current_frame / 60);
+      uint8_t base_speed = is_leaf ? 176 : 255;
+      uint16_t speed = base_speed + (seconds * 2);
 
       fixed_y[i] += speed;
       actor_y[i] = fixed_y[i] >> 8;
@@ -90,9 +95,9 @@ void check_actor_status()
     if (SWEEPING_FLAG)
     {
       if (actor_state[i] == BEING_SWEPT_LEFT)
-        actor_x[i] = position.x[mg_player] - 8;
+        actor_x[i] -= 2;
       else if (actor_state[i] == BEING_SWEPT_RIGHT)
-        actor_x[i] = position.x[mg_player] + 8;
+        actor_x[i] += 2;
     }
 
     draw_extra(actor_ids[i], actor_x[i], actor_y[i], 1, 1);
@@ -133,6 +138,8 @@ void check_actor_collision()
 
       if (is_leaf == 0)
         acorns_count++;
+      else
+        error = 1;
     }
 
     if (actor_state[i] == BEING_SWEPT_RIGHT &&
@@ -146,14 +153,70 @@ void check_actor_collision()
 
       if (is_leaf == 1)
         leaves_count++;
+      else
+        error = 1;
     }
   }
 }
 
 void Mg_Leaves_Update(Scene *scene)
 {
+  if (error)
+  {
+    if (mgt_alarm == 1)
+      return;
+
+    uint8_t limit = 60;
+    uint16_t start = mgt_current_frame;
+
+    while (mgt_current_frame - start <= limit)
+    {
+      if (mgt_alarm == 1)
+        break;
+
+      Mg_TimerUpdate();
+
+      uint16_t delta = mgt_current_frame - start;
+      if (delta % 15 == 0)
+      {
+        if (scroll_right == 0)
+        {
+          scroll_bkg(4, 0);
+          scroll_right = 1;
+        }
+        else
+        {
+          scroll_bkg(-4, 0);
+          scroll_right = 0;
+        }
+      }
+
+      uint16_t seconds = (mgt_current_frame / 60);
+      uint8_t rest = 30 - seconds;
+
+      uint8_t t_tens = (rest / 10) + NUMBER_TILESET_START;
+      uint8_t t_units = (rest % 10) + NUMBER_TILESET_START;
+
+      set_bkg_tile_xy(9, 16, t_tens);
+      set_bkg_tile_xy(10, 16, t_units);
+
+      vsync();
+    }
+
+    error = 0;
+    return;
+  }
+
   Mg_TimerUpdate();
   // hUGE_dosound();
+
+  // acorns
+  set_bkg_tile_xy(1, 15, (acorns_count / 10) + NUMBER_TILESET_START);
+  set_bkg_tile_xy(2, 15, (acorns_count % 10) + NUMBER_TILESET_START);
+
+  // leaves
+  set_bkg_tile_xy(17, 15, (leaves_count / 10) + NUMBER_TILESET_START);
+  set_bkg_tile_xy(18, 15, (leaves_count % 10) + NUMBER_TILESET_START);
 
   if (mgt_alarm == 1)
   {
@@ -213,8 +276,8 @@ void Mg_Leaves_Update(Scene *scene)
 
   Mg_PlayerMovement(1, 0);
 
-  check_actor_status();
   check_actor_collision();
+  check_actor_status();
 
   draw_actor(mg_player);
 
@@ -224,8 +287,8 @@ void Mg_Leaves_Update(Scene *scene)
   uint8_t t_tens = (rest / 10) + NUMBER_TILESET_START;
   uint8_t t_units = (rest % 10) + NUMBER_TILESET_START;
 
-  set_bkg_tile_xy(TEXT_START_X + 9, TEXT_START_Y + 1, t_tens);
-  set_bkg_tile_xy(TEXT_START_X + 10, TEXT_START_Y + 1, t_units);
+  set_bkg_tile_xy(9, 16, t_tens);
+  set_bkg_tile_xy(10, 16, t_units);
 
   return;
 }

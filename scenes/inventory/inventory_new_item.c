@@ -3,15 +3,17 @@
 
 #include "inventory_scene.h"
 
-#include "../../include/inventory.h"
+#include "../../include/input.h"
 #include "../../include/text_positions.h"
 #include "../../include/intermitent_text.h"
 #include "../../include/char_to_tile.h"
+#include "../../include/inventory.h"
 #include "../../include/language.h"
 
 #include "../../assets/sprites/backgrounds/template/template.h"
 #include "../../assets/chars/items.h"
 #include "../../assets/chars/chars.h"
+#include "../../assets/chars/buttons.h"
 
 static void SetItemName(Item item, uint8_t inventory_index)
 {
@@ -115,6 +117,48 @@ void NewItemScreen(Item item)
         IntermitentText_Init(center_tile_start, 8, inventory[index].name_en, 10);
     }
 
+    uint8_t button = 1 + BUTTON_TILESET_START;
+    uint8_t empty_tile = 255;
+
+    set_bkg_data(ITEMS_TILESET_START, items_tileset_size, items_tileset);
+
+    uint8_t icon = (uint8_t)item + ITEMS_TILESET_START;
+
+    set_bkg_tile_xy(11, 10, button);
+    set_bkg_tile_xy(8, 10, icon);
+
+    keys = 0;
+    uint8_t frame_counter = 0;
+    uint8_t visible = 1;
+
     while (1)
-        ;
+    {
+        frame_counter++;
+
+        if (frame_counter >= 25)
+        {
+            frame_counter = 0;
+
+            if (visible == 1)
+            {
+                set_bkg_tile_xy(11, 10, empty_tile);
+                visible = 0;
+            }
+            else
+            {
+                set_bkg_tile_xy(11, 10, button);
+                visible = 1;
+            }
+        }
+
+        vsync();
+
+        prev_keys = keys;
+        keys = joypad();
+
+        if ((keys & J_A) && !(prev_keys & J_A))
+            break;
+    }
+
+    return;
 }

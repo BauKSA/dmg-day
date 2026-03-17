@@ -44,7 +44,7 @@ void Map_Collision(Scene *scene)
     clean();
   }
 
-  if (active_item == 1 && CurrentMapData.collision_map[tile_y][tile_x] == 0)
+  if (active_item == 1 && (CurrentMapData.collision_map[tile_y][tile_x] == 0 || CurrentMapData.receive_items == 0))
   {
     active_item = 0;
     auto_clean_timer = 0;

@@ -47,6 +47,8 @@ extern enum ActorState actor_state[TOTAL_ACTORS];
 extern uint8_t SWEEPING_FLAG;
 extern uint8_t available_x[TOTAL_ACTORS];
 extern uint8_t next_spawn_idx;
+extern uint8_t error;
+extern uint8_t scroll_right;
 
 extern uint8_t min_acorns;
 extern uint8_t min_leaves;

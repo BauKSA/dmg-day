@@ -39,6 +39,8 @@ uint16_t actor_spawner[TOTAL_ACTORS];
 uint8_t actor_spawn_x[TOTAL_ACTORS];
 enum ActorState actor_state[TOTAL_ACTORS];
 uint8_t SWEEPING_FLAG = 0;
+uint8_t error = 0;
+uint8_t scroll_right = 0;
 
 MG_Leaves_DATA mg_leaves_DATA;
 
@@ -51,7 +53,8 @@ uint8_t min_leaves = 10;
 uint8_t acorns_count = 0;
 uint8_t leaves_count = 0;
 
-void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
+void Mg_Leaves_Init(Scene *scene, Entity scene_player)
+{
   mg_leaves_DATA.bottom_limit = 120;
   mg_leaves_DATA.right_limit = 120;
   mg_leaves_DATA.left_limit = 32;
@@ -60,7 +63,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
 
   mg_ended = 1;
 
-  if (language == ENGLISH) {
+  if (language == ENGLISH)
+  {
     char *txt = "move";
     char *sec_txt = "sweep";
 
@@ -95,7 +99,9 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
 
     Mg_Leaves_LoadBKG();
     Mg_SetTitle(title);
-  } else {
+  }
+  else
+  {
     char *txt = "mover";
     char *sec_txt = "barrer";
     Instruction instruction[2];
@@ -133,7 +139,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
 
   Mg_Leaves_Player_Init();
 
-  for (uint8_t i = 0; i < TOTAL_ACTORS; i++) {
+  for (uint8_t i = 0; i < TOTAL_ACTORS; i++)
+  {
     available_x[i] = 44 + (i * (80 / TOTAL_ACTORS));
 
     actor_active[i] = 0;
@@ -141,7 +148,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
     actor_y[i] = 0;
   }
 
-  for (uint8_t i = 0; i <= LEAF_COUNT; i++) {
+  for (uint8_t i = 0; i <= LEAF_COUNT; i++)
+  {
     uint8_t id;
 
     if (i % 2 == 0)
@@ -161,7 +169,8 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
     actor_state[i] = INACTIVE;
   }
 
-  for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++) {
+  for (uint8_t i = LEAF_COUNT; i < TOTAL_ACTORS; i++)
+  {
     uint8_t id = load_extra_tiles(i, spr_acorn, 1);
     actor_ids[i] = id;
     actor_active[i] = false;
@@ -175,6 +184,6 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player) {
     actor_state[i] = INACTIVE;
   }
 
-  Mg_TimerStart(5);
+  Mg_TimerStart(30);
   // Mg_PlayMain();
 }

@@ -30,6 +30,10 @@ void Mg_LoadScreenUpdate()
   uint8_t tile_cache = 0;
   uint8_t tile = 0;
 
+  uint8_t zero = NUMBER_TILESET_START;
+
+  set_bkg_tile_xy(9, 8, zero);
+
   while (mgl_active == 1)
   {
     vsync();
@@ -57,6 +61,6 @@ void Mg_LoadScreenUpdate()
 
     tile_cache = tile;
 
-    set_bkg_tile_xy(9, 8, tile);
+    set_bkg_tile_xy(10, 8, tile);
   }
 }

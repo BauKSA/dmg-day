@@ -30,6 +30,7 @@ void Map_30_Init(Scene *scene, Entity scene_player)
   CurrentMapData.npc_count = 1;
   CurrentMapData.npc[0] = npc_1;
   CurrentMapData.collision_map = map_30_collision;
+  CurrentMapData.receive_items = 0;
 
   CurrentMapData.spawner.right = MAP_31;
   CurrentMapData.spawner.left = NONE;

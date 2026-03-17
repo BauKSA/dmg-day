@@ -1,7 +1,7 @@
 #ifndef _BKG_LEAVES_EXAMPLE_
 #define _BKG_LEAVES_EXAMPLE_
 
-#define bkg_leaves_example_tileset_size 66
+#define bkg_leaves_example_tileset_size 89
 
 extern const unsigned char bkg_leaves_example_tileset[]; 
 
