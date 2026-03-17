@@ -26,6 +26,7 @@
 #include "../../../include/npc_stats_map.h"
 #include "../../../include/npcs.h"
 #include "../../../include/text_positions.h"
+#include "../../../include/mgm_states.h"
 
 void Mg_Homework_Init(Scene *scene, Entity scene_player)
 {
@@ -94,4 +95,6 @@ void Mg_Homework_Init(Scene *scene, Entity scene_player)
   set_bkg_data(HOMEWORK_ICONS_TILESET_START, homework_icons_tileset_size, homework_icons_tileset);
 
   row_tile = get_bkg_tile_xy(QUESTION_X, QUESTION_Y + 1);
+
+  MGM_states.mg_homework = MGM_INACTIVE;
 }

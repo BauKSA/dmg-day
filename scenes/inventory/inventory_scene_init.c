@@ -86,4 +86,6 @@ void InventoryScene_Init(Scene *scene, Entity scene_player)
             uint8_t txt_tile = char_to_tile(inventory[selected_item_index].name_es[i]) + CHARS_TILESET_START;
             set_bkg_tile_xy(INVENTORY_ITEM_START_X + i, INVENTORY_ITEM_START_Y, txt_tile);
         }
+
+    InventoryScene_DrawCoins();
 }

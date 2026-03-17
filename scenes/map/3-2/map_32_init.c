@@ -21,12 +21,8 @@ static void map_32_event()
 void Map_32_Init(Scene *scene, Entity scene_player)
 {
   init_player();
-  Map_32_InitNPC();
-  Map_32_InitDialogues();
 
   CurrentMapData.player = player;
-  CurrentMapData.npc_count = 1;
-  CurrentMapData.npc[0] = npc_1;
   CurrentMapData.collision_map = map_32_collision;
 
   CurrentMapData.spawner.right = MAP_33;
@@ -44,7 +40,26 @@ void Map_32_Init(Scene *scene, Entity scene_player)
   set_bkg_tiles(0, 0, 20, 18, map_3_2_tilemap);
 
   draw_actor(player);
-  draw_actor(npc_1);
+
+  // NPC
+  if (map_32_npc_active == 1)
+  {
+    uint8_t empty_tile = 255;
+    set_bkg_tile_xy(7, 10, empty_tile);
+    set_bkg_tile_xy(8, 10, empty_tile);
+    set_bkg_tile_xy(7, 11, empty_tile);
+    set_bkg_tile_xy(8, 11, empty_tile);
+
+    CurrentMapData.npc_count = 1;
+    CurrentMapData.npc[0] = npc_1;
+
+    Map_32_InitNPC();
+    Map_32_InitDialogues();
+
+    draw_actor(npc_1);
+  }else{
+        CurrentMapData.npc_count = 0;
+  }
 
   actual_tile.prev = 0;
   actual_tile.value = 0;

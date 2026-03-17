@@ -16,17 +16,21 @@
 #include "../../../assets/chars/numbers.h"
 #include "../../../assets/sprites/backgrounds/minigames/homework/correct_icons.h"
 
-void Mgh_clean() {
+void Mgh_clean()
+{
   uint8_t empty_tile = 255;
 
-  for (uint8_t i = 0; i < 13; i++) {
+  for (uint8_t i = 0; i < 13; i++)
+  {
     set_bkg_tile_xy(QUESTION_X + i, QUESTION_Y, empty_tile);
     if (i < 10)
       set_bkg_tile_xy(OPTION_X + i, OPTION_Y, empty_tile);
   }
 
-  for (uint8_t i = 1; i < 4; i++) {
-    for (uint8_t j = 0; j < 13; j++) {
+  for (uint8_t i = 1; i < 4; i++)
+  {
+    for (uint8_t j = 0; j < 13; j++)
+    {
       set_bkg_tile_xy(QUESTION_X + j, QUESTION_Y + i, row_tile);
 
       if (j < 10)
@@ -35,10 +39,12 @@ void Mgh_clean() {
   }
 }
 
-void Mg_Homework_Update(Scene *scene) {
+void Mg_Homework_Update(Scene *scene)
+{
   uint8_t questions_left = 6;
 
-  while (questions_left > 0) {
+  while (questions_left > 0)
+  {
     uint8_t timer = 0;
 
     uint8_t tens = ((QUESTION_TIME - timer) / 10) + NUMBER_TILESET_START;
@@ -48,13 +54,15 @@ void Mg_Homework_Update(Scene *scene) {
     set_bkg_tile_xy(10, 16, units);
 
     uint8_t qi = QUESTION_COUNT - questions_left;
-    for (uint8_t i = 0; i < test[qi].question.lines_count; i++) {
+    for (uint8_t i = 0; i < test[qi].question.lines_count; i++)
+    {
       IntermitentText_Init(QUESTION_X, QUESTION_Y + i,
-                           test[qi].question.lines_txt[i], 15);
+                           test[qi].question.lines_txt[i], 5);
     }
 
-    for (uint8_t i = 0; i < test[qi].options_count; i++) {
-      IntermitentText_Init(OPTION_X, OPTION_Y + i, test[qi].options[i].txt, 15);
+    for (uint8_t i = 0; i < test[qi].options_count; i++)
+    {
+      IntermitentText_Init(OPTION_X, OPTION_Y + i, test[qi].options[i].txt, 5);
     }
 
     uint16_t s = 0;
@@ -63,12 +71,14 @@ void Mg_Homework_Update(Scene *scene) {
     keys = 0;
     prev_keys = 0;
 
-    while (s < QUESTION_TIME * 60) {
+    while (s < QUESTION_TIME * 60)
+    {
 
       prev_keys = keys;
       keys = joypad();
 
-      if ((keys & J_UP) && !(prev_keys & J_UP)) {
+      if ((keys & J_UP) && !(prev_keys & J_UP))
+      {
         if (test[qi].options[0].correct == 0)
           break;
 
@@ -76,7 +86,8 @@ void Mg_Homework_Update(Scene *scene) {
         break;
       }
 
-      if ((keys & J_LEFT) && !(prev_keys & J_LEFT)) {
+      if ((keys & J_LEFT) && !(prev_keys & J_LEFT))
+      {
         if (test[qi].options[1].correct == 0)
           break;
 
@@ -85,7 +96,8 @@ void Mg_Homework_Update(Scene *scene) {
       }
 
       if ((keys & J_RIGHT) && !(prev_keys & J_RIGHT) &&
-          test[qi].options_count > 2) {
+          test[qi].options_count > 2)
+      {
         if (test[qi].options[2].correct == 0)
           break;
 
@@ -94,7 +106,8 @@ void Mg_Homework_Update(Scene *scene) {
       }
 
       if ((keys & J_DOWN) && !(prev_keys & J_DOWN) &&
-          test[qi].options_count > 3) {
+          test[qi].options_count > 3)
+      {
         if (test[qi].options[2].correct == 0)
           break;
 
@@ -102,7 +115,8 @@ void Mg_Homework_Update(Scene *scene) {
         break;
       }
 
-      if (s % 60 == 0) {
+      if (s % 60 == 0)
+      {
         timer++;
 
         tens = ((QUESTION_TIME - timer) / 10) + NUMBER_TILESET_START;
@@ -131,7 +145,7 @@ void Mg_Homework_Update(Scene *scene) {
     if (qi > 2)
       y++;
 
-    uint8_t x = 13 + (qi % 3);
+    uint8_t x = 14 + (qi % 3);
 
     set_bkg_tile_xy(x, y, tile);
 

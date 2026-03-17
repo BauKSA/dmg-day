@@ -12,6 +12,7 @@ void Map_32_Destroy(Scene *scene);
 extern Scene Map_32;
 extern enum MGM_STATE mg_32_tmp;
 extern uint8_t tmp_relation32;
+extern uint8_t map_32_npc_active;
 
 void Map_32_Create(void);
 void Map_32_InitNPC(void);

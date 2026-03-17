@@ -31,6 +31,7 @@ void Map_32_Update(Scene *scene)
   if (mg_32_tmp != MGM_states.mg_homework)
   {
     mg_32_tmp = MGM_states.mg_homework;
+    map_32_npc_active = 0;
 
     Scene_DrawNPCLine(npc_1, (uint8_t)NPC_TAREA, 0, 0, NONE);
   }

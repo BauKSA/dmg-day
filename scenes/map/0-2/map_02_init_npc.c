@@ -34,6 +34,6 @@ void Map_02_InitNPC()
     init_animation(npc_1, &animation[npc_1], 0, npc_idle, 1,
                    DEFAULT_ANIMATION_SPEED, 1);
 
-    init_animation(npc_1, &animation[npc_1], 0, npc_picotazo, 2,
+    init_animation(npc_1, &animation[npc_1], 1, npc_picotazo, 2,
                    DEFAULT_ANIMATION_SPEED, 1);
 }

@@ -15,5 +15,6 @@ extern Scene InventoryScene;
 void InventoryScene_Create(void);
 void InventoryScene_CheckInput(void);
 void InventoryScene_InitArrow(void);
+void InventoryScene_DrawCoins(void);
 
 #endif //_INVENTORYSCENE_
