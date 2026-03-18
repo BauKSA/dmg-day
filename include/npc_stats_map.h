@@ -21,5 +21,6 @@
 #define NPC_ESCOBA 4
 #define NPC_TAREA 5
 #define NPC_DIARIO 6
+#define NPC_LIBRO 7
 
 #endif //_NPCSTATSMAP_

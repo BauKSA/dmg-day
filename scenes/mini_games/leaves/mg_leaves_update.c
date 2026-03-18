@@ -210,14 +210,6 @@ void Mg_Leaves_Update(Scene *scene)
   Mg_TimerUpdate();
   // hUGE_dosound();
 
-  // acorns
-  set_bkg_tile_xy(1, 15, (acorns_count / 10) + NUMBER_TILESET_START);
-  set_bkg_tile_xy(2, 15, (acorns_count % 10) + NUMBER_TILESET_START);
-
-  // leaves
-  set_bkg_tile_xy(17, 15, (leaves_count / 10) + NUMBER_TILESET_START);
-  set_bkg_tile_xy(18, 15, (leaves_count % 10) + NUMBER_TILESET_START);
-
   if (mgt_alarm == 1)
   {
     Mg_TimerStopAlarm();
@@ -289,6 +281,14 @@ void Mg_Leaves_Update(Scene *scene)
 
   set_bkg_tile_xy(9, 16, t_tens);
   set_bkg_tile_xy(10, 16, t_units);
+
+  // acorns
+  set_bkg_tile_xy(1, 15, (acorns_count / 10) + NUMBER_TILESET_START);
+  set_bkg_tile_xy(2, 15, (acorns_count % 10) + NUMBER_TILESET_START);
+
+  // leaves
+  set_bkg_tile_xy(17, 15, (leaves_count / 10) + NUMBER_TILESET_START);
+  set_bkg_tile_xy(18, 15, (leaves_count % 10) + NUMBER_TILESET_START);
 
   return;
 }

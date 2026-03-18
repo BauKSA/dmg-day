@@ -1,4 +1,4 @@
-#pragma bank 3
+#pragma bank 1
 
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
@@ -12,8 +12,10 @@
 
 void Map_20_Update(Scene *scene)
 {
-  Map_AutoClean();
+  if (CurrentMapData.event_active == 0)
+    Map_AutoClean();
 
+  Map_20_CheckInput();
   Map_PlayerMovement();
 
   MapData *data = (MapData *)scene->data;

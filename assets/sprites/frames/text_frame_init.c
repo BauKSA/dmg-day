@@ -2,7 +2,7 @@
 #include <gb/gb.h>
 #include <stdint.h>
 
-uint8_t backup_tiles[100];
+uint8_t backup_tiles[128];
 
 void TextFrame_Close(uint8_t width, uint8_t height)
 {

@@ -21,32 +21,37 @@ void Map_23_ShowBooks()
 
     if (language == SPANISH)
     {
-        books[0].line_a = " la guerra de";
-        books[0].line_b = "los mundos";
+        books[2].line_a = " la guerra de";
+        books[2].line_b = "los mundos";
 
         books[1].line_a = "  el hobbit";
         books[1].line_b = "\0";
 
-        books[2].line_a = " orgullo y";
-        books[2].line_b = "prejuicio";
+        books[0].line_a = " orgullo y";
+        books[0].line_b = "prejuicio";
 
         books[3].line_a = " martin fierro";
         books[3].line_b = "\0";
     }
     else
     {
-        books[0].line_a = " the war of";
-        books[0].line_a = " the worlds";
+        books[2].line_a = " the war of";
+        books[2].line_a = " the worlds";
 
         books[1].line_a = " the hobbit";
         books[1].line_b = "\0";
 
-        books[2].line_a = " pride and";
-        books[2].line_b = " prejudice";
+        books[0].line_a = " pride and";
+        books[0].line_b = " prejudice";
 
         books[3].line_a = " martin fierro";
         books[3].line_b = "\0";
     }
+
+    books[0].book = PRIDE;
+    books[1].book = HOBBIT;
+    books[2].book = WAR;
+    books[3].book = FIERRO;
 
     books[0].price = 100;
     books[1].price = 200;
