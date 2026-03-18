@@ -192,6 +192,8 @@ void Map_20_CheckInput()
         Scene_DrawNPCLine(npc_1, (uint8_t)NPC_LIBRO, 0, 0, NONE);
         npc_20_active = 0;
 
+        dialogue_phase[(uint8_t)NPC_LIBRO] = 0;
+
         return;
     }
 }

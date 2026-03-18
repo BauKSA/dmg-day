@@ -34,9 +34,11 @@ void Map_20_InitNPC()
         spr_ChicaLibro00,
         spr_ChicaLibro01,
         spr_ChicaLibro02,
-        spr_ChicaLibro03
-    };
+        spr_ChicaLibro03};
 
     init_animation(npc_1, &animation[npc_1], 0, npc_sprite, 1,
                    DEFAULT_ANIMATION_SPEED, 4);
+
+    CurrentMapData.npc_count = 1;
+    CurrentMapData.npc[0] = npc_1;
 }

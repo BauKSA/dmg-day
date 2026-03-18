@@ -4,6 +4,7 @@
 #include "./map_31_collision.h"
 
 #include "../map_data.h"
+#include "../2-0/map_20.h"
 
 #include "../../../include/draw.h"
 #include "../../../include/player.h"
@@ -12,10 +13,15 @@
 
 #include "../../../assets/sprites/backgrounds/maps/3-1/map_3-1.h"
 
+static void Map_31_event()
+{
+  if (purchased_book != NONE_BOOK)
+    CurrentMapData.event_active = 1;
+}
+
 void Map_31_Init(Scene *scene, Entity scene_player)
 {
   init_player();
-  Map_31_InitNPCs();
 
   CurrentMapData.player = player;
   CurrentMapData.npc_count = 0;
@@ -26,13 +32,17 @@ void Map_31_Init(Scene *scene, Entity scene_player)
   CurrentMapData.spawner.up = NONE;
   CurrentMapData.spawner.down = NONE;
 
-  CurrentMapData.event_count = 0;
+  CurrentMapData.event_count = 1;
+  CurrentMapData.events[0] = Map_31_event;
   CurrentMapData.event_active = 0;
 
   scene->data = &CurrentMapData;
 
   set_bkg_data(0, map_3_1_tileset_size, map_3_1_tileset);
   set_bkg_tiles(0, 0, 20, 18, map_3_1_tilemap);
+
+  Map_31_InitNPCs();
+  Map_31_InitDialogues();
 
   draw_actor(player);
 

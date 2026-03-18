@@ -34,11 +34,10 @@ static void Map_20_event()
 void Map_20_Init(Scene *scene, Entity scene_player)
 {
     init_player();
-    Map_20_InitDialogues();
 
     CurrentMapData.player = player;
     CurrentMapData.collision_map = map_20_collision;
-    CurrentMapData.npc_count = 1;
+    CurrentMapData.npc_count = 0;
 
     CurrentMapData.event_count = 1;
     CurrentMapData.event_active = 0;
@@ -54,7 +53,17 @@ void Map_20_Init(Scene *scene, Entity scene_player)
     set_bkg_data(0, map_2_0_tileset_size, map_2_0_tileset);
     set_bkg_tiles(0, 0, 20, 18, map_2_0_tilemap);
 
-    Map_20_InitNPC();
+    if (npc_20_active == 1)
+    {
+        Map_20_InitDialogues();
+        Map_20_InitNPC();
+
+        uint8_t empty_tile = 255;
+        set_bkg_tile_xy(7, 5, empty_tile);
+        set_bkg_tile_xy(8, 5, empty_tile);
+        set_bkg_tile_xy(7, 6, empty_tile);
+        set_bkg_tile_xy(8, 6, empty_tile);
+    }
 
     draw_actor(player);
     draw_actor(npc_1);
@@ -62,6 +71,6 @@ void Map_20_Init(Scene *scene, Entity scene_player)
     actual_tile.prev = 0;
     actual_tile.value = 0;
 
-    if (dialogue_phase[(uint8_t)NPC_LIBRO] == 0)
+    if (npc_20_active == 1 && dialogue_phase[(uint8_t)NPC_LIBRO] == 0)
         Scene_DrawNPCLine(npc_1, (uint8_t)NPC_LIBRO, 0, 0, NONE);
 }

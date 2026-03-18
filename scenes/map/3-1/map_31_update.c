@@ -14,6 +14,7 @@ void Map_31_Update(Scene *scene)
 {
   Map_AutoClean();
 
+  Map_31_CheckInput();
   Map_PlayerMovement();
 
   MapData *data = (MapData *)scene->data;
@@ -23,6 +24,7 @@ void Map_31_Update(Scene *scene)
 
   draw_actor(data->player);
   draw_actor(npc_1);
+  draw_actor(npc_2);
 
   Map_Collision(scene);
 
