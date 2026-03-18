@@ -2,7 +2,7 @@
 #define BUTTONS_H
 
 #define buttons_tileset_size 3
-#define BUTTON_TILESET_START 208
+#define BUTTON_TILESET_START 206
 
 extern const unsigned char buttons_tileset[];
 

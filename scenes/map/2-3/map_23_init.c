@@ -10,12 +10,27 @@
 #include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/scene.h"
+#include "../../../include/input.h"
 
 #include "../../../assets/sprites/backgrounds/maps/2-3/map_2-3.h"
 
-static void map_23_event() { CurrentMapData.event_active = 1; }
+static void map_23_event()
+{
+  if (back == 1)
+  {
+    keys = 0;
+    prev_keys = 0;
 
-void Map_23_Init(Scene *scene, Entity scene_player) {
+    back = 0;
+
+    return;
+  }
+
+  CurrentMapData.event_active = 1;
+}
+
+void Map_23_Init(Scene *scene, Entity scene_player)
+{
   init_player();
 
   Map_23_InitNPC();

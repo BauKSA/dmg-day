@@ -2,10 +2,10 @@
 
 int char_to_tile(char c)
 {
-    char map[] = "abcdefghijklmnopqrstuvwxyz.,!?'";
+    char map[] = "abcdefghijklmnopqrstuvwxyz.,!?'*$";
     char number_map[] = "0123456789";
 
-    for (int i = 0; i < 32; i++)
+    for (int i = 0; i < 34; i++)
     {
         if (map[i] == c)
         {
@@ -17,7 +17,7 @@ int char_to_tile(char c)
     {
         if (number_map[i] == c)
         {
-            return i + 1 + 32;
+            return i + 34;
         }
     }
 

@@ -2,7 +2,7 @@
 #define _ITEMS_
 
 #define items_tileset_size 5
-#define ITEMS_TILESET_START 196
+#define ITEMS_TILESET_START 194
 
 extern const unsigned char items_tileset[]; 
 

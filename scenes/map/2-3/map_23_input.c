@@ -21,8 +21,11 @@ void Map_23_CheckInput()
   {
     if (dialogue_phase[(uint8_t)NPC_DIARIO] == 0)
     {
-      Scene_DrawNPCLine(npc_1, (uint8_t)NPC_DIARIOS, 0, 0, NONE);
+      Scene_DrawNPCLine(npc_1, (uint8_t)NPC_DIARIO, 0, 0, NONE);
       Map_23_ShowBooks();
+
+      keys = 0;
+      prev_keys = 0;
     }
   }
 }

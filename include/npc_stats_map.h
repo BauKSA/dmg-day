@@ -16,11 +16,10 @@
 
 #define EXAMPLE_00 0 // Example NPC for testing purpose
 #define NPC_MARTIN 1
-#define NPC_DIARIOS 2
+#define NPC_DIARIO 2
 #define NPC_FIRULAIS 3
 #define NPC_ESCOBA 4
 #define NPC_TAREA 5
-#define NPC_DIARIO 6
 #define NPC_LIBRO 7
 
 #endif //_NPCSTATSMAP_

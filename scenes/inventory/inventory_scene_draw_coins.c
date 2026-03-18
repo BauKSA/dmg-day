@@ -11,11 +11,12 @@
 void InventoryScene_DrawCoins()
 {
     uint8_t digitos[5];
+    uint16_t tmp_money = money;
 
     for (uint8_t i = 5; i >= 1; i--)
     {
-        digitos[i - 1] = money % 10;
-        money /= 10;
+        digitos[i - 1] = tmp_money % 10;
+        tmp_money /= 10;
     }
 
     uint8_t x = 9;

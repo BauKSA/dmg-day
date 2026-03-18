@@ -96,13 +96,15 @@ void NewItemScreen(Item item)
         }
     }
 
+    uint8_t center_tile_start;
+
     if (language == SPANISH)
     {
         uint8_t size = 0;
         for (uint8_t i = 0; inventory[index].name_es[i] != '\0'; i++)
             size++;
 
-        uint8_t center_tile_start = (18 - size) / 2;
+        center_tile_start = (18 - size) / 2;
         center_tile_start++;
         IntermitentText_Init(center_tile_start, 8, inventory[index].name_es, 10);
     }
@@ -112,7 +114,7 @@ void NewItemScreen(Item item)
         for (uint8_t i = 0; inventory[index].name_en[i] != '\0'; i++)
             size++;
 
-        uint8_t center_tile_start = (18 - size) / 2;
+        center_tile_start = (18 - size) / 2;
         center_tile_start++;
         IntermitentText_Init(center_tile_start, 8, inventory[index].name_en, 10);
     }
@@ -124,8 +126,8 @@ void NewItemScreen(Item item)
 
     uint8_t icon = (uint8_t)item + ITEMS_TILESET_START;
 
+    set_bkg_tile_xy(center_tile_start, 10, icon);
     set_bkg_tile_xy(11, 10, button);
-    set_bkg_tile_xy(8, 10, icon);
 
     keys = 0;
     uint8_t frame_counter = 0;

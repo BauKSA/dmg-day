@@ -10,7 +10,7 @@
 
 typedef enum MissionBooks
 {
-    NONE,
+    NONE_BOOK,
     WAR,
     HOBBIT,
     PRIDE,

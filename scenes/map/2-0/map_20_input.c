@@ -8,6 +8,7 @@
 #include "../../../include/player.h"
 #include "../../../include/draw.h"
 #include "../../../include/language.h"
+#include "../../../include/money.h"
 #include "../../../include/char_to_tile.h"
 
 #include "../../../assets/chars/chars.h"
@@ -149,6 +150,34 @@ void Map_20_CheckInput()
         }
 
         TextFrame_Close(12, 4);
+
+        TextFrame_Init(12, 2);
+        char *new_money;
+        char *price = "$5250";
+
+        if (language == SPANISH)
+            new_money = "recibiste";
+        else
+            new_money = "you received";
+
+        for (uint8_t i = 0; new_money[i] != '\0'; i++)
+        {
+            uint8_t tile = char_to_tile(new_money[i]) + CHARS_TILESET_START;
+            set_bkg_tile_xy(3 + i, 4, tile);
+        }
+
+        for (uint8_t i = 0; price[i] != '\0'; i++)
+        {
+            uint8_t tile = char_to_tile(price[i]) + CHARS_TILESET_START;
+            set_bkg_tile_xy(3 + i, 5, tile);
+        }
+
+        for (uint8_t i = 0; i < 90; i++)
+            vsync();
+
+        money += 5250;
+        TextFrame_Close(12, 2);
+
         init_player();
         position.y[npc_1] = npc_tmp_y;
 

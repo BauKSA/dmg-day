@@ -9,6 +9,4 @@
 
 extern uint16_t money;
 
-void add_money(uint8_t min_coins_amount, uint8_t max_coins_amount);
-
 #endif //_MONEY_

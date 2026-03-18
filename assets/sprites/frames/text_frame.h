@@ -7,7 +7,7 @@
 
 extern const unsigned char text_frame_tileset[];
 extern const unsigned char text_frame_tilemap[];
-extern uint8_t backup_tiles[128];
+extern uint8_t backup_tiles[255];
 
 void TextFrame_Init(uint8_t width, uint8_t height);
 void TextFrame_Close(uint8_t width, uint8_t height);
