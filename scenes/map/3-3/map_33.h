@@ -12,5 +12,7 @@ extern Scene Map_33;
 void Map_33_Create(void);
 void Map_33_InitNPC(void);
 void Map_33_LoadBKG(void);
+void Map_33_InitDialogues(void);
+void Map_33_CheckInput(void);
 
 #endif // _MAP_33_

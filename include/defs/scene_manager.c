@@ -3,8 +3,8 @@
 #include "../draw.h"
 #include "../input.h"
 #include "../load.h"
-#include "../player.h"
 #include "../npcs.h"
+#include "../player.h"
 #include "../position.h"
 #include "../scene.h"
 #include "../scene_manager.h"
@@ -13,8 +13,7 @@ enum AllScenes next_scene = NONE;
 SceneManager scene_manager;
 uint8_t is_transitioning = 0;
 
-void SceneManager_CleanScreen()
-{
+void SceneManager_CleanScreen() {
   DISPLAY_OFF;
   HIDE_BKG;
   HIDE_SPRITES;
@@ -36,25 +35,24 @@ void SceneManager_CleanScreen()
   vram_extra_start = 27;
 }
 
-void SceneManager_Create(Game *game)
-{
+void SceneManager_Create(Game *game) {
   scene_manager.game = game;
   scene_manager.change_scene = SceneManager_ChangeScene;
 }
 
-void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player)
-{
+void SceneManager_ChangeScene(enum AllScenes new_scene, Entity *player) {
   if (is_transitioning == 1)
     return;
 
   if (!scene_manager.game)
     return;
 
+  DISPLAY_OFF;
+
   is_transitioning = 1;
   next_scene = NONE;
 
-  if (scene_manager.game->current_scene != NULL && new_scene != INVENTORY)
-  {
+  if (scene_manager.game->current_scene != NULL && new_scene != INVENTORY) {
     Scene *old_scene = scene_manager.game->current_scene;
 
     uint8_t _prev_bank_destroy = _current_bank;

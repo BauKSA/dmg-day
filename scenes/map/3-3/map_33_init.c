@@ -5,14 +5,15 @@
 
 #include "../map_data.h"
 
+#include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
+#include "../../../include/npcs.h"
 #include "../../../include/player.h"
 #include "../../../include/scene.h"
-#include "../../../include/all_scenes.h"
-#include "../../../include/npcs.h"
 
-void Map_33_Init(Scene *scene, Entity scene_player)
-{
+static void Map_33_event() { CurrentMapData.event_active = 1; }
+
+void Map_33_Init(Scene *scene, Entity scene_player) {
   init_player();
 
   CurrentMapData.player = player;
@@ -25,13 +26,15 @@ void Map_33_Init(Scene *scene, Entity scene_player)
   CurrentMapData.spawner.up = NONE;
   CurrentMapData.spawner.down = NONE;
 
-  CurrentMapData.event_count = 0;
+  CurrentMapData.event_count = 1;
   CurrentMapData.event_active = 0;
+  CurrentMapData.events[0] = Map_33_event;
 
   scene->data = &CurrentMapData;
 
   Map_33_LoadBKG();
   Map_33_InitNPC();
+  Map_33_InitDialogues();
 
   draw_actor(player);
   draw_actor(npc_1);

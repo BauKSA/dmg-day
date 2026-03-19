@@ -10,6 +10,7 @@ all:
 	@mkdir -p build
 	@$(LCC) -Wl-yt1 -Wl-m -Wl-yo8 -o $(TARGET) $(SOURCES) > ./build/logs.txt 2>&1
 	@echo "--- ROM CREATED: $(TARGET) ---"
+	@echo -e "\a"
 
 clean:
 	@rm -f $(TARGET)

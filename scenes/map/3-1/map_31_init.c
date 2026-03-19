@@ -3,24 +3,22 @@
 #include "./map_31.h"
 #include "./map_31_collision.h"
 
-#include "../map_data.h"
 #include "../2-0/map_20.h"
+#include "../map_data.h"
 
+#include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
 #include "../../../include/player.h"
 #include "../../../include/scene.h"
-#include "../../../include/all_scenes.h"
 
 #include "../../../assets/sprites/backgrounds/maps/3-1/map_3-1.h"
 
-static void Map_31_event()
-{
+static void Map_31_event() {
   if (purchased_book != NONE_BOOK)
     CurrentMapData.event_active = 1;
 }
 
-void Map_31_Init(Scene *scene, Entity scene_player)
-{
+void Map_31_Init(Scene *scene, Entity scene_player) {
   init_player();
 
   CurrentMapData.player = player;
