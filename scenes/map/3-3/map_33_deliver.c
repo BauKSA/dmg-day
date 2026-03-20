@@ -103,7 +103,7 @@ void Map_33_Deliver()
         set_bkg_tile_xy(4 + i, 5, tile);
     }
 
-    for (uint8_t i = 0; i < 90; i++)
+    for (uint8_t i = 0; i < 180; i++)
         vsync();
 
     money += reward;

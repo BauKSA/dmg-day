@@ -6,17 +6,17 @@
 
 typedef enum MarketItem
 {
-  EMPTY_ITEM,
-  BREAD,
-  MILK,
-  CANDIES,
-  TEA,
-  COFFE,
-  BATTERIES,
-  JAM,
-  SOAP,
-  COOKIES,
-  SODA
+  MKT_EMPTY,
+  MKT_BREAD,
+  MKT_MILK,
+  MKT_CANDIES,
+  MKT_TEA,
+  MKT_COFFE,
+  MKT_BATTERIES,
+  MKT_JAM,
+  MKT_SOAP,
+  MKT_COOKIES,
+  MKT_SODA
 } MarketItem;
 
 typedef struct MarketItemInfo
@@ -30,5 +30,6 @@ typedef struct MarketItemInfo
 extern MarketItem items_to_buy[ITEMS_TO_BUY];
 extern MarketItem item_cart[10];
 extern const MarketItemInfo items_info[10];
+extern uint8_t player_items;
 
 #endif

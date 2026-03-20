@@ -13,6 +13,7 @@ void Map_11_Update(Scene *scene)
 {
     Map_AutoClean();
 
+    Map_11_CheckInput();
     Map_PlayerMovement();
 
     MapData *data = (MapData *)scene->data;

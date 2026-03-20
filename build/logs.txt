@@ -369,7 +369,32 @@ Compilando: map_11_init.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_init.c:39: warning 85: in function Map_11_Init unreferenced function argument : 'scene_player'
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_init.c:15: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_init.c:45: warning 85: in function Map_11_Init unreferenced function argument : 'scene_player'
+Compilando: map_11_input.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:78: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:135: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:137: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:163: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:164: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:168: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:169: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:172: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:173: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:217: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:219: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:250: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:252: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:270: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:284: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:312: warning 110: conditional flow changed by optimizer: so said EVELYN the modified DOG
+Compilando: map_11_option_actor.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_option_actor.c:10: warning 283: function declarator with no prototype
 Compilando: map_11_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
@@ -755,7 +780,7 @@ c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warni
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_destroy.c:12: warning 85: in function Map_33_Destroy unreferenced function argument : 'scene'
 Compilando: map_33_dialogue.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_dialogue.c:41: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_dialogue.c:72: warning 283: function declarator with no prototype
 Compilando: map_33_init.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype

@@ -174,7 +174,7 @@ void Map_33_CheckInput()
         list[0] = "*leche";
         list[1] = "*te";
         list[2] = "*mermelada";
-        list[3] = "*pilas";
+        list[3] = "*soda";
         list[4] = "*galletas";
       }
       else
@@ -184,7 +184,7 @@ void Map_33_CheckInput()
         list[0] = "*milk";
         list[1] = "*tea";
         list[2] = "*jam";
-        list[3] = "*batteries";
+        list[3] = "*soda";
         list[4] = "*biscuits";
       }
 

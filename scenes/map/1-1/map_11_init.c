@@ -12,6 +12,11 @@
 
 #include "../../../assets/sprites/backgrounds/maps/1-1/map_1-1.h"
 
+void Map_11_event()
+{
+    CurrentMapData.event_active = 1;
+}
+
 void Map_11_Init(Scene *scene, Entity scene_player)
 {
     init_player();
@@ -20,8 +25,9 @@ void Map_11_Init(Scene *scene, Entity scene_player)
     CurrentMapData.collision_map = map_11_collision;
     CurrentMapData.npc_count = 0;
 
-    CurrentMapData.event_count = 0;
+    CurrentMapData.event_count = 1;
     CurrentMapData.event_active = 0;
+    CurrentMapData.events[0] = Map_11_event;
 
     CurrentMapData.spawner.right = NONE;
     CurrentMapData.spawner.left = NONE;

@@ -172,7 +172,7 @@ void Map_20_CheckInput()
             set_bkg_tile_xy(3 + i, 5, tile);
         }
 
-        for (uint8_t i = 0; i < 90; i++)
+        for (uint8_t i = 0; i < 180; i++)
             vsync();
 
         money += 5250;
