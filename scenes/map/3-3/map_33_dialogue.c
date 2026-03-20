@@ -29,26 +29,50 @@ static const DialoguePerRelation dialogue_2_33_es = {
      {"joven! como le", "va?"}}};
 
 static const DialoguePerRelation dialogue_3_33_es = {
-    {{"estos jovenes... no", "tienen educacion"}, {"", ""}, {"", ""}},
+    {{"estos jovenes...no", "tienen educacion"}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
-void Map_33_InitDialogues() {
-  if (dialogue_phase[(uint8_t)NPC_SUPER] == 0) {
-    if (language == SPANISH) {
+static const DialoguePerRelation dialogue_4_33_es = {
+    {{"nada... no me", "trajo nada..."}, {"", ""}, {"", ""}},
+    {{"", ""}, {"", ""}, {"", ""}},
+    {{"Bueno, algo es", "algo..."}, {"", ""}, {"muchas gracias,", "joven. disfrute"}}};
+
+void Map_33_InitDialogues()
+{
+  if (dialogue_phase[(uint8_t)NPC_SUPER] == 0)
+  {
+    if (language == SPANISH)
+    {
       CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_0_33_es;
     }
-  } else if (dialogue_phase[(uint8_t)NPC_SUPER] == 1) {
-    if (language == SPANISH) {
+  }
+  else if (dialogue_phase[(uint8_t)NPC_SUPER] == 1)
+  {
+    if (language == SPANISH)
+    {
       CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_1_33_es;
     }
-  } else if (dialogue_phase[(uint8_t)NPC_SUPER] == 2) {
-    if (language == SPANISH) {
+  }
+  else if (dialogue_phase[(uint8_t)NPC_SUPER] == 2)
+  {
+    if (language == SPANISH)
+    {
       CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_2_33_es;
     }
-  } else if (dialogue_phase[(uint8_t)NPC_SUPER] == 3) {
-    if (language == SPANISH) {
+  }
+  else if (dialogue_phase[(uint8_t)NPC_SUPER] == 3)
+  {
+    if (language == SPANISH)
+    {
       CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_3_33_es;
+    }
+  }
+  else if (dialogue_phase[(uint8_t)NPC_SUPER] == 4)
+  {
+    if (language == SPANISH)
+    {
+      CurrentNPCDialogues[0] = (DialoguePerRelation *)&dialogue_4_33_es;
     }
   }
 }

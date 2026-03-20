@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #define text_frame_tileset_size 21
-#define TEXT_FRAME_TILESET_START 180
+#define TEXT_FRAME_TILESET_START 176
 
 extern const unsigned char text_frame_tileset[];
 extern const unsigned char text_frame_tilemap[];
