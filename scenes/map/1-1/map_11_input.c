@@ -11,6 +11,7 @@
 #include "../../../include/position.h"
 #include "../../../include/draw.h"
 #include "../../../include/char_to_tile.h"
+#include "../../../include/music.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/language.h"
 
@@ -85,7 +86,7 @@ static void Map_11_ClearItems()
         for (uint8_t j = 0; j < 15; j++)
         {
             uint8_t tile = 255;
-            set_bkg_tile_xy(3 + j, 5 + i, tile); // Cambiado a 3 para limpiar la columna del asterisco
+            set_bkg_tile_xy(3 + j, 5 + i, tile);
         }
     }
 }
@@ -271,6 +272,8 @@ static void Map_11_Buy(uint8_t *selected_state)
                 if (tmp_cart[i] == MKT_BREAD)
                     NewItemScreen(BREAD);
             }
+
+            Paid();
 
             return;
         }

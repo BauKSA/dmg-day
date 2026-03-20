@@ -10,6 +10,7 @@
 #include "../../../include/animation.h"
 #include "../../../include/draw.h"
 #include "../../../include/language.h"
+#include "../../../include/music.h"
 
 #include "../item_no_use.h"
 
@@ -50,7 +51,7 @@ void Map_12_CheckItems()
         }
     }
 
-    if (correct = 0)
+    if (correct == 0)
     {
         ItemNoUseText();
         return;
@@ -81,6 +82,8 @@ void Map_12_CheckItems()
 
     map_12_collision[7][10] = 0;
     map_12_collision[8][10] = 0;
+    map_12_collision[9][10] = 0;
 
     dog_active = 0;
+    Woof();
 }

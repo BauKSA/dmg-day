@@ -80,3 +80,105 @@ void MiniGamePassed()
 
     delay(3000);
 }
+
+void MiniGameNotPassed()
+{
+    NR10_REG = 0x00;
+    NR11_REG = 0x40;
+    NR12_REG = 0xC2;
+    NR13_REG = 0x00;
+    NR14_REG = 0x85;
+    delay(400);
+
+    NR13_REG = 0x50;
+    NR14_REG = 0x86;
+    delay(400);
+
+    NR10_REG = 0x1E;
+    NR13_REG = 0x40;
+    NR14_REG = 0x86;
+    delay(800);
+
+    NR10_REG = 0x00;
+    NR12_REG = 0xC7;
+    NR13_REG = 0x10;
+    NR14_REG = 0x84;
+
+    NR41_REG = 0x01;
+    NR42_REG = 0xA7;
+    NR43_REG = 0x67;
+    NR44_REG = 0x80;
+
+    delay(3000);
+}
+
+void EarnMoney()
+{
+    NR10_REG = 0x15;
+    NR11_REG = 0x81;
+    NR12_REG = 0xF3;
+    NR13_REG = 0x73;
+    NR14_REG = 0x86;
+}
+
+void Walk()
+{
+    NR41_REG = 0x01;
+    NR42_REG = 0x11;
+    NR43_REG = 0x51;
+    NR44_REG = 0x80;
+}
+
+void SetDialogue()
+{
+    NR10_REG = 0x00;
+    NR11_REG = 0x81;
+    NR12_REG = 0x41;
+    NR13_REG = 0x73;
+    NR14_REG = 0x85;
+}
+
+void AcceptHelp()
+{
+    NR10_REG = 0x15;
+    NR11_REG = 0x81;
+    NR12_REG = 0x52;
+    NR13_REG = 0x73;
+    NR14_REG = 0x85;
+}
+
+void DeclineHelp()
+{
+    NR10_REG = 0x1E;
+    NR11_REG = 0x41;
+    NR12_REG = 0x62;
+    NR13_REG = 0x00;
+    NR14_REG = 0x86;
+}
+
+void Woof()
+{
+    NR10_REG = 0x16;
+    NR11_REG = 0x41;
+    NR12_REG = 0xA2;
+    NR13_REG = 0x50;
+    NR14_REG = 0x86;
+}
+
+void Angru()
+{
+    NR10_REG = 0x27;
+    NR11_REG = 0x82;
+    NR12_REG = 0x44;
+    NR13_REG = 0x10;
+    NR14_REG = 0x86;
+}
+
+void Paid()
+{
+    NR10_REG = 0x1E;
+    NR11_REG = 0x41;
+    NR12_REG = 0x52;
+    NR13_REG = 0x20;
+    NR14_REG = 0x86;
+}

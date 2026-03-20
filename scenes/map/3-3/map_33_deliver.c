@@ -11,6 +11,7 @@
 #include "../../../include/money.h"
 #include "../../../include/mgm_states.h"
 #include "../../../include/char_to_tile.h"
+#include "../../../include/music.h"
 
 #include "../../../assets/sprites/frames/text_frame.h"
 #include "../../../assets/chars/chars.h"
@@ -55,6 +56,8 @@ void Map_33_Deliver()
     {
         humor_stats[npc_map] = 0;
         relation_stats[npc_map] = 0;
+
+        DeclineHelp();
     }
     else if (deliver_items < target_deliver)
     {
@@ -66,6 +69,8 @@ void Map_33_Deliver()
         humor_stats[npc_map] = 2;
         relation_stats[npc_map] = 2;
         reward = total_price + 2500;
+
+        MiniGameWin();
     }
 
     Map_33_InitDialogues();
@@ -105,6 +110,8 @@ void Map_33_Deliver()
 
     for (uint8_t i = 0; i < 180; i++)
         vsync();
+
+    EarnMoney();
 
     money += reward;
     TextFrame_Close(12, 2);

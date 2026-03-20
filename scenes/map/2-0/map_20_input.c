@@ -9,6 +9,7 @@
 #include "../../../include/draw.h"
 #include "../../../include/language.h"
 #include "../../../include/money.h"
+#include "../../../include/music.h"
 #include "../../../include/char_to_tile.h"
 
 #include "../../../assets/chars/chars.h"
@@ -136,6 +137,8 @@ void Map_20_CheckInput()
                 relation_stats[(uint8_t)NPC_LIBRO] = 2;
                 mission_20_active = 1;
 
+                AcceptHelp();
+
                 break;
             }
 
@@ -193,6 +196,8 @@ void Map_20_CheckInput()
         npc_20_active = 0;
 
         dialogue_phase[(uint8_t)NPC_LIBRO] = 0;
+
+        EarnMoney();
 
         return;
     }

@@ -8,6 +8,7 @@
 #include "../../../include/draw.h"
 #include "../../../include/language.h"
 #include "../../../include/char_to_tile.h"
+#include "../../../include/music.h"
 #include "../../../include/money.h"
 
 #include "../../../assets/chars/chars.h"
@@ -78,4 +79,6 @@ void Map_03_CheckItems()
 
     money += 1500;
     TextFrame_Close(12, 2);
+
+    MiniGameWin();
 }

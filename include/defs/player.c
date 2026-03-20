@@ -18,8 +18,8 @@ void create_player()
 
 uint8_t init_player(void)
 {
-  position.x[player] = 50;
-  position.y[player] = 100;
+  position.x[player] = 56;
+  position.y[player] = 80;
 
   if (cache.active[player] == 1)
   {
@@ -31,7 +31,7 @@ uint8_t init_player(void)
     cache.active[player] = 0;
   }
 
-  speed[player] = 128;
+  speed[player] = 156;
 
   player_y_cache = position.y[player];
 

@@ -9,6 +9,7 @@
 #include "../../../include/char_to_tile.h"
 #include "../../../include/language.h"
 #include "../../../include/draw.h"
+#include "../../../include/music.h"
 #include "../../../include/npc_stats_map.h"
 #include "../../../include/text_positions.h"
 #include "../../../include/scene_manager.h"
@@ -269,6 +270,8 @@ void Map_23_ShowBooks()
 
             NewItemScreen(BOOK);
             next_scene = INVENTORY;
+
+            Paid();
 
             break;
         }

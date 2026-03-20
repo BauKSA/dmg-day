@@ -11,6 +11,7 @@
 #include "../../assets/sprites/frames/text_frame.h"
 #include "../char_to_tile.h"
 #include "../text_positions.h"
+#include "../music.h"
 #include "../npc_stats_map.h"
 #include "../../assets/chars/chars.h"
 #include "../../assets/chars/numbers.h"
@@ -42,6 +43,9 @@ void Scene_DrawNPCLine(
     uint8_t has_minigame,
     enum AllScenes minigame)
 {
+
+    SetDialogue();
+
     auto_clean_timer = 0;
 
     uint8_t relation = relation_stats[npc_map];
@@ -160,6 +164,9 @@ void Scene_DrawNPCLine(
             {
                 cache_player_position();
                 next_scene = minigame;
+
+                AcceptHelp();
+
                 break;
             }
 
@@ -170,6 +177,8 @@ void Scene_DrawNPCLine(
                 relation_stats[npc_map] = 0;
 
                 TextFrame_Close(12, 1);
+
+                DeclineHelp();
 
                 break;
             }

@@ -12,6 +12,7 @@
 #include "../../../include/player.h"
 #include "../../../include/position.h"
 #include "../../../include/mgm_states.h"
+#include "../../../include/music.h"
 
 #include "../../../assets/chars/buttons.h"
 #include "../../../assets/chars/chars.h"
@@ -133,6 +134,8 @@ void Map_33_CheckInput()
           relation_stats[(int8_t)NPC_SUPER] = 2;
           mission_accepted = 1;
 
+          AcceptHelp();
+
           break;
         }
 
@@ -141,6 +144,8 @@ void Map_33_CheckInput()
           dialogue_phase[(uint8_t)NPC_SUPER] = 3;
           humor_stats[(uint8_t)NPC_SUPER] = 0;
           relation_stats[(uint8_t)NPC_SUPER] = 0;
+
+          DeclineHelp();
 
           break;
         }

@@ -114,20 +114,45 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\mgm_states.
 Compilando: minigames.c
 Compilando: money.c
 Compilando: music.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:5: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:26: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:47: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:84: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:115: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:124: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:132: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:141: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:150: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:159: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:168: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:177: warning 283: function declarator with no prototype
 Compilando: name.c
 Compilando: npcs.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\scene_manager.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\auto_clean.h:8: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:31: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:161: warning 112: function 'cache_player_position' implicit declaration
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:88: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:89: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:161: warning 84: 'auto' variable 'cache_player_position' may be used before initialization
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:32: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:165: warning 112: function 'cache_player_position' implicit declaration
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:92: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:93: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\npcs.c:165: warning 84: 'auto' variable 'cache_player_position' may be used before initialization
 Compilando: npc_lines.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 Compilando: player.c
@@ -245,7 +270,15 @@ c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
 Compilando: map_player_movement.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\scene_manager.h:16: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\map_player_movement.c:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\map_player_movement.c:11: warning 283: function declarator with no prototype
 Compilando: map_00.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -355,12 +388,20 @@ c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_input.c:13: warning 283: function declarator with no prototype
 Compilando: map_03_items.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:20: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:57: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:60: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:62: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:21: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:58: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:61: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_items.c:63: warning 196: pointer target lost const qualifier
 Compilando: map_03_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
@@ -408,23 +449,31 @@ Compilando: map_11_input.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:81: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:138: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:140: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:166: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:82: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:139: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:141: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:167: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:171: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:168: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:172: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:175: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:173: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:176: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:220: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:222: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:253: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:255: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:280: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:294: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:322: warning 110: conditional flow changed by optimizer: so said EVELYN the modified DOG
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:177: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:221: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:223: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:254: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:256: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:283: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:297: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_input.c:325: warning 110: conditional flow changed by optimizer: so said EVELYN the modified DOG
 Compilando: map_11_option_actor.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-1\map_11_option_actor.c:10: warning 283: function declarator with no prototype
@@ -441,9 +490,15 @@ Compilando: map_12_check_items.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_check_items.c:30: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_check_items.c:55: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_check_items.c:56: warning 126: unreachable code
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_check_items.c:31: warning 283: function declarator with no prototype
 Compilando: map_12_collision.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
@@ -468,10 +523,18 @@ c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_init_npc.c:14: warning 283: function declarator with no prototype
 Compilando: map_12_input.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_input.c:10: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\1-2\map_12_input.c:11: warning 283: function declarator with no prototype
 Compilando: map_12_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\auto_clean.h:8: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -533,15 +596,23 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_in
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_init_npc.c:20: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
 Compilando: map_20_input.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:21: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:39: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:22: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:40: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:156: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:41: warning 158: overflow in implicit constant conversion
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:159: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:161: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:162: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_input.c:164: warning 196: pointer target lost const qualifier
 Compilando: map_20_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -656,38 +727,46 @@ Compilando: map_23_show_books.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\scene_manager.h:16: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:26: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:36: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:27: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:37: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:39: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:38: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:40: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:42: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:41: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:43: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:45: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:44: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:46: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:50: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:47: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:51: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:53: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:52: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:54: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:56: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:55: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:57: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:59: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:58: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:60: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:171: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:173: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:201: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:61: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:172: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:174: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:202: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:206: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:203: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:207: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:210: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:208: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:211: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:239: warning 154: converting integral to pointer without a cast
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:212: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:240: warning 154: converting integral to pointer without a cast
 from type 'const-int literal'
   to type 'char generic* auto'
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:252: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:254: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:253: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-3\map_23_show_books.c:255: warning 196: pointer target lost const qualifier
 Compilando: map_23_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -752,10 +831,20 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_in
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_init_npcs.c:52: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
 Compilando: map_31_input.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_input.c:25: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_input.c:27: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_input.c:69: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-1\map_31_input.c:71: warning 196: pointer target lost const qualifier
 Compilando: map_31_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -805,9 +894,17 @@ Compilando: map_33_create.c
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_create.c:6: warning 283: function declarator with no prototype
 Compilando: map_33_deliver.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:19: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:78: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:80: warning 196: pointer target lost const qualifier
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:20: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:83: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_deliver.c:85: warning 196: pointer target lost const qualifier
 Compilando: map_33_destroy.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_destroy.c:12: warning 85: in function Map_33_Destroy unreferenced function argument : 'scene'
@@ -828,40 +925,48 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_in
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_init_npc.c:20: warning 185: comparison of 'signed char' with 'unsigned char' requires promotion to int
 Compilando: map_33_input.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\assets\chars\buttons.h:11: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:24: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:54: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:25: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:55: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:62: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:56: warning 158: overflow in implicit constant conversion
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:63: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:64: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:66: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:65: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:67: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:74: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:68: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:75: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:76: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:78: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:77: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:79: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:172: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:174: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:175: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:176: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:80: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:177: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:178: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:179: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:180: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:181: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:182: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:184: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:185: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:186: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:183: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:187: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:188: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:261: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:262: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:189: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:190: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:191: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:192: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:193: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:266: warning 196: pointer target lost const qualifier
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:267: warning 196: pointer target lost const qualifier
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:270: warning 158: overflow in implicit constant conversion
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:271: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:271: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:272: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:275: warning 158: overflow in implicit constant conversion
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\3-3\map_33_input.c:276: warning 158: overflow in implicit constant conversion
 Compilando: map_33_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\auto_clean.h:8: warning 283: function declarator with no prototype
@@ -875,7 +980,15 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\mg_loa
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\mg_load_screen.c:28: warning 283: function declarator with no prototype
 Compilando: mg_mission_complete.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\mg_mission_complete.c:140: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\mg_mission_complete.c:153: warning 283: function declarator with no prototype
 Compilando: mg_player_movement.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\scene_manager.h:16: warning 283: function declarator with no prototype
 Compilando: mg_set_coins_reward.c
@@ -904,21 +1017,61 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:103: warning 85: in function Mg_Final_Init unreferenced function argument : 'scene_player'
 Compilando: mg_final_kirby.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_kirby.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_mario.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_mario.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_metroid.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_metroid.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_tetris.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_tetris.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_update.c:9: warning 85: in function Mg_Final_Update unreferenced function argument : 'scene'
 Compilando: mg_final_zelda.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:10: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:12: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:15: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:16: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\music.h:17: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_zelda.c:18: warning 283: function declarator with no prototype
 Compilando: mg_homework.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype

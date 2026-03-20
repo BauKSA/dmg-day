@@ -5,17 +5,21 @@
 #include "../../include/input.h"
 #include "../../include/player.h"
 #include "../../include/scene_manager.h"
+#include "../../include/music.h"
 #include "./map_player_movement.h"
 
-void Map_PlayerMovement() {
-  if (!(keys & J_SELECT) && (prev_keys & J_SELECT)) {
+void Map_PlayerMovement()
+{
+  if (!(keys & J_SELECT) && (prev_keys & J_SELECT))
+  {
     cache_player_position();
 
     next_scene = INVENTORY;
   }
 
   // Si no hay dirección activa, asignamos la primera que se presiona
-  if (current_direction == DIR_NONE) {
+  if (current_direction == DIR_NONE)
+  {
     if (keys & J_UP)
       current_direction = DIR_UP;
     else if (keys & J_DOWN)
@@ -27,7 +31,8 @@ void Map_PlayerMovement() {
   }
 
   // Ejecutar la dirección activa
-  switch (current_direction) {
+  switch (current_direction)
+  {
   case DIR_UP:
     move_up(player);
     set_animation(&animation[player], player_animations.UP_WALKING);
@@ -46,13 +51,17 @@ void Map_PlayerMovement() {
     break;
   }
 
+  Walk();
+
   // Si se suelta la dirección activa, ponemos DIR_NONE
-  if (current_direction == DIR_UP && !(keys & J_UP)) {
+  if (current_direction == DIR_UP && !(keys & J_UP))
+  {
     current_direction = DIR_NONE;
     set_animation(&animation[player], player_animations.UP_STAY);
   }
 
-  if (current_direction == DIR_DOWN && !(keys & J_DOWN)) {
+  if (current_direction == DIR_DOWN && !(keys & J_DOWN))
+  {
     current_direction = DIR_NONE;
     set_animation(&animation[player], player_animations.DOWN_STAY);
   }
