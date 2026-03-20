@@ -64,5 +64,5 @@ void LanguageSelect_CheckInput()
     }
 
     if (!(keys & J_A) && (prev_keys & J_A))
-        next_scene = MAP_21;
+        next_scene = MG_FINAL;
 }

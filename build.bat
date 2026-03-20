@@ -24,8 +24,8 @@ if exist %LOG_FILE% del %LOG_FILE%
     echo.
     echo --- LINKEANDO ROM ---
 
-    "C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\Config\rgbds\rgbasm.exe" -DGBDK -o build/obj/hUGEDriver.obj -i include/huge/ include/huge/hUGEDriver.asm
-    python "C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\tools\rgb2sdas.py" -o build/obj/hUGEDriver.o build/obj/hUGEDriver.obj
+    ::"C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\Config\rgbds\rgbasm.exe" -DGBDK -o build/obj/hUGEDriver.obj -i include/huge/ include/huge/hUGEDriver.asm
+    ::python "C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\tools\rgb2sdas.py" -o build/obj/hUGEDriver.o build/obj/hUGEDriver.obj
 
     :: 3. Crear la lista de objetos
     set OBJS=

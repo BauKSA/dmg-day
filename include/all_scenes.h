@@ -14,7 +14,7 @@ enum AllScenes
   MAP_01,
   MAP_02,
   MAP_03,
-  
+
   MAP_10,
   MAP_11,
   MAP_12,
@@ -32,6 +32,8 @@ enum AllScenes
 
   MG_LEAVES,
   MG_HOMEWORK,
+  MG_FINAL,
+
   NONE
 };
 

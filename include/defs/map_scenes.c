@@ -36,6 +36,7 @@
 // MINI JUEGOS
 #include "../../scenes/mini_games/leaves/mg_leaves.h"
 #include "../../scenes/mini_games/homework/mg_homework.h"
+#include "../../scenes/mini_games/final/mg_final.h"
 
 #define MAP_0_BANK 1
 #define MAP_1_BANK 2
@@ -136,7 +137,7 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     return &Map_13;
 
   case MAP_20:
-    SWITCH_ROM_MBC1(1); // NO ENTRABA MÁS EN EL 3
+    SWITCH_ROM_MBC1(7); // NO ENTRABA MÁS EN EL 3
     Map_20_Create();
     SWITCH_ROM_MBC1(_prev_bank);
 
@@ -193,12 +194,14 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     SWITCH_ROM_MBC1(MG_BANK);
     Mg_Leaves_Create();
     return &Mg_Leaves;
-    SWITCH_ROM_MBC1(_prev_bank);
   case MG_HOMEWORK:
     SWITCH_ROM_MBC1(MG_BANK);
     Mg_Homework_Create();
     return &Mg_Homework;
-    SWITCH_ROM_MBC1(_prev_bank);
+  case MG_FINAL:
+    SWITCH_ROM_MBC1(MG_BANK);
+    Mg_Final_Create();
+    return &Mg_Final;
   default:
     return NULL;
   }

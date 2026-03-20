@@ -11,7 +11,7 @@ typedef struct AllMGMStates
 {
     enum MGM_STATE mg_leaves : 1;
     enum MGM_STATE mg_homework : 1;
-    enum MGM_STATE mg_football : 1;
+    enum MGM_STATE mg_final : 1;
     enum MGM_STATE glasses : 1;
     enum MGM_STATE pigeon : 1;
     enum MGM_STATE super : 1;

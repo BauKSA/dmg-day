@@ -33,6 +33,7 @@ Compilando: map_3-0.c
 Compilando: map_3-1.c
 Compilando: map_3-2.c
 Compilando: map_3-3.c
+Compilando: bkg_final.c
 Compilando: bkg_homework.c
 Compilando: correct_icons.c
 Compilando: bkg_leaves_example.c
@@ -46,6 +47,7 @@ Compilando: text_frame_init.c
 Compilando: broom.c
 Compilando: spr_garbage.c
 Compilando: leaf.c
+Compilando: tetris.c
 Compilando: spr_ChicaLibro0.c
 Compilando: spr_Firulais0.c
 Compilando: spr_FirulaisRun0.c
@@ -103,18 +105,19 @@ c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\leaves\mg_leaves.h:17: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\leaves\mg_leaves.h:59: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:59: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:64: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:69: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:74: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:79: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:196: warning 126: unreachable code
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:201: warning 126: unreachable code
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:60: warning 126: unreachable code
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:65: warning 126: unreachable code
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:70: warning 126: unreachable code
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:75: warning 126: unreachable code
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\map_scenes.c:80: warning 126: unreachable code
 Compilando: market.c
 Compilando: mgm_states.c
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\mgm_states.c:5: warning 283: function declarator with no prototype
 Compilando: minigames.c
 Compilando: money.c
+Compilando: music.c
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:5: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\include\defs\music.c:26: warning 283: function declarator with no prototype
 Compilando: name.c
 Compilando: npcs.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
@@ -338,8 +341,8 @@ Compilando: map_03_init.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_init.c:17: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_init.c:57: warning 85: in function Map_03_Init unreferenced function argument : 'scene_player'
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_init.c:16: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\0-3\map_03_init.c:53: warning 85: in function Map_03_Init unreferenced function argument : 'scene_player'
 Compilando: map_03_init_npc.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -511,7 +514,7 @@ Compilando: map_20_destroy.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:47: warning 283: function declarator with no prototype
-C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_destroy.c:22: warning 85: in function Map_20_Destroy unreferenced function argument : 'scene'
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\map\2-0\map_20_destroy.c:21: warning 85: in function Map_20_Destroy unreferenced function argument : 'scene'
 Compilando: map_20_dialogues.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\map\map_data.h:25: warning 283: function declarator with no prototype
@@ -895,6 +898,30 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\mg_tim
 Compilando: mini_games.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mini_games.h:9: warning 283: function declarator with no prototype
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mini_games.h:11: warning 283: function declarator with no prototype
+Compilando: mg_final.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+Compilando: mg_final_create.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+Compilando: mg_final_init.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mg_timer.h:13: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mg_timer.h:14: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mini_games.h:9: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\scenes\mini_games\mini_games.h:11: warning 283: function declarator with no prototype
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:34: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:35: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:45: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:69: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:70: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:80: warning 196: pointer target lost const qualifier
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:103: warning 85: in function Mg_Final_Init unreferenced function argument : 'scene'
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_init.c:103: warning 85: in function Mg_Final_Init unreferenced function argument : 'scene_player'
+Compilando: mg_final_tetris.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_tetris.c:18: warning 283: function declarator with no prototype
+Compilando: mg_final_update.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_update.c:9: warning 85: in function Mg_Final_Update unreferenced function argument : 'scene'
 Compilando: mg_homework.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 Compilando: mg_homework_create.c
@@ -999,7 +1026,4 @@ from type '_Bool near* fixed'
   to type '_Bool auto'
 
 --- LINKEANDO ROM ---
-RGB2SDAS: object hUGEDriver.obj was successfully converted to hUGEDriver.o
-Warning: Write from one bank spans into the next. 0x7fe7 -> 0x8006 (bank 1 -> 2)
-Warning: Multiple write of  1285 bytes at 0x8000 -> 0x8504 writes:(0x8000 -> 0x9e95, 0x7107 -> 0x8504)
-Warning: Possible overflow from Bank 1 into Bank 2
+El sistema no puede encontrar el controlador especificado.

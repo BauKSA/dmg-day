@@ -1,4 +1,4 @@
-#pragma bank 1
+#pragma bank 7
 
 #include "../../../include/language.h"
 #include "../../../include/npc_lines.h"

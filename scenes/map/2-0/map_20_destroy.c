@@ -1,5 +1,4 @@
-#pragma bank 1
-
+#pragma bank 7
 #include "map_20.h"
 #include "../../../include/npcs.h"
 #include "../../../include/npc_stats_map.h"
