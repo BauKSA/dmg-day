@@ -43,3 +43,40 @@ void MiniGameLose()
     NR13_REG = 0x00;
     NR14_REG = 0x85;
 }
+
+void MiniGamePassed()
+{
+    NR10_REG = 0x00;
+    NR11_REG = 0x80;
+    NR12_REG = 0xF2;
+    NR13_REG = 0x2C; // Nota: Do
+    NR14_REG = 0x84;
+    delay(150);
+
+    NR13_REG = 0x2C;
+    NR14_REG = 0x84;
+    delay(150);
+
+    NR13_REG = 0x2C;
+    NR14_REG = 0x84;
+    delay(150);
+
+    NR12_REG = 0xF4;
+    NR13_REG = 0x94; // Nota: Do (octava superior)
+    NR14_REG = 0x86;
+    delay(600);
+
+    // 5. La nota final
+    NR10_REG = 0x17;
+    NR11_REG = 0x80;
+    NR12_REG = 0xF7;
+    NR13_REG = 0xD7; // Nota: Mi alto
+    NR14_REG = 0x86;
+
+    NR41_REG = 0x01;
+    NR42_REG = 0x96;
+    NR43_REG = 0x44;
+    NR44_REG = 0x80;
+
+    delay(3000);
+}

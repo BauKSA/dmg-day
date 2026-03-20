@@ -25,5 +25,6 @@ void Mg_Final_Create(void);
 // MINI GAMES
 void Mg_Final_Tetris(void);
 void Mg_Final_Mario(void);
+void Mg_Final_Kirby(void);
 
 #endif // MG_FINAL_H

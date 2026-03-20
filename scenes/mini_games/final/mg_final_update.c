@@ -14,7 +14,9 @@ void Mg_Final_Update(Scene *scene)
     case 1:
         Mg_Final_Mario();
         break;
-
+    case 2:
+        Mg_Final_Kirby();
+        break;
     default:
         break;
     }

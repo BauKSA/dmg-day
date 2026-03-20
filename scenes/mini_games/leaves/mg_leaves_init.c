@@ -185,5 +185,4 @@ void Mg_Leaves_Init(Scene *scene, Entity scene_player)
   }
 
   Mg_TimerStart(30);
-  // Mg_PlayMain();
 }

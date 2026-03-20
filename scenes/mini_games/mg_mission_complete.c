@@ -5,13 +5,11 @@
 #include "../../assets/chars/numbers.h"
 #include "../../assets/sprites/backgrounds/npc_icons/npc_icons.h"
 #include "../../include/char_to_tile.h"
-// #include "../../include/huge/include/hUGEDriver.h"
 #include "../../include/input.h"
 #include "../../include/language.h"
 #include "../../include/npcs.h"
 #include "./mini_games.h"
 
-#include "../../assets/music/songs.h"
 #include "../../assets/sprites/backgrounds/minigames/mission_complete/bkg_mission_complete.h"
 
 #include <gb/gb.h>
@@ -23,13 +21,7 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success,
                bkg_mission_complete_tileset);
   set_bkg_tiles(0, 0, 20, 18, bkg_mission_complete_tilemap);
 
-  // if (success == 1)
-  // hUGE_init(&mg_main_win);
-  //   else
-  // hUGE_init(&mg_main_lose);
-
   vsync();
-  // hUGE_dosound();
 
   if (language == SPANISH) {
     char text[] = "mision  completa\0";
@@ -139,12 +131,10 @@ void Mg_SplashCompleteScreen(uint8_t npc_map, uint8_t success,
   uint8_t timer = 0;
 
   while (timer <= limit) {
-    //  hUGE_dosound();
     vsync();
     timer++;
   }
 
-  Mg_StopMusic();
 }
 
 void Mg_CompleteScreenSleep() {

@@ -7,7 +7,6 @@
 #include "../../../include/all_scenes.h"
 #include "../../../include/draw.h"
 #include "../../../include/inventory.h"
-// #include "../../../include/huge/include/hUGEDriver.h"
 #include "../../../include/can_move.h"
 #include "../../../include/extra_actor.h"
 #include "../../../include/input.h"
@@ -208,12 +207,10 @@ void Mg_Leaves_Update(Scene *scene)
   }
 
   Mg_TimerUpdate();
-  // hUGE_dosound();
 
   if (mgt_alarm == 1)
   {
     Mg_TimerStopAlarm();
-    Mg_StopMusic();
 
     for (int8_t i = 0; i < extra_actor_index; i++)
       draw_extra(i, 0, -1, 1, 1);

@@ -92,4 +92,15 @@ void Mg_Final_Tetris()
         current_game++;
         MiniGameLose();
     }
+
+    uint8_t empty_tile = 255;
+
+    for (uint8_t i = 8; i <= 11; i++)
+    {
+        set_bkg_tile_xy(i, 9, empty_tile);
+        set_bkg_tile_xy(i, 10, empty_tile);
+    }
+
+    position.y[npc_1] = 0;
+    draw_actor(npc_1);
 }
