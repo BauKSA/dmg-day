@@ -43,7 +43,9 @@ Compilando: spr_garbage.c
 Compilando: kirby.c
 Compilando: leaf.c
 Compilando: mario.c
+Compilando: metroid.c
 Compilando: tetris.c
+Compilando: zelda.c
 Compilando: spr_ChicaLibro0.c
 Compilando: spr_Firulais0.c
 Compilando: spr_FirulaisRun0.c
@@ -906,12 +908,18 @@ C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\
 Compilando: mg_final_mario.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_mario.c:18: warning 283: function declarator with no prototype
+Compilando: mg_final_metroid.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_metroid.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_tetris.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_tetris.c:18: warning 283: function declarator with no prototype
 Compilando: mg_final_update.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_update.c:9: warning 85: in function Mg_Final_Update unreferenced function argument : 'scene'
+Compilando: mg_final_zelda.c
+c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
+C:\Users\Bau_M\OneDrive\Desktop\GameDev\Gameboy\dmg-day\scenes\mini_games\final\mg_final_zelda.c:18: warning 283: function declarator with no prototype
 Compilando: mg_homework.c
 c:\users\bau_m\onedrive\desktop\gamedev\gameboy\dmg-day\include\npcs.h:12: warning 283: function declarator with no prototype
 Compilando: mg_homework_create.c

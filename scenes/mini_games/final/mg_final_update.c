@@ -17,6 +17,12 @@ void Mg_Final_Update(Scene *scene)
     case 2:
         Mg_Final_Kirby();
         break;
+    case 3:
+        Mg_Final_Metroid();
+        break;
+    case 4:
+        Mg_Final_Zelda();
+        break;
     default:
         break;
     }

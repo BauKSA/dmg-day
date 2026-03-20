@@ -1,3 +1,5 @@
+#pragma bank 6
+
 #include "kirby.h"
 
 unsigned char spr_kirby0[] =

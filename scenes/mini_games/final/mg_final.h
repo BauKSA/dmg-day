@@ -26,5 +26,7 @@ void Mg_Final_Create(void);
 void Mg_Final_Tetris(void);
 void Mg_Final_Mario(void);
 void Mg_Final_Kirby(void);
+void Mg_Final_Metroid(void) BANKED;
+void Mg_Final_Zelda(void) BANKED;
 
 #endif // MG_FINAL_H
