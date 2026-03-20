@@ -12,7 +12,7 @@ typedef enum MarketItem
   MKT_CANDIES,
   MKT_TEA,
   MKT_COFFE,
-  MKT_BATTERIES,
+  MKT_CHOCOLATE,
   MKT_JAM,
   MKT_SOAP,
   MKT_COOKIES,

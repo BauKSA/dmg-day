@@ -13,14 +13,17 @@ void Map_03_Update(Scene *scene)
 {
     Map_AutoClean();
 
+    Map_03_CheckInput();
     Map_PlayerMovement();
 
     MapData *data = (MapData *)scene->data;
 
     update_animation(animation);
     draw_actor(data->player);
+    draw_actor(npc_1);
 
     Map_Collision(scene);
+    Map_03_CheckItems();
 
     return;
 }

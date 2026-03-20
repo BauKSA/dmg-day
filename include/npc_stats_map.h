@@ -14,7 +14,7 @@
  * _XX  -> Mapa en el cual aparecen
  */
 
-#define EXAMPLE_00 0 // Example NPC for testing purpose
+#define NPC_ANTEOJOS 0
 #define NPC_MARTIN 1
 #define NPC_DIARIO 2
 #define NPC_FIRULAIS 3

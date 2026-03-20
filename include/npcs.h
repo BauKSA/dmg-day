@@ -3,7 +3,7 @@
 #include "./entity.h"
 #include "./all_scenes.h"
 
-#define MAX_NPCS 9
+#define MAX_NPCS 12
 
 extern Entity npc_1;
 extern Entity npc_2;

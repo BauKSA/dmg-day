@@ -1,6 +1,9 @@
 #pragma bank 2
 
 #include "map_11.h"
+
+#include "../../inventory/inventory_scene.h"
+
 #include "../../../include/player.h"
 #include "../../../include/money.h"
 #include "../../../include/market.h"
@@ -262,6 +265,12 @@ static void Map_11_Buy(uint8_t *selected_state)
 
             TextFrame_Close(13, 2);
             money -= total_price;
+
+            for (uint8_t i = 0; i < tmp_cart_count; i++)
+            {
+                if (tmp_cart[i] == MKT_BREAD)
+                    NewItemScreen(BREAD);
+            }
 
             return;
         }

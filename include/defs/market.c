@@ -16,7 +16,7 @@ const MarketItemInfo items_info[10] = {
     {MKT_CANDIES, 150, "caramelos", "candies"},
     {MKT_TEA, 150, "te", "tea"},
     {MKT_COFFE, 750, "cafe", "coffe"},
-    {MKT_BATTERIES, 900, "pilas", "batteries"},
+    {MKT_CHOCOLATE, 900, "chocolate", "chocolate"},
     {MKT_JAM, 850, "mermelada", "jam"},
     {MKT_SOAP, 750, "jabon", "soap"},
     {MKT_COOKIES, 650, "galletas", "biscuits"},
