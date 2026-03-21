@@ -16,7 +16,7 @@ void Map_03_InitNPC()
     position.x[npc_1] = 64;
     position.y[npc_1] = 104;
 
-    char npc_name[10] = "v anteojos";
+    char npc_name[10] = "lili";
     for (uint8_t i = 0; npc_name[i] != '\0'; i++)
         names[npc_1][i] = npc_name[i];
 

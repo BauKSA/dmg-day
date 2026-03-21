@@ -4,53 +4,63 @@
 
 Mg_Homework_Test test[QUESTION_COUNT] = {
     {
-        .question = { .lines_txt = {"pregunta a", "segunda linea"}, .lines_count = 2 },
+        .question = { .lines_txt = {"who is the", "author of", "the eternauta"}, .lines_count = 3 },
         .options = {
-            {"incorrecta", 0, MGH_RIGHT},
-            {"correcta", 1, MGH_LEFT}
-        },
-        .options_count = 2
-    },
-    {
-        .question = { .lines_txt = {"pregunta b"}, .lines_count = 1 },
-        .options = {
-            {"mmm, no", 0, MGH_RIGHT},
-            {"mmm, si", 1, MGH_LEFT}
-        },
-        .options_count = 2
-    },
-    {
-        .question = { .lines_txt = {"pregunta c", "linea dos", "una mas"}, .lines_count = 3 },
-        .options = {
-            {"no", 0, MGH_RIGHT},
-            {"no", 0, MGH_LEFT},
-            {"si", 1, MGH_UP},
-            {"no", 0, MGH_DOWN}
+            {"h. g. o.", 1, MGH_UP},
+            {"quinterno", 0, MGH_LEFT},
+            {"g. ferre", 0, MGH_RIGHT},
+            {"altuna", 0, MGH_DOWN}
         },
         .options_count = 4
     },
     {
-        .question = { .lines_txt = {"pregunta d", "linea dos", "una mas", "ultima"}, .lines_count = 4 },
+        .question = { .lines_txt = {"what is the", "indep. day", "of argentina"}, .lines_count = 3 },
         .options = {
-            {"probamos", 0, MGH_RIGHT},
-            {"la", 0, MGH_LEFT},
-            {"respuesta", 0, MGH_LEFT},
-            {"correcta", 1, MGH_LEFT}
+            {"july 9th", 1, MGH_UP},
+            {"july 4th", 0, MGH_LEFT},
+            {"june 20th", 0, MGH_RIGHT},
+            {"may 25th", 0, MGH_DOWN}
         },
         .options_count = 4
     },
     {
-        .question = { .lines_txt = {"pregunta e"}, .lines_count = 1 },
+        .question = { .lines_txt = {"which arg.", "team was", "never", "relegated"}, .lines_count = 4 },
         .options = {
-            {"solo una", 1, MGH_RIGHT}
+            {"river", 0, MGH_UP},
+            {"indep.", 0, MGH_LEFT},
+            {"casla", 0, MGH_RIGHT},
+            {"boca", 1, MGH_DOWN}
         },
-        .options_count = 1
+        .options_count = 4
     },
     {
-        .question = { .lines_txt = {"pregunta f", "esta tiene", "muchas", "lineas"}, .lines_count = 4 },
+        .question = { .lines_txt = {"game boy is", "out today. in", "what year", "are we"}, .lines_count = 4 },
         .options = {
-            {"y una respuesta", 0, MGH_RIGHT}
+            {"1979", 0, MGH_UP},
+            {"1989", 1, MGH_LEFT},
+            {"1990", 0, MGH_RIGHT},
+            {"1980", 0, MGH_DOWN}
         },
-        .options_count = 1
+        .options_count = 4
+    },
+    {
+        .question = { .lines_txt = {"where is the", "now defunct", "prison of the", "end of world"}, .lines_count = 4 },
+        .options = {
+            {"bs as", 0, MGH_UP},
+            {"rosario", 0, MGH_LEFT},
+            {"ushuaia", 1, MGH_RIGHT},
+            {"madryn", 0, MGH_DOWN}
+        },
+        .options_count = 4
+    },
+    {
+        .question = { .lines_txt = {"in which race", "traverso won", "with his car", "on fire"}, .lines_count = 4 },
+        .options = {
+            {"gral roca", 1, MGH_UP},
+            {"pigue", 0, MGH_LEFT},
+            {"s. lorenzo", 0, MGH_RIGHT},
+            {"bs as", 0, MGH_DOWN}
+        },
+        .options_count = 4
     }
 };

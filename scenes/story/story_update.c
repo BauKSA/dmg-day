@@ -1,4 +1,4 @@
-#pragma bank 5
+#pragma bank 7
 
 #include "../../assets/chars/chars.h"
 #include "../../assets/chars/buttons.h"
@@ -13,79 +13,38 @@
 
 void Story_Update(Scene *scene)
 {
-
   if (ended == 1)
   {
-    keys = 0;
-    uint8_t visible = 0;
-    story_lines_rate = 30;
-    story_lines_timer = 0;
-
-    while (1)
+    story_lines_timer++;
+    if (story_lines_timer >= story_lines_rate)
     {
-      vsync();
-      keys = joypad();
-
-      uint8_t button = BUTTON_TILESET_START + 1;
-      uint8_t empty_tile = 255;
-
-      if (keys & J_A)
-        break;
-
-      if (story_lines_timer < story_lines_rate)
-      {
-        story_lines_timer++;
-        continue;
-      }
-
       story_lines_timer = 0;
-
-      if (visible == 1)
-      {
-        set_bkg_tile_xy(17, 11, empty_tile);
-        visible = 0;
-      }
-      else
-      {
-        set_bkg_tile_xy(17, 11, button);
-        visible = 1;
-      }
+      static uint8_t visible = 0;
+      visible = !visible;
+      set_bkg_tile_xy(17, 11, visible ? (BUTTON_TILESET_START + 1) : 255);
     }
 
-    scene_manager.change_scene(MAP_21, &player);
+    if (joypad() & J_A)
+    {
+      scene_manager.change_scene(MAP_21, &player);
+    }
     return;
   }
 
-  if (story_lines_timer < story_lines_rate)
+  uint8_t x_start = 2;
+  uint8_t y_start = 5;
+
+  for (uint8_t i = 0; i < story_lines_count; i++)
   {
-    story_lines_timer++;
-    return;
+    uint8_t j = 0;
+    while (story_lines[i][j] != '\0')
+    {
+      uint8_t tile = char_to_tile(story_lines[i][j]) + CHARS_TILESET_START;
+      set_bkg_tile_xy(x_start + j, y_start + i, tile);
+      j++;
+    }
   }
 
-  if (actual_story_line >= story_lines_count)
-  {
-    ended = 1;
-    return;
-  }
-
-  if (story_lines[actual_story_line][actual_line_char] == '\0' || actual_line_char >= 12)
-  {
-    actual_story_line++;
-    actual_line_char = 0;
-
-    return;
-  }
-
+  ended = 1;
   story_lines_timer = 0;
-
-  uint8_t x = 3;
-  uint8_t y = 4;
-
-  uint8_t tile =
-      char_to_tile(story_lines[actual_story_line][actual_line_char]) +
-      CHARS_TILESET_START;
-
-  set_bkg_tile_xy(x + actual_line_char, y + actual_story_line, tile);
-
-  actual_line_char++;
 }

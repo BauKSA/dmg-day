@@ -7,33 +7,34 @@
 #include "./map_32.h"
 
 static const DialoguePerRelation dialogue_0_32_es = {
-    {{"dialogo a.c", "humor c"}, {"dialogo a.c", "humor b"}, {"dialogo a.c", "humor a"}},
-    {{"dialogo a.b", "humor c"}, {"dialogo a.b", "humor b"}, {"dialogo a.b", "humor a"}},
+    {{"ayudame con la", "tarea, dale"}, {"podrias ayudarme,", "no?"}, {"che, me das", "una mano?"}},
+    {{"che, me das", "una mano?"}, {"buenas!", "tenes unminuto?"}, {"che! ayudame", "un toque, porfa"}},
     {{"", ""}, {"", ""}, {"", ""}},
 };
 
 static const DialoguePerRelation dialogue_0_32_en = {
-    {{"dialogue a.c", "mood c"}, {"dialogue a.c", "mood b"}, {"dialogue a.c", "mood a"}},
-    {{"dialogue a.b", "mood c"}, {"dialogue a.b", "mood b"}, {"dialogue a.b", "mood a"}},
-    {{"", ""}, {"", ""}, {"", ""}}};
+    {{"help me with my", "homework, go"}, {"could you help me,", "eh?"}, {"hey, give me", "a hand?"}},
+    {{"hey, give me", "a hand?"}, {"hello!", "got a minute?"}, {"hey! help me", "a bit, please"}},
+    {{"", ""}, {"", ""}, {"", ""}},
+};
 
 static const DialoguePerRelation dialogue_1_32_es = {
-    {{"gracias.c", "humor c"}, {"gracias.c", "humor b"}, {"gracias.c", "humor a"}},
+    {{"gracias, che", ""}, {"gracias,", "me salvaste"}, {"uuh, gracias!", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
-    {{"gracias.a", "humor c"}, {"gracias.a", "humor b"}, {"gracias.a", "humor a"}}};
+    {{"gracias! te", "debo una"}, {"gracias, genia", ""}, {"muchas gracias!", "sos lo mas"}}};
 
 static const DialoguePerRelation dialogue_1_32_en = {
-    {{"thanks.c", "mood c"}, {"thanks.c", "mood b"}, {"thanks.c", "mood a"}},
+    {{"thanks, mate", ""}, {"cheers,", "saved me"}, {"uuh, thanks!", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
-    {{"thanks.a", "mood c"}, {"thanks.a", "mood b"}, {"thanks.a", "mood a"}}};
+    {{"thanks! I", "owe you one"}, {"thanks, star", ""}, {"thanks a lot!", "you're ace"}}};
 
 static const DialoguePerRelation dialogue_2_32_es = {
-    {{"puto", ""}, {"", ""}, {"", ""}},
+    {{"re ortiba...", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}}};
 
 static const DialoguePerRelation dialogue_2_32_en = {
-    {{"puto", "in english"}, {"", ""}, {"", ""}},
+    {{"proper mean..", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}},
     {{"", ""}, {"", ""}, {"", ""}}};
 

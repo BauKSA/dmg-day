@@ -1,36 +1,42 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set LOG_FILE=build\logs.txt
-if not exist build mkdir build
-if not exist build\obj mkdir build\obj
-if exist %LOG_FILE% del %LOG_FILE%
+:: 1. Definir rutas absolutas para que no se pierda al cambiar de carpeta
+set GBDK_LCC="C:\Program Files\GBDK\bin\lcc.exe"
+set PROJECT_DIR=%~dp0
+set OBJ_DIR=%PROJECT_DIR%build\obj
+set ROM_OUT=%PROJECT_DIR%build\game.gb
 
-echo --- COMPILANDO OBJETOS ---
-:: Compilamos y guardamos salida en el log
-(
-    for /R %%f in (*.c) do (
-        echo Compilando: %%~nxf
-        "C:\Program Files\GBDK\bin\lcc.exe" -debug -c -o "build\obj\%%~nf.o" "%%f"
-    )
-) >> %LOG_FILE% 2>&1
+:: 2. Limpieza y preparación
+if exist build rmdir /s /q build
+mkdir build\obj
 
-echo --- GENERANDO LISTA DE OBJETOS ---
-set OBJS=
-for %%g in (build\obj\*.o) do (
-    set OBJS=!OBJS! "%%g"
+echo [1/3] Compilando cada archivo .c...
+for /R %%f in (*.c) do (
+    echo Compilando: %%~nxf
+    %GBDK_LCC% -debug -c -o "build\obj\%%~nf.o" "%%f"
 )
 
-echo --- LINKEANDO ROM ---
-:: Ejecutamos el linkeo FUERA del bloque de paréntesis para capturar el error real
-"C:\Program Files\GBDK\bin\lcc.exe" -debug -Wl-yt1 -Wl-yo8 -o "build\game.gb" %OBJS%
+echo [2/3] Entrando a la carpeta de objetos para acortar la ruta...
+pushd "%OBJ_DIR%"
 
-if %errorlevel% equ 0 (
+:: 3. Generar la lista de objetos con rutas relativas (cortitas)
+set REL_OBJS=
+for %%g in (*.o) do (
+    set REL_OBJS=!REL_OBJS! %%g
+)
+
+echo [3/3] Linkeando ROM desde build\obj...
+%GBDK_LCC% -debug -Wl-yt1 -Wl-yo8 -o "%ROM_OUT%" !REL_OBJS!
+
+:: 4. Volver a la carpeta original
+popd
+
+if exist "build\game.gb" (
     echo.
-    echo [OK] ROM generada con exito en build\game.gb
+    echo === EXITO: ROM GENERADA EN build\game.gb ===
 ) else (
     echo.
-    echo [ERROR] El linker fallo con codigo %errorlevel%.
-    echo Revisa %LOG_FILE% o los mensajes arriba.
+    echo === FALLO: El linker no pudo crear la ROM ===
     pause
 )

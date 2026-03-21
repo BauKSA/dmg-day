@@ -108,7 +108,7 @@ void Mg_Homework_Update(Scene *scene)
       if ((keys & J_DOWN) && !(prev_keys & J_DOWN) &&
           test[qi].options_count > 3)
       {
-        if (test[qi].options[2].correct == 0)
+        if (test[qi].options[3].correct == 0)
           break;
 
         correct_answer = 1;
