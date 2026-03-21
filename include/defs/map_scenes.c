@@ -38,6 +38,9 @@
 #include "../../scenes/mini_games/homework/mg_homework.h"
 #include "../../scenes/mini_games/final/mg_final.h"
 
+#include "../../scenes/game_over/game_over.h"
+#include "../../scenes/you_win/you_win.h"
+
 #define MAP_0_BANK 1
 #define MAP_1_BANK 2
 #define MAP_2_BANK 3
@@ -202,6 +205,16 @@ Scene *scene_manager_MapScene(enum AllScenes scene)
     SWITCH_ROM_MBC1(MG_BANK);
     Mg_Final_Create();
     return &Mg_Final;
+
+  case GAME_OVER:
+    SWITCH_ROM_MBC1(7);
+    GameOver_Create();
+    return &GameOver;
+
+      case YOU_WIN:
+    SWITCH_ROM_MBC1(7);
+    YouWin_Create();
+    return &YouWin;
   default:
     return NULL;
   }

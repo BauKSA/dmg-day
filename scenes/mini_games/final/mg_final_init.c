@@ -40,14 +40,14 @@ void Mg_Final_Init(Scene *scene, Entity scene_player)
         instruction[0].button = DPAD;
 
         instruction[1].text = txt_b;
-        instruction[1].button = A;
+        instruction[1].button = B;
 
         char *req_a = "wins";
 
         Requirement reqs[1];
 
         reqs[0].text = req_a;
-        reqs[0].qty = 7;
+        reqs[0].qty = 4;
 
         Mg_InstructionSet(instruction, 2, reqs, 1);
 
@@ -75,14 +75,14 @@ void Mg_Final_Init(Scene *scene, Entity scene_player)
         instruction[0].button = DPAD;
 
         instruction[1].text = txt_b;
-        instruction[1].button = A;
+        instruction[1].button = B;
 
         char *req_a = "superados";
 
         Requirement reqs[1];
 
         reqs[0].text = req_a;
-        reqs[0].qty = 7;
+        reqs[0].qty = 4;
 
         Mg_InstructionSet(instruction, 2, reqs, 1);
 

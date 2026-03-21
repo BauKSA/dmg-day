@@ -8,6 +8,9 @@ enum AllScenes
   GENDER_SELECT,
   INVENTORY,
   LANG_SELECT,
+  YOU_WIN,
+  GAME_OVER,
+  CREDITS,
 
   // MAPAS
   MAP_00,

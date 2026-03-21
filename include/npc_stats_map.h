@@ -22,5 +22,8 @@
 #define NPC_TAREA 5
 #define NPC_SUPER 6
 #define NPC_LIBRO 7
+#define NPC_BOCA 8
+#define NPC_GALLINA 9
+#define NPC_TIENDA 10
 
 #endif //_NPCSTATSMAP_

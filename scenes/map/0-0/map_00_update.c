@@ -20,6 +20,7 @@ void Map_00_Update(Scene *scene)
     update_animation(animation);
     draw_actor(data->player);
 
+    Map_00_CheckInput();
     Map_Collision(scene);
 
     return;

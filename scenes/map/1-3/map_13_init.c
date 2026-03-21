@@ -12,16 +12,30 @@
 
 #include "../../../assets/sprites/backgrounds/maps/1-3/map_1-3.h"
 
+void Map_13_event_a()
+{
+    CurrentMapData.event_active = 1;
+}
+
+void Map_13_event_b()
+{
+    CurrentMapData.event_active = 2;
+}
+
 void Map_13_Init(Scene *scene, Entity scene_player)
 {
     init_player();
 
     CurrentMapData.player = player;
     CurrentMapData.collision_map = map_13_collision;
-    CurrentMapData.npc_count = 0;
+    CurrentMapData.npc_count = 2;
+    CurrentMapData.npc[0] = npc_1;
+    CurrentMapData.npc[0] = npc_2;
 
-    CurrentMapData.event_count = 0;
+    CurrentMapData.event_count = 2;
     CurrentMapData.event_active = 0;
+    CurrentMapData.events[0] = Map_13_event_a;
+    CurrentMapData.events[1] = Map_13_event_b;
 
     CurrentMapData.spawner.right = NONE;
     CurrentMapData.spawner.left = MAP_12;
@@ -34,6 +48,9 @@ void Map_13_Init(Scene *scene, Entity scene_player)
     set_bkg_tiles(0, 0, 20, 18, map_1_3_tilemap);
 
     draw_actor(player);
+
+    Map_13_InitDialogues();
+    Map_13_InitNPCs();
 
     actual_tile.prev = 0;
     actual_tile.value = 0;

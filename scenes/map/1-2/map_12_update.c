@@ -21,8 +21,8 @@ void Map_12_Update(Scene *scene) {
   draw_actor(npc_1);
 
   Map_Collision(scene);
-  Map_12_CheckInput();
   Map_12_CheckItems();
+  Map_12_CheckInput();
 
   return;
 }

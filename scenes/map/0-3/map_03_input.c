@@ -9,6 +9,7 @@
 #include "../../../include/npcs.h"
 
 #include "../map_data.h"
+#include "../1-3/map_13.h"
 
 void Map_03_CheckInput()
 {
@@ -19,5 +20,8 @@ void Map_03_CheckInput()
     {
         Scene_DrawNPCLine(npc_1, (uint8_t)NPC_ANTEOJOS, 0, 0, NONE);
         tmp_03_relation = 2;
+
+        if (dialogue_phase[(uint8_t)NPC_ANTEOJOS] == 0)
+            relation_stats[(uint8_t)NPC_GALLINA] = 2;
     }
 }

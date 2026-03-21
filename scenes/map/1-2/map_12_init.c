@@ -19,7 +19,7 @@ void Map_12_Init(Scene *scene, Entity scene_player)
   init_player();
   if (dog_active == 1)
     Map_12_InitNPC();
-    
+
   Map_12_InitDialogues();
 
   CurrentMapData.player = player;
@@ -30,6 +30,8 @@ void Map_12_Init(Scene *scene, Entity scene_player)
   CurrentMapData.event_count = 1;
   CurrentMapData.event_active = 0;
   CurrentMapData.events[0] = event_12;
+
+  CurrentMapData.receive_items = 1;
 
   CurrentMapData.spawner.right = MAP_13;
   CurrentMapData.spawner.left = NONE;

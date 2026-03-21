@@ -20,6 +20,10 @@ void Map_13_Update(Scene *scene)
     update_animation(animation);
     draw_actor(data->player);
 
+    draw_actor(npc_1);
+    draw_actor(npc_2);
+
+    Map_13_CheckInput();
     Map_Collision(scene);
 
     return;

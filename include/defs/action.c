@@ -5,6 +5,7 @@
 #include "../can_move.h"
 #include "../input.h"
 #include "../speed.h"
+#include "../music.h"
 
 Direction current_direction = DIR_NONE;
 
@@ -15,6 +16,8 @@ void move_up(Entity e)
 
     position.fixed_y[e] -= speed[e];
     position.y[e] = position.fixed_y[e] >> 8;
+
+    Walk();
 }
 
 void move_down(Entity e)
@@ -24,6 +27,8 @@ void move_down(Entity e)
 
     position.fixed_y[e] += speed[e];
     position.y[e] = position.fixed_y[e] >> 8;
+
+    Walk();
 }
 
 void move_left(Entity e)
@@ -33,6 +38,8 @@ void move_left(Entity e)
 
     position.fixed_x[e] -= speed[e];
     position.x[e] = position.fixed_x[e] >> 8;
+
+    Walk();
 }
 
 void move_right(Entity e)
@@ -42,4 +49,6 @@ void move_right(Entity e)
 
     position.fixed_x[e] += speed[e];
     position.x[e] = position.fixed_x[e] >> 8;
+
+    Walk();
 }

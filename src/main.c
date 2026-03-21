@@ -17,6 +17,8 @@
 #include "../include/player.h"
 #include "../include/scene.h"
 #include "../include/scene_manager.h"
+#include "../include/mgm_states.h"
+#include "../include/money.h"
 
 #include "../assets/chars/chars.h"
 #include "../assets/chars/numbers.h"
@@ -93,5 +95,11 @@ void main(void)
 
     vsync();
     refresh_OAM();
+
+    if (MGM_states.book == MGM_INACTIVE && MGM_states.glasses == MGM_INACTIVE && MGM_states.mg_homework == MGM_INACTIVE && MGM_states.mg_leaves == MGM_INACTIVE && MGM_states.super == MGM_INACTIVE)
+    {
+      if (money < GAME_BOY_PRICE)
+        next_scene = GAME_OVER;
+    }
   }
 }

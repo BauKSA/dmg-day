@@ -68,7 +68,7 @@ void Map_12_CheckItems()
 
     set_animation(&animation[npc_1], 1);
 
-    while (position.x[npc_1] > 1)
+    while (position.x[npc_1] > 20)
     {
         vsync();
         update_animation(&animation[npc_1]);
@@ -78,6 +78,10 @@ void Map_12_CheckItems()
     }
 
     position.y[npc_1] = 0;
+
+    set_animation(&animation[npc_1], 0);
+    update_animation(&animation[npc_1]);
+
     draw_actor(npc_1);
 
     map_12_collision[7][10] = 0;

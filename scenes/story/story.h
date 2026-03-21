@@ -3,7 +3,7 @@
 #include "../../include/scene.h"
 #include <stdint.h>
 
-typedef char StoryLine[12];
+typedef char *StoryLine;
 
 void Story_Init(Scene *scene, Entity player);
 void Story_Update(Scene *scene);

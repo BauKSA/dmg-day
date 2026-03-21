@@ -5,7 +5,6 @@
 #include "../../include/input.h"
 #include "../../include/player.h"
 #include "../../include/scene_manager.h"
-#include "../../include/music.h"
 #include "./map_player_movement.h"
 
 void Map_PlayerMovement()
@@ -50,8 +49,6 @@ void Map_PlayerMovement()
   default:
     break;
   }
-
-  Walk();
 
   // Si se suelta la dirección activa, ponemos DIR_NONE
   if (current_direction == DIR_UP && !(keys & J_UP))
